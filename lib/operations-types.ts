@@ -1,0 +1,10 @@
+import type {OperationalHistoryRow} from './db-types';
+export type OperationsPolicy={cashCents:number|null;cashDate:string|null;reserveHeldCents:number;reserveFloorCents:number;reserveMonths:number;horizonDays:number;reviewed:boolean};
+export type Expense={id:string;name:string;category:string;frequency:string;amountCents:number|null;due:string|null;essential:boolean;active:boolean;notes:string};
+export type Investment={id:string;name:string;budgetCents:number|null;priority:string;targetDate:string|null;notes:string;status:string;purchasedOn:string|null};
+export type Settlement={id:string;occurrenceId:string;expenseId?:string;investmentId?:string;name:string;category:string;due:string;paidOn:string;amountCents:number;note:string;reversedOn:string|null;reversalReason?:string};
+export type OperationsState={policy:OperationsPolicy;expenses:Expense[];investments:Investment[];settlements:Settlement[]};
+export type OperationsSummary={today:string;until:string;pending:(Expense&{due:string;occurrenceId:string})[];monthlyEssential:number;reserveTarget:number;protectedReserve:number;reserveShortfall:number;payables:number;cash:number|null;postReceipts:number;postPaid:number;undatedReceipts:number;issues:string[];eligible:boolean;available:number|null;deficit:number|null;remainingAfterPlans:number|null;plans:(Investment&{fits:boolean;missingCents:number|null})[]};
+export type OperationsData={state:OperationsState;revision:number;summary:OperationsSummary;history:OperationalHistoryRow[];error?:string};
+export type OperationsEditor=Partial<OperationsPolicy&Expense&Investment&Omit<Settlement,'amountCents'|'due'>>&{mode:string;cash?:string;held?:string;floor?:string;amount?:string;budget?:string;reason?:string};
+export type OperationsRequest={action:string;id?:string;revision?:number;mutationId?:string;policy?:OperationsPolicy;expense?:Partial<Expense>;investment?:Partial<Investment>;due?:string|null;paidOn?:string;amountCents?:number|null;note?:string;reason?:string};

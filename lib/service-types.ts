@@ -1,0 +1,11 @@
+import type {clientInput,opportunityInput,validateNegotiation} from './crm.mjs';
+import type {FinanceFormState} from './ui-types';
+export type SQLStatement={sql:string;args:unknown[]};
+export type MutationPlan={id:string;statements:SQLStatement[]};
+export type CRMRequest={action:string;mutationId:string;id?:string;revision?:number;client?:ReturnType<typeof clientInput>;opportunity?:ReturnType<typeof opportunityInput>;negotiation?:ReturnType<typeof validateNegotiation>;archived?:boolean};
+export type FinanceRequest={action:string;mutationId:string;id?:string;revision?:number;opportunityId?:string;contract?:FinanceFormState;payment?:FinanceFormState;paymentId?:string;reason?:string;note?:string;quoteId?:number;quotePaymentId?:string;existingPaymentId?:string|null};
+export type EventRequest={analytics?:boolean;sessionKey?:string;submissionId?:string;device?:string;event?:string;eventId?:string;step?:string;formSlug?:string;attribution?:Record<string,unknown>};
+export type IntakeRequest=EventRequest&{requestId?:string;token?:string;website?:string;answers?:unknown;sessionId?:string;contact?:unknown;intent?:string};
+export type SiteRequest=IntakeRequest&{formSlug:string};
+export type OfferRequest={action:'confirm'|'release';contractId:string;reason:string}|{action:'configure';reason:string;priceCents:number;status:string;abandonMinutes:number;attributionDays:number};
+export type PortfolioRequest={requestId:string;intent:string;website?:string;token:string;privacy:boolean;name:unknown;email:unknown;message:unknown;service?:unknown};
