@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {FOLLOW_UP_DAYS,ICP_PRIORITIES,addBusinessDays,followUpChoices,scoreLead} from '../../lib/markteam.mjs';
+import {FOLLOW_UP_DAYS,ICP_PRIORITIES,QUALIFICATION_LEVELS,validateManualQualification,addBusinessDays,followUpChoices,scoreLead} from '../../lib/markteam.mjs';
 assert.deepEqual(FOLLOW_UP_DAYS,[3,7,14]);
 assert.equal(addBusinessDays('2026-10-16',3),'2026-10-21');
 assert.equal(addBusinessDays('2026-10-16',3,['2026-10-19']),'2026-10-22');
@@ -35,4 +35,13 @@ assert.equal(scoreLead(Object.fromEntries(Object.keys(valid).map(key=>[key,{valu
 assert.equal(scoreLead({...facts,role:{value:5,evidence:''}},config).score,null);
 assert.throws(()=>scoreLead(facts,{weights:{...valid,role:90},thresholds:config.thresholds}));
 assert.equal(scoreLead(facts,config).evidence.length,6);
+assert.deepEqual(QUALIFICATION_LEVELS,['Alta prioridade','Média prioridade','Investigação','Fora do perfil prioritário']);
+const manual={classification:'Investigação',icpTier:'unknown',explanation:'Ainda não sabemos o momento de compra.',evidence:'Briefing enviado pelo formulário'};
+assert.deepEqual(validateManualQualification(manual),manual);
+assert.deepEqual(validateManualQualification({...manual,explanation:'  Justificativa do cliente  '}).explanation,'Justificativa do cliente');
+assert.throws(()=>validateManualQualification({...manual,classification:'Alta prioridade'}));
+assert.throws(()=>validateManualQualification({...manual,evidence:' ' }));
+assert.throws(()=>validateManualQualification({...manual,icpTier:'D'}));
+assert.throws(()=>validateManualQualification({...manual,explanation:'curta'}));
+assert.equal(validateManualQualification({...manual,classification:'Alta prioridade',icpTier:'A'}).classification,'Alta prioridade');
 console.log('PASS: triagem D+1, follow-up por proposta comprovada, feriados, revisão humana, bloqueios e scoring auditável.');
