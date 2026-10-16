@@ -5,7 +5,7 @@ Data: 16/10/2026. Estado: **incremento parcial, não apto a deploy**. Fonte de d
 - Repositório: https://github.com/mathbrandscontato-wq/Sistema-Financeiro
 - Base imutável nesta etapa: `main` em `6d18c9184c60961054373661e0c91d4b68f1b048`.
 - Branch: `feat/markteam-automatico-v4`.
-- Pull Request: **a preencher após abertura em draft**. Nunca fazer merge nesta etapa.
+- Pull Request: **#1, rascunho, sem merge** — https://github.com/mathbrandscontato-wq/Sistema-Financeiro/pull/1. Nunca fazer merge nesta etapa.
 - Exportação de origem: `SOURCE_VERSION.json` com Sites V18, exportada em 16/10/2026. Não há confirmação de equivalência com produção atual.
 
 ## Mudanças implementadas
