@@ -38,6 +38,11 @@ try{
  await assert.rejects(reviewLead('different-owner','reviewer-1',body(1)),e=>e.status===404);
  failSnapshot=true;await assert.rejects(reviewLead(owner,'reviewer-1',body(2)),/Backup unavailable/);failSnapshot=false;
  assert.equal(readOpportunity().revision,2);assert.equal(reviews().length,1);
+ // Inject an INSERT failure AFTER UPDATE inside the same SQLite transaction.
+ run({queries:{trigger:{sql:"CREATE TRIGGER qa_fail_review BEFORE INSERT ON commercial_history BEGIN SELECT RAISE(ABORT,'qa injected audit failure'); END"}},commitQueries:true});
+ await assert.rejects(reviewLead(owner,'reviewer-1',body(2)),e=>e.status===503);
+ assert.equal(readOpportunity().revision,2);assert.equal(reviews().length,1);
+ run({queries:{trigger:{sql:'DROP TRIGGER qa_fail_review'}},commitQueries:true});
  const next=body(2);next.qualification={...qualification,classification:'Média prioridade',explanation:'Nova informação documentada alterou a avaliação comercial.'};
  await reviewLead(owner,'reviewer-2',next);
  assert.equal(reviews().length,2);assert.equal(readOpportunity().revision,3);
