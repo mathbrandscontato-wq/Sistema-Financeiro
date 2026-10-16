@@ -1,12 +1,21 @@
 import assert from 'node:assert/strict';
-import {FOLLOW_UP_DAYS,addBusinessDays,followUpChoices,scoreLead} from '../../lib/markteam.mjs';
+import {FOLLOW_UP_DAYS,ICP_PRIORITIES,addBusinessDays,followUpChoices,scoreLead} from '../../lib/markteam.mjs';
 assert.deepEqual(FOLLOW_UP_DAYS,[3,7,14]);
 assert.equal(addBusinessDays('2026-10-16',3),'2026-10-21');
 assert.equal(addBusinessDays('2026-10-16',3,['2026-10-19']),'2026-10-22');
 assert.equal(addBusinessDays('2026-12-31',1),'2027-01-01'); // Calendário sem feriados por padrão
 assert.throws(()=>addBusinessDays('2026-02-30',1));
 const lead={id:'op1',stage:'Novo lead',archived:0,captured:'2026-10-16T12:00:00-03:00',next_action:'Entrar em contato'};
-assert.deepEqual(followUpChoices(lead).map(c=>c.date),['2026-10-21','2026-10-27','2026-11-05']);
+assert.deepEqual(followUpChoices(lead).map(c=>c.date),['2026-10-19']);
+assert.equal(followUpChoices(lead)[0].label,'Triagem');
+const proposal={...lead,stage:'Proposta enviada',proposalSentAt:'2026-10-16T12:00:00-03:00',proposalFollowUpEligible:true};
+assert.deepEqual(followUpChoices(proposal).map(c=>c.date),['2026-10-21','2026-10-27','2026-11-05']);
+assert.deepEqual(followUpChoices({...proposal,proposalFollowUpEligible:false}),[]);
+assert.deepEqual(followUpChoices({...proposal,proposalSentAt:null}),[]);
+assert.deepEqual(followUpChoices({...proposal,stage:'Negociação'}),[]);
+assert.deepEqual(followUpChoices({...proposal,stage:'Aguardando resposta'}).map(c=>c.label),['D+3','D+7','D+14']);
+assert.deepEqual(followUpChoices({...lead,stage:'Qualificação'}),[]);
+assert.deepEqual(ICP_PRIORITIES.map(p=>p.id),['A','B','C']);
 assert.deepEqual(followUpChoices({...lead,next_action_on:'2026-10-21'}),[]);
 assert.deepEqual(followUpChoices({...lead,stage:'Fechado'}),[]);
 assert.deepEqual(followUpChoices({...lead,stage:'Recusado'}),[]);
@@ -19,8 +28,11 @@ assert.equal(scoreLead({role:{value:5,evidence:'Decisor identificado'}},config).
 assert.equal(scoreLead({},config).score,null);
 const facts=Object.fromEntries(Object.keys(valid).map(key=>[key,{value:5,evidence:'Preenchimento humano de teste: '+key}]));
 assert.equal(scoreLead(facts,config).score,100);
-assert.equal(scoreLead(facts,config).classification,'Alta');
+assert.equal(scoreLead(facts,config).classification,'Alta prioridade');
+assert.equal(scoreLead({...facts,icp:{...facts.icp,outOfProfile:true}},config).classification,'Fora do perfil prioritário');
+assert.equal(scoreLead({role:{value:4,evidence:'Atendimento direto'}},config).classification,'Investigação');
+assert.equal(scoreLead(Object.fromEntries(Object.keys(valid).map(key=>[key,{value:0,evidence:'Dado real avaliado'}])),config).classification,'Investigação');
 assert.equal(scoreLead({...facts,role:{value:5,evidence:''}},config).score,null);
 assert.throws(()=>scoreLead(facts,{weights:{...valid,role:90},thresholds:config.thresholds}));
 assert.equal(scoreLead(facts,config).evidence.length,6);
-console.log('PASS: D+3/D+7/D+14 em dias úteis, feriados configuráveis, não duplicação de ação marcada, encerrados e scoring sem dados inferidos.');
+console.log('PASS: triagem D+1, follow-up por proposta comprovada, feriados, consentimento operacional, bloqueios e scoring auditável.');
