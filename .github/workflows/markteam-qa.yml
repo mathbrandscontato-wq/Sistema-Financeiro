@@ -1,0 +1,50 @@
+name: Markteam QA (somente testes)
+on:
+  push:
+    branches:
+      - feat/markteam-automatico-v4
+  pull_request:
+    branches:
+      - main
+permissions:
+  contents: read
+concurrency:
+  group: markteam-qa-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    if: github.repository == 'mathbrandscontato-wq/Sistema-Financeiro'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    env:
+      CI: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Preparar pnpm
+        run: corepack enable && corepack prepare pnpm@11.25.0 --activate
+      - name: Instalar dependências congeladas
+        run: pnpm install --frozen-lockfile
+      - name: Testes existentes e Markteam
+        run: |
+          pnpm test:markteam
+          pnpm test:leads
+          pnpm test:protection
+          pnpm test:commercial
+          pnpm test:crm
+          pnpm test:finance
+          pnpm test:dashboard
+          pnpm test:intake
+          pnpm test:evolution
+          pnpm test:operations
+          pnpm test:forms
+      - name: TypeScript
+        run: pnpm exec tsc --noEmit
+      - name: Lint
+        run: pnpm lint
+      - name: Build
+        run: pnpm build
