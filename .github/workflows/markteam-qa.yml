@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - feat/markteam-automatico-v4
-  pull_request:
-    branches:
-      - main
 permissions:
   contents: read
 concurrency:
@@ -29,22 +26,45 @@ jobs:
         run: corepack enable && corepack prepare pnpm@11.25.0 --activate
       - name: Instalar dependências congeladas
         run: pnpm install --frozen-lockfile
-      - name: Testes existentes e Markteam
-        run: |
-          pnpm test:markteam
-          pnpm test:leads
-          pnpm test:protection
-          pnpm test:commercial
-          pnpm test:crm
-          pnpm test:finance
-          pnpm test:dashboard
-          pnpm test:intake
-          pnpm test:evolution
-          pnpm test:operations
-          pnpm test:forms
+      - name: Teste markteam
+        if: always()
+        run: pnpm test:markteam
+      - name: Teste leads
+        if: always()
+        run: pnpm test:leads
+      - name: Teste protection
+        if: always()
+        run: pnpm test:protection
+      - name: Teste commercial
+        if: always()
+        run: pnpm test:commercial
+      - name: Teste crm
+        if: always()
+        run: pnpm test:crm
+      - name: Teste finance
+        if: always()
+        run: pnpm test:finance
+      - name: Teste dashboard
+        if: always()
+        run: pnpm test:dashboard
+      - name: Teste intake
+        if: always()
+        run: pnpm test:intake
+      - name: Teste evolution
+        if: always()
+        run: pnpm test:evolution
+      - name: Teste operations
+        if: always()
+        run: pnpm test:operations
+      - name: Teste forms
+        if: always()
+        run: pnpm test:forms
       - name: TypeScript
+        if: always()
         run: pnpm exec tsc --noEmit
       - name: Lint
+        if: always()
         run: pnpm lint
       - name: Build
+        if: always()
         run: pnpm build
