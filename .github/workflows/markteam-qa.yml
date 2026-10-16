@@ -34,7 +34,13 @@ jobs:
         run: pnpm test:leads
       - name: Teste protection
         if: always()
-        run: pnpm test:protection
+        run: |
+          if pnpm test:protection > /tmp/protection.log 2>&1; then
+            echo "Protection: OK"
+          else
+            grep -m1 -E 'AssertionError|FileNotFoundError|ModuleNotFoundError|Error:|command not found' /tmp/protection.log | head -c 260 | sed 's/^/::error title=Protection test failure::/' || true
+            exit 1
+          fi
       - name: Teste commercial
         if: always()
         run: pnpm test:commercial
@@ -59,6 +65,9 @@ jobs:
       - name: Teste forms
         if: always()
         run: pnpm test:forms
+      - name: Lint somente Markteam
+        if: always()
+        run: pnpm exec eslint lib/markteam.mjs lib/markteam-store.ts lib/leads.mjs app/leads-panel.tsx
       - name: TypeScript
         if: always()
         run: pnpm exec tsc --noEmit
