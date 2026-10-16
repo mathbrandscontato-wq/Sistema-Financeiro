@@ -17,16 +17,17 @@ Desenvolvimento incremental em `feat/markteam-automatico-v4`, criado a partir da
 - `.github/workflows/markteam-qa.yml` executa testes apenas na branch em runner público gratuito, sem publicação.
 
 ## Evidência de execução
-- **50 verificações passaram**, executadas em V8 isolado sobre as versões atuais de `lib/markteam.mjs` + `qa/markteam/check.mjs` (30 asserts) e a seção fundamental de `lib/leads.mjs` + `qa/leads/check.mjs` (20 asserts). É um subconjunto de testes adaptado, não a suíte Node/pnpm oficial.
+- Verificações preliminares em V8: 50 asserções da fundação. **Substituídas como evidência principal pelo CI nativo** com testes reais e SQLite.
 - Revisão estática: tipo da ação corrigido (`kind` no evento), chamadas coerentes entre painel e CRM e nenhuma marca evidente de tokens/segredos nos arquivos alterados. Não substitui a análise de segurança completa.
-- GitHub Actions 38932169389 passou nas 11 suítes nativas e no build, incluindo a fidelidade do PDF com Poppler. Tipagem e lint falharam nessa revisão intermediária; erros de TypeScript do incremento foram corrigidos após esse run, aguardando nova evidência. O lint global também tem erros em arquivos legados.
+- **GitHub Actions 38934085398**: 11 suítes nativas PASS (Markteam + SQLite, leads, protection/PDF, commercial, CRM, finance, dashboard, intake, evolution, operations, forms); `pnpm exec tsc --noEmit` PASS; lint restrito a `lib/markteam.mjs`, `lib/markteam-store.ts`, `lib/leads.mjs`, `app/leads-panel.tsx` PASS; `pnpm build` PASS. Evidências: https://github.com/mathbrandscontato-wq/Sistema-Financeiro/actions/runs/38934085398.
+- **Única falha do job:** `pnpm lint` global sobre a árvore inteira. Há erros em módulos legados (p.ex. `app/acquisition-panel.tsx` com `no-explicit-any`, variáveis/importações não usadas em `lib/forms-store.ts`, `app/workspace.tsx` e template). Não desabilitar o lint nem atribuir aprovação global. Correções devem ocorrer em um incremento técnico separado, com regressão visual e financeira.
 - Runner GitHub Actions instala dependências do lockfile. Não declarar homologação D1 ou QA no navegador.
 - Não executadas migrações ou chamadas autenticadas à D1 de produção.
 - Não realizado QA visual/celular nem integração real com o Diagnóstico público.
 
 ## Próximo incremento obrigatório
 1. Fonte final recebida (V2.1). Validar pesos e limiares quantitativos **não definidos no relatório** com operação comercial e testar critérios por perfil A/B/C antes de habilitar scoring no CRM.
-2. Conferir TypeScript e lint restrito na execução final do CI; preservar pendências de lint legadas documentadas e validar a UI/teclado no navegador.
+2. Testes do incremento, tipagem e build passaram no CI. Tratar o lint global legado sem afrouxar regras, validar a UI/teclado no navegador e executar homologação D1 com fixtures.
 3. Homologar fluxos Diagnóstico → CRM e sites → CRM com fixtures fictícias, revisão/concorrência, idempotência e 10 vagas simultâneas em ambiente separado.
 4. Validar permissões, comportamento dos botões e datas em desktop/mobile; depois retomar prioridades P0 pendentes.
 5. Só com P0 estável: P1/P2 controlados e eventual segunda etapa de publicação.
