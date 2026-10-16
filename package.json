@@ -22,7 +22,7 @@
     "test:operations": "node qa/operations/check.mjs",
     "test:forms": "node qa/forms-check.mjs && node qa/forms-integration.mjs && python3 qa/forms-concurrency.py",
     "test:leads": "node qa/leads/check.mjs",
-    "test:markteam": "node qa/markteam/check.mjs && node qa/markteam/store-check.mjs"
+    "test:markteam": "node qa/markteam/check.mjs && node qa/markteam/store-check.mjs && node qa/markteam/followup_additional_checks.mjs && node qa/markteam/boundary-check.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

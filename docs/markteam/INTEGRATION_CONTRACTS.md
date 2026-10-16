@@ -48,3 +48,23 @@ O painel de aquisição existente possui eventos, filtros e fontes persistidas. 
 3. Revisão humana persistida, retentativa igual, conflito 409 e isolamento de proprietário (teste SQLite do incremento + ambiente real).
 4. Responsividade, acessibilidade, revisão humana e exportações.
 5. Cotas de hospedagem e rollback efetivamente testados antes de qualquer deploy.
+
+
+## Atualização corretiva 4.0.0-dev.2
+- `proposalEvidence` ordena por `created`, depois ID; somente eventos posteriores à última transição de proposta são usados. Suspensão por `negotiation`, `intake`, `diagnostic_intent` ou transição para Negociação, Contato inicial, Fechado ou Recusado. Voltar a Aguardando resposta não remove a suspensão. Uma nova proposta registrada gera nova referência, sempre revisável por pessoa.
+- `followUpChoices(lead,{today,holidays})` adiciona `overdue` sem gravar ou mover datas. `isFollowUpOverdue` também identifica próxima ação já agendada no passado. Dia atual não é atrasado. Fuso local America/Sao_Paulo.
+- Resposta externa e opt-out não são identificados automaticamente. Não existe campo persistente específico de oposição; autorização para eventual migração é gate de negócio. Marketing=false não é oposição universal ao atendimento solicitado.
+- API Analytics e matemática de `formMetrics` preservadas. `lib/acquisition-types.ts` documenta DTO consumido, métricas opcionais por permissão, lead e união de ações confirm/release/configure. A tipagem não substitui validação do servidor nem prova de contrato contra D1 real.
+- SQLite comprova rollback quando a gravação de histórico falha após incremento de revisão; não constitui prova do gateway nem de restore D1/R2.
+- Aplicação continua confiando em headers do gateway. Homologação deve rejeitar falsificação por cliente e acesso direto; nenhuma chave foi inventada nem adicionada ao frontend para simular segurança.
+- Gateway, D1/R2, quotas, consentimento no canal real e restauração permanecem bloqueados para produção. Nenhum teste acessou endpoints publicados.
+
+
+## Contratos técnicos dev.3
+`db-types.ts` representa colunas/tipos/nulabilidade do schema já existente, sem SQL novo. `service-types.ts`, `ui-types.ts` e `operations-types.ts` nomeiam requests, respostas, comandos de desenho e modelos de formulário. Tipos de request não substituem os validadores existentes; JSON recebido e erros permanecem fronteiras não confiáveis.
+
+Consultas SQL, regras de pagamento, conciliação, revisão, snapshots, consentimento e deduplicação foram preservados. `errorDetails` mantém mensagem/status válidos e os endpoints preservam suas mensagens de fallback e códigos. `fetchJson` é somente leitura de resposta interna autenticada, com cache no-store e propagação de falhas de rede/HTTP.
+
+O carregamento dos painéis ocorre após conclusão de rede e ignora updates após desmontagem. Dashboard/prévia têm chave de requisição e estado de espera derivado; conferências, cancelamento e escrita continuam manuais. Datas ausentes da timeline são exibidas como Sem data.
+
+Novas evidências locais: zero erros de lint global, tipagem estrita, testes de fronteiras e contato do portfólio. Não comprovam headers de gateway, D1/R2 reais, restauração, quotas nem UI em navegador. Mantidos os gates de negócio e o isolamento da aplicação publicada.

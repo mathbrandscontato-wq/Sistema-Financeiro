@@ -1,10 +1,11 @@
+import {commercialFixture} from '../fixtures/commercial.mjs';
 import assert from 'node:assert/strict';
-import {readFile,mkdtemp,rm} from 'node:fs/promises';
+import {mkdtemp,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {COMMERCIAL_TABLES,planImport,planQuoteLink,identity,reconciliation,validateSource,stableId} from '../../lib/commercial-import.mjs';
-const reference=JSON.parse(await readFile('data/commercial-reference.json','utf8'));
+const reference=structuredClone(commercialFixture);
 const dir=await mkdtemp(join(tmpdir(),'mathbrands-commercial-')),path=join(dir,'test.sqlite');
 const run=request=>JSON.parse(execFileSync('python3',['qa/commercial/sqlite-runner.py'],{input:JSON.stringify({path,...request}),encoding:'utf8'}));
 const query=(sql,...args)=>({sql,args});
@@ -13,7 +14,7 @@ const records=owner=>run({queries:Object.fromEntries(tables.map(t=>[t,query(`SEL
 const existing=owner=>{const d=records(owner);return {clients:d.commercial_clients,opportunities:d.commercial_opportunities,rows:d.commercial_import_rows};};
 const now='2026-10-10T10:00:00.000Z',owner='owner-one';
 try{
- run({initialize:true});assert.equal(identity('Lavander Cerâmicas'),'lavander ceramicas');assert.notEqual(await stableId('one','client','x'),await stableId('two','client','x'));
+ run({initialize:true});assert.equal(identity('Empresa Fictícia Alfa'),'empresa ficticia alfa');assert.notEqual(await stableId('one','client','x'),await stableId('two','client','x'));
  assert.deepEqual(reconciliation(reference),{opportunities:5,contracts:3,contractedCents:95000,receivedCents:22500,pipelineCents:50000,referenceBalanceCents:72500,unknownPaymentContracts:1,undatedPayments:1});
  const corrupted=structuredClone(reference);corrupted.rows[0].paymentKnowledge='unknown';assert.throws(()=>validateSource(corrupted),/confirmação/);corrupted.rows[0].depositCents=99999;assert.throws(()=>validateSource(corrupted),/supera/);
  const duplicated=structuredClone(reference);duplicated.rows.push(duplicated.rows[0]);assert.throws(()=>validateSource(duplicated),/duplicada/);
@@ -43,7 +44,7 @@ try{
  // A manually existing matching opportunity is a conflict, not a duplicate.
  const preexisting={clients:d.commercial_clients,opportunities:d.commercial_opportunities,rows:[]};const duplicate=await planImport(owner,reference,preexisting,now);assert.equal(duplicate.report.conflicts.length,5);assert.equal(duplicate.statements.length,0);
  assert.equal(run({queries:{quote:query('SELECT count(*) AS n FROM quotes')}}).quote[0].n,1);
- console.log('PASS: 5 oportunidades, 3 contratações, 2 sinais; R$ 950,00 contratado e R$ 225,00 registrado.');
+ console.log('PASS: importação de oportunidades e recebimentos exclusivamente fictícios.');
  console.log('PASS: importação repetida/concorrente sem duplicação, conflitos sem sobrescrita, contas isoladas, datas ausentes preservadas.');
  console.log('PASS: vínculo manual e cópias da origem, orçamento e pagamentos originais intactos.');
 }finally{await rm(dir,{recursive:true,force:true});}

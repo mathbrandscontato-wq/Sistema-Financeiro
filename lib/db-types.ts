@@ -1,0 +1,364 @@
+// Row contracts derived from the existing SQLite/D1 migrations. No schema change.
+export type AcquisitionConfigRow={
+  owner:string;
+  abandon_minutes:number;
+  attribution_days:number;
+  retention_days:number;
+};
+export type AcquisitionEventsRow={
+  id:string;
+  owner:string;
+  form_slug:string;
+  session_key:string;
+  event:string;
+  step:string|null;
+  device:string;
+  attribution:string;
+  submission_id:string|null;
+  created:string;
+};
+export type CommercialClientHistoryRow={
+  id:string;
+  owner:string;
+  client_id:string;
+  action:string;
+  data:string;
+  created:string;
+};
+export type CommercialClientsRow={
+  id:string;
+  owner:string;
+  identity_key:string;
+  display_name:string;
+  segment:string|null;
+  origin:string|null;
+  email:string|null;
+  phone:string|null;
+  created:string;
+  updated:string;
+  contact_name:string|null;
+  notes:string|null;
+  revision:number;
+  archived:number;
+  instagram:string|null;
+  brand_site:string|null;
+};
+export type CommercialContractsRow={
+  id:string;
+  owner:string;
+  opportunity_id:string;
+  amount_cents:number;
+  status:string;
+  payment_knowledge:string;
+  confirmed_on:string|null;
+  reference_date:string|null;
+  created:string;
+  revision:number;
+  billing:number;
+  active:number;
+  deposit_cents:number|null;
+  deposit_due:string|null;
+  balance_due:string|null;
+  terms:string|null;
+  updated:string|null;
+};
+export type CommercialHistoryRow={
+  id:string;
+  owner:string;
+  opportunity_id:string;
+  action:string;
+  data:string;
+  created:string;
+};
+export type CommercialImportBatchesRow={
+  id:string;
+  owner:string;
+  namespace:string;
+  source_sha256:string;
+  source_name:string;
+  source_document:string;
+  report:string;
+  created:string;
+};
+export type CommercialImportRowsRow={
+  id:string;
+  owner:string;
+  namespace:string;
+  external_key:string;
+  content_hash:string;
+  opportunity_id:string;
+  batch_id:string;
+  source:string;
+};
+export type CommercialOpportunitiesRow={
+  id:string;
+  owner:string;
+  client_id:string;
+  title:string;
+  amount_cents:number|null;
+  stage:string;
+  project_stage:string|null;
+  briefing:string|null;
+  next_action:string|null;
+  notes:string|null;
+  reference_date:string|null;
+  created:string;
+  updated:string;
+  next_action_on:string|null;
+  revision:number;
+  archived:number;
+  origin:string|null;
+  service:string|null;
+  intent:string|null;
+  loss_reason:string|null;
+  assignee_email:string|null;
+};
+export type CommercialPaymentsRow={
+  id:string;
+  owner:string;
+  contract_id:string;
+  amount_cents:number;
+  paid_on:string|null;
+  reference_date:string|null;
+  confirmation:string;
+  evidence:string;
+  created:string;
+  kind:string;
+  reversed_on:string|null;
+  reversal_reason:string|null;
+};
+export type CommercialQuoteLinksRow={
+  quote_id:number;
+  owner:string;
+  opportunity_id:string;
+  created:string;
+};
+export type DocumentExportsRow={
+  id:string;
+  owner:string;
+  quote_id:number;
+  revision:number;
+  template_version:string;
+  object_key:string;
+  sha256:string;
+  snapshot:string;
+  created:string;
+};
+export type EventsRow={
+  id:number;
+  quote_id:number|null;
+  owner:string;
+  action:string;
+  data:string;
+  created:string;
+};
+export type FinancialHistoryRow={
+  id:string;
+  owner:string;
+  contract_id:string;
+  action:string;
+  data:string;
+  created:string;
+};
+export type FinancialQuoteReceiptsRow={
+  id:string;
+  owner:string;
+  quote_id:number;
+  quote_payment_id:string;
+  contract_id:string;
+  payment_id:string;
+  snapshot:string;
+  created:string;
+};
+export type IntakeAcquisitionRow={
+  id:string;
+  owner:string;
+  token_hash:string;
+  attribution:string;
+  started_on:string|null;
+  diagnosed_on:string|null;
+  captured_on:string|null;
+  opportunity_id:string|null;
+  created:string;
+};
+export type IntakeCapturesRow={
+  id:string;
+  owner:string;
+  session_id:string;
+  client_id:string;
+  opportunity_id:string;
+  contact:string;
+  privacy_version:string;
+  marketing:number;
+  created:string;
+};
+export type IntakeContactKeysRow={
+  id:string;
+  owner:string;
+  key:string;
+  client_id:string;
+  created:string;
+};
+export type IntakeFormsRow={
+  id:string;
+  owner:string;
+  slug:string;
+  version:number;
+  definition:string;
+  published:number;
+  created:string;
+};
+export type IntakeLeadLinksRow={
+  id:string;
+  owner:string;
+  client_id:string;
+  form_id:string;
+  opportunity_id:string;
+  created:string;
+};
+export type IntakeRateLimitsRow={
+  id:string;
+  owner:string;
+  count:number;
+  expires:string;
+};
+export type IntakeSessionsRow={
+  id:string;
+  owner:string;
+  form_id:string;
+  request_id:string;
+  token_hash:string;
+  answers:string;
+  diagnosis:string;
+  attribution:string;
+  created:string;
+  expires:string;
+};
+export type OfferHistoryRow={
+  id:string;
+  owner:string;
+  offer_id:string;
+  actor:string;
+  action:string;
+  data:string;
+  created:string;
+};
+export type OfferSeatsRow={
+  id:string;
+  owner:string;
+  offer_id:string;
+  contract_id:string;
+  active:number;
+  created:string;
+  released:string|null;
+  reason:string|null;
+};
+export type OperationalHistoryRow={
+  id:string;
+  owner:string;
+  action:string;
+  data:string;
+  created:string;
+};
+export type OperationalStateRow={
+  owner:string;
+  data:string;
+  revision:number;
+  updated:string;
+};
+export type PaymentEventInboxRow={
+  id:string;
+  owner:string;
+  event_id:string;
+  source:string;
+  contract_id:string;
+  payload:string;
+  state:string;
+  review:string|null;
+  reviewed_on:string|null;
+  payment_id:string|null;
+  created:string;
+};
+export type ProtectionSnapshotsRow={
+  id:string;
+  owner:string;
+  object_key:string;
+  sha256:string;
+  reason:string;
+  created:string;
+};
+export type QuotesRow={
+  id:number;
+  owner:string;
+  data:string;
+  revision:number;
+  deleted:number;
+  created:string;
+  updated:string;
+};
+export type SettingsRow={
+  owner:string;
+  data:string;
+};
+export type SiteOffersRow={
+  id:string;
+  owner:string;
+  seat_limit:number;
+  price_cents:number;
+  status:string;
+  opened:string;
+  closed:string|null;
+  revision:number;
+};
+export type WorkspaceAccessHistoryRow={
+  id:string;
+  owner:string;
+  actor:string;
+  action:string;
+  data:string;
+  created:string;
+};
+export type WorkspaceMembersRow={
+  id:string;
+  owner:string;
+  email:string;
+  role:string;
+  active:number;
+  updated:string;
+};
+export type DatabaseRows={
+  acquisition_config:AcquisitionConfigRow;
+  acquisition_events:AcquisitionEventsRow;
+  commercial_client_history:CommercialClientHistoryRow;
+  commercial_clients:CommercialClientsRow;
+  commercial_contracts:CommercialContractsRow;
+  commercial_history:CommercialHistoryRow;
+  commercial_import_batches:CommercialImportBatchesRow;
+  commercial_import_rows:CommercialImportRowsRow;
+  commercial_opportunities:CommercialOpportunitiesRow;
+  commercial_payments:CommercialPaymentsRow;
+  commercial_quote_links:CommercialQuoteLinksRow;
+  document_exports:DocumentExportsRow;
+  events:EventsRow;
+  financial_history:FinancialHistoryRow;
+  financial_quote_receipts:FinancialQuoteReceiptsRow;
+  intake_acquisition:IntakeAcquisitionRow;
+  intake_captures:IntakeCapturesRow;
+  intake_contact_keys:IntakeContactKeysRow;
+  intake_forms:IntakeFormsRow;
+  intake_lead_links:IntakeLeadLinksRow;
+  intake_rate_limits:IntakeRateLimitsRow;
+  intake_sessions:IntakeSessionsRow;
+  offer_history:OfferHistoryRow;
+  offer_seats:OfferSeatsRow;
+  operational_history:OperationalHistoryRow;
+  operational_state:OperationalStateRow;
+  payment_event_inbox:PaymentEventInboxRow;
+  protection_snapshots:ProtectionSnapshotsRow;
+  quotes:QuotesRow;
+  settings:SettingsRow;
+  site_offers:SiteOffersRow;
+  workspace_access_history:WorkspaceAccessHistoryRow;
+  workspace_members:WorkspaceMembersRow;
+};
+export type CommercialRecords={[K in keyof DatabaseRows]:DatabaseRows[K][]};

@@ -12,6 +12,13 @@ assert.equal(leadRows(proposalRecords)[0].proposalFollowUpEligible,true);
 assert.equal(proposalEvidence([],opp.id).proposalFollowUpEligible,false);
 const contactAfter={id:'h2',opportunity_id:'o',created:'2026-10-17T15:00:00Z',data:JSON.stringify({kind:'negotiation',channel:'WhatsApp'})};
 assert.equal(leadRows({...proposalRecords,commercial_history:[stageHistory,contactAfter]})[0].proposalFollowUpEligible,false);
+const movedToNegotiation={id:'h3',opportunity_id:'o',created:'2026-10-17T15:00:00Z',data:JSON.stringify({kind:'opportunity_updated',before:{stage:'Proposta enviada'},after:{stage:'Negociação'}})};
+assert.equal(leadRows({...proposalRecords,commercial_history:[stageHistory,movedToNegotiation]})[0].proposalFollowUpEligible,false);
+const backToWaiting={id:'h4',opportunity_id:'o',created:'2026-10-18T15:00:00Z',data:JSON.stringify({kind:'opportunity_updated',before:{stage:'Negociação'},after:{stage:'Aguardando resposta'}})};
+assert.equal(leadRows({...proposalRecords,commercial_history:[stageHistory,movedToNegotiation,backToWaiting]})[0].proposalFollowUpEligible,false);
+const sameTime={...movedToNegotiation,id:'z-after',created:stageHistory.created};
+assert.equal(leadRows({...proposalRecords,commercial_history:[stageHistory,sameTime]})[0].proposalFollowUpEligible,false);
+
 assert.equal(leadRows({...proposalRecords,commercial_history:[{...stageHistory,opportunity_id:'different'}]})[0].proposalSentAt,null);
 const reviewEvent={id:'review-1',opportunity_id:'o',created:'2026-10-18T15:00:00Z',data:JSON.stringify({kind:'markteam_qualification',qualification:{classification:'Alta prioridade',icpTier:'A',explanation:'Cliente demonstrou expansão e necessidade.',evidence:'Briefing existente'},reviewedBy:'reviewer-test',reviewedAt:'2026-10-18T15:00:00Z'})};
 assert.equal(reviewedQualification([reviewEvent]).classification,'Alta prioridade');
