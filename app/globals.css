@@ -32,3 +32,8 @@
 .sidebar{overflow-y:auto}
 @media(max-height:800px) and (min-width:681px){.brand-lockup{padding-bottom:16px;gap:16px}.sidebar-bottom>p{display:none}}
 @media(max-width:680px){.sidebar{height:76px;gap:12px;align-items:center;overflow-y:visible}.sidebar nav{flex:1;min-width:0;max-width:calc(100% - 82px);overflow-x:auto;scroll-snap-type:x proximity;padding:3px}.sidebar nav button{font-size:10px;display:flex;flex-direction:column;gap:6px;min-width:76px;min-height:52px;flex-shrink:0;align-items:center;justify-content:center;scroll-snap-align:start}.sidebar nav button svg{flex-shrink:0}.sidebar .nav-count{display:none}main{margin-top:76px}.sidebar .brand-lockup{flex-shrink:0;width:70px}.sidebar nav button:focus-visible{outline:2px solid #d0fac6;outline-offset:-2px}}
+
+/* Markteam: ações internas compactas no painel de leads. */
+.lead-followup-actions{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:.5rem 0}
+.lead-followup-actions .text-button{font-size:.78rem;line-height:1.35}
+.lead-followup-actions .text-button:disabled{opacity:.5;cursor:not-allowed}
