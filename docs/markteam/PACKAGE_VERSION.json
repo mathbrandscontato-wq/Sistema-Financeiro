@@ -1,26 +1,27 @@
 {
   "package": "markteam-automatico",
-  "packageVersion": "4.0.0-dev.2",
+  "packageVersion": "4.0.0-dev.3",
   "reference": "Relatório Estratégico V2.1 final (fonte única; confidencial, fora do GitHub)",
   "date": "2026-10-16",
   "repository": "mathbrandscontato-wq/Sistema-Financeiro",
   "branch": "fix/markteam-v4-audit-hardening",
-  "pullRequest": null,
+  "pullRequest": 3,
   "baseSourceVersion": 18,
-  "state": "corrective-development-blocked",
+  "state": "corrective-development-for-isolated-homologation",
   "releaseEligible": false,
   "automatedExternalMessaging": false,
   "productionMigrations": false,
   "requiredFollowup": [
-    "Global lint: 335 inherited errors; no rule suppression",
     "Isolated D1/R2 integration, gateway spoofing and restore rehearsal",
-    "Browser UI desktop/mobile/keyboard",
+    "Browser UI desktop/mobile/keyboard: Chromium download failed",
     "Public-data governance authorization; no history rewrite performed",
     "Opportunity-per-request business decision and persistent opt-out design",
-    "Real account quotas and cost enforcement before any external execution"
+    "Real account quotas and cost enforcement before external execution",
+    "Remote CI and final release tag remain pending"
   ],
   "pullRequestTarget": "feat/markteam-automatico-v4",
-  "candidateCodeSha": "47bbe8a5dbabb472e81c3939be44e552e77b9804",
+  "candidateCodeSha": "edaa308d07fef2209a3d669495c3aa2dbb20ad7d",
   "auditedBaseSha": "1aeccc8fb11c744a394b98fc82bb7a7e08a0f5a2",
-  "finalVerificationIdentity": "Final draft PR head SHA; evidence attached after all documentation commits"
+  "finalVerificationIdentity": "Final draft PR head SHA; evidence attached after all documentation commits",
+  "previousCorrectiveSha": "7b7a5377f7f7206a57c5bedb0348710cbefccd01"
 }

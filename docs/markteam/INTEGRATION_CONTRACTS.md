@@ -58,3 +58,13 @@ O painel de aquisição existente possui eventos, filtros e fontes persistidas. 
 - SQLite comprova rollback quando a gravação de histórico falha após incremento de revisão; não constitui prova do gateway nem de restore D1/R2.
 - Aplicação continua confiando em headers do gateway. Homologação deve rejeitar falsificação por cliente e acesso direto; nenhuma chave foi inventada nem adicionada ao frontend para simular segurança.
 - Gateway, D1/R2, quotas, consentimento no canal real e restauração permanecem bloqueados para produção. Nenhum teste acessou endpoints publicados.
+
+
+## Contratos técnicos dev.3
+`db-types.ts` representa colunas/tipos/nulabilidade do schema já existente, sem SQL novo. `service-types.ts`, `ui-types.ts` e `operations-types.ts` nomeiam requests, respostas, comandos de desenho e modelos de formulário. Tipos de request não substituem os validadores existentes; JSON recebido e erros permanecem fronteiras não confiáveis.
+
+Consultas SQL, regras de pagamento, conciliação, revisão, snapshots, consentimento e deduplicação foram preservados. `errorDetails` mantém mensagem/status válidos e os endpoints preservam suas mensagens de fallback e códigos. `fetchJson` é somente leitura de resposta interna autenticada, com cache no-store e propagação de falhas de rede/HTTP.
+
+O carregamento dos painéis ocorre após conclusão de rede e ignora updates após desmontagem. Dashboard/prévia têm chave de requisição e estado de espera derivado; conferências, cancelamento e escrita continuam manuais. Datas ausentes da timeline são exibidas como Sem data.
+
+Novas evidências locais: zero erros de lint global, tipagem estrita, testes de fronteiras e contato do portfólio. Não comprovam headers de gateway, D1/R2 reais, restauração, quotas nem UI em navegador. Mantidos os gates de negócio e o isolamento da aplicação publicada.

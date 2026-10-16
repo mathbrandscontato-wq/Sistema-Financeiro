@@ -47,3 +47,9 @@ Sem nova infraestrutura, migração, evento externo, scraping, IA faturada ou me
 Proposta de opt-out a decidir: estado persistente por contato/canal com autor, data e origem, avaliado antes de qualquer sugestão ou envio. Não confundir consentimento promocional com resposta a atendimento solicitado. Planejar compatibilidade e migração em ambiente isolado antes de aplicar qualquer SQL real. Até lá, revisão humana e registro de negociação/recusa/arquivamento; nenhuma detecção automática é prometida.
 
 P1/P2 permanecem bloqueados por estabilização P0. Refatoração global dos tipos financeiros deve preservar contratos e incluir homologação própria; não foi executada às cegas neste PR.
+
+
+## Atualização dev.3: supera o bloqueio técnico de lint da dev.2
+R03 concluído em desenvolvimento: lint global sem erros, TypeScript e build aprovados preliminarmente. Nenhuma regra desabilitada. Modelo das linhas SQL e DTOs tipados; carregamento inicial não atualiza estado sincronicamente no efeito. Confirmação final no mesmo SHA anexada ao PR.
+
+R08 continua pendente: instalação de Chromium falhou por download truncado. R01/R02/R04/R07/R09/R10 permanecem nos gates e decisões anteriormente registrados. Opt-out persistente não foi inventado nem migrado. CI remoto/tag não executados. P1/P2 continuam fora do escopo. Resolver lint não equivale a homologar UI, gateway, D1/R2, restauração ou quotas reais.

@@ -1,4 +1,4 @@
-# Manifesto corretivo Markteam 4.0.0-dev.2
+# Manifesto corretivo Markteam 4.0.0-dev.3
 
 Data: 16/10/2026. `releaseEligible: false`. **Não publicar nem fazer merge.**
 
@@ -8,14 +8,14 @@ Data: 16/10/2026. `releaseEligible: false`. **Não publicar nem fazer merge.**
 | Repositório | mathbrandscontato-wq/Sistema-Financeiro |
 | Base auditada | 1aeccc8fb11c744a394b98fc82bb7a7e08a0f5a2 |
 | Main preservada | 6d18c9184c60961054373661e0c91d4b68f1b048 |
-| Candidato de código | 47bbe8a5dbabb472e81c3939be44e552e77b9804 |
+| Candidato de código | edaa308d07fef2209a3d669495c3aa2dbb20ad7d |
 | Branch / base do PR draft | fix/markteam-v4-audit-hardening / feat/markteam-automatico-v4 |
 | SHA final e evidência | Corpo do PR corretivo após todos os commits; relatório privado |
 
 `FILE_INTEGRITY.json` registra hashes reproduzíveis dos arquivos de código/QA modificados. Não inclui dados comerciais, segredos nem o próprio manifesto. A documentação posterior não autoriza reutilizar testes de outro HEAD.
 
 ## QA reproduzível no candidato final
-Executar `pnpm install --frozen-lockfile`, as 11 suítes `test:markteam`, `test:leads`, `test:protection`, `test:commercial`, `test:crm`, `test:finance`, `test:dashboard`, `test:intake`, `test:evolution`, `test:operations`, `test:forms`, `pnpm exec tsc --noEmit`, `pnpm lint` e `pnpm build`. Registrar SHA antes e depois, exit code, duração e hash de cada log. Lint global deve falhar enquanto o backlog legado persistir; jamais converter essa falha em aprovação.
+Executar `pnpm install --frozen-lockfile`, as 11 suítes `test:markteam`, `test:leads`, `test:protection`, `test:commercial`, `test:crm`, `test:finance`, `test:dashboard`, `test:intake`, `test:evolution`, `test:operations`, `test:forms`, `pnpm exec tsc --noEmit`, `pnpm lint` e `pnpm build`. Registrar SHA antes e depois, exit code, duração e hash de cada log. Lint global deve passar sem supressão; dois avisos de img permanecem informativos. Os 335 erros legados foram corrigidos nesta continuação; executar novamente no SHA final.
 
 Antes da limpeza do template: baseline PDF PASS em três fixtures e oito páginas. Depois: pixels idênticos, mesmo layout, Inter incorporada, texto Pix íntegro, CRC e centavos válidos. Hash anterior de document.mjs `f0007e32c9847888dea779654f81c744304c5cb1af46b40a040e5fffca2edbf0`; atual `0bc2fbd1b1bec8b7b43b1e872a857e43e2324ced0fd8dbf2f0c945278eb40580`. Hash do core e todos os ativos/PNGs preservados.
 
@@ -41,4 +41,10 @@ Abandonar/fechar o PR corretivo ou reverter seus commits na branch corretiva, pr
 Antes de qualquer operação externa: medir requisições/CPU, leituras/escritas/storage D1, bytes/retenção/operações R2 e minutos/runner/armazenamento GitHub. Se não houver trava contra gasto adicional, não executar. Um alerta de quota não garante teto financeiro. Política operacional permanece sem novos serviços ou consumo pago.
 
 ## CI / tag
-O workflow existente foi inspecionado e preservado, sem deploy. Ele não cobre a branch corretiva; CI remoto permanece pendente e não é substituído por evidência de execução anterior. Identidade imutável desta entrega é o SHA final do PR. Tag anotada remota não foi criada nesta etapa; não declarar release enquanto lint e homologação estiverem bloqueados.
+O workflow existente foi inspecionado e preservado, sem deploy. Ele não cobre a branch corretiva; CI remoto permanece pendente e não é substituído por evidência de execução anterior. Identidade imutável desta entrega é o SHA final do PR. Tag anotada remota não foi criada nesta etapa; não declarar release enquanto a homologação estiver bloqueada.
+
+
+## Continuação dev.3
+Tipagem global e ciclo de carregamento corrigidos. Nenhuma expressão SQL prepare foi alterada em relação à dev.2; engines puros, schema, contratos reais, PDF e ativos preservados. Executar também `node qa/markteam/boundary-check.mjs` e `node qa/portfolio-check.mjs` no candidato final. `test:markteam` inclui a nova verificação de fronteiras.
+
+Chromium: download de teste falhou por arquivo truncado; instalação não concluída e QA de navegador não liberado. Não foi contratado navegador remoto nem criada hospedagem de homologação. Logs completos de cada comando, exit code, duração e hash ficam no pacote privado e o resumo do mesmo SHA no PR #3. Main, branch de desenvolvimento e PR #1 permanecem intocados.
