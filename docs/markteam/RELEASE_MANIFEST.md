@@ -9,9 +9,9 @@ Data: 16/10/2026. Estado: **incremento parcial, não apto a deploy**. Fonte de d
 - Exportação de origem: `SOURCE_VERSION.json` com Sites V18, exportada em 16/10/2026. Não há confirmação de equivalência com produção atual.
 
 ## Mudanças implementadas
-- Motor `lib/markteam.mjs`: triagem de novos leads D+1 útil; D+3/7/14 **exclusivamente após envio de proposta comprovado no CRM**, sem posterior negociação registrada. O histórico fica em `lib/leads.mjs`; nenhum disparo automático.
+- Motor `lib/markteam.mjs`: triagem de novos leads D+1 útil; D+3/7/14 **somente com transição para “Proposta enviada” registrada no histórico do CRM**, sem posterior negociação registrada. O histórico fica em `lib/leads.mjs`; nenhum disparo automático.
 - Perfis A/B/C e classes comerciais do relatório final são diretrizes, sem pesos/limiares inventados.
-- Escolha humana no painel de leads para registrar `next_action_on` usando a rota CRM autenticada existente. Não há envio de mensagens.
+- Escolha humana no painel de leads para registrar `next_action_on` usando a rota CRM autenticada existente. Não há envio de mensagens. **Importante**: a transição de etapa é evidência de registro comercial, não confirmação independente do envio nem ausência garantida de respostas.
 - Scoring configurável somente quando os seis critérios recebem valores e evidências explícitas e existe política de pesos/limiares válida. **Ainda não integrado à UI, nem persistido.**
 - QA isolado para regras e `pnpm test:markteam` incluído no build.
 
@@ -31,8 +31,8 @@ Data: 16/10/2026. Estado: **incremento parcial, não apto a deploy**. Fonte de d
 ## Testes conhecidos
 | Verificação | Resultado |
 | --- | --- |
-| Primeira versão da lógica em V8 antes da revisão do relatório final | 19 asserts: PASS; não cobre a revisão posterior |
-| `pnpm test:markteam` nativo | Não executado |
+| Suítes atuais adaptadas em V8 isolado | 50 asserts: PASS (30 Markteam + 20 de fundamentos de leads) |
+| `pnpm test:markteam` e `pnpm test:leads` nativos | Não executados |
 | Todos os `pnpm test:*` anteriores | Não executados |
 | TypeScript, ESLint e build | Não executados |
 | Segurança e concorrência em D1 de homologação | Não executados |
