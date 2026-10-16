@@ -1,5 +1,5 @@
 # Release Manifest — Markteam Automático V4 (desenvolvimento)
-Data: 16/10/2026. Estado: **incremento parcial, não apto a deploy**.
+Data: 16/10/2026. Estado: **incremento parcial, não apto a deploy**. Fonte de direção única: Relatório Estratégico Markteam Automático V2.1 (final); o segundo documento mencionado no prompt foi dispensado.
 
 ## Repositório e origem
 - Repositório: https://github.com/mathbrandscontato-wq/Sistema-Financeiro
@@ -9,13 +9,14 @@ Data: 16/10/2026. Estado: **incremento parcial, não apto a deploy**.
 - Exportação de origem: `SOURCE_VERSION.json` com Sites V18, exportada em 16/10/2026. Não há confirmação de equivalência com produção atual.
 
 ## Mudanças implementadas
-- Motor `lib/markteam.mjs`: datas de follow-up úteis D+3, D+7, D+14; bloqueio para leads fechados/arquivados/com data já definida.
+- Motor `lib/markteam.mjs`: triagem de novos leads D+1 útil; D+3/7/14 **exclusivamente após envio de proposta comprovado no CRM**, sem posterior negociação registrada. O histórico fica em `lib/leads.mjs`; nenhum disparo automático.
+- Perfis A/B/C e classes comerciais do relatório final são diretrizes, sem pesos/limiares inventados.
 - Escolha humana no painel de leads para registrar `next_action_on` usando a rota CRM autenticada existente. Não há envio de mensagens.
 - Scoring configurável somente quando os seis critérios recebem valores e evidências explícitas e existe política de pesos/limiares válida. **Ainda não integrado à UI, nem persistido.**
 - QA isolado para regras e `pnpm test:markteam` incluído no build.
 
 ## Pendências e dependências
-- Documentos A/B não localizados nesta execução. Sem validação das regras comerciais de ICP/pesos e das prioridades detalhadas.
+- Documento final V2.1 recebido e adotado como fonte única. Metas numéricas, pesos, limiares, status de retorno do comprador e evidências de capacidade **não constam suficientemente definidos** para ativação automática.
 - P0 de captação, deduplicação, consentimento, concorrência das dez vagas e erro/recuperação precisam de testes ponta a ponta; módulos já existiam e não foram reconstruídos.
 - P1 (funil, métricas por coorte, experimentos, pós-venda) e P2 (pesquisa pública, SEO, editorial) permanecem pendentes.
 - Os testes legados, tipo, lint e build, navegação responsiva e homologação D1 não puderam ser executados nesta sessão.
@@ -30,7 +31,7 @@ Data: 16/10/2026. Estado: **incremento parcial, não apto a deploy**.
 ## Testes conhecidos
 | Verificação | Resultado |
 | --- | --- |
-| Lógica do novo módulo e QA adaptado ao V8 | 19 asserts: PASS |
+| Primeira versão da lógica em V8 antes da revisão do relatório final | 19 asserts: PASS; não cobre a revisão posterior |
 | `pnpm test:markteam` nativo | Não executado |
 | Todos os `pnpm test:*` anteriores | Não executados |
 | TypeScript, ESLint e build | Não executados |
