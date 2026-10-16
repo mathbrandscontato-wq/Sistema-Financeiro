@@ -37,3 +37,12 @@
 .lead-followup-actions{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:.5rem 0}
 .lead-followup-actions .text-button{font-size:.78rem;line-height:1.35}
 .lead-followup-actions .text-button:disabled{opacity:.5;cursor:not-allowed}
+
+/* Markteam V2.1: classificação humana explicável, sem alterar a arquitetura visual. */
+.lead-review-meta{display:grid;gap:.25rem;padding-bottom:.65rem;margin-bottom:.65rem;border-bottom:1px solid var(--border,rgba(128,128,128,.18))}
+.lead-review-meta p{margin:0;font-weight:600}
+.lead-qualification-form{display:grid;gap:.65rem;padding:.75rem;border:1px solid var(--border,rgba(128,128,128,.2));border-radius:.75rem;margin:.4rem 0 1rem;max-width:100%;min-width:0}
+.lead-qualification-form label{display:grid;gap:.2rem;font-size:.75rem;font-weight:600}
+.lead-qualification-form select,.lead-qualification-form textarea{width:100%;max-width:100%;min-width:0;font-size:.85rem;font-family:inherit;box-sizing:border-box}
+.lead-review-actions{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.lead-review-actions button:disabled{opacity:.5;cursor:not-allowed}
