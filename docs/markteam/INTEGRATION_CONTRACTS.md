@@ -48,3 +48,11 @@ O painel de aquisição existente possui eventos, filtros e fontes persistidas. 
 3. Revisão humana persistida, retentativa igual, conflito 409 e isolamento de proprietário (teste SQLite do incremento + ambiente real).
 4. Responsividade, acessibilidade, revisão humana e exportações.
 5. Cotas de hospedagem e rollback efetivamente testados antes de qualquer deploy.
+
+
+## Salvaguardas corretivas, sem mudança de contrato de produção
+- O histórico de `commercial_history` (ordem determinística por `created` e `id`) governa sugestões. Após proposta, `negotiation`, `intake` e `opportunity_updated` com transição para `Negociação`, `Contato inicial`, `Fechado` ou `Recusado` suspendem a cadência; voltar para `Aguardando resposta` não a reativa por si.
+- `followUpChoices(lead,{today,holidays})`: retorna `overdue` para datas anteriores à referência, sem mudar data do compromisso. `today` é injetável para teste, data local de São Paulo por padrão.
+- Campo de resposta/opt-out de canal externo não é pressuposto. Mensagens e webhooks externos seguem **desligados**; revisão humana obrigatória.
+- Diagnóstico→CRM: testar captura voluntária, idempotência de requestId, consentimento promocional separado e deduplicação apenas em D1 isolado; dados identificáveis proibidos no Analytics externo. Contrato de múltiplas oportunidades por formulário ainda sem decisão comercial.
+- Cabeçalhos `oai-authenticated-*` só são confiáveis com garantia provada de gateway que os injeta/filtra. Testar requisições forjadas antes de homologação externa.

@@ -59,3 +59,14 @@ Data: 16/10/2026. Estado: **incremento parcial, não apto a deploy**. Fonte de d
 - `docs/markteam/STATUS.md`
 - `docs/intake-and-kanban.md`
 - `docs/crm-operations.md`
+
+
+## Candidato corretivo 4.0.0-dev.2-rc.1 (16/10/2026)
+- Base auditada, imutável: `1aeccc8fb11c744a394b98fc82bb7a7e08a0f5a2`. Nova branch: `fix/markteam-v4-hardening-20261016`. PR separado em draft, com base na branch de desenvolvimento, **não na main**.
+- Não embutir o SHA final neste mesmo commit: candidato exato e execução GitHub Actions devem ser fixados no PR após último commit. Se HEAD mudar, renovar evidência.
+- Escopo implementado: suspensão de follow-up com negociação/intake/mudança de etapa auditada, desempate de eventos na mesma data, estados atrasados sem envio; revisão de validação do formulário e tipagem do painel Analytics; testes determinísticos.
+- Escopo protegido: PDF/PIX/contratos/sinais/pagamentos, banco de produção, gateway, deploy, dados comerciais existentes e automações externas, **sem alteração**.
+- Controles de QA: 11 suítes, TypeScript, lint global, lint de incremento e build no workflow de branch (resultado válido SOMENTE no HEAD efetivamente executado); sem mudar baselines de PDF.
+- Estado de aprovação: **BLOQUEADO para merge e produção**, independentemente de testes unitários. Exigir D1/R2 de homologação, QA real, governança LGPD/segredos, quotas e segurança de gateway.
+- Custo novo comprometido: R$ 0 (sem compra/infra/API externa). Despesa futura ou quota externa: NÃO AFERIDA, gate obrigatório antes de ativação.
+- Rollback de código: voltar o ponteiro da branch corretiva ao SHA base, ou fechar o PR draft sem merge; não tocar na main/produção. Restore de D1/R2 somente em ambiente segregado e com hashes/contagens verificadas; não realizado neste pacote.

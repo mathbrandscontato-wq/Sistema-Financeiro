@@ -28,3 +28,16 @@ Atualizado em 16/10/2026. Fonte única de direção: **Math Brands · Markteam A
 O proprietário confirmou a versão **V2.1 como documento final único**. A matriz de clientes nela descrita: A central (serviços especializados B2B e empresas em crescimento), B complementar (marcas autorais e especialistas), C seletivo (lançamentos de escopo/orçamento compatíveis). O relatório não define pesos numéricos nem metas calibradas: **não inventá-los**. D+3/7/14 são testes orientativos para propostas sem resposta registrada, não para novos cadastros. A regra de triagem no próximo dia útil também é hipótese operacional, com revisão humana. A revisão manual persistida tem autoria e evidência; scoring automático exige pesos e limiares ainda não aprovados.
 
 Sem nova infraestrutura, migração, evento externo, scraping, IA faturada ou mensagem comercial automática nesta etapa.
+
+
+## Gate corretivo V4 — 4.0.0-dev.2-rc.1
+- [x] Patch reversível com guarda de SHA nos oito arquivos auditados (branch isolada)
+- [x] Teste de timestamp igual, resposta por negociação, retorno à espera e identificação de prazo vencido adicionado ao CI
+- [x] Removidos `any` do painel Analytics por contratos explícitos; validar tipagem no commit final
+- [ ] Resolver lint global herdado sem alterar motor PDF desprotegido (363 erros no baseline auditado; contar novamente no candidato)
+- [ ] Gate R01: responsável decidir visibilidade pública e limpeza de história Git; avaliar forks/caches e risco LGPD
+- [ ] Gate R02: Diagnóstico → CRM em D1 de teste, reenvio idempotente, token/consentimento/UTM, concorrência da décima vaga
+- [ ] Gate R04/R07: snapshot e restauração D1/R2 segregados, limites gratuitos reais, RTO/RPO medidos
+- [ ] Gate R08/R09: QA real acessível mobile/desktop/teclado e confiança de cabeçalhos `oai-authenticated-*` no gateway
+- [ ] Gate R10: política comercial de oportunidades distintas por submissão; migração proibida sem autorização
+- [ ] Opt-out/resposta externa: somente registros integrados autorizados podem bloquear contato; não presumir visibilidade de canais externos

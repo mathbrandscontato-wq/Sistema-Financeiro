@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - feat/markteam-automatico-v4
+      - fix/markteam-v4-hardening-20261016
 permissions:
   contents: read
 concurrency:
@@ -33,6 +34,9 @@ jobs:
       - name: Teste markteam
         if: always()
         run: pnpm test:markteam
+      - name: Testes adicionais de follow-up
+        if: always()
+        run: node qa/markteam/followup_additional_checks.mjs
       - name: Teste leads
         if: always()
         run: pnpm test:leads

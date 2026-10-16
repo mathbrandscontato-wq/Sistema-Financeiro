@@ -34,3 +34,13 @@ Desenvolvimento incremental em `feat/markteam-automatico-v4`, criado a partir da
 
 ## Custos / segurança
 Nenhuma nova dependência, API paga, credencial, banco, worker, job agendado ou publicação incluídos. Um push/PR pode afetar sistemas externos configurados fora do repositório; verificar integrações antes de qualquer deploy. Não utilizar dados reais de leads em testes.
+
+
+## Correção isolada V4 — 16/10/2026 (4.0.0-dev.2-rc.1)
+Branch: `fix/markteam-v4-hardening-20261016`, derivada de `1aeccc8fb11c744a394b98fc82bb7a7e08a0f5a2`. Exclusivamente código e QA em repositório; não é atualização do Sistema Financeiro publicado.
+- Regras: eventos posteriores comprovados de negociação, intake e mudanças de etapa interrompem a cadência da proposta; desempate por timestamp e ID. Datas vencidas recebem flag `overdue` e rótulo visual **Atrasado**, sem editar datas ou enviar mensagens.
+- Validação de contato do formulário preservada; imports obsoletos removidos; painel de Analytics tipado com contratos explícitos e erros tratados sem `any` no componente.
+- Testes artificiais adicionais em `qa/markteam/followup_additional_checks.mjs` integrados ao CI da branch corretiva. Execução deve ser aferida no HEAD do PR; nenhum PASS é presumido.
+- **Gate bloqueado:** repositório público possui arquivo preexistente com categorias comerciais potencialmente restritas. Não reproduzir nem republicar os registros. Visibilidade e reescrita de história só com decisão explícita do titular.
+- **Gate bloqueado:** lint global legado já apresentava 363 erros e 13 avisos no CI de origem; correção indiscriminada fora de escopo pode alterar o motor PDF. Não editar `lib/templates/v1/document.mjs` sem baseline integral.
+- Homologação externa D1/R2, segurança de cabeçalhos de gateway, prova de restore, consentimento e UX continuam **NÃO VERIFICÁVEIS** por CI local; produção e merge bloqueados.
