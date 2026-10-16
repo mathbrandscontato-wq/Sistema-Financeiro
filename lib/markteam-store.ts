@@ -17,6 +17,7 @@ export async function reviewLead(owner:string,actor:string,body:unknown){
   const reuse=async()=>{const prev=await readPrevious();if(!prev)return null;const data=JSON.parse(prev.data);if(prev.opportunity_id!==input.id||data.kind!=='markteam_qualification'||JSON.stringify(data.qualification)!==JSON.stringify(clean))throw new CRMError('Esta revisão já foi enviada com outro conteúdo.',409);return {ok:true,id:input.id,reused:true};};
   const previous=await reuse();if(previous)return previous;
   const row=await db.prepare('SELECT * FROM commercial_opportunities WHERE id=? AND owner=?').bind(input.id,owner).first<{id:string,owner:string,revision:number,archived:number}>();
+  if(!row)throw new CRMError('Oportunidade não encontrada.',404);
   requireRevision(row,owner,input.revision);
   if(row.archived)throw new CRMError('Restaure a oportunidade antes de classificá-la.',409);
   const at=new Date().toISOString();
