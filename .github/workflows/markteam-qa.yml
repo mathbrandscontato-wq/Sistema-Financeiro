@@ -71,7 +71,13 @@ jobs:
         run: pnpm test:forms
       - name: Lint somente Markteam
         if: always()
-        run: pnpm exec eslint lib/markteam.mjs lib/markteam-store.ts lib/leads.mjs app/leads-panel.tsx
+        run: |
+          if pnpm exec eslint lib/markteam.mjs lib/markteam-store.ts lib/leads.mjs app/leads-panel.tsx --format json > /tmp/markteam-eslint.json; then
+            echo "Lint do incremento: OK"
+          else
+            node -e 'const fs=require("fs"); for(const f of JSON.parse(fs.readFileSync("/tmp/markteam-eslint.json","utf8"))){for(const m of f.messages.filter(x=>x.severity===2).slice(0,25)){console.log("::error file="+f.filePath.replace(process.cwd()+"/","")+",line="+(m.line||1)+"::"+m.message.slice(0,180));}}'
+            exit 1
+          fi
       - name: TypeScript
         if: always()
         run: pnpm exec tsc --noEmit
