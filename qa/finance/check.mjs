@@ -1,5 +1,6 @@
+import {commercialFixture} from '../fixtures/commercial.mjs';
 import assert from 'node:assert/strict';
-import {readFile,mkdtemp,rm} from 'node:fs/promises';
+import {mkdtemp,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFileSync} from 'node:child_process';
@@ -11,7 +12,7 @@ const run=r=>JSON.parse(execFileSync('python3',['qa/commercial/sqlite-runner.py'
 const execute=p=>run({statements:p.statements,returnChanges:true}),all=(table,owner)=>run({queries:{rows:{sql:`SELECT * FROM ${table} WHERE owner=? ORDER BY rowid`,args:[owner]}}}).rows;
 const owner='finance-owner',other='another-owner',now='2026-10-10T10:00:00Z',uuid=()=>crypto.randomUUID();
 const contracts=()=>all('commercial_contracts',owner),payments=()=>all('commercial_payments',owner),events=()=>all('financial_history',owner),mappings=()=>all('financial_quote_receipts',owner),get=id=>contracts().find(c=>c.id===id);
-const source=JSON.parse(await readFile('data/commercial-reference.json','utf8'));
+const source=structuredClone(commercialFixture);
 const payment=(amount,kind='Pagamento parcial')=>({amount,paidOn:'2026-10-09',kind,note:'Recebimento conferido no extrato pelo usuário'});
 try{
  run({initialize:true});assert.ok(COMMERCIAL_TABLES.includes('financial_history'));assert.ok(COMMERCIAL_TABLES.includes('financial_quote_receipts'));

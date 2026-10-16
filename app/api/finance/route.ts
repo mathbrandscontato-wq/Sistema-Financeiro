@@ -1,4 +1,3 @@
-import {env} from 'cloudflare:workers';
 import {recordAccessAction} from '../../../lib/access-audit';
 import {workspaceAccess} from '../../../lib/access';
 import {mutateFinance} from '../../../lib/finance-store';

@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useState,useRef} from 'react';
-import {Users,LayoutDashboard,FileText,Settings,Plus,ArrowUpRight,ArrowLeft,Download,Check,Trash2,Eye,Save,Search,X,Clock,Wallet,Copy,Upload,ChevronRight,CheckCircle2,AlertCircle} from 'lucide-react';
+import {Users,LayoutDashboard,FileText,Settings,Plus,ArrowLeft,Download,Check,Trash2,Eye,Save,Search,X,Clock,Wallet,Upload,ChevronRight,CheckCircle2,AlertCircle} from 'lucide-react';
 import {blank,defaults,commercial,calculate,money,nextMonth,today,effectiveStatus,financial,received,validatePix} from '../lib/core.mjs';
 import AcquisitionPanel from './acquisition-panel';
 import TeamPanel from './team-panel';
