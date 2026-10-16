@@ -1,0 +1,30 @@
+{
+  "sourceCommit": "e642465bb5cc0de725a414893ae8dc3ac28096d7",
+  "templateVersion": "mathbrands-v1",
+  "assets": {
+    "header.png": "4b8eb5e550e59a96c3b9be094322ab69b822150c50180e370e50804dececffa3",
+    "logo.png": "5f8fbe0524d725989b23ac90c4d89261621eecbb78d7d52bc9336b26bd5e92d1",
+    "inter-regular.woff": "e20fa0b4fd2dd26e4d14b3ac3cc922509c3a63fa5e910e90c614544aa042dd45",
+    "inter-semibold.woff": "6a9cb3a509b4eeaf12b7dda6c4aacac3e85d07f4201bf4dd716e332e692b87bd",
+    "inter-bold.woff": "7c5ed5655730de337704d3fc94628515cd7e3d8d32368871709bf56ac0397e7a",
+    "Inter-LICENSE.txt": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345"
+  },
+  "fixtures": {
+    "package": {
+      "layout": "be192333ff8fe90d08a26424ae3a18293a7f6bfda59dfad86ff3e2cf98d72798",
+      "pages": 1
+    },
+    "details": {
+      "layout": "5d3ba6928a2e0218ee9036c224a2d227a945cb408f5cd064c3c3a0a5dfe60598",
+      "pages": 2
+    },
+    "multipage": {
+      "layout": "8541ffa6f6af1980f222a8de0a9ed1e4f309864eb5cfc4764d1daabaff88366a",
+      "pages": 5
+    }
+  },
+  "engine": {
+    "lib/templates/v1/document.mjs": "f0007e32c9847888dea779654f81c744304c5cb1af46b40a040e5fffca2edbf0",
+    "lib/templates/v1/core.mjs": "1e9ed6b9f9ff3169ce65da83e09a4cd609c80ba2d7953d5d82e8c5a9fad877ba"
+  }
+}

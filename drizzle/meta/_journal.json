@@ -1,0 +1,76 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1791590197047,
+      "tag": "0000_third_sentinel",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791626262807,
+      "tag": "0001_mean_darkstar",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791626965000,
+      "tag": "0002_messy_moondragon",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1791627736750,
+      "tag": "0003_lively_lizard",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1791629159832,
+      "tag": "0004_harsh_medusa",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1791632802334,
+      "tag": "0005_slow_lightspeed",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1791639442618,
+      "tag": "0006_pretty_wild_child",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1791721495662,
+      "tag": "0007_chubby_the_captain",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1791722331153,
+      "tag": "0008_equipment_budget",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1791752427437,
+      "tag": "0009_opposite_stardust",
+      "breakpoints": true
+    }
+  ]
+}

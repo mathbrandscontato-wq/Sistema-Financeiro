@@ -4,5 +4,7 @@
   "sitesVersion": 18,
   "sourceCommit": "96c37136bd46e4c3a9ec8f9999f2ac8deb9e5b15",
   "exportedAt": "2026-10-16",
-  "status": "Importação do código-fonte em andamento"
+  "sourceFileCount": 237,
+  "status": "complete",
+  "scope": "All files tracked in the source commit. Production databases, R2 objects, runtime credentials and untracked local files are not included."
 }

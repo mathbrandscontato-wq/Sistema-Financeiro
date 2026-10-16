@@ -1,0 +1,7 @@
+import {workspaceAccess} from '../../../lib/access';
+import {recordAccessAction} from '../../../lib/access-audit';
+import {readOperations,saveOperations} from '../../../lib/operations-store';
+export const dynamic='force-dynamic';
+const reply=(v:any,status=200)=>Response.json(v,{status,headers:{'Cache-Control':'no-store'}});
+export async function GET(req:Request){const user=await workspaceAccess('finance.read');if(!user)return reply({error:'Autenticação necessária.'},401);try{const data=await readOperations(user.userId);if(new URL(req.url).searchParams.get('download')==='1')return new Response(JSON.stringify({kind:'mathbrands-operational-finance',...data},null,2),{headers:{'Content-Type':'application/json','Cache-Control':'no-store','Content-Disposition':'attachment; filename=mathbrands-planejamento-financeiro.json'}});return reply(data);}catch(e:any){return reply({error:e.message||'Planejamento indisponível.'},503);}}
+export async function POST(req:Request){const user=await workspaceAccess('finance.write');if(!user)return reply({error:'Autenticação necessária.'},401);try{if(req.headers.get('origin')!==new URL(req.url).origin)return reply({error:'Origem inválida.'},403);const raw=await req.text();if(raw.length>20000)return reply({error:'Solicitação muito grande.'},413);const body=JSON.parse(raw);await recordAccessAction(user,'operations:'+body.action);return reply(await saveOperations(user.userId,body));}catch(e:any){return reply({error:e.message||'Não foi possível salvar.'},e.status||400);}}

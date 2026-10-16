@@ -1,0 +1,3 @@
+import {MessageCircle,Mail} from 'lucide-react';
+import {whatsappURL,emailURL} from '../lib/leads.mjs';
+export default function LeadContacts({phone,email}:{phone?:string|null,email?:string|null}){const whatsapp=whatsappURL(phone),mail=emailURL(email);return <div className="lead-contacts">{whatsapp?<a className="secondary" href={whatsapp} target="_blank" rel="noreferrer" aria-label={`Abrir WhatsApp de ${phone}`}><MessageCircle size={15}/>WhatsApp</a>:phone?<span title="Confira o DDD e o código do país antes de abrir o WhatsApp.">{phone}</span>:null}{mail&&<a className="secondary" href={mail} aria-label={`Enviar e-mail para ${email}`}><Mail size={15}/>E-mail</a>}{!phone&&!email&&<span className="footnote">Contato não informado</span>}</div>;}
