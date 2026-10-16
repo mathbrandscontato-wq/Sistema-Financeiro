@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import {FOLLOW_UP_DAYS,addBusinessDays,followUpChoices,scoreLead} from '../../lib/markteam.mjs';
+assert.deepEqual(FOLLOW_UP_DAYS,[3,7,14]);
+assert.equal(addBusinessDays('2026-10-16',3),'2026-10-21');
+assert.equal(addBusinessDays('2026-10-16',3,['2026-10-19']),'2026-10-22');
+assert.equal(addBusinessDays('2026-12-31',1),'2027-01-01'); // Calendário sem feriados por padrão
+assert.throws(()=>addBusinessDays('2026-02-30',1));
+const lead={id:'op1',stage:'Novo lead',archived:0,captured:'2026-10-16T12:00:00-03:00',next_action:'Entrar em contato'};
+assert.deepEqual(followUpChoices(lead).map(c=>c.date),['2026-10-21','2026-10-27','2026-11-05']);
+assert.deepEqual(followUpChoices({...lead,next_action_on:'2026-10-21'}),[]);
+assert.deepEqual(followUpChoices({...lead,stage:'Fechado'}),[]);
+assert.deepEqual(followUpChoices({...lead,stage:'Recusado'}),[]);
+assert.deepEqual(followUpChoices({...lead,archived:1}),[]);
+assert.deepEqual(followUpChoices({...lead,captured:'invalid'}),[]);
+const valid={role:15,need:25,timing:15,icp:20,deadline:10,context:15};
+const config={weights:valid,thresholds:{high:80,medium:50}};
+assert.equal(scoreLead({role:{value:5,evidence:'Decisor identificado'}}).status,'not_configured');
+assert.equal(scoreLead({role:{value:5,evidence:'Decisor identificado'}},config).status,'incomplete');
+assert.equal(scoreLead({},config).score,null);
+const facts=Object.fromEntries(Object.keys(valid).map(key=>[key,{value:5,evidence:'Preenchimento humano de teste: '+key}]));
+assert.equal(scoreLead(facts,config).score,100);
+assert.equal(scoreLead(facts,config).classification,'Alta');
+assert.equal(scoreLead({...facts,role:{value:5,evidence:''}},config).score,null);
+assert.throws(()=>scoreLead(facts,{weights:{...valid,role:90},thresholds:config.thresholds}));
+assert.equal(scoreLead(facts,config).evidence.length,6);
+console.log('PASS: D+3/D+7/D+14 em dias úteis, feriados configuráveis, não duplicação de ação marcada, encerrados e scoring sem dados inferidos.');
