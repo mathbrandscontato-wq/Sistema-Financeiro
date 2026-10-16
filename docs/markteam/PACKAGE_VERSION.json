@@ -1,0 +1,21 @@
+{
+  "package": "markteam-automatico",
+  "packageVersion": "4.0.0-dev.1",
+  "reference": "Relatório Estratégico V2.1 final (fonte única; confidencial, fora do GitHub)",
+  "date": "2026-10-16",
+  "repository": "mathbrandscontato-wq/Sistema-Financeiro",
+  "branch": "feat/markteam-automatico-v4",
+  "pullRequest": 1,
+  "baseSourceVersion": 18,
+  "state": "development-for-homologation",
+  "releaseEligible": false,
+  "automatedExternalMessaging": false,
+  "productionMigrations": false,
+  "requiredFollowup": [
+    "CI final",
+    "homologação de integração",
+    "QA visual",
+    "verificação LGPD e cotas",
+    "política quantitativa antes de scoring automático"
+  ]
+}

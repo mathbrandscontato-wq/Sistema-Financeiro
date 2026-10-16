@@ -1,0 +1,89 @@
+name: Markteam QA (somente testes)
+on:
+  push:
+    branches:
+      - feat/markteam-automatico-v4
+permissions:
+  contents: read
+concurrency:
+  group: markteam-qa-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    if: github.repository == 'mathbrandscontato-wq/Sistema-Financeiro'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    env:
+      CI: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Preparar pnpm
+        run: corepack enable && corepack prepare pnpm@11.25.0 --activate
+      - name: Instalar dependências congeladas
+        run: pnpm install --frozen-lockfile
+      - name: Preparar ferramentas de validação PDF
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends poppler-utils python3-pil
+      - name: Teste markteam
+        if: always()
+        run: pnpm test:markteam
+      - name: Teste leads
+        if: always()
+        run: pnpm test:leads
+      - name: Teste protection
+        if: always()
+        run: |
+          if pnpm test:protection > /tmp/protection.log 2>&1; then
+            echo "Protection: OK"
+          else
+            grep -m1 -E 'AssertionError|FileNotFoundError|ModuleNotFoundError|Error:|command not found' /tmp/protection.log | head -c 260 | sed 's/^/::error title=Protection test failure::/' || true
+            exit 1
+          fi
+      - name: Teste commercial
+        if: always()
+        run: pnpm test:commercial
+      - name: Teste crm
+        if: always()
+        run: pnpm test:crm
+      - name: Teste finance
+        if: always()
+        run: pnpm test:finance
+      - name: Teste dashboard
+        if: always()
+        run: pnpm test:dashboard
+      - name: Teste intake
+        if: always()
+        run: pnpm test:intake
+      - name: Teste evolution
+        if: always()
+        run: pnpm test:evolution
+      - name: Teste operations
+        if: always()
+        run: pnpm test:operations
+      - name: Teste forms
+        if: always()
+        run: pnpm test:forms
+      - name: Lint somente Markteam
+        if: always()
+        run: |
+          if pnpm exec eslint lib/markteam.mjs lib/markteam-store.ts lib/leads.mjs app/leads-panel.tsx --format json > /tmp/markteam-eslint.json; then
+            echo "Lint do incremento: OK"
+          else
+            node -e 'const fs=require("fs"); for(const f of JSON.parse(fs.readFileSync("/tmp/markteam-eslint.json","utf8"))){for(const m of f.messages.filter(x=>x.severity===2).slice(0,25)){console.log("::error file="+f.filePath.replace(process.cwd()+"/","")+",line="+(m.line||1)+"::"+m.message.slice(0,180));}}'
+            exit 1
+          fi
+      - name: TypeScript
+        if: always()
+        run: pnpm exec tsc --noEmit
+      - name: Lint
+        if: always()
+        run: pnpm lint
+      - name: Build
+        if: always()
+        run: pnpm build
