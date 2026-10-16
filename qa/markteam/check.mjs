@@ -35,4 +35,4 @@ assert.equal(scoreLead(Object.fromEntries(Object.keys(valid).map(key=>[key,{valu
 assert.equal(scoreLead({...facts,role:{value:5,evidence:''}},config).score,null);
 assert.throws(()=>scoreLead(facts,{weights:{...valid,role:90},thresholds:config.thresholds}));
 assert.equal(scoreLead(facts,config).evidence.length,6);
-console.log('PASS: triagem D+1, follow-up por proposta comprovada, feriados, consentimento operacional, bloqueios e scoring auditável.');
+console.log('PASS: triagem D+1, follow-up por proposta comprovada, feriados, revisão humana, bloqueios e scoring auditável.');
