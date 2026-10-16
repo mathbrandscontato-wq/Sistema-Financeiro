@@ -11,7 +11,7 @@ export type AcquisitionLead={
 };
 export type AcquisitionData={
   total:AcquisitionMetrics;previous?:AcquisitionMetrics;
-  timeline:(AcquisitionMetrics&{day:string})[];
+  timeline:(AcquisitionMetrics&{day:string|null})[];
   channels:(AcquisitionMetrics&{channel:string})[];
   forms:(AcquisitionMetrics&{slug:string})[];
   stageDistribution:{stage:string;count:number}[];
