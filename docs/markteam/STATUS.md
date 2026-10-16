@@ -1,36 +1,38 @@
-# Status persistente — Markteam Automático V4
-Data: 16/10/2026
-Documento de produto **único e final**: Relatório Estratégico Markteam Automático V2.1. Documento A separado dispensado pelo proprietário; PDF confidencial não versionado no GitHub público.
+# Markteam Automático V4: estado corretivo
 
-## Estado
-Desenvolvimento incremental em `feat/markteam-automatico-v4`, criado a partir da `main` (commit `6d18c9184c60961054373661e0c91d4b68f1b048`). Não publicar, não fazer merge. A aplicação oficial é separada da cópia do código.
+Data: 16/10/2026. Pacote `4.0.0-dev.2`. **Desenvolvimento entregue com gates bloqueados; produção não autorizada.**
+Fonte de negócio: Relatório Estratégico V2.1 final, conforme critérios do pacote recebido. O PDF confidencial não foi incluído no repositório.
+
+## Identidade e limites
+- Base auditada confirmada: `1aeccc8fb11c744a394b98fc82bb7a7e08a0f5a2`.
+- `main` conferida: `6d18c9184c60961054373661e0c91d4b68f1b048`; PR #1 permanece draft, aberto e sem merge.
+- Branch corretiva: `fix/markteam-v4-audit-hardening`, destino `feat/markteam-automatico-v4`.
+- Candidato de código: `47bbe8a5dbabb472e81c3939be44e552e77b9804`. O SHA final com esta documentação e sua evidência são registrados no corpo do PR corretivo depois da execução, evitando SHA autorreferencial.
+- Nenhum deploy, merge, migração real, mensagem externa ou recurso pago ativado.
 
 ## Implementado
-- `lib/markteam.mjs`: **triagem D+1 dia útil** para novos leads e **D+3/D+7/D+14 dias úteis** apenas para propostas com transição auditada para a etapa “Proposta enviada” e nenhuma negociação posterior registrada. Feriados podem ser fornecidos explicitamente; sem calendário local presumido.
-- Regras não sugerem novas datas para oportunidades concluídas, arquivadas ou que já tenham `next_action_on` definido; escolha e gravação são humanas.
-- `lib/leads.mjs`: referência temporal extraída da transição **registrada** para “Proposta enviada”. A mudança de etapa é evidência operacional, **não** confirmação técnica independente de entrega da mensagem. Usuário deve revisar o histórico antes de usar a cadência.
-- `app/leads-panel.tsx` + `app/crm-workspace.tsx`: botões discretos na lista de leads; ao selecionar, usam `save_opportunity` com `revision` e reaproveitam o armazenamento/proteção/auditoria do CRM.
-- `scoreLead`: motor puro de scoring configurável com seis dimensões, evidência textual obrigatória, perfis A/B/C como referência e classes (alta/média/investigação/fora do perfil sob evidência explícita). O relatório não define pesos: não pontua registros reais automaticamente.
-- Revisão humana persistente: `lib/markteam-store.ts` + `markteam_review` autenticado por CRM, idempotência, controle de revisão, backup e trilha de auditoria. Interface com prioridade, perfil ICP A/B/C, justificativa, evidência e filtros.
-- `qa/markteam/store-check.mjs` valida a persistência em SQLite isolado, inclusive conflitos, reenvio e recuperação de backup; integrado em `pnpm test:markteam` e no build.
-- `docs/markteam/INTEGRATION_CONTRACTS.md` descreve limites e integração.
-- `.github/workflows/markteam-qa.yml` executa testes apenas na branch em runner público gratuito, sem publicação.
+- Aplicador conservador: oito blobs conferidos; `--check` antes de `--apply`; integridade dos 15 arquivos do pacote validada e selfcheck sintético aprovado.
+- Cadência suspensa após negociação, intake, intenção explícita de conversa/orçamento e transições de resposta/decisão. Voltar para Aguardando resposta não revive a cadência antiga. Uma nova transição auditada de proposta inicia nova referência, sujeita a revisão humana.
+- Desempate determinístico por timestamp e ID; não é prova de ordem física nem entrega de mensagem externa.
+- Rótulo Atrasado tanto nas sugestões vencidas quanto na próxima ação já agendada. Datas persistidas não são reescritas. Relógio injetável nos testes e fuso America/Sao_Paulo.
+- Analytics com DTO de resposta, mutações discriminadas e gráficos genéricos tipados; carregamento derivado da chave da requisição evita render com dados de filtros anteriores. Erros financeiros ausentes não viram recebimento inventado.
+- Imports/variável sem uso removidos, sem desligar lint. Validação de contato permanece antes de qualquer gravação.
+- Template PDF: apenas import e variável sem uso removidos. Hash do arquivo atualizado intencionalmente depois de baseline completa PASS antes/depois. Nenhum PNG, fonte, layout, QR/Pix ou cálculo foi substituído.
+- Cinco suítes que liam a referência comercial passaram a carregar fixture artificial independente. As baselines PDF legadas permanecem inalteradas para comparação; não foram republicadas em logs ou no PR.
+- Teste SQLite de falha no INSERT de histórico após UPDATE comprova rollback da revisão. Testes adicionais de follow-up integrados em `pnpm test:markteam` e no build.
 
-## Evidência de execução
-- Verificações preliminares em V8: 50 asserções da fundação. **Substituídas como evidência principal pelo CI nativo** com testes reais e SQLite.
-- Revisão estática: tipo da ação corrigido (`kind` no evento), chamadas coerentes entre painel e CRM e nenhuma marca evidente de tokens/segredos nos arquivos alterados. Não substitui a análise de segurança completa.
-- **GitHub Actions 38934085398**: 11 suítes nativas PASS (Markteam + SQLite, leads, protection/PDF, commercial, CRM, finance, dashboard, intake, evolution, operations, forms); `pnpm exec tsc --noEmit` PASS; lint restrito a `lib/markteam.mjs`, `lib/markteam-store.ts`, `lib/leads.mjs`, `app/leads-panel.tsx` PASS; `pnpm build` PASS. Evidências: https://github.com/mathbrandscontato-wq/Sistema-Financeiro/actions/runs/38934085398.
-- **Única falha do job:** `pnpm lint` global sobre a árvore inteira. Há erros em módulos legados (p.ex. `app/acquisition-panel.tsx` com `no-explicit-any`, variáveis/importações não usadas em `lib/forms-store.ts`, `app/workspace.tsx` e template). Não desabilitar o lint nem atribuir aprovação global. Correções devem ocorrer em um incremento técnico separado, com regressão visual e financeira.
-- Runner GitHub Actions instala dependências do lockfile. Não declarar homologação D1 ou QA no navegador.
-- Não executadas migrações ou chamadas autenticadas à D1 de produção.
-- Não realizado QA visual/celular nem integração real com o Diagnóstico público.
+## Evidência preliminar real
+11 suítes nativas PASS, TypeScript PASS, lint do incremento PASS e build PASS em árvore de código estabilizada. Esses resultados não são CI do commit final. A execução sobre o SHA final será anexada ao PR e ao relatório privado.
 
-## Próximo incremento obrigatório
-1. Fonte final recebida (V2.1). Validar pesos e limiares quantitativos **não definidos no relatório** com operação comercial e testar critérios por perfil A/B/C antes de habilitar scoring no CRM.
-2. Testes do incremento, tipagem e build passaram no CI. Tratar o lint global legado sem afrouxar regras, validar a UI/teclado no navegador e executar homologação D1 com fixtures.
-3. Homologar fluxos Diagnóstico → CRM e sites → CRM com fixtures fictícias, revisão/concorrência, idempotência e 10 vagas simultâneas em ambiente separado.
-4. Validar permissões, comportamento dos botões e datas em desktop/mobile; depois retomar prioridades P0 pendentes.
-5. Só com P0 estável: P1/P2 controlados e eventual segunda etapa de publicação.
+**Lint global FAIL: 335 erros (328 no-explicit-any e 7 set-state-in-effect), 6 avisos.** A maioria está nos módulos financeiros/CRM legados. Refatorar toda essa árvore excede a correção segura sem homologação adicional. Não houve eslint-disable, relaxamento de configuração nem remoção de testes para ocultar falhas.
 
-## Custos / segurança
-Nenhuma nova dependência, API paga, credencial, banco, worker, job agendado ou publicação incluídos. Um push/PR pode afetar sistemas externos configurados fora do repositório; verificar integrações antes de qualquer deploy. Não utilizar dados reais de leads em testes.
+## Não verificável / gates
+- UI: tentativa de QA local bloqueada por ausência de executável Chromium. Roteiro `node qa/markteam/ui-check.mjs` preparado, mas seus cenários não são PASS. Requer Playwright + navegador disponível; dependências do produto e lockfile não foram alterados.
+- D1/R2 isolados, gateway e restauração reais: não executados; nenhum ambiente isolado com quotas comprovadas foi disponibilizado nesta tarefa.
+- Headers `oai-authenticated-*`: aplicação confia no gateway; falta comprovar remoção de headers externos, injeção autenticada e bloqueio de acesso direto ao Worker. Não alegar proteção contra spoofing validada por testes locais.
+- Opt-out: não existe estado persistente específico de oposição. Marketing=false não equivale a opt-out de atendimento. Resposta/recusa deve ser registrada no CRM e revisada por pessoa; nenhuma detecção automática de canal externo foi adicionada. Migração proposta exige autorização.
+- Referência comercial pública: inventário privado por categorias, sem registros; exposição pré-existente confirmada na main. Visibilidade, histórico, forks e caches exigem decisão do proprietário.
+- Múltiplas solicitações do mesmo contato/formulário continuam na mesma oportunidade. Não houve mudança de negócio ou migração.
+- Cotas reais e billing das contas externas não aferidos. Nenhuma execução opcional externa, agendamento ou cobrança ativada.
+
+P1/P2, scoring automático, Ritmo e mensagens externas continuam fora do incremento. Arquivo `Instrução.txt` não foi disponibilizado; não foi utilizado.

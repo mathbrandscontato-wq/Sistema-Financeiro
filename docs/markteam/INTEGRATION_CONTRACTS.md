@@ -48,3 +48,13 @@ O painel de aquisição existente possui eventos, filtros e fontes persistidas. 
 3. Revisão humana persistida, retentativa igual, conflito 409 e isolamento de proprietário (teste SQLite do incremento + ambiente real).
 4. Responsividade, acessibilidade, revisão humana e exportações.
 5. Cotas de hospedagem e rollback efetivamente testados antes de qualquer deploy.
+
+
+## Atualização corretiva 4.0.0-dev.2
+- `proposalEvidence` ordena por `created`, depois ID; somente eventos posteriores à última transição de proposta são usados. Suspensão por `negotiation`, `intake`, `diagnostic_intent` ou transição para Negociação, Contato inicial, Fechado ou Recusado. Voltar a Aguardando resposta não remove a suspensão. Uma nova proposta registrada gera nova referência, sempre revisável por pessoa.
+- `followUpChoices(lead,{today,holidays})` adiciona `overdue` sem gravar ou mover datas. `isFollowUpOverdue` também identifica próxima ação já agendada no passado. Dia atual não é atrasado. Fuso local America/Sao_Paulo.
+- Resposta externa e opt-out não são identificados automaticamente. Não existe campo persistente específico de oposição; autorização para eventual migração é gate de negócio. Marketing=false não é oposição universal ao atendimento solicitado.
+- API Analytics e matemática de `formMetrics` preservadas. `lib/acquisition-types.ts` documenta DTO consumido, métricas opcionais por permissão, lead e união de ações confirm/release/configure. A tipagem não substitui validação do servidor nem prova de contrato contra D1 real.
+- SQLite comprova rollback quando a gravação de histórico falha após incremento de revisão; não constitui prova do gateway nem de restore D1/R2.
+- Aplicação continua confiando em headers do gateway. Homologação deve rejeitar falsificação por cliente e acesso direto; nenhuma chave foi inventada nem adicionada ao frontend para simular segurança.
+- Gateway, D1/R2, quotas, consentimento no canal real e restauração permanecem bloqueados para produção. Nenhum teste acessou endpoints publicados.

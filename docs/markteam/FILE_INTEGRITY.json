@@ -1,0 +1,28 @@
+{
+  "algorithm": "sha256",
+  "candidateCodeSha": "47bbe8a5dbabb472e81c3939be44e552e77b9804",
+  "files": {
+    "app/acquisition-panel.tsx": "454efd33c14b5f2dfcce4e9813a3fedc9fe85f97bfa9864a122a982442d559b7",
+    "app/api/finance/route.ts": "c7d3cf2e433096d3bd86149d6d1fc00fc7270920c44fcea485c6bdeaa9bf2922",
+    "app/leads-panel.tsx": "a006ebb882c573dd3359d3fe09ad17cdf1b59911ee3bbc0d92792350814cab23",
+    "app/workspace.tsx": "58e150f78f1be7fc19da87c33e27c4c11f80152476a4d5132edeb72651ebb9f3",
+    "lib/acquisition-types.ts": "2966a47f70385bcf3263dbaff47fce66fe78988ee1a7161f2e48cc2e66f5a376",
+    "lib/forms-store.ts": "5603b06644fc39ffa6291abca203bc5deb470ba5cf99470cdf0c90797a8a7405",
+    "lib/leads.mjs": "93f549c03e4f57aaf47dad6ad9934cc2b8a70d4401ef62244c67847a19f6e853",
+    "lib/markteam.mjs": "cb57ef33e06353318b27a9cad7410a2b3ae050027280e9ddd8720529c5c093ca",
+    "lib/templates/v1/document.mjs": "0bc2fbd1b1bec8b7b43b1e872a857e43e2324ced0fd8dbf2f0c945278eb40580",
+    "package.json": "7ae94ff16824062cf59785e02e4eaefc6d995a903f84a3b9631aecd28d99c44d",
+    "qa/commercial/check.mjs": "1a2125384434622e0bb1967ecefb16c698e8651384e66eef2adf53bd81a91a49",
+    "qa/crm/check.mjs": "b42eec89578fbc6ed1c4ff94dca44aec0500dbfd58d8160337efaf01f2ed8cbe",
+    "qa/dashboard/check.mjs": "db07e3d7d92f326f667ca84316fe01491f521bd65c6fa32385964842361a0481",
+    "qa/finance/check.mjs": "de149619519332ed35cd6a67988f843c28cd08b907017afd0f567d267f4e6b7c",
+    "qa/fixtures/commercial.mjs": "cb69f8e91f6bbb1ddd855ff2059ca0aa8d7e62a1cd45b94504d2cab68364a027",
+    "qa/forms-integration.mjs": "8b374058ebecb6bef44187388b65c1535cc4bb338a5a0d452e88e32f2ad5d08a",
+    "qa/leads/check.mjs": "68e6335d799c66162e6a46fdab83cd9573c75c2f304d28f9ffbf32378e244a8b",
+    "qa/markteam/check.mjs": "77194545b8c3ec0ce8b94b8a6072a47461c4d9a6c0bd2d8c1490d9f524e3c180",
+    "qa/markteam/followup_additional_checks.mjs": "8542392ae4421c3a76cab6e0e56b8f8533579dbfe0ecf71a6e79c455986aee65",
+    "qa/markteam/store-check.mjs": "66b28400c13736318fde2fc3bc76da46001127783ae30208def29152b7aa5f1c",
+    "qa/markteam/ui-check.mjs": "b297298ba01da057096cd771d2f5ef34ef58d1cb3c0128ba0ee9455665231917",
+    "qa/protection/baseline/manifest.json": "9a8c7396244e98a8e101ff88e2aaed86af29cac0fca9a6b8b0f718eb1158a18a"
+  }
+}

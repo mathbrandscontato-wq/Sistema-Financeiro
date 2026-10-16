@@ -28,3 +28,22 @@ Atualizado em 16/10/2026. Fonte única de direção: **Math Brands · Markteam A
 O proprietário confirmou a versão **V2.1 como documento final único**. A matriz de clientes nela descrita: A central (serviços especializados B2B e empresas em crescimento), B complementar (marcas autorais e especialistas), C seletivo (lançamentos de escopo/orçamento compatíveis). O relatório não define pesos numéricos nem metas calibradas: **não inventá-los**. D+3/7/14 são testes orientativos para propostas sem resposta registrada, não para novos cadastros. A regra de triagem no próximo dia útil também é hipótese operacional, com revisão humana. A revisão manual persistida tem autoria e evidência; scoring automático exige pesos e limiares ainda não aprovados.
 
 Sem nova infraestrutura, migração, evento externo, scraping, IA faturada ou mensagem comercial automática nesta etapa.
+
+
+## Correção 4.0.0-dev.2: gates atuais (prevalecem sobre o inventário histórico)
+| Risco | Entregue | Pendência / bloqueio |
+| --- | --- | --- |
+| R01 | Inventário privado por categorias; main confirmada; QA sem leitura de referência comercial | Proprietário decide visibilidade e saneamento de histórico; avaliar caches/forks; sem force-push |
+| R02 | 11 suítes locais com captura/idempotência/expiração/consentimento/concorrência | Fluxo real no D1 isolado e falha de integração externa |
+| R03 | Analytics tipado, imports seguros, PDF com regressão antes/depois | 335 erros globais legados; sem supressão; bloqueia aceite global |
+| R04 | Runbook separado de código, configuração, D1/R2 | Restore real isolado; RTO/RPO não medidos |
+| R05 | Suspensão após resposta registrada, retorno de etapa, intenção de contato, datas atrasadas | Estado persistente de oposição e migração dependem de autorização; canais externos não integrados |
+| R06 | Commits temáticos; manifesto de hashes; prova final no SHA do PR | CI remoto e tag de release não executados |
+| R07 | Nenhuma nova infraestrutura ou execução paga | Cotas reais e trava de custo antes de qualquer homologação externa |
+| R08 | Labels/datas e roteiro local de QA preparados | Chromium indisponível; UI desktop/mobile/teclado não verificada |
+| R09 | Role/owner validados nas suítes locais existentes | Spoofing de headers e gateway real não verificáveis neste ambiente |
+| R10 | Modelo existente preservado, sem migração | Decidir oportunidade por formulário ou por solicitação independente |
+
+Proposta de opt-out a decidir: estado persistente por contato/canal com autor, data e origem, avaliado antes de qualquer sugestão ou envio. Não confundir consentimento promocional com resposta a atendimento solicitado. Planejar compatibilidade e migração em ambiente isolado antes de aplicar qualquer SQL real. Até lá, revisão humana e registro de negociação/recusa/arquivamento; nenhuma detecção automática é prometida.
+
+P1/P2 permanecem bloqueados por estabilização P0. Refatoração global dos tipos financeiros deve preservar contratos e incluir homologação própria; não foi executada às cegas neste PR.

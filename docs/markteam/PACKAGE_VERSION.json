@@ -1,21 +1,26 @@
 {
   "package": "markteam-automatico",
-  "packageVersion": "4.0.0-dev.1",
+  "packageVersion": "4.0.0-dev.2",
   "reference": "Relatório Estratégico V2.1 final (fonte única; confidencial, fora do GitHub)",
   "date": "2026-10-16",
   "repository": "mathbrandscontato-wq/Sistema-Financeiro",
-  "branch": "feat/markteam-automatico-v4",
-  "pullRequest": 1,
+  "branch": "fix/markteam-v4-audit-hardening",
+  "pullRequest": null,
   "baseSourceVersion": 18,
-  "state": "development-for-homologation",
+  "state": "corrective-development-blocked",
   "releaseEligible": false,
   "automatedExternalMessaging": false,
   "productionMigrations": false,
   "requiredFollowup": [
-    "CI final",
-    "homologação de integração",
-    "QA visual",
-    "verificação LGPD e cotas",
-    "política quantitativa antes de scoring automático"
-  ]
+    "Global lint: 335 inherited errors; no rule suppression",
+    "Isolated D1/R2 integration, gateway spoofing and restore rehearsal",
+    "Browser UI desktop/mobile/keyboard",
+    "Public-data governance authorization; no history rewrite performed",
+    "Opportunity-per-request business decision and persistent opt-out design",
+    "Real account quotas and cost enforcement before any external execution"
+  ],
+  "pullRequestTarget": "feat/markteam-automatico-v4",
+  "candidateCodeSha": "47bbe8a5dbabb472e81c3939be44e552e77b9804",
+  "auditedBaseSha": "1aeccc8fb11c744a394b98fc82bb7a7e08a0f5a2",
+  "finalVerificationIdentity": "Final draft PR head SHA; evidence attached after all documentation commits"
 }
