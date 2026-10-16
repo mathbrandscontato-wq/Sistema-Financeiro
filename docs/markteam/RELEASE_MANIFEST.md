@@ -23,7 +23,7 @@ Data: 16/10/2026. Estado: **incremento parcial, não apto a deploy**. Fonte de d
 - Documento final V2.1 recebido e adotado como fonte única. Metas numéricas, pesos, limiares, status de retorno do comprador e evidências de capacidade **não constam suficientemente definidos** para ativação automática.
 - P0 de captação, deduplicação, consentimento, concorrência das dez vagas e erro/recuperação precisam de testes ponta a ponta; módulos já existiam e não foram reconstruídos.
 - P1 (funil, métricas por coorte, experimentos, pós-venda) e P2 (pesquisa pública, SEO, editorial) permanecem pendentes.
-- Em Actions 38932169389 passaram todas as 11 suítes nativas e o build; TypeScript e lint apontaram erros na revisão intermediária, com correções de tipagem posteriores. O lint global inclui dívida técnica legada. A última revisão do CI, UI responsiva e homologação D1 ainda precisam ser confirmadas.
+- **Run nativo definitivo de código:** [https://github.com/mathbrandscontato-wq/Sistema-Financeiro/actions/runs/38934085398](https://github.com/mathbrandscontato-wq/Sistema-Financeiro/actions/runs/38934085398), commit `2a53b15864ae93423c9d91a806a5895f305dc1fb`: 11 suítes, TypeScript, lint do módulo e build PASS. Apenas o lint global legado FAIL. UI responsiva e D1 de homologação não foram validados.
 - Nenhuma integração com Ritmo ou plataforma externa foi ativada.
 
 ## Banco, segredos e custos
@@ -37,9 +37,9 @@ Data: 16/10/2026. Estado: **incremento parcial, não apto a deploy**. Fonte de d
 | Verificação | Resultado |
 | --- | --- |
 | Suítes atuais adaptadas em V8 isolado | 50 asserts: PASS (30 Markteam + 20 de fundamentos de leads) |
-| 11 suítes nativas do projeto, incluindo SQLite, em Actions 38932169389 | PASS |
+| 11 suítes nativas do projeto, incluindo SQLite, em Actions 38934085398 | PASS |
 | `pnpm build` no mesmo runner | PASS |
-| TypeScript em revisão intermediária | FAIL, correções posteriores aguardam CI final |\n| ESLint global em revisão intermediária | FAIL em arquivos legados, não suprimido |\n| ESLint do módulo novo | Aguardando CI final |
+| `pnpm exec tsc --noEmit` | PASS |\n| `pnpm lint` global | FAIL: dívida técnica em arquivos legados, não suprimida |\n| ESLint do módulo novo (4 arquivos) | PASS |
 | Revisão manual no SQLite isolado | PASS, incluindo idempotência, isolamento, revisão e backup |\n| Segurança e concorrência em D1 de homologação | Não executados |
 | Deploy/produção | Não acionado |
 
