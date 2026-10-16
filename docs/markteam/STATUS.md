@@ -6,15 +6,16 @@ Documento de produto **único e final**: Relatório Estratégico Markteam Autom�
 Desenvolvimento incremental em `feat/markteam-automatico-v4`, criado a partir da `main` (commit `6d18c9184c60961054373661e0c91d4b68f1b048`). Não publicar, não fazer merge. A aplicação oficial é separada da cópia do código.
 
 ## Implementado
-- `lib/markteam.mjs`: **triagem D+1 dia útil** para novos leads e **D+3/D+7/D+14 dias úteis** apenas para propostas com data de envio auditada e nenhuma negociação posterior registrada. Feriados podem ser fornecidos explicitamente; sem calendário local presumido.
+- `lib/markteam.mjs`: **triagem D+1 dia útil** para novos leads e **D+3/D+7/D+14 dias úteis** apenas para propostas com transição auditada para a etapa “Proposta enviada” e nenhuma negociação posterior registrada. Feriados podem ser fornecidos explicitamente; sem calendário local presumido.
 - Regras não sugerem novas datas para oportunidades concluídas, arquivadas ou que já tenham `next_action_on` definido; escolha e gravação são humanas.
-- `lib/leads.mjs`: prova da data da proposta extraída do histórico da oportunidade; não inventar datas de envio ou respostas.
+- `lib/leads.mjs`: referência temporal extraída da transição **registrada** para “Proposta enviada”. A mudança de etapa é evidência operacional, **não** confirmação técnica independente de entrega da mensagem. Usuário deve revisar o histórico antes de usar a cadência.
 - `app/leads-panel.tsx` + `app/crm-workspace.tsx`: botões discretos na lista de leads; ao selecionar, usam `save_opportunity` com `revision` e reaproveitam o armazenamento/proteção/auditoria do CRM.
 - `scoreLead`: motor puro de scoring configurável com seis dimensões, evidência textual obrigatória, perfis A/B/C como referência e classes (alta/média/investigação/fora do perfil sob evidência explícita). O relatório não define pesos: não pontua registros reais automaticamente.
 - `qa/markteam/check.mjs` e `test:markteam` adicionados; inclusão no comando `build`.
 
 ## Evidência de execução
-- A suíte original passou em V8 isolado antes da correção semântica. As suítes atualizadas precisam de nova execução e não substituem Node/pnpm; conferir resultados posteriores no relatório final.
+- **50 verificações passaram**, executadas em V8 isolado sobre as versões atuais de `lib/markteam.mjs` + `qa/markteam/check.mjs` (30 asserts) e a seção fundamental de `lib/leads.mjs` + `qa/leads/check.mjs` (20 asserts). É um subconjunto de testes adaptado, não a suíte Node/pnpm oficial.
+- Revisão estática: tipo da ação corrigido (`kind` no evento), chamadas coerentes entre painel e CRM e nenhuma marca evidente de tokens/segredos nos arquivos alterados. Não substitui a análise de segurança completa.
 - Não foi possível instalar dependências, clonar o repositório ou rodar `pnpm test:*`, `pnpm exec tsc --noEmit`, ESLint e build completo neste ambiente. Não declarar essas verificações como concluídas.
 - Não executadas migrações ou chamadas autenticadas à D1 de produção.
 - Não realizado QA visual/celular nem integração real com o Diagnóstico público.
