@@ -9,7 +9,7 @@ export async function reviewLead(owner:string,actor:string,body:unknown){
   if(!env.DB||!env.BUCKET)throw new CRMError('Proteção ou banco indisponível. Nada foi alterado.',503);
   const input=body as {mutationId:string,id:string,revision:number,qualification:unknown};
   validateMutationId(input?.mutationId);
-  if(typeof body?.id!=='string'||!/^[-a-zA-Z0-9]{1,120}$/.test(input.id))throw new CRMError('Oportunidade inválida.');
+  if(typeof input?.id!=='string'||!/^[-a-zA-Z0-9]{1,120}$/.test(input.id))throw new CRMError('Oportunidade inválida.');
   let clean:ReturnType<typeof validateManualQualification>;
   try{clean=validateManualQualification(input.qualification);}catch(e){throw new CRMError(e instanceof Error?e.message:'Classificação inválida.');}
   const db=env.DB,historyId=await stableId(owner,'markteam-qualification',input.mutationId);
