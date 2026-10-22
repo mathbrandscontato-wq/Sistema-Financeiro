@@ -210,9 +210,10 @@
         "termsAcceptanceExplicitlyAuthorized": true,
         "termsAccepted": true,
         "registerStepComplete": true,
-        "pendingStep": "Verify account: add mobile phone and verify by SMS",
+        "pendingStep": "Add mobile phone in Accounts Center, then return to developer verification",
         "authenticationHandedToOwner": true,
-        "phoneEntered": false,
+        "agentEnteredPhone": false,
+        "accountsCenterContactFormOpened": true,
         "appCreated": false,
         "credentialIssued": false
       }
