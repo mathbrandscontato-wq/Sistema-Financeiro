@@ -29,3 +29,4 @@ with tempfile.TemporaryDirectory() as folder:
  result=db.execute(queries['submission'],('sub','owner','form','r','t','{}','{}','{}','2026-10-11','2026-10-20','sites-projeto-especial','owner'))
  assert result.rowcount==0
  print('PASS: duas conexões concorrentes disputam a última vaga, uma única confirmação, limite íntegro e bloqueio transacional de formulário encerrado.')
+ db.close()

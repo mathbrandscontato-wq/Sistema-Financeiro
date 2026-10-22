@@ -1,0 +1,1 @@
+ALTER TABLE `site_offers` ADD `deposit_policy` text DEFAULT 'legacy_50' NOT NULL;

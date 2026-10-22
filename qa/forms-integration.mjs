@@ -27,7 +27,26 @@ try{
  const unpaid=query("SELECT c.id FROM commercial_contracts c JOIN commercial_opportunities op ON op.id=c.opportunity_id WHERE op.title='Revisão do Blog do Ricardo'")[0];await assert.rejects(()=>store.seatMutation(owner,owner,{action:'confirm',contractId:unpaid.id,reason:'Sem sinal'}));
  await store.seatMutation(owner,owner,{action:'release',contractId:existing.contract_id,reason:'Cancelamento autorizado no teste'});assert.equal((await store.readOffer(owner)).available,9);await store.seatMutation(owner,owner,{action:'confirm',contractId:existing.contract_id,reason:'Reativação autorizada'});assert.equal((await store.readOffer(owner)).available,8);
  await store.recordEvent(owner,{formSlug:args.formSlug,sessionKey:args.sessionKey,eventId:'event-123456789',event:'form_view',device:'mobile',analytics:true,attribution:args.attribution});await store.recordEvent(owner,{formSlug:args.formSlug,sessionKey:args.sessionKey,eventId:'event-123456789',event:'form_view',device:'mobile',analytics:true,attribution:args.attribution});assert.equal(query("SELECT COUNT(*) n FROM acquisition_events WHERE event='form_view'")[0].n,1);
- await store.seatMutation(owner,owner,{action:'configure',priceCents:35000,status:'closed',abandonMinutes:60,attributionDays:30,reason:'Teste de encerramento'});await assert.rejects(()=>store.submitSite(owner,{...args,requestId:crypto.randomUUID()}),e=>e.status===410);assert.equal((await store.publicSites(owner,'sites-orcamento')).form.slug,'sites-orcamento');
+ // Policy is opt-in per offer: the existing offer and public contract stay legacy by default.
+ assert.equal((await store.publicSites(owner,'sites-projeto-especial')).offer.depositPercent,50);
+ const v7Client=query('SELECT id FROM commercial_clients WHERE owner=? LIMIT 1',[owner])[0].id;
+ run({statements:[
+ {sql:"INSERT INTO commercial_opportunities(id,owner,client_id,title,stage,created,updated) VALUES('v7-op',?,?,'QA V7','Fechado','2026-10-21','2026-10-21')",args:[owner,v7Client]},
+ {sql:"INSERT INTO commercial_contracts(id,owner,opportunity_id,amount_cents,deposit_cents,status,payment_knowledge,active,created) VALUES('v7-contract',?,'v7-op',50000,20000,'Confirmado','confirmed',1,'2026-10-21')",args:[owner]},
+ {sql:"INSERT INTO commercial_payments(id,owner,contract_id,amount_cents,confirmation,evidence,kind,created) VALUES('v7-payment',?,'v7-contract',20000,'Confirmado','Dado fictício','Sinal','2026-10-21')",args:[owner]}
+ ]});
+ const financialBefore=JSON.stringify(['commercial_contracts','commercial_payments'].map(t=>query('SELECT * FROM '+t+' ORDER BY id')));
+ await assert.rejects(()=>store.seatMutation(owner,owner,{action:'confirm',contractId:'v7-contract',reason:'Legado ainda exige 50%'}));
+ await assert.rejects(()=>store.seatMutation(owner,owner,{action:'configure',priceCents:50000,depositPolicy:'invalid',status:'open',abandonMinutes:60,attributionDays:30,reason:'Política inválida'}));
+ assert.equal((await store.readOffer(owner)).deposit_policy,'legacy_50');
+ await store.seatMutation(owner,owner,{action:'configure',priceCents:50000,depositPolicy:'contract_deposit',status:'open',abandonMinutes:60,attributionDays:30,reason:'Sinal contratual aprovado para homologação'});
+ assert.equal((await store.publicSites(owner,'sites-projeto-especial')).offer.depositPercent,null);
+ assert.equal((await store.publicSites(owner,'sites-projeto-especial')).offer.priceCents,50000);
+ await store.seatMutation(owner,owner,{action:'confirm',contractId:'v7-contract',reason:'Sinal de R$200 confirmado no teste'});
+ assert.equal(query("SELECT COUNT(*) n FROM offer_seats WHERE contract_id='v7-contract' AND active=1")[0].n,1);
+ assert.equal(JSON.stringify(['commercial_contracts','commercial_payments'].map(t=>query('SELECT * FROM '+t+' ORDER BY id'))),financialBefore);
+ assert.ok(query("SELECT data FROM offer_history WHERE action='configure'").some(h=>JSON.parse(h.data).depositPolicy==='contract_deposit'));
+ await store.seatMutation(owner,owner,{action:'configure',priceCents:35000,status:'closed',abandonMinutes:60,attributionDays:30,reason:'Teste de encerramento'});assert.equal((await store.readOffer(owner)).deposit_policy,'contract_deposit');await assert.rejects(()=>store.submitSite(owner,{...args,requestId:crypto.randomUUID()}),e=>e.status===410);assert.equal((await store.publicSites(owner,'sites-orcamento')).form.slug,'sites-orcamento');
  // Payment-safe rollback and owner isolation are enforced by the real migration triggers.
  await assert.rejects(()=>store.seatMutation('other','other',{action:'confirm',contractId:existing.contract_id,reason:'Acesso indevido'}));
  console.log('PASS: armazenamento real, 8 vagas iniciais, CRM idempotente, consentimento, isolamento financeiro, sinal obrigatório, auditoria e oferta encerrada.');
