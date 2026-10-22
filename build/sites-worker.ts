@@ -1,6 +1,8 @@
 import handler from "vinext/server/fetch-handler";
 import { runWithConnectorBinding } from "../lib/connector-context";
 import type { ConnectorBinding } from "../lib/connector-contract.mjs";
+import {processCommercialQueues} from '../lib/prospecting/server.mjs';
+import {createProtectionSnapshot} from '../lib/protection';
 
 export default {
   fetch(request: Request, env: Cloudflare.Env, ctx: ExecutionContext<{ CONNECTORS?: ConnectorBinding }>) {
@@ -23,6 +25,13 @@ export default {
         },
       };
     }
-    return runWithConnectorBinding(binding, () => handler.fetch(request, env, ctx));
+    const response=runWithConnectorBinding(binding, () => handler.fetch(request, env, ctx));
+    if(request.method==='POST'&&new URL(request.url).pathname==='/api/whatsapp'){
+      return Promise.resolve(response).then(result=>{
+        if(result.ok)ctx.waitUntil(processCommercialQueues(env,{beforeWrite:async()=>{await createProtectionSnapshot(env.COMMERCIAL_OWNER||env.INTAKE_OWNER||'','Antes de encaminhar conversa comercial');}}).catch(()=>{}));
+        return result;
+      });
+    }
+    return response;
   },
 };

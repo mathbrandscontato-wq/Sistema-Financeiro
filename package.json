@@ -8,7 +8,7 @@
   "scripts": {
     "install:ci": "bash scripts/install-pnpm.sh",
     "dev": "node scripts/run-framework.mjs dev",
-    "build": "pnpm test:offer-policy && pnpm test:prospecting && pnpm test:leads && pnpm test:protection && pnpm test:commercial && pnpm test:crm && pnpm test:finance && pnpm test:dashboard && pnpm test:intake && pnpm test:evolution && pnpm test:operations && pnpm test:forms && node scripts/run-framework.mjs build",
+    "build": "pnpm test:offer-policy && pnpm test:prospecting && pnpm test:commercial-runtime && pnpm test:leads && pnpm test:protection && pnpm test:commercial && pnpm test:crm && pnpm test:finance && pnpm test:dashboard && pnpm test:intake && pnpm test:evolution && pnpm test:operations && pnpm test:forms && node scripts/run-framework.mjs build",
     "start": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
@@ -23,7 +23,8 @@
     "test:forms": "node qa/forms-check.mjs && node qa/forms-integration.mjs && python3 qa/forms-concurrency.py",
     "test:leads": "node qa/leads/check.mjs",
     "test:prospecting": "node qa/prospecting/check.mjs",
-    "test:offer-policy": "node qa/offer-policy.mjs"
+    "test:offer-policy": "node qa/offer-policy.mjs",
+    "test:commercial-runtime": "node qa/prospecting/runtime.mjs && node qa/prospecting/providers.mjs && node qa/prospecting/research.mjs && node qa/prospecting/orchestrator.mjs && node qa/prospecting/server.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

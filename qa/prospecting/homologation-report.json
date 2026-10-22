@@ -1,0 +1,174 @@
+{
+  "started": "2026-10-22T15:34:05.179Z",
+  "finished": "2026-10-22T15:36:22.514Z",
+  "environment": {
+    "node": "v24.19.0",
+    "database": "SQLite local + D1/R2 emulators",
+    "providers": "injected mocks; no real provider calls"
+  },
+  "passed": 24,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "qa/prospecting/check.mjs",
+      "exit": 0,
+      "seconds": 0.16
+    },
+    {
+      "name": "qa/prospecting/runtime.mjs",
+      "exit": 0,
+      "seconds": 0.11
+    },
+    {
+      "name": "qa/prospecting/research.mjs",
+      "exit": 0,
+      "seconds": 0.17
+    },
+    {
+      "name": "qa/prospecting/providers.mjs",
+      "exit": 0,
+      "seconds": 0.12
+    },
+    {
+      "name": "qa/prospecting/orchestrator.mjs",
+      "exit": 0,
+      "seconds": 0.19
+    },
+    {
+      "name": "qa/prospecting/server.mjs",
+      "exit": 0,
+      "seconds": 0.18
+    },
+    {
+      "name": "qa/offer-policy.mjs",
+      "exit": 0,
+      "seconds": 0.11
+    },
+    {
+      "name": "qa/leads/check.mjs",
+      "exit": 0,
+      "seconds": 0.23
+    },
+    {
+      "name": "qa/commercial/check.mjs",
+      "exit": 0,
+      "seconds": 4.19
+    },
+    {
+      "name": "qa/crm/check.mjs",
+      "exit": 0,
+      "seconds": 8.31
+    },
+    {
+      "name": "qa/finance/check.mjs",
+      "exit": 0,
+      "seconds": 12.59
+    },
+    {
+      "name": "qa/dashboard/check.mjs",
+      "exit": 0,
+      "seconds": 21.07
+    },
+    {
+      "name": "qa/intake/check.mjs",
+      "exit": 0,
+      "seconds": 19.01
+    },
+    {
+      "name": "qa/evolution/check.mjs",
+      "exit": 0,
+      "seconds": 7.64
+    },
+    {
+      "name": "qa/operations/check.mjs",
+      "exit": 0,
+      "seconds": 4.01
+    },
+    {
+      "name": "qa/forms-check.mjs",
+      "exit": 0,
+      "seconds": 0.1
+    },
+    {
+      "name": "qa/forms-integration.mjs",
+      "exit": 0,
+      "seconds": 15.98
+    },
+    {
+      "name": "qa/prospecting/concurrency.py",
+      "exit": 0,
+      "seconds": 1.88
+    },
+    {
+      "name": "qa/offer-policy-concurrency.py",
+      "exit": 0,
+      "seconds": 2.41
+    },
+    {
+      "name": "qa/forms-concurrency.py",
+      "exit": 0,
+      "seconds": 1.89
+    },
+    {
+      "name": "qa/protection/database.py",
+      "exit": 0,
+      "seconds": 0.13
+    },
+    {
+      "name": "qa/finance/migration.py",
+      "exit": 0,
+      "seconds": 0.18
+    },
+    {
+      "name": "types",
+      "exit": 0,
+      "seconds": 5.74
+    },
+    {
+      "name": "framework-build",
+      "exit": 0,
+      "seconds": 30.92
+    }
+  ],
+  "http": {
+    "localOnly": true,
+    "dryRun": true,
+    "externalEnabled": false,
+    "emailDestinationConfigured": true,
+    "emailDestinationVerified": false,
+    "simulatedMessages": 1,
+    "crmHandoff": true,
+    "humanTakeover": true,
+    "privateBackupVersion": 8,
+    "unauthenticatedDenied": true,
+    "crossOriginDenied": true,
+    "liveActivationDenied": true,
+    "networkProvidersCalled": 0
+  },
+  "limitations": [
+    "PDF visual regression requires unavailable pdftotext and pdffonts",
+    "Local browser attempt interrupted by approval reviewer usage limit",
+    "No production deploy, provider delivery or Meta coexistence homologation"
+  ],
+  "followUp": {
+    "checkedAt": "2026-10-22T15:46:05.383Z",
+    "reason": "Invalidate adapters after account revision or offer change",
+    "passed": [
+      "qa/prospecting/server.mjs",
+      "qa/prospecting/orchestrator.mjs",
+      "types",
+      "framework-build"
+    ],
+    "failed": 0
+  },
+  "landingPageCI": {
+    "commit": "da9328bfe0dc0dbba1976a7376c07bc5f04f37d9",
+    "run": "https://github.com/mathbrandscontato-wq/mathbrands-projeto-especial/actions/runs/39807554014",
+    "status": "success",
+    "responsiveWidths": 9,
+    "horizontalOverflow": 0,
+    "majorAccessibilityViolations": 0,
+    "screenshots": 14,
+    "mockSubmissions": 1
+  }
+}

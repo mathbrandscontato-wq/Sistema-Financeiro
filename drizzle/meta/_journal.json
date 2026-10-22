@@ -85,6 +85,27 @@
       "when": 1792632370020,
       "tag": "0011_offer_deposit_policy",
       "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "6",
+      "when": 1792664528408,
+      "tag": "0012_commercial_runtime",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "6",
+      "when": 1792664997271,
+      "tag": "0013_commercial_controls",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "6",
+      "when": 1792665830034,
+      "tag": "0014_commercial_provenance",
+      "breakpoints": true
     }
   ]
 }
