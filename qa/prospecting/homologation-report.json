@@ -205,7 +205,17 @@
       "messagingAccountsAdded": 0,
       "appsAdded": 0,
       "scope": "selected portfolio only",
-      "numberConnected": false
+      "numberConnected": false,
+      "developerRegistration": {
+        "termsAcceptanceExplicitlyAuthorized": true,
+        "termsAccepted": true,
+        "registerStepComplete": true,
+        "pendingStep": "Verify account: add mobile phone and verify by SMS",
+        "authenticationHandedToOwner": true,
+        "phoneEntered": false,
+        "appCreated": false,
+        "credentialIssued": false
+      }
     },
     "paidProviderCalls": 0,
     "productionDeploy": false
