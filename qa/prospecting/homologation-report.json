@@ -215,7 +215,7 @@
         "existingEmailConfirmed": true,
         "marketingOptIn": false,
         "profileRole": "owner/founder",
-        "pendingStep": "Explicit approval of the final app creation review",
+        "pendingStep": "Owner reauthenticates with password directly in Meta to confirm app creation",
         "authenticationHandedToOwner": true,
         "ownerReportedAccountsCenterComplete": true,
         "contactPresentInAccountsCenter": true,
@@ -229,7 +229,10 @@
           "businessVerified": false,
           "useCase": "WhatsApp",
           "prepared": true,
-          "finalCreationApproved": false
+          "finalCreationApproved": true,
+          "createButtonClicked": true,
+          "passwordReauthenticationRequired": true,
+          "creationConfirmed": false
         },
         "appCreated": false,
         "credentialIssued": false
