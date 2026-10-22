@@ -53,7 +53,7 @@ O teste principal aplica TODAS as migrações em SQLite em memória, usa dados f
 - Bloqueio de ambiente: proteção visual de PDF exige `pdftotext`, `pdffonts` e `pdftoppm` (Poppler), ausentes. Conversão automática CRLF do checkout também exigiu restaurar temporariamente os bytes originais para conferir hashes; nenhum asset ou motor foi incluído no commit.
 - Teste legado `forms-concurrency.py`: asserções comerciais passaram, porém processo terminou com falha ao limpar SQLite ainda aberto no Windows. Não contado como suíte aprovada.
 - Resultado: 14 de 16 suítes listadas concluíram com sucesso após adaptação de ambiente; duas ficaram limitadas como descrito. Build completo/QA visual e homologação D1/Meta não foram confirmados.
-- Envio da branch: bloqueado duas vezes pela revisão automática, inclusive após verificar correspondência exata do remoto com o repositório indicado. Aguarda autorização explícita para divulgação do código nesse destino. Nenhum PR foi criado nem alteração publicada.
+- Envio da branch: autorizado pelo proprietário na continuação da sessão. Branch enviada e PR de rascunho #4 criado: https://github.com/mathbrandscontato-wq/Sistema-Financeiro/pull/4. Nada incorporado a main ou publicado em produção.
 
 ## Componentes ainda necessários
 
