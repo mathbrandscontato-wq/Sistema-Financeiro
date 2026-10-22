@@ -45,6 +45,16 @@ node scripts/prospecting-demo.mjs
 
 O teste principal aplica TODAS as migrações em SQLite em memória, usa dados fictícios `example.invalid` e verifica que pesquisa não cria oportunidades. A prova concorrente usa 100 tentativas/20 conexões e exige exatamente dez reservas. Os testes não demonstram comportamento em uma conta D1/Meta real.
 
+### Resultado da sessão
+
+- Aprovados: nova suíte `qa/prospecting/check.mjs`, concorrência 100/20 e demonstração offline.
+- Aprovados: `tsc --noEmit --incremental false` e geração oficial Drizzle de migração/snapshot. Todas as migrações foram aplicadas em SQLite em memória pelo teste novo.
+- Regressão aprovada: leads, commercial, CRM, finance, dashboard, intake, evolution, operations, forms-check, forms-integration, protection/database e finance/migration. Testes que chamam `python3` usaram um preload temporário local redirecionando ao Python disponível; nenhum teste legado foi alterado.
+- Bloqueio de ambiente: proteção visual de PDF exige `pdftotext`, `pdffonts` e `pdftoppm` (Poppler), ausentes. Conversão automática CRLF do checkout também exigiu restaurar temporariamente os bytes originais para conferir hashes; nenhum asset ou motor foi incluído no commit.
+- Teste legado `forms-concurrency.py`: asserções comerciais passaram, porém processo terminou com falha ao limpar SQLite ainda aberto no Windows. Não contado como suíte aprovada.
+- Resultado: 14 de 16 suítes listadas concluíram com sucesso após adaptação de ambiente; duas ficaram limitadas como descrito. Build completo/QA visual e homologação D1/Meta não foram confirmados.
+- Envio da branch: bloqueado duas vezes pela revisão automática, inclusive após verificar correspondência exata do remoto com o repositório indicado. Aguarda autorização explícita para divulgação do código nesse destino. Nenhum PR foi criado nem alteração publicada.
+
 ## Componentes ainda necessários
 
 1. Validar oferta atual no CRM e regra de reserva de vagas para sinal de R$ 200; corrigir em tarefa separada após auditoria de impacto.
