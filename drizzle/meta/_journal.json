@@ -78,6 +78,13 @@
       "when": 1792631194376,
       "tag": "0010_prospecting_offline",
       "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "6",
+      "when": 1792632370020,
+      "tag": "0011_offer_deposit_policy",
+      "breakpoints": true
     }
   ]
 }
