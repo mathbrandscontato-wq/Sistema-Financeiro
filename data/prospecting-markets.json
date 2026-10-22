@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Personal Trainers",
+    "queries": [
+      "\"personal trainer\" \"Joinville\" consultoria online",
+      "\"treinamento personalizado\" \"Joinville\" inscrições",
+      "\"personal trainer\" \"Joinville\" nova turma",
+      "\"assessoria esportiva\" \"Joinville\" expansão",
+      "site:instagram.com \"personal trainer\" \"Joinville\"",
+      "\"personal trainer\" \"Joinville\" entrevista evento"
+    ]
+  },
+  {
+    "name": "Nutricionistas",
+    "queries": [
+      "\"nutricionista\" \"Joinville\" novo consultório",
+      "\"nutricionista esportiva\" \"Joinville\" atendimento online",
+      "\"nutrição materno infantil\" \"Joinville\" inauguração",
+      "\"consultório de nutrição\" \"Joinville\" nova unidade",
+      "site:instagram.com \"nutricionista\" \"Joinville\" especialidade",
+      "\"nutrição\" \"Joinville\" palestra congresso"
+    ]
+  },
+  {
+    "name": "Psicólogos",
+    "queries": [
+      "\"psicóloga clínica\" \"Joinville\" consultório",
+      "\"psicoterapia online\" \"Joinville\" atendimento",
+      "\"psicólogo infantil\" \"Joinville\" novo espaço",
+      "\"consultório psicológico\" \"Joinville\" inauguração",
+      "site:instagram.com \"psicóloga\" \"Joinville\" consultório",
+      "\"psicologia\" \"Joinville\" evento formação"
+    ]
+  },
+  {
+    "name": "Esteticistas e Lash Designers",
+    "queries": [
+      "\"lash designer\" \"Joinville\" agenda",
+      "\"studio de sobrancelhas\" \"Joinville\" nova sala",
+      "\"estética facial\" \"Joinville\" procedimento novo",
+      "\"centro de estética\" \"Joinville\" inauguração",
+      "site:instagram.com \"lash designer\" \"Joinville\"",
+      "\"estética\" \"Joinville\" workshop evento"
+    ]
+  },
+  {
+    "name": "Fotógrafos",
+    "queries": [
+      "\"fotógrafo de casamento\" \"Joinville\" portfólio",
+      "\"fotografia newborn\" \"Joinville\" novo estúdio",
+      "\"fotografia corporativa\" \"Joinville\" ensaio",
+      "\"fotógrafa\" \"Joinville\" especialização retratos",
+      "site:instagram.com \"fotógrafa\" \"Joinville\"",
+      "\"fotografia\" \"Joinville\" exposição prêmio"
+    ]
+  },
+  {
+    "name": "Confeitarias artesanais",
+    "queries": [
+      "\"bolos personalizados\" \"Joinville\" encomenda",
+      "\"confeitaria artesanal\" \"Joinville\" catálogo",
+      "\"doces finos\" \"Joinville\" nova coleção",
+      "\"confeitaria\" \"Joinville\" inauguração loja",
+      "site:instagram.com \"confeitaria\" \"Joinville\"",
+      "\"doces artesanais\" \"Joinville\" feira evento"
+    ]
+  },
+  {
+    "name": "Arquitetos e Designers de Interiores",
+    "queries": [
+      "\"escritório de arquitetura\" \"Joinville\" projetos",
+      "\"arquitetura comercial\" \"Joinville\" inauguração",
+      "\"designer de interiores\" \"Joinville\" mostra",
+      "\"arquitetura\" \"Joinville\" novos projetos incorporadora",
+      "site:instagram.com \"arquiteta\" \"Joinville\"",
+      "\"escritório de arquitetura\" \"Joinville\" prêmio evento"
+    ]
+  },
+  {
+    "name": "Empresas de limpeza e higienização",
+    "queries": [
+      "\"higienização de estofados\" \"Joinville\" atendimento",
+      "\"limpeza pós obra\" \"Joinville\" empresa",
+      "\"impermeabilização sofá\" \"Joinville\" novo serviço",
+      "\"limpeza residencial\" \"Joinville\" expansão",
+      "site:instagram.com \"higienização\" \"Joinville\"",
+      "\"limpeza profissional\" \"Joinville\" contrato evento"
+    ]
+  },
+  {
+    "name": "Marcenarias",
+    "queries": [
+      "\"marcenaria sob medida\" \"Joinville\" projetos",
+      "\"móveis planejados\" \"Joinville\" showroom",
+      "\"marcenaria\" \"Joinville\" parceria arquiteto",
+      "\"móveis personalizados\" \"Joinville\" expansão",
+      "site:instagram.com \"marcenaria\" \"Joinville\"",
+      "\"marcenaria\" \"Joinville\" feira móveis"
+    ]
+  },
+  {
+    "name": "Consultorias e assessorias empresariais",
+    "queries": [
+      "\"consultoria empresarial\" \"Joinville\" serviços",
+      "\"consultoria ambiental\" \"Joinville\" licenciamento",
+      "\"consultoria RH\" \"Joinville\" nova solução",
+      "\"consultoria de gestão\" \"Joinville\" expansão",
+      "site:linkedin.com/company/ \"consultoria\" \"Joinville\"",
+      "\"consultoria\" \"Joinville\" certificação evento"
+    ]
+  },
+  {
+    "name": "Advogados autônomos",
+    "queries": [
+      "\"escritório de advocacia\" \"Joinville\" nova sede",
+      "\"advogado empresarial\" \"Joinville\" escritório",
+      "\"advocacia\" \"Joinville\" ingresso sócio",
+      "\"escritório jurídico\" \"Joinville\" inauguração",
+      "site:instagram.com \"advocacia\" \"Joinville\"",
+      "\"advocacia\" \"Joinville\" seminário evento"
+    ]
+  },
+  {
+    "name": "Corretores de imóveis",
+    "queries": [
+      "\"corretor de imóveis\" \"Joinville\" lançamentos",
+      "\"consultor imobiliário\" \"Joinville\" alto padrão",
+      "\"corretor autônomo\" \"Joinville\" imóveis",
+      "\"corretor\" \"Joinville\" nova parceria incorporadora",
+      "site:instagram.com \"corretora de imóveis\" \"Joinville\"",
+      "\"corretor de imóveis\" \"Joinville\" feirão evento"
+    ]
+  },
+  {
+    "name": "Pet shops e banho e tosa",
+    "queries": [
+      "\"banho e tosa\" \"Joinville\" atendimento",
+      "\"estética pet\" \"Joinville\" nova unidade",
+      "\"pet grooming\" \"Joinville\" cuidado especializado",
+      "\"pet shop\" \"Joinville\" inauguração",
+      "site:instagram.com \"banho e tosa\" \"Joinville\"",
+      "\"pet shop\" \"Joinville\" feira evento"
+    ]
+  },
+  {
+    "name": "Estúdios de tatuagem",
+    "queries": [
+      "\"tatuador fine line\" \"Joinville\" agenda",
+      "\"tattoo studio\" \"Joinville\" novo estúdio",
+      "\"tatuagem realismo\" \"Joinville\" artista",
+      "\"estúdio de tatuagem\" \"Joinville\" guest artist",
+      "site:instagram.com \"tattoo\" \"Joinville\"",
+      "\"tatuagem\" \"Joinville\" convenção evento"
+    ]
+  },
+  {
+    "name": "Oficinas automotivas especializadas",
+    "queries": [
+      "\"oficina especializada\" \"Joinville\" diagnóstico",
+      "\"estética automotiva\" \"Joinville\" detalhamento",
+      "\"mecânica especializada\" \"Joinville\" novo equipamento",
+      "\"oficina\" \"Joinville\" nova unidade",
+      "site:instagram.com \"oficina mecânica\" \"Joinville\"",
+      "\"oficina\" \"Joinville\" feira automotiva"
+    ]
+  }
+]
