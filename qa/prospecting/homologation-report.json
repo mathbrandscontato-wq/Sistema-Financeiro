@@ -4,7 +4,7 @@
   "environment": {
     "node": "v24.19.0",
     "database": "SQLite local + D1/R2 emulators",
-    "providers": "injected mocks; no real provider calls"
+    "providers": "injected mocks in the initial phase only; later Meta tests and provider account preparation recorded under nextStage"
   },
   "passed": 24,
   "failed": 0,
@@ -146,9 +146,9 @@
     "networkProvidersCalled": 0
   },
   "limitations": [
-    "Meta Cloud API account/app onboarding and coexistence not homologated",
-    "Real delivery, providers, templates and approved budget pending",
-    "No production deploy or real messages"
+    "Meta test app and webhook transport validated; full conversation, real delivery and coexistence remain pending",
+    "OpenAI restricted private key prepared but model, budget and API validation pending; Google project has no billing or Places API/key; one authorized Resend test delivered and owner-confirmed, but definitive sender domain and integrated CRM notice queue remain pending; approved budget still zero",
+    "No production deploy or WhatsApp messages sent"
   ],
   "followUp": {
     "checkedAt": "2026-10-22T15:46:05.383Z",
@@ -201,9 +201,12 @@
     "metaAudit": {
       "portfolio": "Math Brands",
       "authenticated": true,
-      "whatsappAccountsAdded": 0,
-      "messagingAccountsAdded": 0,
-      "appsAdded": 0,
+      "assetCountsBeforeDeveloperSignup": {
+        "whatsappAccountsAdded": 0,
+        "messagingAccountsAdded": 0,
+        "appsAdded": 0
+      },
+      "appsCreatedSinceAudit": 1,
       "scope": "selected portfolio only",
       "numberConnected": false,
       "developerRegistration": {
@@ -215,7 +218,7 @@
         "existingEmailConfirmed": true,
         "marketingOptIn": false,
         "profileRole": "owner/founder",
-        "pendingStep": "Owner reauthenticates with password directly in Meta to confirm app creation",
+        "pendingStep": "Test transport complete; provider accounts, permitted recipients, full conversation/delivery and coexistence pending",
         "authenticationHandedToOwner": true,
         "ownerReportedAccountsCenterComplete": true,
         "contactPresentInAccountsCenter": true,
@@ -232,13 +235,411 @@
           "finalCreationApproved": true,
           "createButtonClicked": true,
           "passwordReauthenticationRequired": true,
-          "creationConfirmed": false
+          "creationConfirmed": true,
+          "mode": "development",
+          "published": false
         },
-        "appCreated": false,
-        "credentialIssued": false
+        "appCreated": true,
+        "accessTokenGenerated": true,
+        "appSecretViewed": true
+      },
+      "whatsappTestSetup": {
+        "termsReviewPrepared": true,
+        "termsAcceptanceApproved": true,
+        "continueClicked": true,
+        "termsAccepted": true,
+        "stepOneOpened": true,
+        "testNumberClaimed": true,
+        "testMessagingAccountProvisioned": true,
+        "graphVersionDisplayed": "v25.0",
+        "temporaryTokenGenerated": true,
+        "testRecipientConfigured": false,
+        "messageSent": false
+      },
+      "officialTestHomologation": {
+        "environment": "isolated Git worktree outside OneDrive; credentials excluded from version control; new local D1/R2 state, no existing persisted database copied",
+        "appName": "Math Brands Homologação",
+        "appMode": "development",
+        "appPublished": false,
+        "privateCredentialsOnly": true,
+        "serviceAccess": {
+          "checkedAt": "2026-10-22T18:56:11.466Z",
+          "readOnly": true,
+          "sentMessages": 0,
+          "httpStatus": 200,
+          "phoneIdMatches": true,
+          "errorCode": null
+        },
+        "tokenInspection": {
+          "checkedAt": "2026-10-22T19:03:37.495Z",
+          "readOnly": true,
+          "sentMessages": 0,
+          "httpStatus": 200,
+          "valid": true,
+          "appMatches": true,
+          "expiresAt": "2026-10-22T20:00:00.000Z",
+          "scopes": [
+            "whatsapp_business_management",
+            "whatsapp_business_messaging",
+            "public_profile"
+          ],
+          "whatsappGranularScopes": [
+            {
+              "scope": "whatsapp_business_management",
+              "targetCount": 0,
+              "onlyTestTargets": false
+            },
+            {
+              "scope": "whatsapp_business_messaging",
+              "targetCount": 0,
+              "onlyTestTargets": false
+            }
+          ],
+          "errorCode": null,
+          "validIsHistoricalAtInspection": true
+        },
+        "assetScopeCaveat": "Granular scopes returned no target IDs; credential exclusivity to test assets was not proven. Local configuration and performed requests were bound to test IDs; no other assets queried.",
+        "activeSubscriptionBeforeTest": {
+          "checkedAt": "2026-10-22T19:17:52.811Z",
+          "readOnly": true,
+          "httpStatus": 200,
+          "errorCode": null,
+          "subscriptions": [
+            {
+              "object": "whatsapp_business_account",
+              "active": true,
+              "callbackMatches": true,
+              "fields": [
+                {
+                  "name": "messages",
+                  "version": "v26.0"
+                }
+              ]
+            }
+          ]
+        },
+        "graphServiceVersion": "v25.0",
+        "webhookSubscriptionVersion": "v26.0",
+        "localEndpointChecks": {
+          "checkedAt": "2026-10-22T19:06:09.983Z",
+          "localOnly": true,
+          "emptyEnvelopeOnly": true,
+          "realMetaWebhook": false,
+          "sentMessages": 0,
+          "passed": true,
+          "checks": [
+            {
+              "name": "correct-verification",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "wrong-verification",
+              "status": 403,
+              "passed": true
+            },
+            {
+              "name": "valid-empty-signed-envelope",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "invalid-signature",
+              "status": 401,
+              "passed": true
+            }
+          ]
+        },
+        "localGatewayChecks": {
+          "checkedAt": "2026-10-22T19:09:07.813Z",
+          "localOnly": true,
+          "emptyEnvelopeOnly": true,
+          "realMetaWebhook": false,
+          "sentMessages": 0,
+          "passed": true,
+          "checks": [
+            {
+              "name": "correct-verification",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "wrong-verification",
+              "status": 403,
+              "passed": true
+            },
+            {
+              "name": "valid-empty-signed-envelope",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "invalid-signature",
+              "status": 401,
+              "passed": true
+            }
+          ]
+        },
+        "publicEndpointChecks": {
+          "checkedAt": "2026-10-22T19:11:08.040Z",
+          "localOnly": false,
+          "emptyEnvelopeOnly": true,
+          "realMetaWebhook": false,
+          "sentMessages": 0,
+          "passed": true,
+          "checks": [
+            {
+              "name": "correct-verification",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "wrong-verification",
+              "status": 403,
+              "passed": true
+            },
+            {
+              "name": "valid-empty-signed-envelope",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "invalid-signature",
+              "status": 401,
+              "passed": true
+            }
+          ]
+        },
+        "gatewayExposure": {
+          "allowedPath": "/api/whatsapp",
+          "allowedMethods": [
+            "GET",
+            "POST"
+          ],
+          "otherPathsHttpStatus": 404,
+          "optionsHttpStatus": 405,
+          "bodyLimitBytes": 131072
+        },
+        "realMetaDashboardSample": {
+          "requestedInMetaDashboard": true,
+          "serverHttpStatus": 200,
+          "signatureAccepted": true,
+          "samplePhoneId": "123456123",
+          "matchesConfiguredTestAccount": false,
+          "ignoredByAccountScope": true,
+          "receivedEvents": 0,
+          "conversations": 0,
+          "inbox": 0,
+          "outbox": 0,
+          "crmLeadsCreated": 0,
+          "crmHandoffsCreated": 0,
+          "whatsappMessagesSent": 0,
+          "proves": "webhook transport and real Meta signature only; not end-to-end conversation or delivery"
+        },
+        "pausedLocalState": {
+          "privateLocalRoot": true,
+          "accountMatchesTestPhoneId": true,
+          "dryRun": true,
+          "killSwitch": true,
+          "budgetMicros": 0,
+          "testRecipients": 0,
+          "liveApproved": false,
+          "webhookVerified": false,
+          "ownerNotificationsEnabled": false,
+          "researchEnabled": false,
+          "counts": {
+            "prospecting_conversations": 0,
+            "prospecting_inbox": 0,
+            "prospecting_outbox": 0
+          }
+        },
+        "cleanup": {
+          "subscriptionCheck": {
+            "checkedAt": "2026-10-22T19:21:35.881Z",
+            "readOnly": true,
+            "httpStatus": 200,
+            "errorCode": null,
+            "subscriptions": []
+          },
+          "callbackRemoved": true,
+          "tunnelStopped": true,
+          "gatewayStopped": true,
+          "localAppStopped": true,
+          "formerPublicUrlHttpStatus": 530,
+          "temporaryAccessClosed": true,
+          "testAppAndNumberPreserved": true
+        },
+        "accountPreparationPending": [
+          "OpenAI API",
+          "Google Cloud/Places",
+          "Resend"
+        ],
+        "productionNumberConnected": false,
+        "whatsappMessagesSent": 0,
+        "paidProviderCalls": 0,
+        "productionDeploy": false,
+        "accountPreparationPendingAsOf": "2026-10-22T19:21:35.881Z",
+        "accountPreparationPendingScope": "Historical status at Meta test cleanup; see nextStage.providerAccountPreparation for subsequent account preparation.",
+        "tokenCurrentStatus": {
+          "checkedAt": "2026-10-22T22:31:20Z",
+          "status": "expired",
+          "basis": "Recorded expiresAt is earlier than this documentation update; no new API call performed",
+          "expiresAt": "2026-10-22T20:00:00.000Z",
+          "renewalRequiredBeforeReuse": true
+        }
       }
     },
     "paidProviderCalls": 0,
-    "productionDeploy": false
+    "productionDeploy": false,
+    "providerAccountPreparation": {
+      "checkedAt": "2026-10-22T22:31:20Z",
+      "source": "Observed account UI and owner authorization; separate from historical Meta test events",
+      "googleCloud": {
+        "termsAcceptanceApproved": true,
+        "registrationComplete": true,
+        "projectName": "Math Brands Homologacao",
+        "projectCreated": true,
+        "billingAccountLinked": false,
+        "noBillingConfirmedInProjectDashboard": true,
+        "placesApiEnabled": false,
+        "placesApiKeyCreated": false,
+        "freeTrialStarted": false,
+        "researchEnabled": false
+      },
+      "resend": {
+        "accountPreexisting": true,
+        "plan": "Free",
+        "displayedMonthlyEmailLimit": 3000,
+        "displayedDailyEmailLimit": 100,
+        "domains": 0,
+        "existingFormKeyPreserved": true,
+        "newSendingKeyExplicitlyAuthorized": true,
+        "newSendingKeyName": "Math Brands — Homologação Comercial",
+        "newSendingKeyCreated": true,
+        "permission": "sending_access",
+        "domainAccess": "All domains",
+        "domainAccessWasOnlyUiOption": true,
+        "keyStoredOnlyInPrivateUnversionedEnv": true,
+        "from": "onboarding@resend.dev",
+        "apiValidationCalled": false,
+        "emailsSent": 0,
+        "recipientVerified": false,
+        "deliveryHomologated": false,
+        "privateEnvPresenceAndFormatChecked": true,
+        "testSenderPresent": true,
+        "ownAccountTestSenderAllowed": "onboarding@resend.dev",
+        "definitiveSenderDomainPending": true
+      },
+      "openaiApi": {
+        "accountPreexisting": true,
+        "organizationName": "Personal",
+        "projectName": "Math Brands Homologacao",
+        "separateProjectCreated": true,
+        "displayedCreditRemainingUsd": 0,
+        "displayedRequests": 0,
+        "keyCreationExplicitlyAuthorized": true,
+        "keyName": "Math Brands — Homologação Comercial",
+        "keyCreated": true,
+        "keyCreatedAt": "2026-10-22T22:28:28Z",
+        "keyExpiresAt": "2026-10-29T22:28:28Z",
+        "keyStatusAtObservation": "Active",
+        "keyPermissionMode": "Restricted",
+        "keyLastUsedAtObservation": "Never",
+        "scopes": [
+          "api.model.read",
+          "model.read",
+          "api.responses.write",
+          "api.responses.read"
+        ],
+        "otherCapabilitiesDisabled": true,
+        "keyStoredOnlyInPrivateUnversionedEnv": true,
+        "privateEnvPresenceAndFormatChecked": true,
+        "modelSelected": false,
+        "modelConfigured": false,
+        "pluginConnectionConfirmed": false,
+        "pluginInstalled": false,
+        "preparedThroughOfficialUi": true,
+        "apiCalls": 0,
+        "creditsPurchased": false,
+        "paymentCardAdded": false,
+        "newTermsPresentedDuringThisStep": false,
+        "remainingSteps": [
+          "select and approve model",
+          "approve nonzero budget if applicable",
+          "authorize and validate API use"
+        ]
+      },
+      "budgetMicros": 0,
+      "researchEnabled": false,
+      "ownerNotificationsEnabled": false,
+      "paidProviderCalls": 0,
+      "productionDeploy": false,
+      "privateEnvGates": {
+        "checkedWithoutSecretOutput": true,
+        "COMMERCIAL_ENVIRONMENT": "test",
+        "COMMERCIAL_EXTERNAL_APPROVED": false,
+        "COMMERCIAL_PRODUCTION_APPROVED": false,
+        "COMMERCIAL_SCHEDULER_ENABLED": false
+      },
+      "scope": "Historical snapshot at 2026-10-22T22:31:20Z, before the single authorized email test; see nextStage.emailDeliveryHomologation for the subsequent delivery proof."
+    },
+    "emailDeliveryHomologation": {
+      "checkedAt": "2026-10-22T22:35:24Z",
+      "source": [
+        "single authorized Resend API response",
+        "Resend email detail UI",
+        "owner inbox confirmation"
+      ],
+      "authorization": {
+        "explicit": true,
+        "maximumEmails": 1,
+        "recipientScope": "email of the same Resend account; private address omitted",
+        "subject": "Teste autorizado de homologação — Math Brands",
+        "bodyExplicitlyIdentifiedAsTest": true,
+        "bodyWithoutSaleOrClient": true
+      },
+      "transport": {
+        "requests": 1,
+        "method": "POST",
+        "provider": "Resend",
+        "httpStatus": 200,
+        "accepted": true,
+        "retries": 0,
+        "duplicateProtection": "atomic attempt marker and fixed idempotency key; values omitted",
+        "from": "onboarding@resend.dev",
+        "subjectAndBodyMatchApproved": true
+      },
+      "deliveryEvidence": {
+        "providerUiStatus": [
+          "Sent",
+          "Delivered"
+        ],
+        "providerUiDisplayedAt": "2026-10-22 19:34 America/Sao_Paulo",
+        "ownerConfirmedInboxReceipt": true,
+        "ownerConfirmation": "Recebi na caixa de entrada",
+        "receiptIdentifierOmitted": true,
+        "recipientAddressOmitted": true
+      },
+      "emailsSentInThisHomologation": 1,
+      "otherEmailsSentInThisHomologation": 0,
+      "aiApiCalls": 0,
+      "placesApiCalls": 0,
+      "whatsappMessagesSent": 0,
+      "crmLeadCreated": false,
+      "contractCreated": false,
+      "financialMovementCreated": false,
+      "runtimeGatesChanged": false,
+      "ownerEmailVerifiedConfiguration": false,
+      "ownerNotificationsEnabled": false,
+      "budgetMicros": 0,
+      "paidPlanPurchased": false,
+      "productionDeploy": false,
+      "proves": "Single isolated authorized email transport, provider delivery status and owner-confirmed inbox receipt; does not activate or homologate the integrated CRM notice queue.",
+      "remainingSteps": [
+        "verify definitive sender domain",
+        "homologate integrated CRM notice queue",
+        "review and authorize configuration activation separately"
+      ]
+    }
   }
 }
