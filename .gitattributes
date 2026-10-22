@@ -1,0 +1,3 @@
+# Frozen PDF assets are checked byte-for-byte against their approved manifest.
+/public/brand/Inter-LICENSE.txt text eol=lf
+/lib/templates/v1/*.mjs text eol=lf

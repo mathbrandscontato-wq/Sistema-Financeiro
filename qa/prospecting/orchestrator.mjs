@@ -80,4 +80,34 @@ await live.receiveNormalizedEvents([{accountId:account,kind:'human_echo',eventId
 await store.resume(owner,phone,'owner',time);await live.receiveNormalizedEvents([{accountId:account,kind:'human_echo',eventId:'human-1',recipient:phone,providerId:'echo-1',at:time}]);assert.equal((await store.conversation(owner,phone)).paused,false);
 await live.receiveNormalizedEvents([event('optout','Não quero mensagens')]);await live.processInbox();assert.equal((await store.conversation(owner,phone)).optedOut,true);
 settings=await store.account(owner);await store.configureAccount(owner,{account,revision:settings.revision,killSwitch:true},time);await live.receiveNormalizedEvents([event('kill','Oi','5547999990099')]);assert.ok((await live.processInbox()).blocked>0);
+
+// Conversation contention is waiting, not a processing failure or an external send attempt.
+const concurrentOwner='concurrency-owner',concurrentAccount='concurrency-account',concurrentPhone='5547999990066';let concurrentCalls=0,activeSends=0,maxActiveSends=0,firstStarted,releaseFirst;
+const firstStartedPromise=new Promise(resolve=>{firstStarted=resolve;}),firstReleasePromise=new Promise(resolve=>{releaseFirst=resolve;});
+const concurrentProvider={async send(){const number=++concurrentCalls;activeSends++;maxActiveSends=Math.max(maxActiveSends,activeSends);try{if(number===1){firstStarted();await firstReleasePromise;}return {status:'accepted',providerId:'serialized-'+number};}finally{activeSends--;}}};
+const concurrent=createCommercialRuntime({db:adapter,owner:concurrentOwner,clock,whatsapp:concurrentProvider,liveNetworkApproved:true});
+const concurrentStore=concurrent.store;
+await concurrentStore.configureAccount(concurrentOwner,{account:concurrentAccount,killSwitch:false,config:{waQuality:'healthy'}},time);
+const concurrentEvent=id=>({accountId:concurrentAccount,kind:'inbound',eventId:id,recipient:concurrentPhone,at:time,text:'Qual o preço?',messageType:'text'});
+await concurrent.receiveNormalizedEvents([concurrentEvent('busy-inbound')]);assert.equal(await concurrentStore.claimConversation(concurrentOwner,concurrentPhone,'other-processor',time),true);
+for(let i=0;i<8;i++){const waiting=await concurrent.processInbox();assert.equal(waiting.blocked,1);assert.equal(waiting.failed,0);const inbox=await concurrentStore.inbox(concurrentOwner,'busy-inbound');assert.equal(inbox.state,'pending');assert.equal(inbox.attempts,0);}
+await concurrentStore.releaseConversation(concurrentOwner,concurrentPhone,'other-processor');assert.equal((await concurrent.processInbox()).replies,1);assert.equal((await concurrentStore.inbox(concurrentOwner,'busy-inbound')).state,'complete');assert.equal((await concurrentStore.inbox(concurrentOwner,'busy-inbound')).attempts,1);await concurrent.flushOutbox();assert.equal(concurrentCalls,0);
+let concurrentSettings=await concurrentStore.account(concurrentOwner);await concurrentStore.configureAccount(concurrentOwner,{account:concurrentAccount,revision:concurrentSettings.revision,dryRun:false},time);
+await concurrent.receiveNormalizedEvents([concurrentEvent('real-service-window')]);
+for(const key of ['serialized-a','serialized-b'])await concurrentStore.enqueueOutbox(concurrentOwner,{key,sourceMode:'real',simulated:false,recipient:concurrentPhone,channel:'whatsapp',payload:{text:consult('Qual o preço?').reply}},time);
+await concurrentStore.claimConversation(concurrentOwner,concurrentPhone,'other-processor',time);
+for(let i=0;i<5;i++){const waiting=await concurrent.flushOutbox();assert.equal(waiting.uncertain,0);assert.equal(waiting.failed,0);assert.equal(waiting.blocked,2);for(const key of ['serialized-a','serialized-b']){const out=await concurrentStore.outbox(concurrentOwner,key);assert.equal(out.state,'pending');assert.equal(out.attempts,0);}}
+await concurrentStore.releaseConversation(concurrentOwner,concurrentPhone,'other-processor');
+const runningFlush=concurrent.flushOutbox({limit:1});await firstStartedPromise;
+try{const competingFlush=await concurrent.flushOutbox();assert.equal(competingFlush.blocked,1);assert.equal(competingFlush.uncertain,0);assert.equal(competingFlush.failed,0);assert.equal(concurrentCalls,1);assert.equal((await concurrentStore.outbox(concurrentOwner,'serialized-b')).attempts,0);assert.equal((await concurrentStore.outbox(concurrentOwner,'serialized-b')).state,'pending');}finally{releaseFirst();}
+await runningFlush;await Promise.all([concurrent.flushOutbox(),concurrent.flushOutbox()]);assert.equal(concurrentCalls,2);assert.equal(maxActiveSends,1);for(const key of ['serialized-a','serialized-b']){const out=await concurrentStore.outbox(concurrentOwner,key);assert.equal(out.state,'sent');assert.equal(out.attempts,1);}
+
+// Human takeover while the final gate is running cancels preparation before the provider.
+await concurrentStore.enqueueOutbox(concurrentOwner,{key:'takeover-before-provider',sourceMode:'real',simulated:false,recipient:concurrentPhone,channel:'whatsapp',payload:{text:consult('Qual o preço?').reply}},time);
+const takeoverBeforeProvider=createCommercialRuntime({db:adapter,owner:concurrentOwner,clock,whatsapp:concurrentProvider,liveNetworkApproved:true,beforeSend:async()=>{await concurrentStore.takeover(concurrentOwner,concurrentPhone,concurrentOwner,time);return true;}});
+const stopped=await takeoverBeforeProvider.flushOutbox();assert.equal(stopped.uncertain,0);assert.equal(concurrentCalls,2);const cancelledPreparation=await concurrentStore.outbox(concurrentOwner,'takeover-before-provider');assert.equal(cancelledPreparation.state,'cancelled');assert.equal(cancelledPreparation.attempts,0);assert.equal((await concurrentStore.conversation(concurrentOwner,concurrentPhone)).paused,true);
+await concurrentStore.resume(concurrentOwner,concurrentPhone,concurrentOwner,time);
+await concurrentStore.enqueueOutbox(concurrentOwner,{key:'preflight-error',sourceMode:'real',simulated:false,recipient:concurrentPhone,channel:'whatsapp',payload:{text:consult('Qual o preço?').reply}},time);
+const preflightError=createCommercialRuntime({db:adapter,owner:concurrentOwner,clock,whatsapp:concurrentProvider,liveNetworkApproved:true,beforeSend:async()=>{throw Object.assign(new Error('approval_temporarily_unavailable'),{uncertain:true,retryable:true});}});
+assert.equal((await preflightError.flushOutbox()).uncertain,0);assert.equal(concurrentCalls,2);assert.equal((await concurrentStore.outbox(concurrentOwner,'preflight-error')).state,'failed');assert.equal((await concurrentStore.outbox(concurrentOwner,'preflight-error')).attempts,0);
 assert.equal(financial(),financialBefore);db.close();console.log('PASS: jornada integrada com mocks, CRM reaproveitado, handoff/e-mail pendentes, dry-run separado, janela original, guard de escopo, Pix bloqueado, timeout sem replay, cota global 10, takeover e financeiro intacto.');

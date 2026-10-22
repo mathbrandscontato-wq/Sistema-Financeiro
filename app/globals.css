@@ -32,3 +32,30 @@
 .sidebar{overflow-y:auto}
 @media(max-height:800px) and (min-width:681px){.brand-lockup{padding-bottom:16px;gap:16px}.sidebar-bottom>p{display:none}}
 @media(max-width:680px){.sidebar{height:76px;gap:12px;align-items:center;overflow-y:visible}.sidebar nav{flex:1;min-width:0;max-width:calc(100% - 82px);overflow-x:auto;scroll-snap-type:x proximity;padding:3px}.sidebar nav button{font-size:10px;display:flex;flex-direction:column;gap:6px;min-width:76px;min-height:52px;flex-shrink:0;align-items:center;justify-content:center;scroll-snap-align:start}.sidebar nav button svg{flex-shrink:0}.sidebar .nav-count{display:none}main{margin-top:76px}.sidebar .brand-lockup{flex-shrink:0;width:70px}.sidebar nav button:focus-visible{outline:2px solid #d0fac6;outline-offset:-2px}}
+
+/* Private commercial operations panel; shares the existing CRM design tokens. */
+.commercial-automation{line-height:1.6;min-width:0}
+.commercial-automation .automation-state{display:block;padding:22px 24px;border-radius:10px}
+.commercial-automation .automation-state strong{display:block;font-size:13px;margin-bottom:6px}
+.commercial-automation .automation-state p+p{margin-top:8px}
+.commercial-automation .automation-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:24px 0}
+.commercial-automation .automation-stats .readonly{display:block;padding:22px;background:#fff;border:1px solid var(--border);border-radius:10px}
+.commercial-automation .automation-stats h3{font-size:12px;font-weight:500;color:#56695e}
+.commercial-automation .automation-stats strong{display:block;font-size:30px;line-height:1.3;margin:10px 0;color:var(--ink)}
+.commercial-automation .automation-stats p{font-size:11px;color:#637469}
+.commercial-automation>.analytics-detail{margin:18px 0;padding:18px 0}
+.commercial-automation .analytics-detail summary{cursor:pointer;font-weight:600;min-height:24px}
+.commercial-automation form{margin-top:20px}
+.commercial-automation .form-grid label{display:flex;flex-direction:column;gap:7px;font-size:12px}
+.commercial-automation small{color:#66776c;line-height:1.5}
+.commercial-automation .automation-check{display:flex;align-items:center;gap:9px;margin:20px 0}
+.commercial-automation input[type=checkbox]{width:auto}
+.commercial-automation form>p{color:#637469;margin:14px 0}
+.commercial-automation>h2{font-size:17px;margin:30px 0 14px}
+.commercial-automation .automation-conversation{display:block;background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:12px;overflow-wrap:anywhere}
+.commercial-automation .automation-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.commercial-automation .records tbody tr{cursor:default}
+.commercial-automation .analytics-detail ul{margin:14px 0 0;padding-left:22px}
+.commercial-automation .analytics-detail li{padding:4px 0}
+@media(max-width:1000px){.commercial-automation .automation-stats{grid-template-columns:1fr}.commercial-automation .section-header{align-items:flex-start}.commercial-automation .automation-state{padding:18px}}
+@media(max-width:680px){.commercial-automation .section-header{flex-direction:column;gap:16px}.commercial-automation .automation-actions .secondary{white-space:normal;min-height:44px}.commercial-automation .records th,.commercial-automation .records td{padding:14px}.commercial-automation h1{font-size:26px}}

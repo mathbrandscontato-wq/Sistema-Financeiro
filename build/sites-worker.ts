@@ -26,7 +26,7 @@ export default {
       };
     }
     const response=runWithConnectorBinding(binding, () => handler.fetch(request, env, ctx));
-    if(request.method==='POST'&&new URL(request.url).pathname==='/api/whatsapp'){
+    if(request.method==='POST'&&['/api/whatsapp','/api/finance'].includes(new URL(request.url).pathname)){
       return Promise.resolve(response).then(result=>{
         if(result.ok)ctx.waitUntil(processCommercialQueues(env,{beforeWrite:async()=>{await createProtectionSnapshot(env.COMMERCIAL_OWNER||env.INTAKE_OWNER||'','Antes de encaminhar conversa comercial');}}).catch(()=>{}));
         return result;

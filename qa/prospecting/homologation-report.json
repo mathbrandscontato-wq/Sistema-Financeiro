@@ -146,9 +146,9 @@
     "networkProvidersCalled": 0
   },
   "limitations": [
-    "PDF visual regression requires unavailable pdftotext and pdffonts",
-    "Local browser attempt interrupted by approval reviewer usage limit",
-    "No production deploy, provider delivery or Meta coexistence homologation"
+    "Meta Cloud API account/app onboarding and coexistence not homologated",
+    "Real delivery, providers, templates and approved budget pending",
+    "No production deploy or real messages"
   ],
   "followUp": {
     "checkedAt": "2026-10-22T15:46:05.383Z",
@@ -162,13 +162,52 @@
     "failed": 0
   },
   "landingPageCI": {
-    "commit": "da9328bfe0dc0dbba1976a7376c07bc5f04f37d9",
-    "run": "https://github.com/mathbrandscontato-wq/mathbrands-projeto-especial/actions/runs/39807554014",
+    "commit": "3b78ad397b24deb062c3da10440321164bc9987c",
+    "run": "https://github.com/mathbrandscontato-wq/mathbrands-projeto-especial/actions/runs/39817260707",
     "status": "success",
     "responsiveWidths": 9,
     "horizontalOverflow": 0,
     "majorAccessibilityViolations": 0,
     "screenshots": 14,
     "mockSubmissions": 1
+  },
+  "nextStage": {
+    "checkedAt": "2026-10-22T16:51:22.551Z",
+    "aggregateBuild": {
+      "command": "pnpm run build",
+      "exit": 0,
+      "includesPdfBaseline": true,
+      "pdfPages": 8,
+      "includesOwnerNotifications": true
+    },
+    "types": {
+      "exit": 0
+    },
+    "concurrencyFixes": [
+      "busy inbox deferred without consuming attempts",
+      "outbox preparation separated from dispatch",
+      "same-recipient sends serialized",
+      "takeover before provider cancels without attempt"
+    ],
+    "browser": {
+      "localOnly": true,
+      "desktopInspected": true,
+      "mobileWidth": 390,
+      "horizontalOverflow": false,
+      "simulatedConversation": true,
+      "humanTakeover": true,
+      "privateDestinationsSeparated": true
+    },
+    "metaAudit": {
+      "portfolio": "Math Brands",
+      "authenticated": true,
+      "whatsappAccountsAdded": 0,
+      "messagingAccountsAdded": 0,
+      "appsAdded": 0,
+      "scope": "selected portfolio only",
+      "numberConnected": false
+    },
+    "paidProviderCalls": 0,
+    "productionDeploy": false
   }
 }

@@ -14,7 +14,7 @@ O Sistema Financeiro continua como CRM oficial. Foram reutilizados clientes, opo
 | WhatsApp oficial e relay LP/CRM privado | HMAC, replay, conta, limite de corpo e isolamento testados | Não |
 | Consentimento, pausa humana, opt-out e cota dez | SQL concorrente e testes integrados | Não |
 | Agente consultivo | Determinístico + Responses; prosa LLM exige revisão humana | Não |
-| Handoff CRM e avisos | Tarefa/histórico idempotentes, e-mail pendente e falhas testados | Provedor pendente |
+| Handoff CRM e avisos | Tarefa/histórico idempotentes, e-mail pendente e falhas testados; WhatsApp do proprietário separado para confirmação manual | Provedor/template pendentes |
 | Pix após avaliação e aceite | Aprovação humana, aceite real, CRC/chave e valor R$200 testados | Pix oficial pendente |
 | Painel privado e backup | Tipos, build e HTTP local com D1/R2 | Não publicado |
 
@@ -25,12 +25,16 @@ Ordem dos PRs do CRM: [núcleo offline #4](https://github.com/mathbrandscontato-
 - CRM hospedado permanece privado e ainda não contém o runtime desta branch. A oferta consultada em produção está em **R$300**, enquanto o padrão aprovado é **R$500 / R$200 / R$300**. Não foi alterada. O gate externo exige preço R$500 e `deposit_policy='contract_deposit'`.
 - A LP atual publicada usa R$500/200/300, sem Pix. O GitHub estava atrasado; o PR alinha primeiro ao snapshot atual de Sites (`3824c4e`), evitando restaurar preços antigos. Depois esclarece domínio à parte, hospedagem condicional e saldo na entrega validada. CSS, scripts do formulário e campos foram comparados nas três rotas.
 - As configurações existentes de intake foram preservadas. As novas credenciais de Meta/IA/pesquisa/e-mail não estão configuradas no ambiente publicado. Secrets não foram divulgados ou incorporados ao código.
-- Meta Business/WABA, coexistência, efeitos nos dispositivos vinculados e eco humano não foram homologados. As páginas diretas da Meta retornaram 429. Nenhum registro, migração ou desconexão do número foi tentado.
+- Meta Business foi consultado na sessão autenticada. O seletor apresentava dois portfólios; foi selecionado **Math Brands**. Nesse portfólio, a interface mostrou nenhuma conta de WhatsApp adicionada, nenhuma conta de mensagens e nenhum aplicativo adicionado. Isso não comprova inexistência de contas fora do portfólio. Coexistência, dispositivos vinculados e eco humano continuam não homologados. Nenhum registro, migração ou desconexão foi tentado.
+- O portal Meta for Developers direcionou para cadastro de desenvolvedor, com etapas de registro, verificação, contato e perfil. O primeiro botão aceita Termos da Plataforma e Políticas do Desenvolvedor; essa aceitação aguarda confirmação específica. A opção de criar ID de app no Business estava desabilitada. Não foi criada conta/app nem emitida credencial.
 - O e-mail informado pelo proprietário foi configurado **somente na base local**, com verificação falsa. Não foi enviado teste; o endereço não integra o código ou exemplos publicados.
+- Decisão posterior do proprietário: o atendimento comercial usa **+55 47 99770-6454**; o número pessoal anteriormente usado nos CTAs destina-se apenas aos avisos privados. Os links da LP foram corrigidos no PR. Os dois destinos foram separados na configuração local; o telefone pessoal não é gravado no código ou em exemplos públicos.
 
 ## Evidências de homologação
 
 Resultado final local: **24 verificações aprovadas, zero falhas**. Ver `qa/prospecting/homologation-report.json`. Incluem seis suítes do núcleo/runtime, oferta, regressões de leads/CRM/comercial/financeiro/dashboard/intake/equipe/operações/formulários, cinco provas Python, TypeScript e build do framework. Dados e transportes são fictícios, sem chamadas aos provedores.
+
+Na etapa seguinte, **`pnpm build` agregado passou integralmente**, incluindo a nova suíte de avisos ao proprietário, regressões e os oito PDFs. As novas provas de concorrência mantêm uma entrada pendente sem consumir tentativas enquanto a conversa está ocupada e serializam dois envios ao mesmo destinatário. Preparação cancelada por takeover não é tratada como envio tentado. Tipos e demais gates foram revalidados após integrar os avisos internos.
 
 As provas abrangem HMAC e replay; proprietário confiável; isolamento de conta; 100 tentativas concorrentes reservando dez destinatários; vinte contratos disputando uma vaga; revogação; limite de vinte respostas por destinatário/hora; timestamp original; tomada humana durante tentativa; recibo tardio preservado; timeout sem replay; simulações bloqueadas após mudança para modo real; prosa LLM sempre revisada; Pix sem aprovação e com valor diferente de R$200 bloqueado; tabelas financeiras intactas; backup do estado operacional por proprietário.
 
@@ -38,9 +42,13 @@ O teste HTTP contra **127.0.0.1** usou login fictício do plugin, D1 e R2 locais
 
 Comandos reproduzíveis: `pnpm test:prospecting`, `pnpm test:commercial-runtime`, `pnpm test:offer-policy` e regressões de `package.json`. Requerem Node >=22.13 e Python como `python3`; o perfil Windows local usou o Python fornecido pelo ambiente sem alterar a aplicação. O build do framework foi executado separadamente do agregado `pnpm build`.
 
-**Lacunas de QA:** o agregado também exige comparação de PDFs por Poppler. Aqui há `pdftoppm`, mas faltam `pdftotext`/`pdffonts`; essa comparação integral não foi concluída. Motor e assets originais de PDF não foram alterados. A abertura do navegador local foi interrompida pela revisão automática por limite de uso da sessão; HTTP não substitui inspeção visual do painel CRM.
+**Pendências de QA anteriores resolvidas:** Poppler portátil 26.09.0 foi obtido no workspace temporário e conferido pelo SHA-256 do [manifesto Scoop](https://github.com/ScoopInstaller/Main/blob/master/bucket/poppler.json). A comparação confirmou os oito PDFs, pixels/layout/fontes/texto Pix, sem alteração da baseline ou do motor. `.gitattributes` preserva os bytes LF dos três arquivos congelados em checkouts Windows; o Git não registra alteração nesses arquivos. O watcher de desenvolvimento ignora `work/`, evitando erro de arquivo temporário ocupado.
+
+O painel foi inspecionado no navegador local em desktop e viewport de 390px: margens, cartões, formulário e fila ajustados ao padrão do CRM; nenhum overflow horizontal externo. Foram registrados/processados dados fictícios, conferido estado `Simulado`, assumido atendimento humano e salvos destinos privados distintos. Nenhuma chamada aos provedores. Capturas locais ficam em `outputs/homologacao/`, fora do Git.
 
 Na LP, o [workflow 20](https://github.com/mathbrandscontato-wq/mathbrands-projeto-especial/actions/runs/39807554014) passou no commit `da9328b`: sete suítes, build, validação ESM e QA visual automatizada em nove larguras, zero overflow, zero violações graves de acessibilidade, quatorze capturas e uma submissão fictícia. Artefatos ficam no run por sete dias. O teste antigo esperava os valores anteriores; foi corrigido para o padrão aprovado e passou a abrir a resposta de pagamento antes de verificar seu texto. Também foi corrigida a afirmação de hospedagem sempre paga no FAQ. Não houve publicação ou submissão real.
+
+Após corrigir o número comercial, o [workflow 21](https://github.com/mathbrandscontato-wq/mathbrands-projeto-especial/actions/runs/39817260707) também passou no commit `3b78ad3`.
 
 ## Configuração privada necessária
 
@@ -61,6 +69,8 @@ Credenciais ficam exclusivamente nos secrets da hospedagem. O endpoint de config
 | Timer separado | `SCHEDULE_ENABLED`, `CRM_SITE_TOKEN`, `COMMERCIAL_JOB_SECRET` |
 
 Configuração persistente: destinatário de avisos e verificação, calendário revisado com feriados aplicáveis, templates efetivamente aprovados, qualidade verificada, destinatários de teste permitidos, referências de ativação, orçamento diário global e limites de pesquisa. Defaults: `dryRun:true`, `killSwitch:true`. O painel mantém homologação; não dispensa os gates do servidor. Alterar a revisão da configuração invalida provedores já criados antes de nova reserva de custo; a oferta também é relida antes de cada chamada paga.
+
+Avisos privados usam `commercialPhone` separado de `ownerNotificationPhone`; destinos iguais são recusados. `ownerNotificationsEnabled` começa desligado. Para habilitar, exigir `ownerNotificationVerified`, `ownerNotificationConsentRef`, `ownerNotificationsSince` e `ownerNotificationTemplate` efetivamente aprovado. O timestamp exclui negócios históricos; apenas contrato ativo com confirmação manual auditada e oportunidade fechada gera aviso. Conteúdo mínimo: referência e link privado, sem dados do cliente. O gate é específico para notificação interna e não transforma opt-in do proprietário em consentimento de prospecção nem consome cota de clientes. POST financeiro bem-sucedido aciona a reconciliação em segundo plano; job/filas também retomam pendências. Ver [contrato dos avisos](owner-notifications.md).
 
 `POST /api/commercial-job` aceita somente `scheduledAt` e exige bearer; proprietário e configuração vêm do servidor. `worker/commercial-cron.mjs` usa URL privada fixa e template desativado. Cloudflare cron usa UTC: `30 13 * * *` corresponde atualmente a 10h30 São Paulo. Revalidar essa relação antes de habilitar. [Referência Cloudflare](https://developers.cloudflare.com/workers/configuration/cron-triggers/).
 
