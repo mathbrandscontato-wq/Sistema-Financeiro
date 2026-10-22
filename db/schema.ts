@@ -1,4 +1,6 @@
 import { integer, sqliteTable, text, uniqueIndex, index } from 'drizzle-orm/sqlite-core';
+import { primaryKey, check } from 'drizzle-orm/sqlite-core';
+import { sql } from 'drizzle-orm';
 export const quotes=sqliteTable('quotes',{id:integer('id').primaryKey({autoIncrement:true}),owner:text('owner').notNull(),data:text('data').notNull(),revision:integer('revision').notNull().default(1),deleted:integer('deleted').notNull().default(0),created:text('created').notNull(),updated:text('updated').notNull()});
 export const settings=sqliteTable('settings',{owner:text('owner').primaryKey(),data:text('data').notNull()});
 export const events=sqliteTable('events',{id:integer('id').primaryKey({autoIncrement:true}),quoteId:integer('quote_id'),owner:text('owner').notNull(),action:text('action').notNull(),data:text('data').notNull(),created:text('created').notNull()});
@@ -39,3 +41,17 @@ export const acquisitionConfig=sqliteTable('acquisition_config',{owner:text('own
 export const siteOffers=sqliteTable('site_offers',{id:text('id').primaryKey(),owner:text('owner').notNull(),limit:integer('seat_limit').notNull().default(10),priceCents:integer('price_cents').notNull().default(30000),status:text('status').notNull().default('open'),opened:text('opened').notNull(),closed:text('closed'),revision:integer('revision').notNull().default(1)});
 export const offerSeats=sqliteTable('offer_seats',{id:text('id').primaryKey(),owner:text('owner').notNull(),offerId:text('offer_id').notNull().references(()=>siteOffers.id),contractId:text('contract_id').notNull().references(()=>commercialContracts.id),active:integer('active').notNull().default(1),created:text('created').notNull(),released:text('released'),reason:text('reason')},t=>[uniqueIndex('seat_contract').on(t.owner,t.contractId)]);
 export const offerHistory=sqliteTable('offer_history',{id:text('id').primaryKey(),owner:text('owner').notNull(),offerId:text('offer_id').notNull(),actor:text('actor').notNull(),action:text('action').notNull(),data:text('data').notNull(),created:text('created').notNull()});
+
+// Research queue only. Interested clients remain in commercial_clients/opportunities.
+export const prospectingRuns=sqliteTable('prospecting_runs',{
+ owner:text('owner').notNull(),localDay:text('local_day').notNull(),status:text('status').notNull(),token:text('token').notNull(),attempt:integer('attempt').notNull(),leaseUntil:integer('lease_until').notNull(),report:text('report').notNull()
+},t=>[primaryKey({columns:[t.owner,t.localDay]})]);
+export const prospectingCompanies=sqliteTable('prospecting_companies',{
+ owner:text('owner').notNull(),identity:text('identity').notNull(),market:text('market').notNull(),data:text('data').notNull(),score:integer('score').notNull(),grade:text('grade').notNull(),created:text('created').notNull(),updated:text('updated').notNull()
+},t=>[primaryKey({columns:[t.owner,t.identity]}),check('prospecting_score',sql`${t.score} between 0 and 10`),check('prospecting_grade',sql`${t.grade} in ('A','B','C','D')`)]);
+export const prospectingOutreach=sqliteTable('prospecting_outreach',{
+ account:text('account').notNull(),localDay:text('local_day').notNull(),recipient:text('recipient').notNull(),attemptKey:text('attempt_key').notNull(),status:text('status').notNull().default('reserved'),created:text('created').notNull()
+},t=>[primaryKey({columns:[t.account,t.localDay,t.recipient]}),uniqueIndex('prospecting_attempt').on(t.account,t.attemptKey)]);
+export const prospectingHandoffs=sqliteTable('prospecting_handoffs',{
+ owner:text('owner').notNull(),eventId:text('event_id').notNull(),opportunityId:text('opportunity_id').notNull().references(()=>commercialOpportunities.id),summary:text('summary').notNull(),status:text('status').notNull().default('pending'),created:text('created').notNull()
+},t=>[primaryKey({columns:[t.owner,t.eventId]})]);
