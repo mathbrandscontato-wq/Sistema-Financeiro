@@ -90,3 +90,11 @@ O token anterior continua expirado; nenhum novo token, assinatura de webhook, de
 O proprietário concluiu a confirmação diretamente na Meta. A página exibiu **Acesso restaurado ao Meta for Developers**; após o processamento, a lista de apps e o painel de **Math Brands Homologação** voltaram a abrir. O aplicativo continua em desenvolvimento e não publicado. A exigência de identidade registrada acima é histórica e não continua pendente do proprietário.
 
 A página do caso de uso WhatsApp demorou a carregar e a primeira navegação automática não foi concluída. O proprietário confirmou que abriu **Etapa 1. Experimente**, e a preparação foi retomada na rota de testes. Não é uma nova exigência de identidade. A renovação da credencial temporária não foi concluída nesta conferência; o token de 22/10 permanece expirado. O checkout privado foi atualizado para a revisão de custo zero `bd22a5b`, preservando os arquivos ignorados e sem ativar gates, destinatários, callback, envio ou número real. A liberação do portal não comprova conversa, entrega ou coexistência.
+
+## Credencial temporária renovada — 23/10/2026 às 21h47 UTC
+
+Após a confirmação do proprietário de que o token apareceu na página, a credencial foi substituída somente no arquivo privado de homologação. Duas consultas de leitura retornaram **HTTP 200**: inspeção de validade/app e consulta do identificador do número de teste. O token corresponde ao app e está válido até **23/10/2026 às 23h UTC (20h de São Paulo)**. A validade é a observada nesta conferência e não deve ser estendida ou descrita como permanente.
+
+Os escopos continuam `whatsapp_business_management`, `whatsapp_business_messaging` e `public_profile`, dentro da concessão anterior. A inspeção retornou zero IDs de ativos granulares; portanto, **não foi comprovada exclusividade da credencial aos ativos de teste**. Todas as chamadas desta etapa foram vinculadas explicitamente ao app e número de teste aprovados; outros ativos não foram consultados.
+
+Nenhum destinatário foi adicionado, webhook reaberto, WhatsApp enviado, gate ativado ou número real conectado. Conversa, entrega e tomada humana reais continuam pendentes. A tela de credencial foi recolhida após a captura privada; o valor não integra o Git, recibos públicos ou capturas.
