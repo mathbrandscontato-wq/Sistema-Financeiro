@@ -725,12 +725,14 @@
         "freeQuotaConcurrentConnections": 4,
         "freeQuotaConcurrentAttempts": 40,
         "originalQueriesVerified": 90,
-        "frozenPdfFixtures": 8,
+        "frozenPdfFixtures": 3,
         "environment": "Windows bundled Node/Python; TMP and Poppler configured locally only",
         "panelSavedPaused": true,
         "newRoutesAfterResponse": true,
         "blockedNoticesDoNotStarveEligibleQueues": true,
-        "additiveMigration": "0015 index only; no remote application"
+        "additiveMigration": "0015 index only; no remote application",
+        "frozenPdfPages": 8,
+        "freePreHttpQuotaDeferralVerified": true
       },
       "privateGates": {
         "freePlanReviewThrough": "2026-10-29T00:00:00Z",
@@ -742,16 +744,30 @@
         "ownerNotificationsEnabled": false
       },
       "productionDeploy": false
+    },
+    "metaAccessReconfirmation": {
+      "checkedAt": "2026-10-23T16:04:36.986Z",
+      "source": "Meta for Developers and Facebook identity checkpoint UI",
+      "developerAccessBlocked": true,
+      "platformReason": "Unusual activity; identity confirmation required",
+      "currentStep": "Owner must select the correct masked email and complete confirmation directly in Meta",
+      "secretOrOtpRequestedInChat": false,
+      "credentialRenewed": false,
+      "realNumberConnected": false,
+      "whatsappMessagesSent": 0,
+      "productionDeployed": false,
+      "priorTransportEvidenceStillHistorical": true
     }
   },
   "currentStatus": {
-    "updated": "2026-10-23T15:56:00.861Z",
+    "updated": "2026-10-23T16:04:36.985Z",
     "costPolicy": "free_only",
     "operationalCostLimitBRL": 0,
     "active": false,
     "productionDeploy": false,
     "whatsappMessagesSent": 0,
     "remaining": [
+      "Meta developer account identity reconfirmation required by platform",
       "Meta real conversation/delivery and coexistence",
       "commercial quality and end-to-end CRM notice queue",
       "source metadata retention review",

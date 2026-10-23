@@ -78,3 +78,9 @@ Não houve outro envio feito nesta homologação, chamada de IA, Places ou envio
 O relatório versionado [homologation-report.json](../qa/prospecting/homologation-report.json), em `nextStage.metaAudit.officialTestHomologation`, contém apenas resultados sanitizados das consultas de leitura, dos testes de endpoint, do estado pausado e da remoção da assinatura. As capturas locais ficam em `outputs/homologacao/`, excluídas do versionamento, com seções de credenciais recolhidas. Segredos e a URL temporária não fazem parte do relatório público.
 
 Para uma nova sessão: revisar a credencial, reiniciar o ambiente privado, criar outro callback temporário somente mediante autorização aplicável e repetir a verificação. Conversa e entrega exigem destinatário de teste explicitamente permitido; número comercial, produção, campanhas e cobrança permanecem sujeitos aos gates e autorizações específicos descritos em [preparação de produção](commercial-production-readiness.md).
+
+## Retomada em 23/10/2026 — confirmação de identidade pendente
+
+Ao retomar o painel do aplicativo de homologação, a Meta exibiu **Confirmação de conta necessária**, mencionando atividade incomum na conta de desenvolvedor. O fluxo **Confirmar conta** abriu uma nova confirmação de identidade com duas opções de e-mail mascaradas. O proprietário precisa escolher seu contato correto e concluir a confirmação diretamente na Meta; não foi solicitado código, senha ou documento no chat. Essa exigência não comprova comprometimento da conta.
+
+O token anterior continua expirado; nenhum novo token, assinatura de webhook, destinatário, mensagem, migração ou conexão do número real foi realizado nessa retomada. As provas de transporte de 22/10 permanecem históricas. A implementação de custo zero e a preparação/testes gratuitos Cloudflare/Tavily foram concluídos independentemente desse bloqueio; ver [prontidão](commercial-production-readiness.md).
