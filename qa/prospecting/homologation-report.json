@@ -746,28 +746,66 @@
       "productionDeploy": false
     },
     "metaAccessReconfirmation": {
-      "checkedAt": "2026-10-23T16:04:36.986Z",
+      "checkedAt": "2026-10-23T21:44:04.492Z",
       "source": "Meta for Developers and Facebook identity checkpoint UI",
-      "developerAccessBlocked": true,
-      "platformReason": "Unusual activity; identity confirmation required",
-      "currentStep": "Owner must select the correct masked email and complete confirmation directly in Meta",
+      "developerAccessBlocked": false,
+      "platformReason": "Identity confirmed; access restored",
+      "currentStep": "Owner confirmed Step 1 opened; automation resumed on API testing route. Temporary credential renewal still pending.",
       "secretOrOtpRequestedInChat": false,
       "credentialRenewed": false,
       "realNumberConnected": false,
       "whatsappMessagesSent": 0,
       "productionDeployed": false,
-      "priorTransportEvidenceStillHistorical": true
+      "priorTransportEvidenceStillHistorical": true,
+      "initialBlockedCheck": {
+        "checkedAt": "2026-10-23T16:04:36.986Z",
+        "developerAccessBlocked": true,
+        "currentStep": "Owner must select the correct masked email and complete confirmation directly in Meta",
+        "platformReason": "Unusual activity; identity confirmation required"
+      },
+      "ownerCompletedIdentityConfirmation": true,
+      "accessRestoredMessageObserved": true,
+      "appListAndDashboardAccessible": true,
+      "appStatus": "Development / Unpublished",
+      "privateCheckoutUpdatedTo": "bd22a5bd7b4eae09cdb48212386e74dee426294b",
+      "activationChanged": false,
+      "browserNavigationHandoff": true,
+      "ownerConfirmedTestStepOpened": true
+    },
+    "reviewedCommercialCalendar": {
+      "checkedAt": "2026-10-23T21:42:51.034Z",
+      "artifact": "data/commercial-calendar-joinville-2026.json",
+      "city": "Joinville",
+      "state": "SC",
+      "timeZone": "America/Sao_Paulo",
+      "reviewedThrough": "2026-12-31",
+      "holidayCount": 13,
+      "officialSourcesVerified": true,
+      "publicSectorOptionalClosuresApplied": false,
+      "stateHolidayTransferredTo": "2026-08-16",
+      "focusedPolicyValidation": "passed",
+      "checks": [
+        "holidays and local business hours",
+        "state holiday transfer",
+        "optional public closure does not imply private closure",
+        "follow-ups skip holidays",
+        "expired calendar fails closed",
+        "research remains daily including holidays"
+      ],
+      "configApplied": false,
+      "productionChanged": false,
+      "networkCalls": 0
     }
   },
   "currentStatus": {
-    "updated": "2026-10-23T16:04:36.985Z",
+    "updated": "2026-10-23T21:44:04.492Z",
     "costPolicy": "free_only",
     "operationalCostLimitBRL": 0,
     "active": false,
     "productionDeploy": false,
     "whatsappMessagesSent": 0,
     "remaining": [
-      "Meta developer account identity reconfirmation required by platform",
+      "Meta temporary credential renewal; current token expired",
       "Meta real conversation/delivery and coexistence",
       "commercial quality and end-to-end CRM notice queue",
       "source metadata retention review",

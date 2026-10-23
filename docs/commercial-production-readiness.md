@@ -140,3 +140,9 @@ Após os aceites específicos, Workers Free US$0 e Tavily Researcher Free foram 
 A prévia local foi salva com pausa geral, dry-run, pesquisa desligada e custo zero. Os gates publicados e o ambiente oficial isolado continuam sem ativação. Faltam conversa/entrega/coexistência Meta, qualidade, retenção de metadados, fila de e-mail, oferta/Pix e execução gratuita hospedada. Nenhuma migração remota, merge, publicação, mensagem adicional ou alteração financeira foi realizada.
 
 Na retomada de 23/10, a Meta exigiu nova confirmação de identidade antes de liberar o acesso de desenvolvedor. O fluxo foi deixado na seleção dos contatos mascarados para conclusão pessoal pelo proprietário, sem solicitar códigos no chat. Essa etapa bloqueia a renovação do token de teste; não alterou o número, os ativos ou os resultados históricos. A evidência detalhada está em [homologação Meta](meta-homologation.md). A comparação de PDFs cobre três documentos de teste, somando oito páginas, conforme o manifesto da baseline.
+
+## Retomada após confirmação de identidade — 23/10/2026
+
+O proprietário concluiu a confirmação pessoal na Meta. A mensagem de acesso restaurado, a lista de apps e o painel do app de homologação foram conferidos. O bloqueio de identidade acima é histórico; não se deve solicitar a mesma confirmação novamente. O app continua não publicado e o token anterior permanece expirado, com renovação pendente. O checkout privado recebeu o código de custo zero, mantendo pausa e gates externos desligados.
+
+O [calendário de Joinville 2026](commercial-calendar.md) foi preparado com fontes oficiais e validade até 31/12/2026. As verificações focadas confirmaram feriados, horário local, follow-ups, transferência da data estadual e bloqueio após a validade; pesquisa continua permitida diariamente. O arquivo não foi aplicado à configuração da conta ou publicado. Outra cidade ou ano exige revisão própria.
