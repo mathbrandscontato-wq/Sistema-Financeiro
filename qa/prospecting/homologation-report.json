@@ -640,6 +640,123 @@
         "homologate integrated CRM notice queue",
         "review and authorize configuration activation separately"
       ]
+    },
+    "zeroCostHomologation": {
+      "checkedAt": "2026-10-23T15:56:00.862Z",
+      "policy": {
+        "permanentZeroCost": true,
+        "paidFallback": false,
+        "positiveBudgetRejected": true,
+        "freeProviderAllowlist": [
+          "meta_whatsapp",
+          "resend",
+          "cloudflare_ai",
+          "tavily_search"
+        ],
+        "quotaPersistence": "global UTC minute/day/month atomic SQLite/D1 reservations, failures consumed",
+        "planReviewMaxDays": 31,
+        "templatesBlocked": true,
+        "realServiceWindowSafetyMinutes": 2
+      },
+      "accounts": {
+        "cloudflare": {
+          "existingAccount": true,
+          "termsSpecificallyApproved": true,
+          "currentPlan": "Workers Free US$0",
+          "credentialScopes": [
+            "Workers AI Read",
+            "Workers AI Edit"
+          ],
+          "credentialAccountCount": 1,
+          "credentialExpiresOn": "2026-10-30",
+          "storedOnlyInPrivateEnv": true
+        },
+        "tavily": {
+          "accountCreated": true,
+          "termsSpecificallyApproved": true,
+          "currentPlan": "Researcher Free",
+          "monthlyCredits": 1000,
+          "payAsYouGo": "Off",
+          "autoUpgrade": false,
+          "requestsStopAtPlanLimit": true,
+          "noUpcomingInvoice": true,
+          "keyType": "Development",
+          "keyMonthlyLimit": 620,
+          "defaultKeyPreservedUnused": true,
+          "storedOnlyInPrivateEnv": true
+        }
+      },
+      "officialTransport": {
+        "cloudflare": {
+          "realRequests": 2,
+          "syntheticInputOnly": true,
+          "safePolicyHandoffs": 2,
+          "usage": [
+            {
+              "inputTokens": 340,
+              "outputTokens": 57
+            },
+            {
+              "inputTokens": 338,
+              "outputTokens": 47
+            }
+          ],
+          "commercialQualityHomologated": false
+        },
+        "tavily": {
+          "realRequests": 1,
+          "originalPublicLibraryQuery": true,
+          "credits": 1,
+          "resultCount": 5,
+          "resultContentVerified": false,
+          "resultsPersisted": false
+        },
+        "networkCallsTotal": 3,
+        "privateCustomerDataSent": false,
+        "realMessagesSent": 0,
+        "cardAdded": false,
+        "paidPlanPurchased": false,
+        "initialHarnessExpectationCorrected": "A valid model decision selected policy/handoff. The overly strict expectation of model prose was corrected; the first call was preserved, not replayed."
+      },
+      "localValidation": {
+        "aggregateBuildExit": 0,
+        "typescriptExit": 0,
+        "commercialRuntimeSuites": 10,
+        "freeQuotaConcurrentConnections": 4,
+        "freeQuotaConcurrentAttempts": 40,
+        "originalQueriesVerified": 90,
+        "frozenPdfFixtures": 8,
+        "environment": "Windows bundled Node/Python; TMP and Poppler configured locally only",
+        "panelSavedPaused": true,
+        "newRoutesAfterResponse": true,
+        "blockedNoticesDoNotStarveEligibleQueues": true,
+        "additiveMigration": "0015 index only; no remote application"
+      },
+      "privateGates": {
+        "freePlanReviewThrough": "2026-10-29T00:00:00Z",
+        "COMMERCIAL_ENVIRONMENT": "test",
+        "COMMERCIAL_EXTERNAL_APPROVED": false,
+        "COMMERCIAL_PRODUCTION_APPROVED": false,
+        "COMMERCIAL_SCHEDULER_ENABLED": false,
+        "ownerEmailVerified": false,
+        "ownerNotificationsEnabled": false
+      },
+      "productionDeploy": false
     }
+  },
+  "currentStatus": {
+    "updated": "2026-10-23T15:56:00.861Z",
+    "costPolicy": "free_only",
+    "operationalCostLimitBRL": 0,
+    "active": false,
+    "productionDeploy": false,
+    "whatsappMessagesSent": 0,
+    "remaining": [
+      "Meta real conversation/delivery and coexistence",
+      "commercial quality and end-to-end CRM notice queue",
+      "source metadata retention review",
+      "offer alignment and official Pix readiness",
+      "hosted free cron and explicit production release"
+    ]
   }
 }

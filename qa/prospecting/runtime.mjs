@@ -14,9 +14,13 @@ db.exec("INSERT INTO commercial_clients(id,owner,identity_key,display_name,creat
 const financialBefore=JSON.stringify(['commercial_contracts','commercial_payments','financial_history'].map(t=>db.prepare('SELECT * FROM '+t).all()));
 assert.equal(await store.account(owner),null);
 let account=await store.configureAccount(owner,{account:'fixture-business'},now);assert.equal(account.dryRun,true);assert.equal(account.killSwitch,true);
+assert.equal(account.config.costPolicy,'free_only');assert.deepEqual(account.config.budgets,{limitMicros:0,estimates:{}});
 await assert.rejects(()=>store.configureAccount('other',{account:'fixture-business'},now),/conflict/);
 await assert.rejects(()=>store.configureAccount(owner,{account:'fixture-business',revision:0},now),/revision_conflict/);
 await assert.rejects(()=>store.configureAccount(owner,{account:'fixture-business',revision:1,config:{research:{apiKey:'do-not-store'}}},now),/secrets_not_allowed/);
+for(const invalid of [{costPolicy:'paid'},{budgets:{limitMicros:1}},{budgets:{estimates:{resend:0}}},{research:{maxQueries:21}},{research:{maxCostMicros:1}},{research:{costPerQueryMicros:1}}])await assert.rejects(()=>store.configureAccount(owner,{account:'fixture-business',revision:account.revision,config:invalid},now),/zero_cost_required|invalid_research_config/);
+assert.equal((await store.account(owner)).revision,account.revision,'Rejected paid settings must not update the account.');
+const freeAccount=await store.configureAccount('free-defaults',{account:'free-defaults',config:{costPolicy:'free_only',research:{researchEnabled:false}}},now);assert.deepEqual(freeAccount.config.research,{researchEnabled:false,maxQueries:20,maxCostMicros:0,costPerQueryMicros:0});
 account=await store.configureAccount(owner,{account:'fixture-business',revision:account.revision,killSwitch:false,config:{ownerEmail:'owner@example.invalid',ownerEmailVerified:true,crmOrigin:'https://crm.example.invalid',testRecipients:[phone],calendar:{reviewedThrough:'2026-12-31',holidays:[]}}},now);assert.equal(account.dryRun,true);
 await store.configureAccount('other',{account:'fixture-business-other'},now);
 await assert.rejects(()=>store.ensureConversation('other',phone,{opportunityId:'opp'},now),/opportunity_not_found/);

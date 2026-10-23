@@ -21,7 +21,10 @@ const raw=JSON.stringify(payload),sign=async value=>{const key=await crypto.subt
 const request=signature=>new Request(base,{method:'POST',headers:{'X-Hub-Signature-256':signature,'Content-Type':'application/json'},body:raw});
 assert.equal((await receiveWhatsApp(new Request(base,{method:'POST',body:'x'.repeat(131073)}),env,{clock})).status,413);
 assert.equal((await receiveWhatsApp(request('sha256='+'0'.repeat(64)),env,{clock})).status,401);assert.equal(db.prepare('SELECT COUNT(*) n FROM prospecting_inbox').get().n,0);
-const signature=await sign(raw);assert.equal((await receiveWhatsApp(request(signature),env,{clock})).status,200);assert.equal((await receiveWhatsApp(request(signature),env,{clock})).status,200);assert.equal(db.prepare('SELECT COUNT(*) n FROM prospecting_inbox').get().n,1);
+let backgroundScheduled=0;const onAccepted=()=>{backgroundScheduled++;};
+assert.equal((await receiveWhatsApp(request('sha256='+'0'.repeat(64)),env,{clock,onAccepted})).status,401);assert.equal(backgroundScheduled,0);
+const ignoredRaw=JSON.stringify({...payload,entry:[]});assert.equal((await receiveWhatsApp(new Request(base,{method:'POST',headers:{'X-Hub-Signature-256':await sign(ignoredRaw)},body:ignoredRaw}),env,{clock,onAccepted})).status,200);assert.equal(backgroundScheduled,0);
+const signature=await sign(raw);assert.equal((await receiveWhatsApp(request(signature),env,{clock,onAccepted})).status,200);assert.equal((await receiveWhatsApp(request(signature),env,{clock,onAccepted})).status,200);assert.equal(backgroundScheduled,2);assert.equal(db.prepare('SELECT COUNT(*) n FROM prospecting_inbox').get().n,1);
 assert.equal((await runCommercialJob(new Request('https://crm.example.invalid/api/commercial-job',{method:'POST'}),env,{})).status,401);
 let networkCalls=0;const service=await commercialServices({...env,COMMERCIAL_EXTERNAL_APPROVED:'true'},owner,{clock,fetchImpl:async()=>{networkCalls++;throw Error('No network permitted');}});
 await service.runtime.processInbox({limit:10});await service.runtime.flushOutbox({limit:10});assert.equal(networkCalls,0);assert.ok(db.prepare("SELECT COUNT(*) n FROM prospecting_outbox WHERE state='simulated'").get().n>=1);
@@ -58,18 +61,33 @@ assert.equal(backup.prospecting_accounts.length,1);assert.equal(backup.prospecti
 assert.equal(backup.prospecting_outreach.length,1);assert.equal(backup.prospecting_outreach[0].attempt_key,'owner-attempt');
 assert.ok(backup.prospecting_inbox.length>0&&backup.prospecting_consents.length>0&&backup.prospecting_approvals.length>0);
 
-// Changing budget/approval or the offer invalidates a previously-created adapter.
+// Legacy paid configuration cannot activate the deployed runtime or consume old keys.
 db.prepare("INSERT INTO site_offers(id,owner,opened,price_cents,deposit_policy) VALUES('fixture-offer',?,'2026-10-22',50000,'contract_deposit')").run(owner);
 let liveAccount=await store.account(owner);
-const liveConfig={liveApproved:true,webhookVerified:true,waQuality:'healthy',budgets:{limitMicros:100,estimates:{google_places:1}}};
+const paidConfig={liveApproved:true,webhookVerified:true,waQuality:'healthy',budgets:{limitMicros:100,estimates:{google_places:1}}};
+db.prepare('UPDATE prospecting_accounts SET config=?,dry_run=0,kill_switch=0 WHERE owner=?').run(JSON.stringify(paidConfig),owner);
+const paidService=await commercialServices({...env,COMMERCIAL_EXTERNAL_APPROVED:'true',OPENAI_API_KEY:'unused-fixture',GOOGLE_PLACES_API_KEY:'unused-fixture'},owner,{clock,fetchImpl:async()=>{throw Error('paid network forbidden');}});
+assert.equal(paidService.readiness.effectiveExternalEnabled,false);
+await assert.rejects(()=>paidService.researchProvider().search('consultoria Joinville'),/provider_disabled/);
+liveAccount=await store.account(owner);
+const liveConfig={costPolicy:'free_only',liveApproved:true,webhookVerified:true,waQuality:'healthy',budgets:{limitMicros:0,estimates:{}}};
 await store.configureAccount(owner,{account:liveAccount.account,revision:liveAccount.revision,dryRun:false,killSwitch:false,config:liveConfig},now);
-const mockLiveEnv={...env,COMMERCIAL_EXTERNAL_APPROVED:'true',COMMERCIAL_ACTIVATION_REFERENCE:'fixture-approval',GOOGLE_PLACES_API_KEY:'fixture-not-a-secret'};
-let mockCalls=0;const mockFetch=async()=>{mockCalls++;return Response.json({places:[]});};
+const mockLiveEnv={...env,COMMERCIAL_EXTERNAL_APPROVED:'true',COMMERCIAL_ACTIVATION_REFERENCE:'fixture-approval',TAVILY_API_KEY:'fixture-not-a-secret',TAVILY_FREE_PLAN_VERIFIED:'true',COMMERCIAL_FREE_PLAN_REVIEW_THROUGH:'2026-11-01T00:00:00Z'};
+let mockCalls=0;const mockFetch=async(url,options)=>{mockCalls++;assert.equal(url,'https://api.tavily.com/search');const body=JSON.parse(options.body);assert.equal(body.search_depth,'basic');assert.equal(body.auto_parameters,false);return Response.json({results:[],usage:{credits:1}});};
 const liveService=await commercialServices(mockLiveEnv,owner,{clock,fetchImpl:mockFetch});assert.equal(liveService.readiness.effectiveExternalEnabled,true);
 await liveService.researchProvider().search('consultoria Joinville');assert.equal(mockCalls,1);
 liveAccount=await store.account(owner);await store.configureAccount(owner,{account:liveAccount.account,revision:liveAccount.revision,config:{...liveConfig,liveApproved:false}},now);
-await assert.rejects(()=>liveService.researchProvider().search('consultoria Joinville'),/provider_budget_exhausted/);assert.equal(mockCalls,1);
+await assert.rejects(()=>liveService.researchProvider().search('consultoria Joinville'),/provider_free_quota_exhausted/);assert.equal(mockCalls,1);
 liveAccount=await store.account(owner);await store.configureAccount(owner,{account:liveAccount.account,revision:liveAccount.revision,config:liveConfig},now);
 const beforeOfferChange=await commercialServices(mockLiveEnv,owner,{clock,fetchImpl:mockFetch});db.prepare("UPDATE site_offers SET price_cents=30000 WHERE id='fixture-offer'").run();
-await assert.rejects(()=>beforeOfferChange.researchProvider().search('consultoria Joinville'),/provider_budget_exhausted/);assert.equal(mockCalls,1);
+await assert.rejects(()=>beforeOfferChange.researchProvider().search('consultoria Joinville'),/provider_free_quota_exhausted/);assert.equal(mockCalls,1);
+db.prepare("UPDATE site_offers SET price_cents=50000 WHERE id='fixture-offer'").run();
+const expiredService=await commercialServices({...mockLiveEnv,COMMERCIAL_FREE_PLAN_REVIEW_THROUGH:'2026-10-21T00:00:00Z'},owner,{clock,fetchImpl:mockFetch});
+assert.equal(expiredService.readiness.research,false);await assert.rejects(()=>expiredService.researchProvider().search('consultoria Joinville'),/provider_free_plan_unverified/);assert.equal(mockCalls,1);
+// An unexpected provider credit debit persists the kill switch, invalidating all adapters.
+const mismatch=await commercialServices(mockLiveEnv,owner,{clock,fetchImpl:async()=>Response.json({results:[],usage:{credits:2}})});
+await assert.rejects(()=>mismatch.researchProvider().search('consultoria Joinville'),/tavily_credit_mismatch/);
+assert.equal((await store.account(owner)).killSwitch,true);
+await assert.rejects(()=>mismatch.researchProvider().search('consultoria Joinville'),/provider_free_quota_exhausted/);
+assert.equal(db.prepare('SELECT COUNT(*) n FROM prospecting_costs WHERE cost_micros>0 AND provider LIKE ?').get('free:%').n,0);
 db.close();console.log('PASS: webhook HMAC e replay, job autenticado, simulação sem rede, orçamento atômico, handoff CRM e Pix condicionado sem pagamentos.');

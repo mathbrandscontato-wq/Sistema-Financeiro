@@ -67,6 +67,24 @@ assert.equal(limited.status,'partial');assert.equal(limited.report.spentMicros,1
 await runDailyResearch({store,owner:'budget',token:'budget-two',markets,provider:chargedProvider,config:budgetConfig,clock});assert.equal(chargedCalls,1);
 const resumed=await runDailyResearch({store,owner:'budget',token:'budget-three',markets,provider:chargedProvider,config:{...budgetConfig,maxCostMicros:50},clock});assert.equal(resumed.status,'complete');assert.equal(resumed.report.spentMicros,50);assert.equal(chargedCalls,5);
 
+const freeConfig={...config,costPolicy:'free_only',allowLiveResearch:true,maxQueries:20};
+let freeCalls=0;
+const freeProvider={mode:'authorized',id:'tavily_search',costMode:'free_only',async search(query){freeCalls++;assert.ok(original.has(query));return [];}};
+const free=await runDailyResearch({store,owner:'free-research',token:'free',markets,provider:freeProvider,config:freeConfig,clock});
+assert.equal(free.status,'complete');assert.equal(freeCalls,17);assert.equal(free.report.costPolicy,'free_only');assert.equal(free.report.spentMicros,0);assert.ok(free.report.entries.every(entry=>entry.chargedMicros===0));assert.equal(free.report.plan.unusedContextSlots,3);
+for(const bad of [{...freeConfig,costPolicy:undefined},{...freeConfig,maxQueries:21},{...freeConfig,costPerQueryMicros:1},{...freeConfig,maxCostMicros:1}])await assert.rejects(()=>runDailyResearch({store,owner:'free-invalid',token:'invalid',markets,provider:freeProvider,config:bad,clock}),/zero_cost_research_required/);
+for(const badProvider of [{...freeProvider,id:'google_places'},{...freeProvider,costMode:undefined}])await assert.rejects(()=>runDailyResearch({store,owner:'free-invalid-provider',token:'invalid',markets,provider:badProvider,config:freeConfig,clock}),/live_research_not_approved/);
+assert.equal(freeCalls,17,'Rejected free configurations must not call a provider.');
+let quotaCalls=0;
+const quota=await runDailyResearch({store,owner:'free-quota',token:'quota',markets,provider:{...freeProvider,async search(){quotaCalls++;if(quotaCalls===3)throw Object.assign(new Error('Provider detail must not be persisted'),{code:'provider_free_quota_exhausted'});return [];}},config:freeConfig,clock});
+assert.equal(quota.status,'partial');assert.equal(quotaCalls,3);assert.equal(quota.report.attemptedQueries,3);assert.equal(quota.report.pendingQueries,14);assert.equal(quota.report.pauseReason,'provider_free_quota_exhausted');assert.equal(quota.report.spentMicros,0);assert.ok(!JSON.stringify(quota.report).includes('Provider detail'));
+let rateCalls=0;
+const rate=await runDailyResearch({store,owner:'free-rate',token:'rate',markets,provider:{...freeProvider,async search(){rateCalls++;throw Object.assign(new Error('provider_http_error'),{code:'provider_http_error',status:429});}},config:freeConfig,clock});
+assert.equal(rateCalls,1);assert.equal(rate.report.pauseReason,'provider_rate_limit');assert.equal(rate.report.pendingQueries,16);
+let mismatchCalls=0;
+const mismatch=await runDailyResearch({store,owner:'free-mismatch',token:'mismatch',markets,provider:{...freeProvider,async search(){mismatchCalls++;throw Object.assign(new Error('tavily_credit_mismatch'),{code:'tavily_credit_mismatch'});}},config:freeConfig,clock});
+assert.equal(mismatchCalls,1);assert.equal(mismatch.report.pauseReason,'tavily_credit_mismatch');assert.equal(mismatch.report.spentMicros,0);
+
 let failures=0;
 const down={mode:'mock',id:'down',async search(){failures++;throw new Error('Provider error may include sensitive data which must not be stored');}};
 const failed=await runDailyResearch({store,owner:'down',token:'one',markets,provider:down,config,clock});assert.equal(failed.status,'partial');assert.equal(failed.report.errors,5);

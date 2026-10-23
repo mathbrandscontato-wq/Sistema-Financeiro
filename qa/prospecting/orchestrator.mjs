@@ -65,10 +65,10 @@ await store.enqueueOutbox(owner,{sourceMode:'real',simulated:false,key:'uncertai
 let attempts=0;const uncertain=createCommercialRuntime({db:adapter,owner,clock,beforeWrite,liveNetworkApproved:true,whatsapp:{async send(){attempts++;throw Object.assign(new Error('provider_transport_error'),{uncertain:true});}},email});
 await uncertain.flushOutbox();assert.equal((await store.outbox(owner,'uncertain')).state,'uncertain');await uncertain.flushOutbox();assert.equal(attempts,1);
 
-// The first-outreach quota is global to the configured account and is not consumed by replies.
+// The zero-cost runtime refuses all proactive templates before consuming outreach quota.
 settings=await store.account(owner);await store.configureAccount(owner,{account,revision:settings.revision,config:{...settings.config,calendar:{reviewedThrough:'2026-12-31',holidays:[]},approvedTemplates:['mathbrands_intro']}},time);
 for(let i=0;i<11;i++){const recipient='554799998'+String(i).padStart(4,'0');await store.ensureConversation(owner,recipient,{},time);await store.setConsent(owner,recipient,{channel:'whatsapp',brand:'Math Brands',purpose:'sites',evidence:'Aceite fictício de QA',grantedAt:'2026-10-22T12:00:00Z'},time);await store.enqueueOutbox(owner,{sourceMode:'real',simulated:false,key:'proactive-'+i,recipient,channel:'whatsapp',payload:{proactive:true,template:{approved:true,name:'mathbrands_intro',language:'pt_BR'}}},time);}
-const quota=await live.flushOutbox({limit:30});assert.equal(quota.sent,10);assert.equal(db.prepare('SELECT COUNT(*) n FROM prospecting_outreach').get().n,10);assert.equal(waCalls.filter(r=>r.template).length,10);
+const quota=await live.flushOutbox({limit:30});assert.equal(quota.sent,0);assert.equal(db.prepare('SELECT COUNT(*) n FROM prospecting_outreach').get().n,0);assert.equal(waCalls.filter(r=>r.template).length,0);
 
 // An accepted receipt arriving after human takeover is retained without enabling retry.
 const latePhone='5547999990077';await live.receiveNormalizedEvents([event('late-receipt','Qual o preço?',latePhone)]);await live.processInbox();
@@ -110,4 +110,42 @@ await concurrentStore.resume(concurrentOwner,concurrentPhone,concurrentOwner,tim
 await concurrentStore.enqueueOutbox(concurrentOwner,{key:'preflight-error',sourceMode:'real',simulated:false,recipient:concurrentPhone,channel:'whatsapp',payload:{text:consult('Qual o preço?').reply}},time);
 const preflightError=createCommercialRuntime({db:adapter,owner:concurrentOwner,clock,whatsapp:concurrentProvider,liveNetworkApproved:true,beforeSend:async()=>{throw Object.assign(new Error('approval_temporarily_unavailable'),{uncertain:true,retryable:true});}});
 assert.equal((await preflightError.flushOutbox()).uncertain,0);assert.equal(concurrentCalls,2);assert.equal((await concurrentStore.outbox(concurrentOwner,'preflight-error')).state,'failed');assert.equal((await concurrentStore.outbox(concurrentOwner,'preflight-error')).attempts,0);
-assert.equal(financial(),financialBefore);db.close();console.log('PASS: jornada integrada com mocks, CRM reaproveitado, handoff/e-mail pendentes, dry-run separado, janela original, guard de escopo, Pix bloqueado, timeout sem replay, cota global 10, takeover e financeiro intacto.');
+// Older rows awaiting a free window, templates, simulations and paused recipients
+// cannot monopolize a bounded batch and starve eligible e-mail or service replies.
+const queueOwner='free-queue-owner',queueAccount='free-queue-account',queueSent=[],queueEmails=[],queueNow=new Date(time).toISOString(),queueOld='2026-10-20T13:30:00.000Z';
+const freeQueue=createCommercialRuntime({db:adapter,owner:queueOwner,clock,liveNetworkApproved:true,whatsapp:{async send(input){queueSent.push(input);return {status:'accepted',providerId:'free-queue-'+queueSent.length};}},email:{async send(input){queueEmails.push(input);return {status:'accepted',providerId:'free-mail-'+queueEmails.length};}}});
+const queueStore=freeQueue.store;
+await queueStore.configureAccount(queueOwner,{account:queueAccount,dryRun:false,killSwitch:false,config:{costPolicy:'free_only',budgets:{limitMicros:0,estimates:{}},waQuality:'healthy',ownerEmail:'queue-owner@example.invalid',ownerEmailVerified:true}},time);
+const queuePhones={expired:'5547999990200',template:'5547999990201',paused:'5547999990202',optedOut:'5547999990203',simulation:'5547999990204',ready:'5547999990205'};
+const skipped=[];
+for(const [kind,recipient] of Object.entries(queuePhones)){
+ if(kind==='ready')continue;
+ await queueStore.ensureConversation(queueOwner,recipient,{},queueOld);
+ db.prepare('UPDATE prospecting_conversations SET last_real_inbound=? WHERE owner=? AND recipient=?').run(kind==='expired'?queueOld:queueNow,queueOwner,recipient);
+ for(let i=0;i<10;i++){
+  const key='old-'+kind+'-'+i;skipped.push(key);
+  await queueStore.enqueueOutbox(queueOwner,{key,recipient,channel:'whatsapp',sourceMode:kind==='simulation'?'simulation':'real',simulated:kind==='simulation',payload:{text:consult('Qual o preço?').reply,...(kind==='template'?{template:{approved:true,name:'fixture_old_template',language:'pt_BR'}}:{})}},queueOld);
+ }
+ if(kind==='paused'||kind==='optedOut')db.prepare('UPDATE prospecting_conversations SET paused=?,opted_out=? WHERE owner=? AND recipient=?').run(kind==='paused'?1:0,kind==='optedOut'?1:0,queueOwner,recipient);
+}
+await freeQueue.receiveNormalizedEvents([{accountId:queueAccount,kind:'inbound',eventId:'ready-window',recipient:queuePhones.ready,at:time,text:'Oi'}]);
+await queueStore.enqueueOutbox(queueOwner,{key:'ready-email',recipient:'queue-owner@example.invalid',channel:'email',sourceMode:'real',simulated:false,payload:{subject:'Aviso fictício',text:'Teste local de prioridade da fila.'}},time);
+await queueStore.enqueueOutbox(queueOwner,{key:'ready-reply',recipient:queuePhones.ready,channel:'whatsapp',sourceMode:'real',simulated:false,payload:{text:consult('Qual o preço?').reply}},time);
+const eligibleBatch=await freeQueue.flushOutbox({limit:2});assert.equal(eligibleBatch.sent,2);assert.equal(queueEmails.length,1);assert.equal(queueSent.length,1);assert.equal(queueSent[0].recipient,queuePhones.ready);
+for(const key of skipped){const waiting=await queueStore.outbox(queueOwner,key);assert.equal(waiting.state,'pending');assert.equal(waiting.attempts,0);assert.equal(waiting.next_attempt,0);}
+// Reopening the service window wakes existing rows immediately, with no clock
+// advance and no retry timer, and still refuses all template/simulated rows.
+await freeQueue.receiveNormalizedEvents([{accountId:queueAccount,kind:'inbound',eventId:'reopen-expired-window',recipient:queuePhones.expired,at:time,text:'Pode responder agora'}]);
+assert.equal((await freeQueue.flushOutbox({limit:1})).sent,1);assert.equal(queueSent.length,2);assert.equal(queueSent[1].recipient,queuePhones.expired);
+assert.equal((await queueStore.outbox(queueOwner,'old-expired-0')).state,'sent');
+for(const kind of ['template','paused','optedOut','simulation'])for(let i=0;i<10;i++){const row=await queueStore.outbox(queueOwner,'old-'+kind+'-'+i);assert.equal(row.state,'pending');assert.equal(row.attempts,0);}
+// Exhausting a free allowance does not dead-letter an email that never reached HTTP.
+db.prepare('UPDATE prospecting_conversations SET paused=1 WHERE owner=? AND recipient=?').run(queueOwner,queuePhones.expired);
+await queueStore.enqueueOutbox(queueOwner,{key:'free-quota-email',recipient:'queue-owner@example.invalid',channel:'email',sourceMode:'real',simulated:false,payload:{subject:'Cota fictícia',text:'Aguardar franquia gratuita.'}},time);
+let noHttpAttempts=0;
+const quotaQueue=createCommercialRuntime({db:adapter,owner:queueOwner,clock,liveNetworkApproved:true,email:{send:async()=>{noHttpAttempts++;throw Object.assign(new Error('provider_free_quota_exhausted'),{code:'provider_free_quota_exhausted'});}}});
+assert.equal((await quotaQueue.flushOutbox({limit:1})).failed,0);
+const quotaWaiting=await queueStore.outbox(queueOwner,'free-quota-email');assert.equal(quotaWaiting.state,'pending');assert.equal(quotaWaiting.attempts,0);assert.equal(quotaWaiting.next_attempt,Date.parse(time)+60000);assert.equal(noHttpAttempts,1);
+await quotaQueue.flushOutbox({limit:1});assert.equal(noHttpAttempts,1);
+await assert.rejects(()=>queueStore.deferUnsentFreeOutbox(queueOwner,'free-quota-email','invalid-token','provider_transport_error',time),/invalid_free_deferral/);
+assert.equal(financial(),financialBefore);db.close();console.log('PASS: jornada integrada com mocks, CRM reaproveitado, handoff/e-mail pendentes, dry-run separado, janela original, guard de escopo, Pix bloqueado, timeout sem replay, templates pagos bloqueados, fila sem starvation, takeover e financeiro intacto.');
