@@ -1,9 +1,6 @@
 name: QA Automacao Comercial (sem deploy)
 
 on:
-  push:
-    branches:
-      - feat/commercial-runtime-homologation
   pull_request:
     branches:
       - fix/contract-deposit-seat-policy
@@ -13,7 +10,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: commercial-ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  group: commercial-ci-${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
 
 jobs:
