@@ -1092,10 +1092,45 @@
       "newRealEmails": 0,
       "productionChanged": false,
       "realNumberConnected": false
+    },
+    "senderDomainPreparation": {
+      "observedAt": "2026-10-24T16:08:54.889Z",
+      "domain": "avisos.mathbrands.com.br",
+      "region": "sa-east-1",
+      "status": "Not Started",
+      "domainCount": 1,
+      "domainCreated": true,
+      "ownershipVerified": false,
+      "receivingEnabled": false,
+      "dnsChanges": 0,
+      "dnsDraftPrepared": true,
+      "requiredRecords": 3,
+      "recordNames": [
+        "resend._domainkey.avisos",
+        "rsend.avisos",
+        "send.avisos"
+      ],
+      "publicDnsPreflight": "NXDOMAIN for each proposed required name in local resolver",
+      "publishedNameservers": [
+        "e.sec.dns.br",
+        "f.sec.dns.br"
+      ],
+      "administratorAccessConfirmed": false,
+      "dnsAuthorizationPending": true,
+      "siteAndExistingMailRecordsChanged": false,
+      "optionalRootDmarcIncluded": false,
+      "tlsEnforced": false,
+      "tlsProposalPrepared": true,
+      "tlsConfirmationCancelled": true,
+      "privateEmailConfigurationChanged": false,
+      "newEmailsSent": 0,
+      "paidPlanPurchased": false,
+      "automationActivated": false,
+      "source": "https://resend.com/docs/dashboard/domains/introduction"
     }
   },
   "currentStatus": {
-    "updated": "2026-10-24T16:00:30.884Z",
+    "updated": "2026-10-24T16:08:54.889Z",
     "costPolicy": "free_only",
     "operationalCostLimitBRL": 0,
     "active": false,
@@ -1121,6 +1156,12 @@
       "calendarLocal": "applied in paused preview",
       "timerLocal": "validated",
       "productionActive": false
+    },
+    "senderDomain": {
+      "domain": "avisos.mathbrands.com.br",
+      "status": "Not Started",
+      "dnsChanges": 0,
+      "ownershipVerified": false
     }
   }
 }

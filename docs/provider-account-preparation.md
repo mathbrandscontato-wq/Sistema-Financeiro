@@ -79,6 +79,16 @@ Nenhum outro envio foi realizado nessa fase. O teste não criou contrato, lead o
 
 Pendências: remetente definitivo com domínio próprio/DNS e homologação do fluxo CRM de fila e handoff. O teste individual comprovado não autoriza novos envios, campanhas ou ativação automática. A verificação de domínio, caso necessária no futuro, continua sendo etapa separada.
 
+### Domínio de avisos preparado — 24/10/2026
+
+Foi preparado no Resend o subdomínio **avisos.mathbrands.com.br**, região **São Paulo / sa-east-1**, mantendo recebimento desligado. A lista confirmou exatamente um domínio, estado **Not Started**. Não houve verificação de controle, publicação DNS, e-mail adicional, contratação ou ativação do CRM. A chave existente do formulário e as credenciais foram preservadas.
+
+Os três registros exigidos na tela são um TXT DKIM e dois CNAMEs de envio/retorno. Os nomes relativos à zona são `resend._domainkey.avisos`, `rsend.avisos` e `send.avisos`. Os valores completos estão apenas na proposta local de revisão, fora do Git; não foram substituídos por exemplos de outros provedores ou regiões. A consulta pública local encontrou os três nomes inexistentes e os servidores `e.sec.dns.br` / `f.sec.dns.br`. O acesso administrativo ao domínio ainda precisa ser concluído pelo proprietário no Registro.br; a consulta pública não comprova esse acesso.
+
+A proposta exclui os registros atuais do site, MX, servidores DNS e o DMARC opcional do domínio principal. Exigir TLS nos futuros envios também foi preparado, mas o diálogo foi cancelado sem confirmar a mudança. A publicação dos três registros, a verificação do remetente e o TLS foram reunidos em um pedido específico de autorização. O domínio não foi marcado como homologado, nem a configuração privada de e-mail alterada para habilitar filas. Não há novo envio autorizado nesta etapa.
+
+O [uso de subdomínio e a verificação por DNS](https://resend.com/docs/dashboard/domains/introduction) seguem a documentação oficial. A fila CRM/adaptador foi validada localmente com transporte fictício em [handoff-email.md](handoff-email.md); essa prova não substitui a verificação de DNS ou entrega real.
+
 ## OpenAI API — preparação histórica, sem uso operacional
 
 O fluxo oficial utiliza uma chave de projeto para autenticar chamadas da aplicação. O plugin OpenAI Developers pode ajudar a conectar o Codex à OpenAI Platform e preparar a chave pelo fluxo apropriado; a documentação prevê uma etapa própria de conexão da Platform. Nesta sessão, o plugin foi sugerido e permanece não instalado, sem conexão confirmada; isso não impediu concluir o login no navegador e preparar o projeto/chave na Platform. [Developer quickstart](https://developers.openai.com/api/docs/quickstart), [plugin oficial](https://developers.openai.com/learn/developers-codex-plugin).
