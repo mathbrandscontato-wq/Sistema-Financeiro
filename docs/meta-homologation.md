@@ -98,3 +98,17 @@ Após a confirmação do proprietário de que o token apareceu na página, a cre
 Os escopos continuam `whatsapp_business_management`, `whatsapp_business_messaging` e `public_profile`, dentro da concessão anterior. A inspeção retornou zero IDs de ativos granulares; portanto, **não foi comprovada exclusividade da credencial aos ativos de teste**. Todas as chamadas desta etapa foram vinculadas explicitamente ao app e número de teste aprovados; outros ativos não foram consultados.
 
 Nenhum destinatário foi adicionado, webhook reaberto, WhatsApp enviado, gate ativado ou número real conectado. Conversa, entrega e tomada humana reais continuam pendentes. A tela de credencial foi recolhida após a captura privada; o valor não integra o Git, recibos públicos ou capturas.
+
+## Teste de conversa autorizado — 23/10/2026, falha 130497
+
+O proprietário autorizou cadastrar seu telefone privado como único destinatário de teste, usar um callback restrito por até uma hora e enviar um `hello_world`, com até duas respostas de atendimento após sua resposta. Ele concluiu a verificação de cinco dígitos diretamente na Meta. A própria interface informa mensagens de teste gratuitas. O telefone e os códigos não integram o relatório versionado.
+
+A revisão do catálogo confirmou `hello_world`, `en_US`, aprovado. A qualidade do número de teste retornou **UNKNOWN / CLOUD_API**, mantida como não homologada. O runtime privado continuou em dry-run/kill-switch, sem destinatário local e sem resposta automática. O remetente comercial real não foi conectado.
+
+O callback temporário passou em desafio correto 200, incorreto 403, envelope vazio com HMAC válido 200 e inválido 401; raiz e rota privada do CRM retornaram 404, OPTIONS 405. A Meta verificou `whatsapp_business_account / messages / v26.0`, e a conta de teste foi assinada temporariamente.
+
+Houve **uma tentativa de envio**, sem retentativa, às **19h02 de São Paulo**: HTTP 200 e ID de mensagem. O proprietário informou não ter recebido. O payload completo no painel da Meta mostrou **failed**, código **130497**, com o mesmo identificador do recibo privado. Isso comprova a falha de entrega, não uma conversa bem-sucedida. O erro informa restrição da conta para o país de destino. A [referência oficial](https://developers.facebook.com/documentation/business-messaging/whatsapp/support/error-codes) direciona à elegibilidade dos países para a categoria da empresa; não foi presumida a causa específica da restrição.
+
+O envio de bootstrap ocorreu fora da outbox do CRM, e seu status sem correspondência nessa fila é ignorado por desenho. O banco privado terminou com zero conversas, inbox e outbox; não se deve descrever esse teste como validação completa do fluxo do CRM. Não houve resposta automática, cliente, contrato ou pagamento criado.
+
+O túnel encerrou automaticamente às **19h58**, e o processo privado foi confirmado parado. Callback e assinatura criados nesta sessão foram removidos e conferidos. Uma renovação equivalente de credencial foi usada somente para retirar a assinatura remanescente, sem novo envio; expira em **24/10 às 01h de São Paulo**. A permissão do destinatário de teste foi preservada. O próximo passo é a revisão oficial da categoria/elegibilidade da conta; o rascunho está preparado, sem chamado enviado. Nenhuma cobrança, cartão, campanha, migração, publicação ou contorno de restrição foi realizado.

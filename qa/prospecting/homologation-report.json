@@ -750,7 +750,7 @@
       "source": "Meta for Developers and Facebook identity checkpoint UI",
       "developerAccessBlocked": false,
       "platformReason": "Identity confirmed; access restored",
-      "currentStep": "Temporary test credential renewed and validated by two read-only calls; real conversation and delivery remain pending",
+      "currentStep": "Identity restored; sandbox message failed with country restriction 130497. Temporary callback and test subscription removed; official review required.",
       "secretOrOtpRequestedInChat": false,
       "credentialRenewed": true,
       "realNumberConnected": false,
@@ -829,21 +829,172 @@
       "recipientAdded": false,
       "externalGatesChanged": false,
       "productionChanged": false
+    },
+    "restrictedMetaConversationTest": {
+      "checkedAt": "2026-10-24T02:46:07.422Z",
+      "dateLocal": "2026-10-23",
+      "timeZone": "America/Sao_Paulo",
+      "authorization": "Owner explicitly approved one hello_world and up to two service replies to the verified private test recipient, plus a restricted temporary callback for at most 60 minutes",
+      "recipientVerifiedDirectlyInMeta": true,
+      "recipientDetailsNotExported": true,
+      "metaUiExplicitlyDescribedTestMessagesAsFree": true,
+      "template": "hello_world",
+      "language": "en_US",
+      "templateApproved": true,
+      "send": {
+        "attemptedAt": "2026-10-23T22:02:13.791Z",
+        "httpStatus": 200,
+        "attempts": 1,
+        "automaticRetries": 0,
+        "apiAccepted": true
+      },
+      "delivery": {
+        "status": "failed",
+        "errorCode": 130497,
+        "errorDescription": "Account restricted from messaging users in destination country",
+        "providerIdMatchedPrivately": true,
+        "source": "Meta for Developers visible complete webhook payload",
+        "eventAt": "2026-10-23T22:02:30.000Z",
+        "ownerReportedNotReceived": true,
+        "delivered": false
+      },
+      "quality": {
+        "observed": "UNKNOWN",
+        "platform": "CLOUD_API",
+        "healthyNotAssumed": true
+      },
+      "localPreflight": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "correct-verification",
+            "status": 200,
+            "passed": true
+          },
+          {
+            "name": "wrong-verification",
+            "status": 403,
+            "passed": true
+          },
+          {
+            "name": "valid-empty-signature",
+            "status": 200,
+            "passed": true
+          },
+          {
+            "name": "wrong-signature",
+            "status": 401,
+            "passed": true
+          }
+        ],
+        "emptyEnvelopesOnly": true
+      },
+      "publicPreflight": {
+        "checks": [
+          {
+            "name": "correct_challenge",
+            "status": 200,
+            "passed": true
+          },
+          {
+            "name": "wrong_challenge",
+            "status": 403,
+            "passed": true
+          },
+          {
+            "name": "valid_empty_hmac",
+            "status": 200,
+            "passed": true
+          },
+          {
+            "name": "wrong_hmac",
+            "status": 401,
+            "passed": true
+          },
+          {
+            "name": "root_blocked",
+            "status": 404,
+            "passed": true
+          },
+          {
+            "name": "private_crm_blocked",
+            "status": 404,
+            "passed": true
+          },
+          {
+            "name": "options_blocked",
+            "status": 405,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      "officialCallback": {
+        "configuredAndVerified": true,
+        "fields": [
+          {
+            "name": "messages",
+            "version": "v26.0"
+          }
+        ],
+        "testWabaSubscribedDuringSession": true
+      },
+      "crm": {
+        "automaticRepliesSent": 0,
+        "realConversationProven": false,
+        "deliveryProven": false,
+        "bootstrapOutsideCrmOutbox": true,
+        "unmatchedDeliveryStatusIgnoredByDesign": true,
+        "dryRun": true,
+        "killSwitch": true,
+        "liveApproved": false,
+        "webhookVerified": false,
+        "localTestRecipientCount": 0,
+        "counts": {
+          "prospecting_conversations": 0,
+          "prospecting_inbox": 0,
+          "prospecting_outbox": 0
+        }
+      },
+      "cleanup": {
+        "tunnelClosed": true,
+        "tunnelClosedAt": "2026-10-23T22:58:00.045Z",
+        "tunnelClosedBy": "authorized_time_limit",
+        "withinAuthorizedHour": true,
+        "appCallbackRemoved": true,
+        "testWabaSubscriptionRemoved": true,
+        "privateServerStopped": true,
+        "renewedCredentialUsedOnlyForCleanup": true,
+        "cleanupCredentialExpiresAt": "2026-10-24T04:00:00.000Z"
+      },
+      "productionDeployed": false,
+      "realNumberConnected": false,
+      "cardAdded": false,
+      "paidPlanPurchased": false,
+      "support": {
+        "officialReference": "https://developers.facebook.com/documentation/business-messaging/whatsapp/support/error-codes",
+        "guidance": "Review destination-country eligibility for the business category; seek official clarification rather than assume a billing or code fix",
+        "draftPrepared": true,
+        "submitted": false
+      }
     }
   },
   "currentStatus": {
-    "updated": "2026-10-23T21:47:48.033Z",
+    "updated": "2026-10-24T02:46:07.429Z",
     "costPolicy": "free_only",
     "operationalCostLimitBRL": 0,
     "active": false,
     "productionDeploy": false,
-    "whatsappMessagesSent": 0,
+    "whatsappMessagesSent": 1,
     "remaining": [
-      "Meta real conversation/delivery and coexistence",
+      "Meta destination-country eligibility restriction 130497; real conversation/delivery and coexistence unproven",
       "commercial quality and end-to-end CRM notice queue",
       "source metadata retention review",
       "offer alignment and official Pix readiness",
       "hosted free cron and explicit production release"
-    ]
+    ],
+    "whatsappMessagesDelivered": 0,
+    "whatsappMessagesFailed": 1,
+    "whatsappAutomaticRepliesSent": 0
   }
 }
