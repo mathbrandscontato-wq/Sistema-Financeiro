@@ -6,7 +6,7 @@ import {ProspectingStore} from '../../lib/prospecting/store.mjs';
 import {createCommercialAgent} from '../../lib/prospecting/agent.mjs';
 
 const now='2026-10-22T22:40:00.000Z',clock=()=>now;
-const config={enabled:true,approved:true,approvalRef:'fixture-owner-approval',costMode:'free_only',estimatedCostMicros:0,freePlanVerified:true,freePlanReviewThrough:'2026-11-15T00:00:00.000Z',apiKey:'secret-test-fixture',timeoutMs:100,clock};
+const config={enabled:true,approved:true,approvalRef:'fixture-owner-approval',useCaseApproved:true,useCaseApprovalRef:'fixture-terms-reviewed',costMode:'free_only',estimatedCostMicros:0,freePlanVerified:true,freePlanReviewThrough:'2026-11-15T00:00:00.000Z',apiKey:'secret-test-fixture',timeoutMs:100,clock};
 const original='site:instagram.com "fotógrafo" "Joinville"';
 const markets=JSON.parse(readFileSync(new URL('../../data/prospecting-markets.json',import.meta.url),'utf8'));
 const queries=markets.flatMap(m=>m.queries);assert.equal(queries.length,90);
@@ -23,6 +23,14 @@ function fixture(overrides={},behavior={}){
  const provider=createTavilySearchProvider({...config,...overrides},{clock,async reserveBudget(value){reservations.push(value);return behavior.grant!==false;},async onUnexpectedUsage(value){pauses.push(value);if(behavior.pauseThrows)throw new Error('private pause detail');},async fetchImpl(url,options){calls.push({url,options});if(behavior.fetch) return behavior.fetch(url,options);return new Response(JSON.stringify(payload),{status:behavior.status||200});}});
  return {provider,calls,reservations,pauses};
 }
+
+// The new contract-review gate must block before quota reservation or HTTP.
+const noUseCase=fixture({useCaseApproved:false});
+await assert.rejects(()=>noUseCase.provider.search(original),e=>e.code==='tavily_use_case_review_required');
+assert.equal(noUseCase.calls.length,0);assert.equal(noUseCase.reservations.length,0);
+const missingUseReference=fixture({useCaseApprovalRef:undefined});
+await assert.rejects(()=>missingUseReference.provider.search(original),e=>e.code==='tavily_use_case_review_required');
+assert.equal(missingUseReference.calls.length,0);assert.equal(missingUseReference.reservations.length,0);
 
 const f=fixture(),[page]=await f.provider.search(original,{now,market:'Fotógrafos'});
 assert.equal(f.calls.length,1);assert.equal(f.reservations.length,1);assert.deepEqual(f.reservations[0],{provider:'tavily_search',costMicros:0});
@@ -41,7 +49,7 @@ for(const query of queries){
  if(normalized.filterTranslation.value){assert.deepEqual(body.include_domains,[normalized.filterTranslation.value]);assert.equal(body.include_domains_mode,'restrict');}else{assert.equal(Object.hasOwn(body,'include_domains'),false);assert.equal(Object.hasOwn(body,'include_domains_mode'),false);}
 }
 
-for(const invalid of [{enabled:false},{approved:false},{approvalRef:''},{costMode:'paid'},{estimatedCostMicros:1},{freePlanVerified:false},{freePlanReviewThrough:'2026-10-01T00:00:00Z'},{freePlanReviewThrough:'2027-01-01T00:00:00Z'},{paidFallback:true},{apiKey:''},{metadataPersistenceApproved:true}]){
+for(const invalid of [{enabled:false},{approved:false},{approvalRef:''},{useCaseApproved:false},{useCaseApprovalRef:''},{costMode:'paid'},{estimatedCostMicros:1},{freePlanVerified:false},{freePlanReviewThrough:'2026-10-01T00:00:00Z'},{freePlanReviewThrough:'2027-01-01T00:00:00Z'},{paidFallback:true},{apiKey:''},{metadataPersistenceApproved:true}]){
  const x=fixture(invalid);await assert.rejects(()=>x.provider.search(original),e=>typeof e.code==='string'&&!e.message.includes('secret'));assert.equal(x.calls.length,0);assert.equal(x.reservations.length,0);
 }
 const noCallback=createTavilySearchProvider(config,{clock,fetchImpl:async()=>assert.fail('network forbidden'),reserveBudget:async()=>assert.fail('reservation forbidden')});await assert.rejects(()=>noCallback.search(original),e=>e.code==='tavily_usage_guard_required');
