@@ -31,3 +31,9 @@ O worker ou rota autenticada deve chamar o handler a partir de um agendador em n
 `node qa/prospecting/research.mjs` aplica as migrações reais em SQLite e verifica: distribuição 60/25/15, consultas originais, prioridades, contexto vazio, orçamento persistente inclusive em retomadas, reserva antes da chamada, falhas/timeout sem repetição cega, takeover de lease e fencing, descarte integral de conteúdo com persistência proibida, deduplicação entre fontes sobre registros existentes, ambiguidades sem fusão, limites explícitos de cobertura, separação do CRM, sábado/feriado, atraso na mesma data local, passagem de dia e agendador desligado.
 
 O teste usa dados fictícios e HTTP injetado; não comprova uma publicação Cloudflare/Sites, integração programática real ou ativação de rotina diária.
+
+## Timer integrado e limites da preparação — 24/10/2026
+
+`qa/prospecting/cron.mjs` conecta o timer existente à rota autenticada, ao scheduler e ao SQLite real com respostas fictícias. Confirma 10h30 de São Paulo, pesquisa no sábado, domingo e feriado, recusa de evento antigo e idempotência por dia. Sem contexto aprovado, dezessete consultas ocupam as vagas de prioridade/rodízio; as três vagas contextuais ficam vazias. O teste também cobre credenciais ausentes, timer desligado e erro HTTP sem repetição automática. Não publica nem agenda tarefas reais.
+
+O timer faz uma chamada ao CRM e não executa a pesquisa no próprio Worker. A documentação do [Workers Free](https://developers.cloudflare.com/workers/platform/limits/) informa 10 ms de CPU por disparo cron; espera de rede não conta como CPU. Isso não comprova capacidade do CRM hospedado. O limite de 25 segundos do transporte do timer também não garante concluir vinte consultas: um timeout exige conferir o run persistente antes de retomar. Não mudar para plano pago ou repetir chamadas incertas. Faltam medir o ambiente hospedado, verificar as franquias da conta e homologar a execução com computador desligado.

@@ -16,7 +16,7 @@ O Sistema Financeiro continua como CRM oficial. Foram reutilizados clientes, opo
 | WhatsApp oficial e relay LP/CRM privado | HMAC, replay, conta, limite de corpo e isolamento testados | Não |
 | Consentimento, pausa humana, opt-out e cota dez | SQL concorrente e testes integrados | Não |
 | Agente consultivo | Determinístico + Cloudflare Workers AI com modelo fixo; duas respostas reais de textos fictícios; prosa LLM exige revisão humana | Qualidade e fluxo completo pendentes |
-| Handoff CRM e avisos | Tarefa/histórico idempotentes e falhas testados; transporte de um e-mail autorizado entregue e confirmado pelo proprietário; WhatsApp privado separado | Fila integrada e remetente definitivo pendentes; WhatsApp só em janela gratuita real |
+| Handoff CRM e avisos | Tarefa/histórico idempotentes; fila integrada ao adaptador Resend validada localmente; um e-mail individual anterior entregue e confirmado pelo proprietário; WhatsApp privado separado | Remetente definitivo e entrega real da fila pendentes; WhatsApp só em janela gratuita real |
 | Pix após avaliação e aceite | Aprovação humana, aceite real, CRC/chave e valor R$200 testados | Pix oficial pendente |
 | Painel privado e backup | Tipos, build e HTTP local com D1/R2 | Não publicado |
 
@@ -164,3 +164,13 @@ A [documentação oficial do erro 130497](https://developers.facebook.com/docume
 Após autorização específica do envio e dos Termos do Meta AI exibidos no formulário, o [chamado 29067865726179250](https://business.facebook.com/direct-support/case-detail/29067865726179250/) foi criado às **07h17 de São Paulo**, com status **Open**. O texto equivalente em inglês solicita revisão da elegibilidade de destino e da configuração dos recursos de teste. Inclui somente IDs de teste, horário e falha; não inclui tokens, segredos ou telefone privado. Não houve anexo, novo envio de WhatsApp ou alteração financeira.
 
 O formulário Account & WABA não ofereceu o número artificial no seletor obrigatório. O relato foi encaminhado por **Dev: Cloud API / Messages API and Webhook**, descrevendo essa limitação e pedindo triagem ao time adequado. A existência do chamado não comprova análise humana, correção da restrição ou entrega. A automação permanece pausada, sem publicação, conexão do número real ou consumo pago.
+
+## Preparação independente da Meta — 24/10/2026
+
+Foi corrigida a recuperação de [encaminhamentos por e-mail](handoff-email.md): saídas já existentes, origens simuladas no modo real e oportunidades arquivadas são excluídas antes do limite da página. Antes da correção, registros antigos ocupavam os primeiros lugares e impediam preparar avisos mais novos. A prova integrada usa CRM, SQLite, fila, adaptador Resend e ledger reais, com transporte e dados inteiramente fictícios. Doze avisos avançaram uma única vez em lotes gratuitos; destino não verificado, pausa, cota e resultado incerto continuaram bloqueando o envio adequado. Nenhum e-mail real foi enviado nesta etapa.
+
+O painel permite aplicar explicitamente o calendário de Joinville 2026. A aplicação e a preservação em um segundo salvamento sem seleção foram conferidas **somente na prévia local**. A tela confirmou validade até 31/12/2026, homologação e pausa geral; a pesquisa permaneceu desligada, com orçamento zero. Não houve alteração do calendário publicado nem da conta oficial de teste Meta. A largura disponível de 675 px foi conferida sem overflow externo. A prévia de QA foi encerrada ao terminar.
+
+O timer foi integrado em teste à rota autenticada e à pesquisa persistente, incluindo sábado, domingo, feriado, repetição do evento e evento antigo. Isso prepara o agendamento sem ativá-lo. Os limites gratuitos e a capacidade do CRM hospedado ainda exigem medição; não foi contratado plano ou criado cron em nuvem. A revisão complementar dos termos de pesquisa está em [free-research.md](free-research.md); a persistência de resultados continua bloqueada.
+
+Passaram as **treze suítes de runtime**, TypeScript e build do framework. As três novas suítes cobrem a fila integrada de e-mail, o calendário revisado e timer/rota/scheduler. Não houve mudança do motor financeiro, dos PDFs, das migrações ou dos gates de ativação. A consulta anônima à API local permaneceu negada com HTTP 403. A entrega real da fila, o remetente definitivo, a retenção, a qualidade comercial, oferta/Pix e execução gratuita hospedada continuam pendentes, além da restrição Meta.

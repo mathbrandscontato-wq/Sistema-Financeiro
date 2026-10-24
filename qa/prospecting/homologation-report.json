@@ -794,7 +794,14 @@
       ],
       "configApplied": false,
       "productionChanged": false,
-      "networkCalls": 0
+      "networkCalls": 0,
+      "localPreviewApplication": {
+        "appliedAt": "2026-10-24T15:59:20.941Z",
+        "configApplied": true,
+        "environment": "localhost preview only",
+        "productionChanged": false,
+        "officialMetaTestAccountChanged": false
+      }
     },
     "metaCredentialRenewal": {
       "checkedAt": "2026-10-23T21:47:48.033Z",
@@ -1015,10 +1022,80 @@
           ]
         }
       }
+    },
+    "independentReadiness20261024": {
+      "checkedAt": "2026-10-24T16:00:30.884Z",
+      "environment": "local fixtures and localhost preview",
+      "costPolicy": "free_only",
+      "operationalCostLimitBRL": 0,
+      "handoffEmail": {
+        "localCrmQueueAdapterValidated": true,
+        "regressionReproducedBeforeFix": true,
+        "fix": "Filter already queued, simulated-live and archived handoffs before the reconciliation page limit",
+        "backlogAcceptedByFictionalProvider": 12,
+        "fictionalTransportUncertaintyAttempts": 1,
+        "quotaLedgerVerified": true,
+        "idempotencyVerified": true,
+        "uncertainNotReplayed": true,
+        "changedDestinationNotRedirected": true,
+        "financialTablesUnchangedInFixtures": true,
+        "realQueueDeliveryHomologated": false,
+        "realEmailsSent": 0
+      },
+      "calendar": {
+        "panelChoiceImplemented": true,
+        "defaultSelected": false,
+        "localPreviewApplied": true,
+        "preservedWhenUnselected": true,
+        "reviewedThrough": "2026-12-31",
+        "holidays": 13,
+        "pausePreserved": true,
+        "researchEnabled": false,
+        "productionApplied": false,
+        "officialMetaTestAccountChanged": false
+      },
+      "scheduler": {
+        "timerToAuthenticatedJobToSqliteValidated": true,
+        "weekendAndHolidayResearchVerified": true,
+        "duplicateEventIdempotent": true,
+        "staleEventRejected": true,
+        "failedRequestNotRetried": true,
+        "templateEnabled": false,
+        "cloudScheduleCreated": false,
+        "hostedExecutionProven": false,
+        "hostedCapacityReviewPending": true
+      },
+      "researchReview": {
+        "checkedOn": "2026-10-24",
+        "termsUpdatedOn": "2026-05-04",
+        "source": "https://www.tavily.com/terms",
+        "privateCrmInputAllowed": false,
+        "metadataPersistenceEnabled": false,
+        "permanentMetadataPermissionUnresolved": true,
+        "newRealQueries": 0
+      },
+      "validation": {
+        "runtimeSuitesPassed": 13,
+        "types": "passed",
+        "frameworkBuild": "passed",
+        "browser": {
+          "viewportWidth": 675,
+          "documentWidth": 675,
+          "externalOverflow": false,
+          "saveConfirmed": true,
+          "anonymousApiStatus": 403,
+          "previewStopped": true
+        }
+      },
+      "newExternalProviderCalls": 0,
+      "newWhatsAppMessages": 0,
+      "newRealEmails": 0,
+      "productionChanged": false,
+      "realNumberConnected": false
     }
   },
   "currentStatus": {
-    "updated": "2026-10-24T10:19:55.429Z",
+    "updated": "2026-10-24T16:00:30.884Z",
     "costPolicy": "free_only",
     "operationalCostLimitBRL": 0,
     "active": false,
@@ -1026,7 +1103,7 @@
     "whatsappMessagesSent": 1,
     "remaining": [
       "Meta destination-country eligibility restriction 130497; real conversation/delivery and coexistence unproven",
-      "commercial quality and end-to-end CRM notice queue",
+      "commercial quality and real integrated e-mail delivery with definitive sender; local queue validated",
       "source metadata retention review",
       "offer alignment and official Pix readiness",
       "hosted free cron and explicit production release"
@@ -1038,6 +1115,12 @@
       "caseId": "29067865726179250",
       "status": "Open",
       "restrictionResolved": false
+    },
+    "independentPreparation": {
+      "emailQueueLocal": "validated",
+      "calendarLocal": "applied in paused preview",
+      "timerLocal": "validated",
+      "productionActive": false
     }
   }
 }

@@ -24,7 +24,7 @@
     "test:leads": "node qa/leads/check.mjs",
     "test:prospecting": "node qa/prospecting/check.mjs",
     "test:offer-policy": "node qa/offer-policy.mjs",
-    "test:commercial-runtime": "node qa/prospecting/runtime.mjs && node qa/prospecting/providers.mjs && node qa/prospecting/free-cost.mjs && node qa/prospecting/free-agent.mjs && node qa/prospecting/free-research-provider.mjs && node qa/prospecting/research.mjs && node qa/prospecting/orchestrator.mjs && node qa/prospecting/server.mjs && node qa/prospecting/webhook-route.mjs && node qa/prospecting/owner-notifications.mjs"
+    "test:commercial-runtime": "node qa/prospecting/runtime.mjs && node qa/prospecting/providers.mjs && node qa/prospecting/free-cost.mjs && node qa/prospecting/free-agent.mjs && node qa/prospecting/free-research-provider.mjs && node qa/prospecting/research.mjs && node qa/prospecting/orchestrator.mjs && node qa/prospecting/server.mjs && node qa/prospecting/webhook-route.mjs && node qa/prospecting/owner-notifications.mjs && node qa/prospecting/handoff-email.mjs && node qa/prospecting/calendar.mjs && node qa/prospecting/cron.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
