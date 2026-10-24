@@ -58,3 +58,6 @@ next-env.d.ts
 qa/*.pdf
 qa/*.png
 qa/*.txt
+
+# Local Workers secrets and simulation flags
+.dev.vars*

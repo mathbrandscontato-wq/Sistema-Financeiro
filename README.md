@@ -2,6 +2,8 @@
 
 Aplicação privada para propostas comerciais, baseada no orçamento aprovado enviado em 09/10/2026. Sem integração bancária ou com Google Drive.
 
+Automação comercial em homologação: [estado, evidências, configurações pendentes, custos e rollback](docs/commercial-production-readiness.md). Integrações externas e cron não estão ativos.
+
 ## Arquitetura
 
 - React/Vinext com rotas HTTP protegidas pela identidade fornecida pelo Sites.

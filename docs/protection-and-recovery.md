@@ -58,3 +58,7 @@ Snapshots `dataModelVersion: 5` incluem as tabelas do diagnóstico público e me
 ## Evolução versão 6
 
 Aquisição, responsáveis, permissões de equipe, contato visível com Instagram/site e preparação da API financeira são descritos em `acquisition-team-and-payment-api.md`. O backup completo agora usa `dataModelVersion: 6`. O editor genérico de questionários permanece fora desta entrega.
+
+## Atendimento comercial — versão 8
+
+O snapshot versão 8 mantém os campos anteriores e acrescenta `prospectingRecords`, com configuração, consentimentos, conversas, inbox/outbox, handoffs, aprovações, custos, relatórios e cota da conta do proprietário. As consultas e a cota são isoladas por proprietário/conta; segredos do ambiente ficam fora do JSON. Preservar opt-outs e recibos durante restauração e conciliar eventos posteriores para evitar reenvios ou autorizações ressuscitadas. A reversão preferencial mantém migrações aditivas. Ver [preparação de produção e rollback](commercial-production-readiness.md).
