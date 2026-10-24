@@ -22,6 +22,20 @@ O POST usa exclusivamente `https://api.tavily.com/search`, com Bearer no cabeça
 
 Operadores compostos, negativos, desconhecidos, curingas, filtros com credenciais, portas, esquema de URL, caminhos relativos ou codificação ambígua são recusados antes da reserva/chamada. As frases entre aspas são preservadas e enviadas com correspondência exata. Isso traduz a sintaxe documentadamente; não declara equivalência de cobertura entre buscadores.
 
+## Novo gate de uso permitido — revisão de 24/10/2026
+
+Os [Termos da Plataforma](https://www.tavily.com/terms), atualização de 04/05/2026, e a [Política de Uso Aceitável](https://www.tavily.com/acceptable-use-policy), atualização de **21/10/2026**, requerem uma análise adicional **sobre o caso de uso**, não apenas sobre retenção e custo. A AUP proíbe facilitar comunicações promocionais não solicitadas; os termos também restringem uso ligado a propostas comerciais não solicitadas. A busca de empresas para prospecção pode fazer parte desse contexto, mesmo que a aplicação não envie mensagens via Tavily. Não presumir que todo uso interno comercial esteja automaticamente autorizado. A interpretação jurídica e a autorização do fornecedor, quando necessária, continuam pendentes.
+
+**Estado padrão: bloqueado.** O adaptador agora exige, separadamente:
+
+- `useCaseApproved:true`, somente quando houver revisão documentada que confirme o uso pretendido como permitido;
+- `useCaseApprovalRef` não vazio, vinculado à análise;
+- variáveis server-only `TAVILY_COMMERCIAL_USE_APPROVED='true'` e `TAVILY_COMMERCIAL_USE_APPROVAL_REFERENCE`, sem valor por padrão.
+
+Sem ambos, `tavily_use_case_review_required` impede a chamada **antes** da reserva de crédito e do transporte HTTP. `serverReadiness.research` permanece falso. Isso não libera a persistência: `TAVILY_METADATA_PERSISTENCE_APPROVED` e sua evidência continuam sendo outro gate. Tampouco libera contatos externos, consentimento WhatsApp ou uma campanha.
+
+Nenhuma ativação, aceite novo de termos ou consulta real foi realizada nesta atualização. Para revisão, descrever ao fornecedor o fluxo exato: biblioteca de consultas públicas por segmento e cidade, qualificação de empresas, nenhum envio pela Tavily, acesso limitado e nenhuma inferência de consentimento. Se o uso for proibido ou não puder ser confirmado, preservar o módulo desativado e avaliar outro meio tecnicamente autorizado **somente mediante decisão explícita do proprietário**, sem substituição silenciosa.
+
 ## Configuração e interrupção
 
 Campos necessários no objeto confiável do servidor:
@@ -30,6 +44,7 @@ Campos necessários no objeto confiável do servidor:
 - `costMode:'free_only'`, `estimatedCostMicros:0`, `freePlanVerified:true` e `freePlanReviewThrough` ISO futuro, com revisão no máximo 31 dias adiante;
 - `apiKey` privada e `clock` confiável, opcionalmente `timeoutMs` entre os limites do transporte;
 - dependências `reserveBudget({provider:'tavily_search',costMicros:0})` e `onUnexpectedUsage(event)`, ambas obrigatórias; `fetchImpl` injetável para QA;
+- `useCaseApproved:true` e `useCaseApprovalRef` somente após análise e confirmação independente do caso de uso comercial permitido; 
 - `metadataPersistenceApproved` ausente/falso por padrão; para permitir persistência mínima exige também `metadataPersistenceApprovalRef` explícita e separada.
 
 O autorizador e a reserva rodam antes de cada acesso. O adaptador não repete requisições, não segue redirects e não muda para outro serviço/plano. Cancelamento prévio não faz chamada. Erros contêm somente códigos/status, sem chave, corpo ou resposta privada.
