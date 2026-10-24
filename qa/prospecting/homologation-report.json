@@ -975,12 +975,50 @@
         "officialReference": "https://developers.facebook.com/documentation/business-messaging/whatsapp/support/error-codes",
         "guidance": "Review destination-country eligibility for the business category; seek official clarification rather than assume a billing or code fix",
         "draftPrepared": true,
-        "submitted": false
+        "submitted": true,
+        "caseId": "29067865726179250",
+        "caseUrl": "https://business.facebook.com/direct-support/case-detail/29067865726179250/",
+        "status": "Open",
+        "observedCreatedAtLocal": "2026-10-24 07:17 America/Sao_Paulo",
+        "createdTimePrecision": "minute",
+        "observedAt": "2026-10-24T10:18:25.415Z",
+        "submissionCount": 1,
+        "topic": "Dev: Cloud API",
+        "requestType": "Messages API and Webhook",
+        "language": "English equivalent of approved Portuguese request",
+        "routingReason": "Mandatory Account & WABA selector did not list the artificial test phone",
+        "includesRoutingLimitationAndTriageRequest": true,
+        "specificSubmissionAuthorized": true,
+        "metaAiTermsExplicitlyAuthorized": true,
+        "termsUrl": "https://www.facebook.com/legal/ai-terms",
+        "disclosedSupportUse": "Assistance and improvement of customer support and automated assistance; access by Meta employees, support team and service providers",
+        "attachmentCount": 0,
+        "privatePhoneIncluded": false,
+        "credentialsIncluded": false,
+        "aiAssistanceOffered": true,
+        "humanReviewProven": false,
+        "restrictionResolved": false,
+        "additionalWhatsAppSends": 0,
+        "paidServiceAuthorized": false,
+        "statusReconfirmedAfterReload": true,
+        "humanTriage": {
+          "requestedInSubmittedCaseBody": true,
+          "chatFollowUpAttempted": true,
+          "chatFollowUpDeliveryConfirmed": false,
+          "chatFollowUpRepeated": false,
+          "humanReviewConfirmed": false,
+          "additionalChatTermsPromptObserved": true,
+          "additionalChatTermsAccepted": false,
+          "additionalChatTermsUrls": [
+            "https://www.facebook.com/legal/BetaProductTestingTerms",
+            "https://www.facebook.com/legal/meta-ai-business-assistant-supplemental-terms"
+          ]
+        }
       }
     }
   },
   "currentStatus": {
-    "updated": "2026-10-24T02:46:07.429Z",
+    "updated": "2026-10-24T10:19:55.429Z",
     "costPolicy": "free_only",
     "operationalCostLimitBRL": 0,
     "active": false,
@@ -995,6 +1033,11 @@
     ],
     "whatsappMessagesDelivered": 0,
     "whatsappMessagesFailed": 1,
-    "whatsappAutomaticRepliesSent": 0
+    "whatsappAutomaticRepliesSent": 0,
+    "metaSupport": {
+      "caseId": "29067865726179250",
+      "status": "Open",
+      "restrictionResolved": false
+    }
   }
 }
