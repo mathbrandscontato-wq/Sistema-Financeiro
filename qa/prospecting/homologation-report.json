@@ -1127,10 +1127,46 @@
       "paidPlanPurchased": false,
       "automationActivated": false,
       "source": "https://resend.com/docs/dashboard/domains/introduction"
+    },
+    "senderDomainHomologation": {
+      "observedAt": "2026-10-24T20:47:18.392Z",
+      "domain": "avisos.mathbrands.com.br",
+      "region": "sa-east-1",
+      "status": "Verified",
+      "verifiedAtLocalDisplayed": "2026-10-24 17:44 America/Sao_Paulo",
+      "displayedTimePrecision": "minute",
+      "specificDnsAndTlsAuthorization": true,
+      "administratorAccessConfirmed": true,
+      "recordsBefore": 9,
+      "recordsAfter": 12,
+      "authorizedRecordsAdded": 3,
+      "allOriginalRecordsPreserved": true,
+      "reloadedBeforeVerification": true,
+      "authoritativeDnsMatched": true,
+      "dnsVerificationCompleted": true,
+      "ownershipVerified": true,
+      "tls": "Enforced",
+      "receivingEnabled": false,
+      "siteRecordsChanged": false,
+      "mxChanged": false,
+      "nameserversChanged": false,
+      "rootDmarcChanged": false,
+      "privateSenderConfigured": true,
+      "onlyPrivateFromVariableChanged": true,
+      "credentialValuesUnchanged": true,
+      "ownerEmailVerificationGateChanged": false,
+      "realQueueDeliveryHomologated": false,
+      "newEmailsSent": 0,
+      "newWhatsAppMessages": 0,
+      "externalApproved": false,
+      "productionApproved": false,
+      "schedulerEnabled": false,
+      "productionDeployed": false,
+      "paidPlanPurchased": false
     }
   },
   "currentStatus": {
-    "updated": "2026-10-24T16:08:54.889Z",
+    "updated": "2026-10-24T20:47:18.392Z",
     "costPolicy": "free_only",
     "operationalCostLimitBRL": 0,
     "active": false,
@@ -1138,7 +1174,7 @@
     "whatsappMessagesSent": 1,
     "remaining": [
       "Meta destination-country eligibility restriction 130497; real conversation/delivery and coexistence unproven",
-      "commercial quality and real integrated e-mail delivery with definitive sender; local queue validated",
+      "commercial quality and real integrated e-mail delivery using verified sender; local queue validated",
       "source metadata retention review",
       "offer alignment and official Pix readiness",
       "hosted free cron and explicit production release"
@@ -1159,9 +1195,12 @@
     },
     "senderDomain": {
       "domain": "avisos.mathbrands.com.br",
-      "status": "Not Started",
-      "dnsChanges": 0,
-      "ownershipVerified": false
+      "status": "Verified",
+      "dnsChanges": 3,
+      "ownershipVerified": true,
+      "tls": "Enforced",
+      "privateSenderConfigured": true,
+      "realQueueDeliveryHomologated": false
     }
   }
 }

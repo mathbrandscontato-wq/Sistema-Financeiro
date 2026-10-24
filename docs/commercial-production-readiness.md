@@ -16,7 +16,7 @@ O Sistema Financeiro continua como CRM oficial. Foram reutilizados clientes, opo
 | WhatsApp oficial e relay LP/CRM privado | HMAC, replay, conta, limite de corpo e isolamento testados | Não |
 | Consentimento, pausa humana, opt-out e cota dez | SQL concorrente e testes integrados | Não |
 | Agente consultivo | Determinístico + Cloudflare Workers AI com modelo fixo; duas respostas reais de textos fictícios; prosa LLM exige revisão humana | Qualidade e fluxo completo pendentes |
-| Handoff CRM e avisos | Tarefa/histórico idempotentes; fila integrada ao adaptador Resend validada localmente; um e-mail individual anterior entregue e confirmado pelo proprietário; WhatsApp privado separado | Remetente definitivo e entrega real da fila pendentes; WhatsApp só em janela gratuita real |
+| Handoff CRM e avisos | Tarefa/histórico idempotentes; fila Resend validada localmente; domínio próprio verificado com TLS obrigatório; um e-mail individual anterior entregue e confirmado pelo proprietário | Entrega real da fila pelo novo remetente pendente; WhatsApp só em janela gratuita real |
 | Pix após avaliação e aceite | Aprovação humana, aceite real, CRC/chave e valor R$200 testados | Pix oficial pendente |
 | Painel privado e backup | Tipos, build e HTTP local com D1/R2 | Não publicado |
 
@@ -176,3 +176,9 @@ O timer foi integrado em teste à rota autenticada e à pesquisa persistente, in
 Passaram as **treze suítes de runtime**, TypeScript e build do framework. As três novas suítes cobrem a fila integrada de e-mail, o calendário revisado e timer/rota/scheduler. Não houve mudança do motor financeiro, dos PDFs, das migrações ou dos gates de ativação. A consulta anônima à API local permaneceu negada com HTTP 403. A entrega real da fila, o remetente definitivo, a retenção, a qualidade comercial, oferta/Pix e execução gratuita hospedada continuam pendentes, além da restrição Meta.
 
 Na preparação seguinte, foi criado no Resend **avisos.mathbrands.com.br**, região São Paulo, ainda **Not Started**, com recebimento desligado. Os três registros DNS foram preparados e conferidos como ausentes na consulta pública local. Publicação, acesso administrativo ao domínio, verificação e TLS continuam pendentes da autorização específica e do acesso do proprietário. Não houve alteração DNS, novo e-mail, plano pago ou ativação. Ver [estado da conta](provider-account-preparation.md#domínio-de-avisos-preparado--24102026).
+
+## Remetente próprio verificado — 24/10/2026
+
+A preparação acima foi concluída após o aceite específico do proprietário e seu login no Registro.br. Os três registros autorizados foram publicados, preservando os nove anteriores. A zona foi conferida após recarregar o painel, e os valores responderam no DNS autoritativo. O Resend confirmou **Verified**, domínio pronto para enviar, e **TLS: Enforced**. Nenhum registro do site, MX ou servidores DNS foi alterado; recebimento de e-mail continua desligado.
+
+O remetente no domínio verificado foi preparado somente no ambiente privado de teste. Credenciais, gates de envio e verificação do destinatário foram preservados. Não houve e-mail novo, ativação de fila, alteração de produção ou gasto. A entrega real da fila usando esse remetente continua pendente; o teste anterior recebido usava o domínio de teste do Resend. Ver [prova e limites da conclusão](provider-account-preparation.md#dns-e-tls-concluídos--24102026).

@@ -89,6 +89,16 @@ A proposta exclui os registros atuais do site, MX, servidores DNS e o DMARC opci
 
 O [uso de subdomínio e a verificação por DNS](https://resend.com/docs/dashboard/domains/introduction) seguem a documentação oficial. A fila CRM/adaptador foi validada localmente com transporte fictício em [handoff-email.md](handoff-email.md); essa prova não substitui a verificação de DNS ou entrega real.
 
+### DNS e TLS concluídos — 24/10/2026
+
+Após autorização específica dos três registros e do TLS, o proprietário concluiu pessoalmente o acesso ao Registro.br. O painel confirmou `mathbrands.com.br`, publicado e usando os servidores do próprio Registro.br. Foi guardada uma cópia local da zona antes da alteração, com nove registros.
+
+Foram acrescentados somente o TXT DKIM e os dois CNAMEs aprovados. Após salvar e recarregar o painel, a zona tinha doze registros: os nove anteriores permaneceram idênticos e cada nova entrada apareceu uma única vez. Não houve troca de servidores, remoção de registro, alteração do site/MX ou inclusão do DMARC opcional. A consulta ao servidor autoritativo confirmou os três valores publicados.
+
+O Resend concluiu **Verified / Domain verified**, exibido em **24/10 às 17h44 de São Paulo**, e confirmou domínio pronto para enviar. A configuração **TLS: Enforced** foi salva e conferida; destinatários sem conexão criptografada devem resultar em falha, sem envio em texto aberto. Região São Paulo e recebimento desligado foram preservados. O painel do domínio verificado não comprova entrega de um e-mail.
+
+Somente o remetente foi preparado no arquivo privado de homologação, usando endereço no domínio verificado. As credenciais e demais variáveis foram preservadas; ambiente de teste, gates externos, produção e agendamento continuam desligados. A verificação do destinatário não foi promovida e nenhum e-mail adicional foi enviado. Não houve publicação de aplicação, mudança de preço ou plano pago. Falta o teste específico de entrega real da fila com esse remetente, separado do teste histórico com `onboarding@resend.dev`.
+
 ## OpenAI API — preparação histórica, sem uso operacional
 
 O fluxo oficial utiliza uma chave de projeto para autenticar chamadas da aplicação. O plugin OpenAI Developers pode ajudar a conectar o Codex à OpenAI Platform e preparar a chave pelo fluxo apropriado; a documentação prevê uma etapa própria de conexão da Platform. Nesta sessão, o plugin foi sugerido e permanece não instalado, sem conexão confirmada; isso não impediu concluir o login no navegador e preparar o projeto/chave na Platform. [Developer quickstart](https://developers.openai.com/api/docs/quickstart), [plugin oficial](https://developers.openai.com/learn/developers-codex-plugin).
