@@ -1,0 +1,51 @@
+name: QA Automacao Comercial (sem deploy)
+
+on:
+  push:
+    branches:
+      - feat/commercial-runtime-homologation
+  pull_request:
+    branches:
+      - fix/contract-deposit-seat-policy
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: commercial-ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: TypeScript, regressao e build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CI: "true"
+    steps:
+      - name: Checkout da branch
+        uses: actions/checkout@v4
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.13.1"
+      - name: Python 3
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Utilitarios para PDFs de regressao
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+      - name: Verificar integridade do diff
+        run: git diff --check
+      - name: Dependencias travadas no lockfile
+        run: |
+          corepack enable
+          corepack pnpm --version
+          corepack pnpm install --frozen-lockfile
+      - name: Verificacao de tipos
+        run: corepack pnpm exec tsc --noEmit
+      - name: Testes completos e build
+        run: corepack pnpm build
