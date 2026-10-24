@@ -72,8 +72,12 @@ await assert.rejects(()=>paidService.researchProvider().search('consultoria Join
 liveAccount=await store.account(owner);
 const liveConfig={costPolicy:'free_only',liveApproved:true,webhookVerified:true,waQuality:'healthy',budgets:{limitMicros:0,estimates:{}}};
 await store.configureAccount(owner,{account:liveAccount.account,revision:liveAccount.revision,dryRun:false,killSwitch:false,config:liveConfig},now);
-const mockLiveEnv={...env,COMMERCIAL_EXTERNAL_APPROVED:'true',COMMERCIAL_ACTIVATION_REFERENCE:'fixture-approval',TAVILY_API_KEY:'fixture-not-a-secret',TAVILY_FREE_PLAN_VERIFIED:'true',COMMERCIAL_FREE_PLAN_REVIEW_THROUGH:'2026-11-01T00:00:00Z'};
+const mockLiveEnv={...env,COMMERCIAL_EXTERNAL_APPROVED:'true',COMMERCIAL_ACTIVATION_REFERENCE:'fixture-approval',TAVILY_API_KEY:'fixture-not-a-secret',TAVILY_FREE_PLAN_VERIFIED:'true',TAVILY_COMMERCIAL_USE_APPROVED:'true',TAVILY_COMMERCIAL_USE_APPROVAL_REFERENCE:'fixture-terms-review',COMMERCIAL_FREE_PLAN_REVIEW_THROUGH:'2026-11-01T00:00:00Z'};
 let mockCalls=0;const mockFetch=async(url,options)=>{mockCalls++;assert.equal(url,'https://api.tavily.com/search');const body=JSON.parse(options.body);assert.equal(body.search_depth,'basic');assert.equal(body.auto_parameters,false);return Response.json({results:[],usage:{credits:1}});};
+const termsBlockedService=await commercialServices({...mockLiveEnv,TAVILY_COMMERCIAL_USE_APPROVED:'false'},owner,{clock,fetchImpl:mockFetch});
+assert.equal(termsBlockedService.readiness.research,false);
+await assert.rejects(()=>termsBlockedService.researchProvider().search('consultoria Joinville'),/tavily_use_case_review_required/);
+assert.equal(mockCalls,0,'terms review gate cannot reserve or transmit');
 const liveService=await commercialServices(mockLiveEnv,owner,{clock,fetchImpl:mockFetch});assert.equal(liveService.readiness.effectiveExternalEnabled,true);
 await liveService.researchProvider().search('consultoria Joinville');assert.equal(mockCalls,1);
 liveAccount=await store.account(owner);await store.configureAccount(owner,{account:liveAccount.account,revision:liveAccount.revision,config:{...liveConfig,liveApproved:false}},now);
