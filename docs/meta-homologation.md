@@ -122,3 +122,11 @@ O relato equivalente em inglês contém os identificadores do app, da conta e do
 No canal Account & WABA, o seletor obrigatório não listou o número de teste, inclusive por identificador. Foi usado **Dev: Cloud API / Messages API and Webhook**, com a limitação descrita no próprio relato e solicitação de triagem ao time correto. A página oferece assistência Meta AI; o protocolo aberto não comprova revisão humana ou resolução. Não houve novo envio de WhatsApp, alteração de configurações operacionais ou reabertura do callback. O teste de entrega permanece reprovado e a automação pausada.
 
 Foi tentado um pedido de revisão humana na conversa do mesmo protocolo, mas a interface não confirmou sua entrega. Após reabrir o chamado, o chat exibiu uma etapa adicional **Start using Meta AI**, com termos Beta e Suplementares distintos do aceite do formulário. Essa etapa não foi aceita nem o pedido repetido. O encaminhamento solicitado no corpo original está registrado; uma resposta ou revisão humana continua sem comprovação. O status do chamado permaneceu **Open** após recarregar a página.
+
+## Chamado reaberto por comentário — 24/10/2026
+
+Na conferência posterior, o protocolo aparecia **Closed** e o histórico do chat informava encerramento automático por falta de resposta. Não havia resposta técnica nem demonstração de correção. O fluxo permanecia diante dos termos adicionais do chat, que não foram aceitos.
+
+Foi enviado um único comentário no formulário oficial do **mesmo chamado**, dentro da finalidade já autorizada. O texto descreve o encerramento automático, pede reabertura ou análise humana e solicita esclarecimento da elegibilidade/configuração dos recursos de teste. Reitera a única tentativa falha 130497 e ausência de retentativa. Não contém credenciais, telefone privado, anexo ou autorização de cobrança, migração ou novo envio.
+
+O comentário ficou visível com horário **17h52 de São Paulo**, e o chamado voltou a **Open**. Nova leitura confirmou esse estado. Isso comprova registro e reabertura, sem comprovar atribuição a analista humano, solução ou entrega. Não houve outro WhatsApp, renovação de token, assinatura/callback ou mudança dos gates.

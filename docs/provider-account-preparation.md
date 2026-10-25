@@ -99,6 +99,14 @@ O Resend concluiu **Verified / Domain verified**, exibido em **24/10 às 17h44 d
 
 Somente o remetente foi preparado no arquivo privado de homologação, usando endereço no domínio verificado. As credenciais e demais variáveis foram preservadas; ambiente de teste, gates externos, produção e agendamento continuam desligados. A verificação do destinatário não foi promovida e nenhum e-mail adicional foi enviado. Não houve publicação de aplicação, mudança de preço ou plano pago. Falta o teste específico de entrega real da fila com esse remetente, separado do teste histórico com `onboarding@resend.dev`.
 
+### Entrega com remetente próprio e confirmação privada — 24/10/2026
+
+O proprietário autorizou avançar até o uso da automação. Foi realizado um único teste de e-mail para ele pelo novo remetente, através de outbox SQLite isolada, reserva gratuita e adaptador Resend reais, com assunto identificado como teste. O plano foi conferido como **Free**, com **Pay As You Go desligado** e franquia disponível antes da chamada. Houve exatamente um POST e HTTP 200; o ID privado correspondeu ao detalhe **Sent / Delivered às 17h55 de São Paulo**. O proprietário confirmou: **“Agora eu recebi o email teste”**. Não houve retentativa ou e-mail a cliente.
+
+São dois testes de e-mail entregues nesta tarefa: o anterior com domínio de teste e este com domínio próprio. O segundo comprova fila/adaptador e entrega reais em banco isolado; o fluxo de handoff no CRM hospedado continua pendente. Não houve WhatsApp, contrato, pagamento ou ativação. A identidade de destinatário e os recibos permanecem privados.
+
+Após essa confirmação, o destinatário aprovado foi configurado e marcado como verificado **somente na conta privada de homologação**, com backup SQLite consistente e integridade conferida. O salvamento normalizou custo zero; todas as outras tabelas ficaram idênticas. Foi acrescentado somente `RESEND_FREE_PLAN_VERIFIED=true` no ambiente privado, mantendo revisão até **29/10/2026 às 00h UTC**, credenciais intactas e gates externos/produção/agendamento desligados. Pausa e dry-run seguem ligados, pesquisa e avisos WhatsApp desligados. Não foi copiada configuração para a hospedagem.
+
 ## OpenAI API — preparação histórica, sem uso operacional
 
 O fluxo oficial utiliza uma chave de projeto para autenticar chamadas da aplicação. O plugin OpenAI Developers pode ajudar a conectar o Codex à OpenAI Platform e preparar a chave pelo fluxo apropriado; a documentação prevê uma etapa própria de conexão da Platform. Nesta sessão, o plugin foi sugerido e permanece não instalado, sem conexão confirmada; isso não impediu concluir o login no navegador e preparar o projeto/chave na Platform. [Developer quickstart](https://developers.openai.com/api/docs/quickstart), [plugin oficial](https://developers.openai.com/learn/developers-codex-plugin).

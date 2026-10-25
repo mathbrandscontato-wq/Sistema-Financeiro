@@ -1163,10 +1163,108 @@
       "schedulerEnabled": false,
       "productionDeployed": false,
       "paidPlanPurchased": false
+    },
+    "ownerMailQueueDelivery": {
+      "acceptedAt": "2026-10-24T20:54:58.220Z",
+      "recordedAt": "2026-10-25T02:08:04.038Z",
+      "localDeliveryDisplayed": "2026-10-24 17:55 America/Sao_Paulo",
+      "displayedTimePrecision": "minute",
+      "authorization": "owner instruction to advance until usable; controlled owner test",
+      "senderDomain": "avisos.mathbrands.com.br",
+      "senderVerified": true,
+      "tls": "Enforced",
+      "provider": "resend",
+      "plan": "Free",
+      "payAsYouGoEnabled": false,
+      "transport": "official runtime outbox and adapter in separate SQLite database",
+      "httpStatus": 200,
+      "networkCalls": 1,
+      "queueRows": 1,
+      "providerReceiptMatched": true,
+      "providerStatus": "Delivered",
+      "userReceiptConfirmed": true,
+      "subjectIdentifiesTest": true,
+      "customerInboundFabricated": false,
+      "realClientsCreated": 0,
+      "opportunitiesCreated": 0,
+      "contractsCreated": 0,
+      "paymentsCreated": 0,
+      "whatsAppEventsCreated": 0,
+      "whatsAppSends": 0,
+      "reservedCostMicros": 0,
+      "retries": 0,
+      "exclusiveAttemptMarker": true,
+      "hostedCrmHandoffHomologated": false,
+      "appGatesChanged": false,
+      "productionChanges": 0
+    },
+    "privateEmailRecipientPreparation": {
+      "checkedAt": "2026-10-25T02:05:29.447Z",
+      "status": "private_recipient_confirmed_paused",
+      "userReceiptConfirmed": true,
+      "providerDeliveredConfirmed": true,
+      "isolatedRuntimeQueueAccepted": true,
+      "backupIntegrity": "ok",
+      "configChanges": [
+        "authorized owner recipient configured and verified",
+        "explicit zero-cost policy normalized"
+      ],
+      "configRevisionIncrement": 1,
+      "otherTablesUnchanged": true,
+      "onlyEnvironmentChange": "RESEND_FREE_PLAN_VERIFIED:absent->true",
+      "credentialValuesUnchanged": true,
+      "freeReviewThrough": "2026-10-29T00:00:00.000Z",
+      "dryRun": true,
+      "killSwitch": true,
+      "externalApproved": false,
+      "productionApproved": false,
+      "schedulerEnabled": false,
+      "researchEnabled": false,
+      "ownerNotificationsEnabled": false,
+      "metaQuality": "unknown",
+      "networkCalls": 0,
+      "productionChanges": 0
+    },
+    "metaSupportFollowup20261024": {
+      "caseId": "29067865726179250",
+      "observedAt": "2026-10-25T02:08:04.038Z",
+      "previousStatus": "Closed",
+      "closureReason": "chat automatically closed for no response; additional chat terms not completed",
+      "followupChannel": "same case official comment form",
+      "followupCommentsSent": 1,
+      "commentDisplayedLocal": "2026-10-24 17:52 America/Sao_Paulo",
+      "commentPersisted": true,
+      "status": "Open",
+      "humanTechnicalReplyVerified": false,
+      "additionalTermsAccepted": false,
+      "restrictionResolved": false,
+      "newWhatsAppMessages": 0,
+      "privateRecipientDisclosed": false,
+      "credentialsDisclosed": false
+    },
+    "hostedReadinessInspection20261024": {
+      "observedAt": "2026-10-25T02:08:04.038Z",
+      "projectId": "appgprj_6ac97e7bd4f48191bb0e682861cb6af9",
+      "siteStatus": "active",
+      "currentUserRole": "owner",
+      "accessMode": "custom",
+      "soleExplicitViewerRole": "owner",
+      "allowedViewerCount": 1,
+      "allowedGroupCount": 0,
+      "linkedSchedules": 0,
+      "latestSavedVersion": 19,
+      "environmentRevision": 1,
+      "existingIntakeVariables": 3,
+      "commercialCredentialsPresent": false,
+      "commercialJobConfigured": false,
+      "cloudTimerActivated": false,
+      "hostedCapacityMeasured": false,
+      "environmentChanged": false,
+      "deployed": false
     }
   },
   "currentStatus": {
-    "updated": "2026-10-24T20:47:18.392Z",
+    "updated": "2026-10-25T02:08:04.038Z",
     "costPolicy": "free_only",
     "operationalCostLimitBRL": 0,
     "active": false,
@@ -1174,10 +1272,10 @@
     "whatsappMessagesSent": 1,
     "remaining": [
       "Meta destination-country eligibility restriction 130497; real conversation/delivery and coexistence unproven",
-      "commercial quality and real integrated e-mail delivery using verified sender; local queue validated",
+      "commercial agent quality and handoff delivery in hosted CRM; isolated real owner-email queue delivery confirmed",
       "source metadata retention review",
       "offer alignment and official Pix readiness",
-      "hosted free cron and explicit production release"
+      "hosted free cron capacity/access verification and production release"
     ],
     "whatsappMessagesDelivered": 0,
     "whatsappMessagesFailed": 1,
@@ -1185,13 +1283,19 @@
     "metaSupport": {
       "caseId": "29067865726179250",
       "status": "Open",
+      "reopenedByPersistedComment": true,
+      "humanTechnicalReplyVerified": false,
       "restrictionResolved": false
     },
     "independentPreparation": {
       "emailQueueLocal": "validated",
       "calendarLocal": "applied in paused preview",
       "timerLocal": "validated",
-      "productionActive": false
+      "productionActive": false,
+      "emailQueueIsolatedReal": "delivered and received by owner",
+      "privateEmailRecipientVerified": true,
+      "privateAccountPaused": true,
+      "hostedInspection": "owner-only access; no linked schedule; commercial credentials absent"
     },
     "senderDomain": {
       "domain": "avisos.mathbrands.com.br",
@@ -1200,7 +1304,12 @@
       "ownershipVerified": true,
       "tls": "Enforced",
       "privateSenderConfigured": true,
-      "realQueueDeliveryHomologated": false
-    }
+      "realQueueDeliveryHomologated": true,
+      "realQueueDeliveryScope": "isolated owner test only",
+      "hostedCrmHandoffHomologated": false
+    },
+    "emailsSentInThisTask": 2,
+    "emailsDeliveredInThisTask": 2,
+    "emailsUserConfirmedInThisTask": 2
   }
 }
