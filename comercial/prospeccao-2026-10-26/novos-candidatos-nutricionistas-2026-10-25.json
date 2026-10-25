@@ -1,0 +1,380 @@
+{
+  "date": "2026-10-25",
+  "queries": [
+    {
+      "city": "Jaraguá do Sul",
+      "searches": 10
+    },
+    {
+      "city": "Criciúma",
+      "searches": 10
+    },
+    {
+      "city": "Joinville",
+      "searches": 10
+    },
+    {
+      "city": "Maringá",
+      "searches": 10
+    },
+    {
+      "city": "Blumenau",
+      "searches": 10
+    },
+    {
+      "city": "Chapecó",
+      "searches": 10
+    },
+    {
+      "city": "Ponta Grossa",
+      "searches": 10
+    },
+    {
+      "city": "São José dos Pinhais",
+      "searches": 10
+    }
+  ],
+  "candidates": [
+    {
+      "handle": "nutrigabrielat",
+      "segment": "Nutricionista",
+      "city": "Jaraguá do Sul",
+      "uf": "SC",
+      "name": "Gabriela Tomasi | Nutricionista em Jaraguá do Sul",
+      "instagram": "https://www.instagram.com/nutrigabrielat/",
+      "snippet": "Gabriela Tomasi | Nutricionista em Jaraguá do Sul | CRN 6399. 6,500 followers. 2,861 following. Especialista em te fazer emagrecer sem neuras e sem passar ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Jaraguá do Sul",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutribisalvador",
+      "segment": "Nutricionista",
+      "city": "Jaraguá do Sul",
+      "uf": "SC",
+      "name": "Bianca Salvador | Nutricionista em Jaraguá do Sul",
+      "instagram": "https://www.instagram.com/nutribisalvador/",
+      "snippet": "Bianca Salvador | Nutricionista em Jaraguá do Sul | CRN10 14389. 1,103 ... Bianca Salvador CRN-10 14389 #nutricionista #dieta #emagrecer #treino #cafe ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Jaraguá do Sul",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrilurosso",
+      "segment": "Nutricionista",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "CRN10 9337 Criciúma e Floripa (@nutrilurosso)",
+      "instagram": "https://www.instagram.com/nutrilurosso/",
+      "snippet": "NUTRICIONISTA LU ROSSO - CRN10 9337 Criciúma e Floripa. 16.1K followers ... Nutri Lu Rosso Nutricionista | CRN 9337 ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "larissazanettec",
+      "segment": "Nutricionista",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Larissa Zanette Colonetti (@larissazanettec)",
+      "instagram": "https://www.instagram.com/larissazanettec/",
+      "snippet": "Sou nutricionista, mas esse perfil vai além disso. Lipedema • Emagrecimento • Intestino Içara • Criciúma • On-line Agendamentos ↓ CRN 109630. Follow.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "bflornutri",
+      "segment": "Nutricionista",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Dra. Beatriz Flôr-CRN 10372 (@bflornutri) · Criciúma, SC",
+      "instagram": "https://www.instagram.com/bflornutri/",
+      "snippet": "... Criciúma. ... Algumas sugestões de recheio de pão, para vocês não ficarem enjoados #nutricionista ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutri_mararovaris",
+      "segment": "Nutricionista",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Criciúma e Morro da Fumaça (@nutri_mararovaris)",
+      "instagram": "https://www.instagram.com/nutri_mararovaris/",
+      "snippet": "... CRN 11818 Morro da Fumaça,SC Criciúma,SC Agendamentos ⤵️ ... Nutricionista Mara Machado - Criciúma e Morro da Fumaça. 5,307 followers.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "mariaaugusta.nutricionista",
+      "segment": "Nutricionista",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Maria Augusta Freitas (@mariaaugusta.nutricionista)",
+      "instagram": "https://www.instagram.com/mariaaugusta.nutricionista/",
+      "snippet": "999 followers · 32 posts · Nutricionista | CRN-SC 10821 Saúde, Metabolismo e Composição Corporal.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "tarcisiojunior_",
+      "segment": "Nutricionista",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Dr. Tarcísio Júnior (@tarcisiojunior_) · Criciúma, SC",
+      "instagram": "https://www.instagram.com/tarcisiojunior_/",
+      "snippet": "... CRN-10/13637P ®️CRT ... O que eu diria sobre ser Nutri? Ser nutricionista ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "debibertinutri",
+      "segment": "Nutricionista",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Debora Berti | Nutricionista Oncológica (@debibertinutri)",
+      "instagram": "https://www.instagram.com/debibertinutri/",
+      "snippet": "‍⚕️DÉBORA BERTI - Nutricionista Oncológica - CRN 1645 Criciúma | On-line para ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrituanyarenhart",
+      "segment": "Nutricionista",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Nutricionista Joinville e Online (@nutrituanyarenhart)",
+      "instagram": "https://www.instagram.com/nutrituanyarenhart/",
+      "snippet": "Fitododia | Nutricionista Joinville e Online. 13.5K followers. 2,478 following ... Nutricionista Tuany Arenhart CRN 8908 Edifício Helbor Dual Offices ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutri_nandastella",
+      "segment": "Nutricionista",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Nutricionista - CRN 10 14478 | Joinville (@nutri_nandastella)",
+      "instagram": "https://www.instagram.com/nutri_nandastella/",
+      "snippet": "Nanda Stella | Nutricionista - CRN 10 14478 | Joinville. 4,350 followers. 1,041 following. @armazemdanaturezabistro • Nutricionista • Autora:Consultório na ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutricionista_shaupastega",
+      "segment": "Nutricionista",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Nutricionista (@nutricionista_shaupastega)",
+      "instagram": "https://www.instagram.com/nutricionista_shaupastega/",
+      "snippet": "Quando emagrecer não depende só de dieta. Lipedema • Hormônios • Emagrecimento Nutricionista CRN 10-5690| Axys Clínica Joinville | Online Comece aqui.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "lucascostanutri",
+      "segment": "Nutricionista",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Nutricionista Lucas | CRN 10 7338 (@lucascostanutri)",
+      "instagram": "https://www.instagram.com/lucascostanutri/",
+      "snippet": "Nutricionista Lucas | CRN 10 7338. 15.3K followers. 323 following ... Joinville essa vontade vai embora rapidinho . . #nutricionista ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "gabialencar.nutri",
+      "segment": "Nutricionista",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Nutricionista em Maringá | CRN-8/2002 (@gabialencar.nutri)",
+      "instagram": "https://www.instagram.com/gabialencar.nutri/",
+      "snippet": "Gabriela Alencar | Nutricionista em Maringá | CRN-8/2002. 1,617 followers. 3,881 following. Organizo sua alimentação, sem te transformar refém de dieta ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutri.amandasato",
+      "segment": "Nutricionista",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Nutricionista | Maringá & online (@nutri.amandasato)",
+      "instagram": "https://www.instagram.com/nutri.amandasato/",
+      "snippet": "Amanda Sato | Nutricionista | Maringá & online. 1,493 followers. 1,469 following. CRN 19954. Mulher, por aqui te ajudo a emagrecer e alcançar o corpo que sempre ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "bahmoretti.nutri",
+      "segment": "Nutricionista",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Barbara Moretti | Nutricionista (@bahmoretti.nutri)",
+      "instagram": "https://www.instagram.com/bahmoretti.nutri/",
+      "snippet": "CRN-8 n°19697. A Nutri que acolhe, transforma e respeita quem você é ... #NutriçãoInteligente #Maringá #nutricionista #comportamento ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutribarbarasantana",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Nutricionista CRN 10/11413 (@nutribarbarasantana)",
+      "instagram": "https://www.instagram.com/nutribarbarasantana/",
+      "snippet": "Bárbara Sant'Ana | Nutricionista CRN 10/11413. 3,394 followers. 1,106 ... Blumenau: @kugiktofu ✨ #vegan #tofu #tofurecipes ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrithainacsousa",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Thainá Sousa | Nutricionista (@nutrithainacsousa)",
+      "instagram": "https://www.instagram.com/nutrithainacsousa/",
+      "snippet": "te mostro que é possível comer bem & ter resultados (com prazer e constância) atendimentos em Blumenau e online crn 14246 — agende aqui ↓.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutri.angelicafkl",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "nutri.angelicafkl - Angélica Ludwig",
+      "instagram": "https://www.instagram.com/nutri.angelicafkl/",
+      "snippet": "Angélica Ludwig | Nutricionista Materno Infantil | CRN 10-4896. 5,921 ... Blumenau/SC', desenvolvido no âmbito do Edital 01-2023 da Fundação Fritz ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutriamandaametzner",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Nutricionista (@nutriamandaametzner)",
+      "instagram": "https://www.instagram.com/nutriamandaametzner/",
+      "snippet": "... Blumenau | Online CRN 13763 ... Como nutricionista, eu te ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrimaiarak",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Nutricionista Comportamental | CRN 14471 (@nutrimaiarak)",
+      "instagram": "https://www.instagram.com/nutrimaiarak/",
+      "snippet": "... Blumenau e online Comece aqui ↓ ... Maiara Kopsch | Nutricionista Comportamental | CRN 14471. 1,163 followers. 628 ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrithainahenschel",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Thainá Henschel | Nutricionista (@nutrithainahenschel)",
+      "instagram": "https://www.instagram.com/nutrithainahenschel/",
+      "snippet": "... Blumenau CRN 12330 ... Meu trabalho como nutricionista ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutricao.dix",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "André Dix | Nutricionista em Blumenau (@nutricao.dix)",
+      "instagram": "https://www.instagram.com/nutricao.dix/",
+      "snippet": "André Dix | Nutricionista em Blumenau. 2,285 followers. 764 following. Nutritionist. Planejamento Nutricional, Emagrecimento e Hipertrofia. CRN-10/9986",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "crn10sc",
+      "segment": "Nutricionista",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "CRN10 SC (@crn10sc) - Conselho Regional de Nutrição",
+      "instagram": "https://www.instagram.com/crn10sc/",
+      "snippet": "... nutricionista na saúde, na educação e na segurança alimentar e nutricional. ... A coordenadora técnica do CRN-10, Pietra Diehl Klein (CRN-10 0837), também ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "escolinhadescobrindosabores",
+      "segment": "Nutricionista",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "CRN 10. 3113 (@escolinhadescobrindosabores) ...",
+      "instagram": "https://www.instagram.com/escolinhadescobrindosabores/",
+      "snippet": "... Chapecó e Xanxerê –SC Agende. ... Graciane Piran | Nutricionista Infantil - CRN 10. 3113. 1,175 posts. 5,701 ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "vivianesimomura",
+      "segment": "Nutricionista",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Nutricionista Clínica | CRN 10: 6300 (@vivianesimomura)",
+      "instagram": "https://www.instagram.com/vivianesimomura/",
+      "snippet": "... Chapecó ... Viviane Simomura | Nutricionista Clínica | CRN 10: 6300. 1,079 followers.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutri.lucasmorais",
+      "segment": "Nutricionista",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Lucas Morais | Nutricionista (@nutri.lucasmorais)",
+      "instagram": "https://www.instagram.com/nutri.lucasmorais/",
+      "snippet": "Nutricionista | CRN-8 n°18389 🍽️ Te ajudo a emagrecer comendo o que gosta Consulta online e presencial Ponta Grossa • PR ⬇️ Agende sua consulta.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutribyju",
+      "segment": "Nutricionista",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Nutricionista CRN 8 18267 (@nutribyju) - Julia Portela",
+      "instagram": "https://www.instagram.com/nutribyju/",
+      "snippet": "Julia Portela | Nutricionista CRN 8 18267. 1,537 followers. 297 following ... A OAB Ponta ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "lg_anapaula",
+      "segment": "Nutricionista",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Ana Paula (@lg_anapaula)",
+      "instagram": "https://www.instagram.com/lg_anapaula/",
+      "snippet": "CRN 8 3592 Nutricionista Clínica - Paliativista Atenção à Saúde Unimed Ponta Grossa Enfermagem 5/10. Atendimento @clinica.believe #AnaNutriAlma.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutricarolgibur",
+      "segment": "Nutricionista",
+      "city": "São José dos Pinhais",
+      "uf": "PR",
+      "name": "Carolina Gibur | Nutricionista (@nutricarolgibur)",
+      "instagram": "https://www.instagram.com/nutricarolgibur/",
+      "snippet": "... São José dos Pinhais ... nutricionista Carolina Gibur Nutricionista CRN - 16228. Receitinha nova por ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN São José dos Pinhais",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrilomorais",
+      "segment": "Nutricionista",
+      "city": "São José dos Pinhais",
+      "uf": "PR",
+      "name": "Lorrayne Morais | Nutricionista (@nutrilomorais)",
+      "instagram": "https://www.instagram.com/nutrilomorais/",
+      "snippet": "... São José dos Pinhais | Online @ ... Me formei em 2023 e conquistei meu CRN em 2024. Hoje, apenas três anos depois de ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN São José dos Pinhais",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    }
+  ]
+}
