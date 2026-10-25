@@ -10,7 +10,7 @@ Oi, pessoal da {MARCA}! Sou Matheus, da Math Brands. Conheci {DIFERENCIAL_REAL} 
 
 **Após responder com interesse:**
 
-Fico feliz que tenha feito sentido! A ideia é um site personalizado, com apresentação dos serviços, informações essenciais e contato facilitado. O investimento da campanha é R$ 500, com R$ 200 na contratação e R$ 300 conforme as condições acordadas. A criação do site não funciona por assinatura. Se for mais prático, podemos continuar por WhatsApp? https://wa.me/5547997506434
+Fico feliz que tenha feito sentido! A ideia é um site personalizado, com apresentação dos serviços, informações essenciais e contato facilitado. O investimento da campanha é R$ 500, com R$ 200 na contratação e R$ 300 conforme as condições acordadas. A criação do site não funciona por assinatura. Se for mais prático, podemos continuar por WhatsApp? {LINK_WHATSAPP_COMERCIAL_CONFIRMADO}
 
 **Objeção preço:** O valor é fechado para o escopo que combinarmos. Antes de iniciar qualquer criação, alinhamos a proposta, os itens incluídos e as condições de pagamento para não haver surpresa.
 
