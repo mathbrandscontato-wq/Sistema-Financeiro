@@ -1,6 +1,6 @@
-# Preservação da versão publicada e preparação de implantação
+# Preservação da versão publicada e implantação pausada
 
-Revisão de 25/10/2026. Esta etapa prepara o runtime sem ativar pesquisa, mensagens ou agendamento. Nenhum PR foi mesclado no GitHub e nenhum número real foi conectado.
+Revisão de 25/10/2026. O runtime foi publicado privado e pausado na versão Sites 20, sem ativar pesquisa, mensagens ou agendamento. Nenhum PR foi mesclado no GitHub e nenhum número real foi conectado.
 
 ## Fonte publicada conferida
 
@@ -26,4 +26,14 @@ A prévia local com identidade fictícia conferiu o menu Atendimento, homologaç
 
 ## Condições preservadas para publicação pausada
 
-Reutilizar o mesmo projeto, acesso exclusivo do proprietário, DB, BUCKET e variáveis existentes. A nova versão deve iniciar sem credenciais de provedores, pesquisa, relay, job ou envio habilitados. Não copiar as credenciais autorizadas apenas para homologação privada para produção. A implantação pausada não libera a restrição Meta 130497, a revisão de uso/retenção Tavily, coexistência, qualidade do agente, preço/Pix ou execução diária real. O recibo de versão e a verificação do estado publicado devem ser registrados separadamente após retorno da plataforma.
+Foram reutilizados o mesmo projeto, acesso exclusivo do proprietário, DB, BUCKET e variáveis existentes. A nova versão iniciou sem credenciais de provedores, pesquisa, relay, job ou envio habilitados. As credenciais autorizadas apenas para homologação privada não foram copiadas para produção. A implantação pausada não libera a restrição Meta 130497, a revisão de uso/retenção Tavily, coexistência, qualidade do agente, preço/Pix ou execução diária real.
+
+## Recibo da publicação privada de 25/10/2026
+
+O GitHub aprovou o CI do candidato `6f3726abb179d794ab4ff763eabe1011ad39ac30` no [run 40187850560](https://github.com/mathbrandscontato-wq/Sistema-Financeiro/actions/runs/40187850560). O helper oficial Sites executou novamente o build agregado completo, sincronizou a fonte `3214856f68789e2b587f540307c1341c93f7babe` e empacotou o artefato de SHA-256 `7acde84d57048fc6073f4e41c9362dc946be15a3ab58f3e8f970ba503490dd95`. A operação nativa retornou **succeeded**, versão **20**, às **12h47 de São Paulo**, no [CRM privado](https://mathbrands-orcamentos.mthsdoliveira.chatgpt.site). A sincronização da fonte não publicou automaticamente; a publicação usou a operação privada nativa.
+
+As migrações 0010–0015 foram aplicadas. A leitura hospedada confirmou **44 tabelas**, onze novas vazias, sem conta operacional criada. A oferta permanece R$300 e recebeu somente a política legada `legacy_50`. O ambiente continua na revisão 1, com exatamente as três variáveis anteriores de intake; acesso somente do proprietário e nenhuma agenda vinculada. O navegador confirmou Atendimento, modo de homologação, pausa geral ligada, R$0 e fila vazia; a configuração não foi salva e não houve chamada de fornecedor nem envio de mensagem.
+
+A leitura HTTP anônima do CRM retornou **401**, sem conteúdo do workspace. A rota pública `/api/whatsapp-webhook` da LP retornou **503**, coerente com o relay desativado. Essas verificações não usaram credenciais ou bypass e não enviaram mensagens. A consulta final de suporte em 25/10 manteve o chamado Meta aberto sem resposta técnica e o e-mail Tavily com somente o pedido enviado e a confirmação automática de recebimento; ambos os bloqueios continuam.
+
+Um novo backup oficial foi baixado imediatamente antes da publicação, às **12h46**, e outro depois, às **12h51**. Ambos tiveram SHA-256 conferido com os metadados de proteção hospedados. A comparação integral das 32 tabelas anteriores do proprietário, usando somente suas colunas originais, não encontrou mudanças em valores de negócio, contratos, pagamentos ou referências de documentos. O histórico de acesso recebeu os registros normais de navegação. O backup posterior é modelo 8 e inclui as onze tabelas de prospecção vazias. Os arquivos privados ficam fora de OneDrive/Git. No total desta tarefa foram criados três backups de proteção; nenhum foi restaurado sobre produção. As limitações de recuperação integral descritas acima permanecem.

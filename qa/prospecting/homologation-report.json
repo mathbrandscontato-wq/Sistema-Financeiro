@@ -172,6 +172,39 @@
     "mockSubmissions": 1
   },
   "nextStage": {
+    "pausedPublication20261025": {
+      "crmSiteVersion": 20,
+      "crmGithubCandidate": "6f3726abb179d794ab4ff763eabe1011ad39ac30",
+      "crmPublishedSource": "3214856f68789e2b587f540307c1341c93f7babe",
+      "crmDeploymentStatus": "succeeded",
+      "crmOwnerOnly": true,
+      "crmEnvironmentRevisionPreserved": 1,
+      "crmProviderCredentialsAbsent": true,
+      "crmSchedules": 0,
+      "crmTablesBefore": 33,
+      "crmTablesAfter": 44,
+      "crmNewTablesEmpty": 11,
+      "fullOwnerBackupsBeforeAfterHashesVerified": true,
+      "fullOwnerOldTablesCompared": 32,
+      "allOldColumnValuesPreservedExceptAccessAudit": true,
+      "legacyDepositPolicyInitialized": "legacy_50",
+      "postPublicationBackupModel": 8,
+      "crmBackupRecordsAddedThisTask": 3,
+      "publishedUiPausedAndZeroCostVerified": true,
+      "lpSiteVersion": 21,
+      "lpGithubCandidate": "91a5a14116316ff836fb756d575f6a2f7b1b42a6",
+      "lpPublishedSource": "6d51a352061634b204abbfcf7a8ae83b2907afe4",
+      "lpDeploymentStatus": "succeeded",
+      "lpEnvironmentRevisionPreserved": 2,
+      "lpAudiencePreserved": "public",
+      "lpRelayEnabled": false,
+      "lpPublicCommercialPhoneVerified": true,
+      "lpCiRun22": "success",
+      "providerCallsOrMessagesByPublication": 0,
+      "actualAutomationActivated": false,
+      "githubPullRequestsMerged": false,
+      "wholeD1R2DisasterRecoveryProven": false
+    },
     "checkedAt": "2026-10-22T16:51:22.551Z",
     "aggregateBuild": {
       "command": "pnpm run build",
@@ -1499,6 +1532,6 @@
     "localRecoveryWithRealBackupValidated": true,
     "allReferencedObjectBytesRecoveredPrivately": true,
     "wholeD1R2DisasterRecoveryProven": false,
-    "productionBackupRecordsAdded": 1
+    "productionBackupRecordsAdded": 3
   }
 }
