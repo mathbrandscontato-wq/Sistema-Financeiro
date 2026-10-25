@@ -75,3 +75,18 @@ A programação original de 80 contatos por dia não é exequível respeitando o
 - Evidências adicionais para 20 prioritários em `revisao-v7-top-prioridade-busca-1.json` e `...-2.json`.
 - Fonte da V6: `RELATORIO_AUDITORIA_COMERCIAL_V6.md`.
 - Branch de auditoria `comercial/prospeccao-26-30-out-2026`, PR #8 em rascunho. Não fazer merge sem aprovação, não alterar D1 e não presumir DMs enviadas.
+
+## Controle operacional na planilha (V7)
+
+A planilha nativa foi atualizada sem alterar banco de produção. O painel agora apresenta **290 candidatos na fila**, **110 posições a repor ou ainda não aptas** (66 excluídos + 44 em revisão), **71 em revisão/reservas** (44 revisão + 27 reserva), **0 liberados** e **0 DMs enviadas**. Esses indicadores representam etapas distintas; não somar reservas aos 400 contatos.
+
+Nos cinco dias da agenda foram corrigidos 400 estados de elegibilidade, distinguindo 296 candidatos atualmente na fila (incluindo 6 rebaixados na segunda-feira) de 104 células VAGA. A fórmula de liberação agora exige:
+
+- 4 checagens anteriores (bio sem site, Google sem site, visual profissional e DM inédita);
+- quinta checagem booleana **AB** (atividade recente verificada);
+- volume mensal **numérico** em **S**, quantidade de resultados Google **numérica** em **T** e fonte+data em **U**;
+- status em **G** não iniciado por 'REVISAR'.
+
+Os seis casos rebaixados da lista de almoço estão marcados como REVISAR. Não há liberação automática de perfis classificados como VAGA. Recontagem após o ajuste: Segunda 62 candidatos/18 vagas, Terça 60/20, Quarta 58/22, Quinta 58/22, Sexta 58/22. Todos os 296 registros de operação permanecem como **NÃO ENVIAR** até verificação final.
+
+Não é possível comprovar retrospectivamente mensagens privadas já enviadas sem acesso ao histórico da conta Instagram da Math Brands. A campanha não teve mensagens enviadas por esta auditoria.
