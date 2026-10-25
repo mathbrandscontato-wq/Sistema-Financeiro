@@ -1,0 +1,292 @@
+{
+  "date": "2026-10-25",
+  "queries": [
+    {
+      "city": "Jaraguá do Sul",
+      "searches": 10
+    },
+    {
+      "city": "São José dos Pinhais",
+      "searches": 4
+    },
+    {
+      "city": "Apucarana",
+      "searches": 10
+    },
+    {
+      "city": "Maringá",
+      "searches": 10
+    },
+    {
+      "city": "Itajaí",
+      "searches": 10
+    },
+    {
+      "city": "Joinville",
+      "searches": 10
+    },
+    {
+      "city": "Chapecó",
+      "searches": 10
+    },
+    {
+      "city": "Pato Branco",
+      "searches": 3
+    }
+  ],
+  "candidates": [
+    {
+      "handle": "priscilagreffinconfeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Jaraguá do Sul",
+      "uf": "SC",
+      "name": "Priscila Greffin Confeitaria (@priscilagreffinconfeitaria)",
+      "instagram": "https://www.instagram.com/priscilagreffinconfeitaria/",
+      "snippet": "... Jaraguá do Sul: sexta e sábado Dúvidas ou encomendas, clique no link ... Priscila Greffin Confeitaria. 8,629 followers. 298 following. • Bolos e bentô cake ...",
+      "sourceSearch": "site:instagram.com confeitaria Jaraguá do Sul",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "flordelysconfeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Jaraguá do Sul",
+      "uf": "SC",
+      "name": "Flor de Lys Confeitaria (@flordelysconfeitaria) - Doces",
+      "instagram": "https://www.instagram.com/flordelysconfeitaria/",
+      "snippet": "... Jaraguá do Sul - Entrega em toda região ... 1 ano da ...",
+      "sourceSearch": "site:instagram.com confeitaria Jaraguá do Sul",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "bornweiler",
+      "segment": "Padaria / Confeitaria",
+      "city": "Jaraguá do Sul",
+      "uf": "SC",
+      "name": "Bornweiler",
+      "instagram": "https://www.instagram.com/bornweiler/",
+      "snippet": "Confeitaria artesanal. Por @camilacborn Jaraguá do Sul Encomendas e orçamentos · Bolo florido e primaveril · Morangos e mais morangos O morango além ...",
+      "sourceSearch": "site:instagram.com confeitaria Jaraguá do Sul",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "patriciacruz.confeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Jaraguá do Sul",
+      "uf": "SC",
+      "name": "Confeitaria da Patrícia (@patriciacruz.confeitaria)",
+      "instagram": "https://www.instagram.com/patriciacruz.confeitaria/",
+      "snippet": "... Jaraguá do Sul • SC Encomendas pelo WhatsApp. ... Peça já o seu , não fique sem ...",
+      "sourceSearch": "site:instagram.com confeitaria Jaraguá do Sul",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "ela.doces_",
+      "segment": "Padaria / Confeitaria",
+      "city": "Jaraguá do Sul",
+      "uf": "SC",
+      "name": "Ela.doces | brigadeiros e bolos jaraguá (@ela.doces_)",
+      "instagram": "https://www.instagram.com/ela.doces_/",
+      "snippet": "... encomendas | Jaraguá do Sul - SC ... confeitaria #confeitariasantacatarina #confeitaria #jaraguadosul #guaramirim ...",
+      "sourceSearch": "site:instagram.com confeitaria Jaraguá do Sul",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "docesdalivia483",
+      "segment": "Padaria / Confeitaria",
+      "city": "São José dos Pinhais",
+      "uf": "PR",
+      "name": "Lívia Oliveira | Bolos e Brigadeiros | São José dos Pinhais ...",
+      "instagram": "https://www.instagram.com/docesdalivia483/",
+      "snippet": "Lívia Oliveira | Bolos e Brigadeiros | São José dos Pinhais. 383 followers. 675 ... São José dos Pinhais ❤️ #coxinhas #delivery #confeitaria #fyp #explorar ...",
+      "sourceSearch": "site:instagram.com confeitaria São José dos Pinhais",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "celiasalgadosebolos",
+      "segment": "Padaria / Confeitaria",
+      "city": "Apucarana",
+      "uf": "PR",
+      "name": "Célia Salgados e Bolos (@celiasalgadosebolos) - Doces",
+      "instagram": "https://www.instagram.com/celiasalgadosebolos/",
+      "snippet": "Bolos | Doces | Salgados Feitos com sabor e tradição Encomendas todos os dias Apucarana - PR Fale com a nossa equipe.",
+      "sourceSearch": "site:instagram.com confeitaria Apucarana",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "confeitariamegadoces",
+      "segment": "Padaria / Confeitaria",
+      "city": "Apucarana",
+      "uf": "PR",
+      "name": "Mega Doces Confeitaria (@confeitariamegadoces)",
+      "instagram": "https://www.instagram.com/confeitariamegadoces/",
+      "snippet": "Mega Doces Confeitaria. 1,037 followers. 134 following. Desde 1996 no coração de Apucarana ... #apucarana #bolos ...",
+      "sourceSearch": "site:instagram.com confeitaria Apucarana",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "silviabuenobolos",
+      "segment": "Padaria / Confeitaria",
+      "city": "Apucarana",
+      "uf": "PR",
+      "name": "Silvia Bueno Bolos (@silviabuenobolos)",
+      "instagram": "https://www.instagram.com/silviabuenobolos/",
+      "snippet": "Amor em forma de tortas. Blindada, Amparada e Abençoada por Deus e N.S.. Tortas sob encomenda. Apucarana PR. ⚠️⚠️Pedidos no link abaixo⬇️⬇️.",
+      "sourceSearch": "site:instagram.com confeitaria Apucarana",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "thayla_caroline_bolos",
+      "segment": "Padaria / Confeitaria",
+      "city": "Apucarana",
+      "uf": "PR",
+      "name": "𝑨𝒑𝒖𝒄𝒂𝒓𝒂𝒏𝒂 (@thayla_caroline_bolos)",
+      "instagram": "https://www.instagram.com/thayla_caroline_bolos/",
+      "snippet": "Transformando momentos em doces lembranças. Apucarana - Pr Bolos festivos /Personalizados Delivery Orçamentos / Encomendas pelo link a baixo.",
+      "sourceSearch": "site:instagram.com confeitaria Apucarana",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "elianetavaresbolos",
+      "segment": "Padaria / Confeitaria",
+      "city": "Apucarana",
+      "uf": "PR",
+      "name": "Eliane Tavares | Apucarana PR (@elianetavaresbolos)",
+      "instagram": "https://www.instagram.com/elianetavaresbolos/",
+      "snippet": "#confeitaria #apucarana #bolos #torta #viral. Torta Ovomaltine ...",
+      "sourceSearch": "site:instagram.com confeitaria Apucarana",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "amorde.bolo",
+      "segment": "Padaria / Confeitaria",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Amor de Bolo | Maringá - PR (@amorde.bolo)",
+      "instagram": "https://www.instagram.com/amorde.bolo/",
+      "snippet": "Bolos personalizados, feitos com muito amor! Maringá -PR Bolos por encomenda ... confeitaria #bolo ...",
+      "sourceSearch": "site:instagram.com confeitaria Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "jurodrigues.confeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Bolos ▪︎ Doces ▪︎ Salgados (@jurodrigues.confeitaria)",
+      "instagram": "https://www.instagram.com/jurodrigues.confeitaria/",
+      "snippet": "3.7K+ followers · 1.9K+ following · 919 posts · @jurodrigues.confeitaria: “ Bolos personalizados, doces e salgados Por @_jurodriguess_ Maringá-PR ⤵️ Link",
+      "sourceSearch": "site:instagram.com confeitaria Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "pedrofreeitas",
+      "segment": "Padaria / Confeitaria",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Pedro Freitas Cachel | Bolos e Cursos Itajaí (@pedrofreeitas)",
+      "instagram": "https://www.instagram.com/pedrofreeitas/",
+      "snippet": "Pedro Freitas Cachel | Bolos e Cursos Itajaí. 12.2K followers. 7,380 following. Cake Decorator/Cursos Confeitaria Nutrição @pedrocachel GNT - Que Seja ...",
+      "sourceSearch": "site:instagram.com confeitaria Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "bydelicieconfeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "BOLOS & DOCES (@bydelicieconfeitaria)",
+      "instagram": "https://www.instagram.com/bydelicieconfeitaria/",
+      "snippet": "DELICIÊ CONFEITARIA | BOLOS & DOCES. 1,620 followers. 34 following. Entrepreneur. \"Espalhando doçuras por aí...\" Bolos e doces artesanais Itajaí-SC",
+      "sourceSearch": "site:instagram.com confeitaria Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "ramonserpa",
+      "segment": "Padaria / Confeitaria",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Gastronomia (@ramonserpa) - Bolos Decorados",
+      "instagram": "https://www.instagram.com/ramonserpa/",
+      "snippet": "Transformando bolos em Arte desde 2008. Itajaí - SC - Brasil Vice-campeão da América Latina. Encomendas link abaixo. ... Sigo apaixonado nesse bolo.",
+      "sourceSearch": "site:instagram.com confeitaria Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "feitoalegria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Feito Alegria Doces Artesanais (@feitoalegria)",
+      "instagram": "https://www.instagram.com/feitoalegria/",
+      "snippet": "Feito Alegria Doces Artesanais. 175 posts. 4,648 followers. 1,462 following. Cafe ... CONFEITARIA E CAFE NOVO AQUI EM JOINVILLE Tudo que é feito na ...",
+      "sourceSearch": "site:instagram.com confeitaria Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "docinhosdasu.jlle",
+      "segment": "Padaria / Confeitaria",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Brigadeiros | Brownies | Joinville (@docinhosdasu.jlle) • ...",
+      "instagram": "https://www.instagram.com/docinhosdasu.jlle/",
+      "snippet": "... doces artesanais Escolha ter essa experiência Click no link e escolha o ... Confeitaria | Brigadeiros | Brownies | Joinville. 8,288 followers. 798 ...",
+      "sourceSearch": "site:instagram.com confeitaria Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "alanapondelek.confeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Bolos & Doces (@alanapondelek.confeitaria)",
+      "instagram": "https://www.instagram.com/alanapondelek.confeitaria/",
+      "snippet": "2.1K+ followers · 1.4K+ following · 514 posts · @alanapondelek.confeitaria: “ Bom Retiro, Joinville-Sc Bolos personalizados | Doces artesanais Por @alana ...",
+      "sourceSearch": "site:instagram.com confeitaria Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "ange.confeitariaartesanal",
+      "segment": "Padaria / Confeitaria",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Delivery | take away | Ange Confeitaria | Chapecó",
+      "instagram": "https://www.instagram.com/ange.confeitariaartesanal/",
+      "snippet": "Delivery | take away | Ange Confeitaria | Chapecó - SC. 1,424 followers. 600 following. Dessert Shop. | Delivery e doces por encomendas | Chapecó - SC",
+      "sourceSearch": "site:instagram.com confeitaria Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "santaisabel_confeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Confeitaria | Chapecó (@santaisabel_confeitaria)",
+      "instagram": "https://www.instagram.com/santaisabel_confeitaria/",
+      "snippet": "Adoçando seus momentos! Chapecó - SC Menu e encomendas ... Qual seu sabor preferido? #brigadeiro #tradicional #ninhocomnutella #churros #confeitaria ...",
+      "sourceSearch": "site:instagram.com confeitaria Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "confeitariasonhosdeacucar",
+      "segment": "Padaria / Confeitaria",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Sonhos de Açúcar Confeitaria (@confeitariasonhosdeacucar)",
+      "instagram": "https://www.instagram.com/confeitariasonhosdeacucar/",
+      "snippet": "#confeitaria #bolorosa #festadeaniversario #encomendas #bolodefesta ... Seus ... Parabéns Chapecó!",
+      "sourceSearch": "site:instagram.com confeitaria Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "sosweetpb",
+      "segment": "Padaria / Confeitaria",
+      "city": "Pato Branco",
+      "uf": "PR",
+      "name": "So Sweet | Casa de Bolos e Chás (@sosweetpb)",
+      "instagram": "https://www.instagram.com/sosweetpb/",
+      "snippet": "Te esperamos na So Sweet — Casa de Bolos & Chás, em Pato Branco! ... confeitaria #bolorecheado ...",
+      "sourceSearch": "site:instagram.com confeitaria Pato Branco",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    }
+  ]
+}
