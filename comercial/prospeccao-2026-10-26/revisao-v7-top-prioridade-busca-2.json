@@ -1,0 +1,109 @@
+[
+  {
+    "id": "MB-137",
+    "handle": "bolos__tata",
+    "query": "\"bolos__tata\" \"Itajaí\" -site:instagram.com -site:facebook.com -site:threads.com",
+    "results": []
+  },
+  {
+    "id": "MB-140",
+    "handle": "bolosebolosconfeitaria",
+    "query": "\"bolosebolosconfeitaria\" \"Ponta Grossa\" -site:instagram.com -site:facebook.com -site:threads.com",
+    "results": []
+  },
+  {
+    "id": "MB-146",
+    "handle": "angelssconfeitaria",
+    "query": "\"angelssconfeitaria\" \"Ponta Grossa\" -site:instagram.com -site:facebook.com -site:threads.com",
+    "results": []
+  },
+  {
+    "id": "MB-148",
+    "handle": "saborearte.ind",
+    "query": "\"saborearte.ind\" \"Chapecó\" -site:instagram.com -site:facebook.com -site:threads.com",
+    "results": [
+      {
+        "url": "https://wanderlog.com/place/details/3027043/sabor-e-arte",
+        "title": "Sabor e Arte, - Reviews, Ratings, Tips and Why You Should Go",
+        "snippet": "Av. Irineu Bornhausen, 1010 E - Palmital, Chapecó - SC, 89814-650, Brazil · Sunday: 7:15AM–12PM. SuMoTuWeThFrSa Show times. SuSunday: 7:15AM"
+      },
+      {
+        "url": "https://saborcidade.com/chapeco/cafeterias/sabor-e-arte-gourmet",
+        "title": "Sabor e Arte Gourmet — Cafeterias em Chapecó, SC",
+        "snippet": "Rua Marechal José B Bormann, 119, Chapecó, SC, 89801-050. Bairro: Chapecó. Telefone: +554933236008. Site: https://www.instagram.com/saborear"
+      },
+      {
+        "url": "https://cnpja.com/office/51330558000176",
+        "title": "E2K CAFE, PADARIA E CESTARIA LTDA",
+        "snippet": "... dados da empresa Sabor e Arte Cestaria e Padaria, CNPJ 51.330.558/0001-76, telefone (49) 9929-3993, e-mail saborearte.ind@hotmail.com, s"
+      },
+      {
+        "url": "https://restaurantguru.com.br/Sabor-and-Arte-Chapeco-2",
+        "title": "Sabor e Arte, Chapecó - Menu do restaurante, preços e opiniões",
+        "snippet": "Sabor e Arte em Chapecó avaliado 2.8 de 5 no ... Irineu Bornhausen, 1010 E, Palmital, Chapecó, Santa Catarina, Brasil, 89814-650 ... @sabore"
+      },
+      {
+        "url": "https://wanderlog.com/tr/place/details/3027043/sabor-e-arte",
+        "title": "Sabor e Arte, - Yorumlar, Puanlar, İpuçları ve Neden Gitmelisiniz",
+        "snippet": "Irineu Bornhausen, 1010 E - Palmital, Chapecó - SC, 89814-650, Brezilya ... https://www.instagram.com/saborearte.ind/?hl=pt ... (Google tara"
+      },
+      {
+        "url": "https://cnpja.com/en/office/51330558000176",
+        "title": "E2K CAFE, PADARIA E CESTARIA LTDA",
+        "snippet": "Lookup data of company Sabor e Arte Cestaria e Padaria, CNPJ 51.330.558/0001-76, phone (49) 9929-3993, e-mail saborearte.ind@hotmail.com, lo"
+      },
+      {
+        "url": "https://starngage.com/app/global/brand/ranking/brazil/chapeco-brazil-city",
+        "title": "List of Top 100 Brands of Brazil in 2026",
+        "snippet": "PMSC - Chapecó - 2º Batalhão de Polícia Militar ... @saborearte.ind. Brazil · Food, 16.5K, 0.94%. 25, Tal ... ibis Chapecó @ibischapeco · Br"
+      }
+    ]
+  },
+  {
+    "id": "MB-207",
+    "handle": "psi.anamaia",
+    "query": "\"psi.anamaia\" \"Joinville\" -site:instagram.com -site:facebook.com -site:threads.com",
+    "results": [
+      {
+        "url": "https://app.prospectagram.com.br/i/psicologos/psi.anamaia",
+        "title": "CRP 12/18999 (@psi.anamaia) — Psicólogos no Instagram",
+        "snippet": "Um lugar seguro para quando sentimento pesar ou faltar Psicologia Clínica/ Neuropsicologia Presencial (Joinville/SC) e online Agende aqui. ."
+      },
+      {
+        "url": "https://euterapeuta.com.br/ana.maia.1",
+        "title": "Ana Maia",
+        "snippet": "(Joinville/SC) ... Seja o primeiro! Fale com Ana Maia. psi.anamaia@gmail.com. Nome. Email. Celular. Mensagem. Enviar. Compartilhar esse perf"
+      }
+    ]
+  },
+  {
+    "id": "MB-258",
+    "handle": "geuclinicadepsicologia",
+    "query": "\"geuclinicadepsicologia\" \"Pinhais\" -site:instagram.com -site:facebook.com -site:threads.com",
+    "results": []
+  },
+  {
+    "id": "MB-301",
+    "handle": "alanaperichnutri",
+    "query": "\"alanaperichnutri\" \"Blumenau\" -site:instagram.com -site:facebook.com -site:threads.com",
+    "results": []
+  },
+  {
+    "id": "MB-302",
+    "handle": "telianeestevam.nutri",
+    "query": "\"telianeestevam.nutri\" \"Maringá\" -site:instagram.com -site:facebook.com -site:threads.com",
+    "results": []
+  },
+  {
+    "id": "MB-367",
+    "handle": "nutri.catharine",
+    "query": "\"nutri.catharine\" \"Rio do Sul\" -site:instagram.com -site:facebook.com -site:threads.com",
+    "results": []
+  },
+  {
+    "id": "MB-400",
+    "handle": "nutri.larissasiqueira",
+    "query": "\"nutri.larissasiqueira\" \"Caçador\" -site:instagram.com -site:facebook.com -site:threads.com",
+    "results": []
+  }
+]
