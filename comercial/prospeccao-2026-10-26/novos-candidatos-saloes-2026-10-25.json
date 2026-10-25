@@ -1,0 +1,336 @@
+{
+  "date": "2026-10-25",
+  "queries": [
+    {
+      "city": "Blumenau",
+      "searches": 10
+    },
+    {
+      "city": "Palhoça",
+      "searches": 10
+    },
+    {
+      "city": "Brusque",
+      "searches": 4
+    },
+    {
+      "city": "Chapecó",
+      "searches": 4
+    },
+    {
+      "city": "São José",
+      "searches": 3
+    },
+    {
+      "city": "Criciúma",
+      "searches": 4
+    },
+    {
+      "city": "Itajaí",
+      "searches": 10
+    },
+    {
+      "city": "Ponta Grossa",
+      "searches": 10
+    }
+  ],
+  "candidates": [
+    {
+      "handle": "alameda_hair",
+      "segment": "Salão de Beleza",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "SALÃO DE BELEZA | BLUMENAU (@alameda_hair)",
+      "instagram": "https://www.instagram.com/alameda_hair/",
+      "snippet": "ALAMEDA HAIR | SALÃO DE BELEZA | BLUMENAU. 1,805 followers. 2,474 ... Venha viver a experiência Alameda ...",
+      "sourceSearch": "site:instagram.com salão beleza Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "leboho_concept",
+      "segment": "Salão de Beleza",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "SALÃO DE BELEZA EM BLUMENAU (@leboho_concept)",
+      "instagram": "https://www.instagram.com/leboho_concept/",
+      "snippet": "... Agendamentos: (47) 99206-2901 ou pelo link ... LĒ BOHO | SALÃO DE BELEZA EM BLUMENAU. 2,347 followers. 743 following. Onde a ...",
+      "sourceSearch": "site:instagram.com salão beleza Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "pointdabelezabnu",
+      "segment": "Salão de Beleza",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Point da Beleza (@pointdabelezabnu) · Blumenau, SC",
+      "instagram": "https://www.instagram.com/pointdabelezabnu/",
+      "snippet": "Um salão de beleza completo para você ✨ Blumenau, SC Dúvidas, agendamentos e contato pelo link ⬇️ · Mecha em tons dourado ❤️ ...",
+      "sourceSearch": "site:instagram.com salão beleza Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "salon27blumenau",
+      "segment": "Salão de Beleza",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Salon 27 (@salon27blumenau) - SALÃO DE BELEZA",
+      "instagram": "https://www.instagram.com/salon27blumenau/",
+      "snippet": "... K+ followers · 856 following · 239 posts · @salon27blumenau: “ O salão mais lindo de Blumenau Dúvidas e agendamentos somente pelo link ... SALÃO DE BELEZA • ...",
+      "sourceSearch": "site:instagram.com salão beleza Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "centrodebelezalidia",
+      "segment": "Salão de Beleza",
+      "city": "Palhoça",
+      "uf": "SC",
+      "name": "SALÃO DE BELEZA | SC- PALHOÇA (@centrodebelezalidia)",
+      "instagram": "https://www.instagram.com/centrodebelezalidia/",
+      "snippet": "SALÃO DE BELEZA | SC- PALHOÇA. 4,888 followers. 2,124 following. • Os ... mechas #palhoça ...",
+      "sourceSearch": "site:instagram.com salão beleza Palhoça",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "mnesteticaebeleza",
+      "segment": "Salão de Beleza",
+      "city": "Palhoça",
+      "uf": "SC",
+      "name": "SALÃO DE BELEZA (@mnesteticaebeleza) · Palhoça, SC",
+      "instagram": "https://www.instagram.com/mnesteticaebeleza/",
+      "snippet": "Há 18 anos + de 10.000 atendimentos Especialista em Loiros, Alisamento, corte ,estética, manicure e pedicure, maquiagem, penteado by @_maryanjos_ · Mechas ...",
+      "sourceSearch": "site:instagram.com salão beleza Palhoça",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "agsalondebeaute",
+      "segment": "Salão de Beleza",
+      "city": "Palhoça",
+      "uf": "SC",
+      "name": "Amanda Guimarães (@agsalondebeaute)",
+      "instagram": "https://www.instagram.com/agsalondebeaute/",
+      "snippet": "Salão de Beleza Palhoça| Amanda Guimarães. 3,402 followers. 939 following. Mechas & Transformações ✨ Educadora de Cabeleireiros Da técnica ao sucesso ...",
+      "sourceSearch": "site:instagram.com salão beleza Palhoça",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "lequipe_cabeleireiros",
+      "segment": "Salão de Beleza",
+      "city": "Palhoça",
+      "uf": "SC",
+      "name": "Salão de Beleza Palhoça (@lequipe_cabeleireiros)",
+      "instagram": "https://www.instagram.com/lequipe_cabeleireiros/",
+      "snippet": "L'equipe | Salão de Beleza Palhoça. 1,911 followers. 1,541 following ... #hair #blonde #dourado #mechas #hairtouch #santacatarina #palhoça ...",
+      "sourceSearch": "site:instagram.com salão beleza Palhoça",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "selmacabeleireira_",
+      "segment": "Salão de Beleza",
+      "city": "Palhoça",
+      "uf": "SC",
+      "name": "Salão de Beleza/Palhoça (@selmacabeleireira_)",
+      "instagram": "https://www.instagram.com/selmacabeleireira_/",
+      "snippet": "Salão de Beleza/Palhoça. 1,465 followers. 3,561 following. Beauty Salon. SELMA ... Essas ...",
+      "sourceSearch": "site:instagram.com salão beleza Palhoça",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "studiokiuanysilva",
+      "segment": "Salão de Beleza",
+      "city": "Palhoça",
+      "uf": "SC",
+      "name": "Salão de beleza💇🏽‍♀️Palhoça (@studiokiuanysilva)",
+      "instagram": "https://www.instagram.com/studiokiuanysilva/",
+      "snippet": "Salão de beleza ‍♀️Palhoça. 1,275 followers. 1,013 following. Experiência de 12 anos na área da beleza Especialista em mechas e cortes femininos",
+      "sourceSearch": "site:instagram.com salão beleza Palhoça",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "liza_costaaa",
+      "segment": "Salão de Beleza",
+      "city": "Brusque",
+      "uf": "SC",
+      "name": "Liza Costa | Salão de Beleza em Brusque (@liza_costaaa)",
+      "instagram": "https://www.instagram.com/liza_costaaa/",
+      "snippet": "Liza Costa | Salão de Beleza em Brusque. 3,892 followers. 2,425 following. Health/beauty. ▪️Vision by Liza Costa . Cabelos | Tratamentos | Unhas | Sobrancelha ...",
+      "sourceSearch": "site:instagram.com salão beleza Brusque",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "fredybeautybrusque",
+      "segment": "Salão de Beleza",
+      "city": "Brusque",
+      "uf": "SC",
+      "name": "Fredy Beauty Salão de Beleza (@fredybeautybrusque)",
+      "instagram": "https://www.instagram.com/fredybeautybrusque/",
+      "snippet": "Desde 2003 no coração e na beleza de Brusque. Cabelos e produção ‍♀️ Para agendamento e informações ⤵️.",
+      "sourceSearch": "site:instagram.com salão beleza Brusque",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "helenasalao",
+      "segment": "Salão de Beleza",
+      "city": "Brusque",
+      "uf": "SC",
+      "name": "Helena Salão de Beleza (@helenasalao)",
+      "instagram": "https://www.instagram.com/helenasalao/",
+      "snippet": "... Brusque #44AnosDeHistória #MulheresPoderosas #SalãoDeBeleza #Estética #Cabelo #helenasalao ...",
+      "sourceSearch": "site:instagram.com salão beleza Brusque",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "redhairsalao",
+      "segment": "Salão de Beleza",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Red Hair Salão de Beleza (@redhairsalao)",
+      "instagram": "https://www.instagram.com/redhairsalao/",
+      "snippet": "Red Hair Salão de Beleza. 5,255 followers. 2,599 following. Beauty Salon ... mechas #cortefeminino #chapecó ...",
+      "sourceSearch": "site:instagram.com salão beleza Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "blessbeautysjrp",
+      "segment": "Salão de Beleza",
+      "city": "São José",
+      "uf": "SC",
+      "name": "Bless Beauty Seu Salão de Beleza (@blessbeautysjrp)",
+      "instagram": "https://www.instagram.com/blessbeautysjrp/",
+      "snippet": "✨ Bless Beauty | Seu Salão de Beleza ✨ Cabelos • Unhas • Estética • Maquiagem • Sobrancelhas Rua Américo Gomes Novoa, 810. São José do Rio Preto - SP.",
+      "sourceSearch": "site:instagram.com salão beleza São José",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "elianelorencetti_studio",
+      "segment": "Salão de Beleza",
+      "city": "São José",
+      "uf": "SC",
+      "name": "Eliane Lorencetti Studio (@elianelorencetti_studio)",
+      "instagram": "https://www.instagram.com/elianelorencetti_studio/",
+      "snippet": "⚜️Há mais de 16 anos realçando a sua beleza. Cabelos • Unhas • Estética Salão de Beleza | Bela Vista - São José, SC Agendamentos via WhatsApp.",
+      "sourceSearch": "site:instagram.com salão beleza São José",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "blaziusmaisonsalon",
+      "segment": "Salão de Beleza",
+      "city": "São José",
+      "uf": "SC",
+      "name": "Salão de Beleza (@blaziusmaisonsalon)",
+      "instagram": "https://www.instagram.com/blaziusmaisonsalon/",
+      "snippet": "... Cabelos• Unhas• Barbearia Noivas e Produções Forquilhas, São José @blaziusbarber Seu momento de se cuidar começa aqui ... Blazius Maison Salon | Salão de Beleza.",
+      "sourceSearch": "site:instagram.com salão beleza São José",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "lulussecrets.itajai",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Lulus Secrets | Salão de Beleza em Itajaí (@lulussecrets. ...",
+      "instagram": "https://www.instagram.com/lulussecrets.itajai/",
+      "snippet": "itajai. Lulus Secrets | Salão de Beleza em Itajaí. 317 posts. 4,888 followers. 8 following. Beauty, cosmetic & personal care. Lulus Secrets | ...",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "labelleespacovip",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Salão de Beleza e Estética | Itajaí - SC (@labelleespacovip)",
+      "instagram": "https://www.instagram.com/labelleespacovip/",
+      "snippet": "La Belle Espaço Vip | Salão de Beleza e Estética | Itajaí - SC. 18.9K ... Ela nasceu pra ter essa ...",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "sttudioacoiffeur",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Studio A | Salão de beleza | Itajai SC (@sttudioacoiffeur)",
+      "instagram": "https://www.instagram.com/sttudioacoiffeur/",
+      "snippet": "Mechas iluminadas em tons de bege e champagne, raiz esfumada e camadas que valorizam o movimento dos fios. Elegância e luminosidade na medida certa! Agende seu ...",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "kettylinhair",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "salão de beleza itajai e Balneário Camboriú (@kettylinhair)",
+      "instagram": "https://www.instagram.com/kettylinhair/",
+      "snippet": "ITAJAÍ—47-988552751 —Rua Indaial n•1060 • BC —47-32280628 —Rua 3700 n•415 ... O tipo de loiro que faz a gente olhar duas vezes ...",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "room382_art_beauty",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "ROOM 382 art & beauty (@room382_art_beauty)",
+      "instagram": "https://www.instagram.com/room382_art_beauty/",
+      "snippet": "Salão de beleza-Coloristas Especialistas em mechas. Design em cortes. CEO @timotiochalito. Samuel Heusi, 382 - Itajaí/SC Agendamento via whats.",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "salaodebelezajeane",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Salão de beleza Jeane Karla (@salaodebelezajeane)",
+      "instagram": "https://www.instagram.com/salaodebelezajeane/",
+      "snippet": "✨ Realce sua beleza todos os dias ‍♀️ Progressiva | Mechas | Penteados Unhas impecáveis Itajaí-Sc Agende seu horário!",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "lumaesteticaebeleza",
+      "segment": "Salão de Beleza",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Salão de beleza em Ponta Grossa (@lumaesteticaebeleza)",
+      "instagram": "https://www.instagram.com/lumaesteticaebeleza/",
+      "snippet": "Salão de beleza em Ponta Grossa. 1,581 followers. 1,038 following. Luma Centro de Beleza & Estética Cabelo • unhas • estética • beauty. Experiências de beleza ...",
+      "sourceSearch": "site:instagram.com salão beleza Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "sl.beauty_pg",
+      "segment": "Salão de Beleza",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Salão de Beleza | Ponta Grossa (@sl.beauty_pg)",
+      "instagram": "https://www.instagram.com/sl.beauty_pg/",
+      "snippet": "Sl's Beauty | Salão de Beleza | Ponta Grossa. 1,835 followers. 4,093 following. Beauty Salon. ‍♀️ + de 8 anos no Mercado da Beleza ✂️Especialistas em ...",
+      "sourceSearch": "site:instagram.com salão beleza Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "espacovippg",
+      "segment": "Salão de Beleza",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "SALÃO DE BELEZA PONTA GROSSA (@espacovippg) • ...",
+      "instagram": "https://www.instagram.com/espacovippg/",
+      "snippet": "ESPAÇO VIP- BELEZA& ESTÉTICA| SALÃO DE BELEZA PONTA GROSSA. 695 followers. 617 following. Beauty Salon. ✨ Beleza com cuidado, essência e transformação ...",
+      "sourceSearch": "site:instagram.com salão beleza Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "renanpenteadosalaodebeleza",
+      "segment": "Salão de Beleza",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Salão de Beleza Renan Penteado. ...",
+      "instagram": "https://www.instagram.com/renanpenteadosalaodebeleza/",
+      "snippet": "Salão de Beleza Renan Penteado. 7,521 followers. 5,960 following. Product ... Em Ponta ...",
+      "sourceSearch": "site:instagram.com salão beleza Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    }
+  ]
+}
