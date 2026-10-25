@@ -1,8 +1,16 @@
-# Math Brands | Prospecção SC + PR | 26 a 30 de outubro de 2026
+# Math Brands | Campanha 26–30/10/2026 — AUDITORIA V5
 
 Data da descoberta: 25/10/2026. Meta: 400 contatos potenciais, 20 por dia por segmento, meta 10 contratos.
 
-**ALERTA: a base contém CANDIDATOS, não leads integralmente qualificados. NÃO disparar abordagens em lote.**
+**ALERTA: Auditoria V5 de 25/10/2026. Não disparar nenhuma DM. Foram identificados 50 candidatos com site e 3 fora do ICP. 21 estão em checagem final (nenhum aprovado); 326 permanecem em outras pendências.**
+
+- [Planilha auditada](https://docs.google.com/spreadsheets/d/1MZC2DltHM8QIshzjItyDy17FM5dUp7bfgzYbPWLYQBY/edit)
+- `auditoria-geral-400-v5.json`: conclusão por candidato.
+- `NAO-CONTATAR-53.csv`: blacklist para esta oferta.
+- `TOP-21-CHECAGEM-FINAL.csv`: prioridades, ainda sem autorização de envio.
+- `RELATORIO-AUDITORIA-V4.md`: metodologia, problemas e limitações.
+
+**Score de pré-triagem é apenas textual/heurístico, não comprova qualidade estética, procura real nem chance de fechamento.**
 
 ## Abrangência
 - Salão de Beleza: 100/100;
