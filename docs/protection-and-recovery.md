@@ -58,3 +58,23 @@ Snapshots `dataModelVersion: 5` incluem as tabelas do diagnóstico público e me
 ## Evolução versão 6
 
 Aquisição, responsáveis, permissões de equipe, contato visível com Instagram/site e preparação da API financeira são descritos em `acquisition-team-and-payment-api.md`. O backup completo agora usa `dataModelVersion: 6`. O editor genérico de questionários permanece fora desta entrega.
+
+## Atendimento comercial — versão 8
+
+O snapshot versão 8 mantém os campos anteriores e acrescenta `prospectingRecords`, com configuração, consentimentos, conversas, inbox/outbox, handoffs, aprovações, custos, relatórios e cota da conta do proprietário. As consultas e a cota são isoladas por proprietário/conta; segredos do ambiente ficam fora do JSON. Preservar opt-outs e recibos durante restauração e conciliar eventos posteriores para evitar reenvios ou autorizações ressuscitadas. A reversão preferencial mantém migrações aditivas. Ver [preparação de produção e rollback](commercial-production-readiness.md).
+
+## Ensaio isolado de restauração v8 — 24/10/2026
+
+`qa/prospecting/restore-drill.mjs` valida, usando somente SQLite em memória e identidades fictícias, a estrutura do snapshot v8, SHA-256 do JSON, restauração para banco vazio, integridade referencial, isolamento por proprietário, contratos/pagamentos/histórico, consentimento revogado, opt-out, pausa humana, outbox incerta sem reenvio e ledger individual. O teste recusa payload alterado, não acessa D1/R2 reais e foi incorporado à suíte `test:commercial-runtime`. Na primeira execução CI após integração, o run [40138552856](https://github.com/mathbrandscontato-wq/Sistema-Financeiro/actions/runs/40138552856), commit `0d99b967`, passou com `pnpm build`, TypeScript e regressões.
+
+**Limite crítico do escopo de proteção:** o snapshot gerado por `createProtectionSnapshot(owner,...)` contém somente registros daquele proprietário. Já `prospecting_costs` tem cotas **globais da conta compartilhada de fornecedores**; outros proprietários não estão na cópia individual. Uma restauração exclusiva do snapshot poderia subcontar uso gratuito, sem que o teste unitário detectasse a perda por completo. Os PDFs em R2 também não estão embutidos nesse JSON. Portanto, backup por proprietário não é equivalente a backup integral/recuperação de desastre.
+
+Antes de qualquer recuperação de produção: obter backup integral consistente de D1, todos os objetos R2 e seus metadados, criar inventário de referências e hashes, preservar o ledger de **todos** os proprietários, testar restauração em infraestrutura separada e validar as permissões. Enquanto a conciliação global não for comprovada, manter `killSwitch:true` e todos os provedores externos desligados. Não restaurar diretamente o JSON de um único proprietário sobre o D1 em uso, não sobrescrever registros posteriores, não reiniciar cota e não apagar recibos, opt-outs ou estornos. Nenhum backup/restore remoto foi executado nesta etapa.
+
+## Ensaio com a base atual e arquivos referenciados — 25/10/2026
+
+O backup nativo criado em 24/10 às 23h30 foi baixado e teve seu hash conferido contra o registro real. A cópia restaurada em SQLite privado cobriu as 33 tabelas atuais, 193 registros e um proprietário. As seis migrações pendentes preservaram todos os valores existentes; integridade e referências passaram. Dezesseis snapshots e um PDF original também foram baixados, conferidos e reconstruídos localmente sob suas chaves, sem regenerar o PDF. Não houve restauração ou migração no banco publicado nessa prova; a operação de backup acrescentou um registro de proteção e auditoria normal de acesso.
+
+A coleta inicial da ferramenta nativa tinha sete valores resumidos e foi explicitamente recusada para restauração. Os dados completos vieram da exportação protegida. O ensaio cobre os registros e objetos referenciados no momento da cópia; não prova snapshot físico atômico, inventário de objetos órfãos ou de todos os metadados R2, nem RTO/RPO. Detalhes em [preservação e implantação pausada](published-v19-integration.md).
+
+Na publicação privada da versão 20, em 25/10, foram feitas exportações protegidas imediatamente antes e depois. Seus hashes corresponderam aos metadados reais, e a comparação completa das 32 tabelas anteriores do proprietário preservou todos os valores nas colunas originais, exceto os registros normais de acesso. A oferta manteve preço R$300 e inicializou `legacy_50`; o backup posterior modelo 8 inclui as onze tabelas de prospecção vazias. Somando a cópia inicial, três backups foram criados nesta tarefa. Não houve restauração sobre produção, envio de mensagens ou reativação de fornecedores; o limite de recuperação integral permanece.

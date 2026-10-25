@@ -55,3 +55,7 @@ export const prospectingOutreach=sqliteTable('prospecting_outreach',{
 export const prospectingHandoffs=sqliteTable('prospecting_handoffs',{
  owner:text('owner').notNull(),eventId:text('event_id').notNull(),opportunityId:text('opportunity_id').notNull().references(()=>commercialOpportunities.id),summary:text('summary').notNull(),status:text('status').notNull().default('pending'),created:text('created').notNull()
 },t=>[primaryKey({columns:[t.owner,t.eventId]})]);
+
+export * from './prospecting-runtime-schema';
+
+export * from './commercial-controls-schema';

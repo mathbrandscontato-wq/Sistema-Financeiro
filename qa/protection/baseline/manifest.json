@@ -24,7 +24,7 @@
     }
   },
   "engine": {
-    "lib/templates/v1/document.mjs": "f0007e32c9847888dea779654f81c744304c5cb1af46b40a040e5fffca2edbf0",
+    "lib/templates/v1/document.mjs": "0bc2fbd1b1bec8b7b43b1e872a857e43e2324ced0fd8dbf2f0c945278eb40580",
     "lib/templates/v1/core.mjs": "1e9ed6b9f9ff3169ce65da83e09a4cd609c80ba2d7953d5d82e8c5a9fad877ba"
   }
 }

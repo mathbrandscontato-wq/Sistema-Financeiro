@@ -1,0 +1,1537 @@
+{
+  "started": "2026-10-22T15:34:05.179Z",
+  "finished": "2026-10-22T15:36:22.514Z",
+  "environment": {
+    "node": "v24.19.0",
+    "database": "SQLite local + D1/R2 emulators",
+    "providers": "injected mocks in the initial phase only; later Meta tests and provider account preparation recorded under nextStage"
+  },
+  "passed": 24,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "qa/prospecting/check.mjs",
+      "exit": 0,
+      "seconds": 0.16
+    },
+    {
+      "name": "qa/prospecting/runtime.mjs",
+      "exit": 0,
+      "seconds": 0.11
+    },
+    {
+      "name": "qa/prospecting/research.mjs",
+      "exit": 0,
+      "seconds": 0.17
+    },
+    {
+      "name": "qa/prospecting/providers.mjs",
+      "exit": 0,
+      "seconds": 0.12
+    },
+    {
+      "name": "qa/prospecting/orchestrator.mjs",
+      "exit": 0,
+      "seconds": 0.19
+    },
+    {
+      "name": "qa/prospecting/server.mjs",
+      "exit": 0,
+      "seconds": 0.18
+    },
+    {
+      "name": "qa/offer-policy.mjs",
+      "exit": 0,
+      "seconds": 0.11
+    },
+    {
+      "name": "qa/leads/check.mjs",
+      "exit": 0,
+      "seconds": 0.23
+    },
+    {
+      "name": "qa/commercial/check.mjs",
+      "exit": 0,
+      "seconds": 4.19
+    },
+    {
+      "name": "qa/crm/check.mjs",
+      "exit": 0,
+      "seconds": 8.31
+    },
+    {
+      "name": "qa/finance/check.mjs",
+      "exit": 0,
+      "seconds": 12.59
+    },
+    {
+      "name": "qa/dashboard/check.mjs",
+      "exit": 0,
+      "seconds": 21.07
+    },
+    {
+      "name": "qa/intake/check.mjs",
+      "exit": 0,
+      "seconds": 19.01
+    },
+    {
+      "name": "qa/evolution/check.mjs",
+      "exit": 0,
+      "seconds": 7.64
+    },
+    {
+      "name": "qa/operations/check.mjs",
+      "exit": 0,
+      "seconds": 4.01
+    },
+    {
+      "name": "qa/forms-check.mjs",
+      "exit": 0,
+      "seconds": 0.1
+    },
+    {
+      "name": "qa/forms-integration.mjs",
+      "exit": 0,
+      "seconds": 15.98
+    },
+    {
+      "name": "qa/prospecting/concurrency.py",
+      "exit": 0,
+      "seconds": 1.88
+    },
+    {
+      "name": "qa/offer-policy-concurrency.py",
+      "exit": 0,
+      "seconds": 2.41
+    },
+    {
+      "name": "qa/forms-concurrency.py",
+      "exit": 0,
+      "seconds": 1.89
+    },
+    {
+      "name": "qa/protection/database.py",
+      "exit": 0,
+      "seconds": 0.13
+    },
+    {
+      "name": "qa/finance/migration.py",
+      "exit": 0,
+      "seconds": 0.18
+    },
+    {
+      "name": "types",
+      "exit": 0,
+      "seconds": 5.74
+    },
+    {
+      "name": "framework-build",
+      "exit": 0,
+      "seconds": 30.92
+    }
+  ],
+  "http": {
+    "localOnly": true,
+    "dryRun": true,
+    "externalEnabled": false,
+    "emailDestinationConfigured": true,
+    "emailDestinationVerified": false,
+    "simulatedMessages": 1,
+    "crmHandoff": true,
+    "humanTakeover": true,
+    "privateBackupVersion": 8,
+    "unauthenticatedDenied": true,
+    "crossOriginDenied": true,
+    "liveActivationDenied": true,
+    "networkProvidersCalled": 0
+  },
+  "limitations": [
+    "Meta test app and webhook transport validated; full conversation, real delivery and coexistence remain pending",
+    "OpenAI restricted private key prepared but model, budget and API validation pending; Google project has no billing or Places API/key; one authorized Resend test delivered and owner-confirmed, but definitive sender domain and integrated CRM notice queue remain pending; approved budget still zero",
+    "No production deploy or WhatsApp messages sent"
+  ],
+  "followUp": {
+    "checkedAt": "2026-10-22T15:46:05.383Z",
+    "reason": "Invalidate adapters after account revision or offer change",
+    "passed": [
+      "qa/prospecting/server.mjs",
+      "qa/prospecting/orchestrator.mjs",
+      "types",
+      "framework-build"
+    ],
+    "failed": 0
+  },
+  "landingPageCI": {
+    "commit": "3b78ad397b24deb062c3da10440321164bc9987c",
+    "run": "https://github.com/mathbrandscontato-wq/mathbrands-projeto-especial/actions/runs/39817260707",
+    "status": "success",
+    "responsiveWidths": 9,
+    "horizontalOverflow": 0,
+    "majorAccessibilityViolations": 0,
+    "screenshots": 14,
+    "mockSubmissions": 1
+  },
+  "nextStage": {
+    "pausedPublication20261025": {
+      "crmSiteVersion": 20,
+      "crmGithubCandidate": "6f3726abb179d794ab4ff763eabe1011ad39ac30",
+      "crmPublishedSource": "3214856f68789e2b587f540307c1341c93f7babe",
+      "crmDeploymentStatus": "succeeded",
+      "crmOwnerOnly": true,
+      "crmEnvironmentRevisionPreserved": 1,
+      "crmProviderCredentialsAbsent": true,
+      "crmSchedules": 0,
+      "crmTablesBefore": 33,
+      "crmTablesAfter": 44,
+      "crmNewTablesEmpty": 11,
+      "fullOwnerBackupsBeforeAfterHashesVerified": true,
+      "fullOwnerOldTablesCompared": 32,
+      "allOldColumnValuesPreservedExceptAccessAudit": true,
+      "legacyDepositPolicyInitialized": "legacy_50",
+      "postPublicationBackupModel": 8,
+      "crmBackupRecordsAddedThisTask": 3,
+      "publishedUiPausedAndZeroCostVerified": true,
+      "lpSiteVersion": 21,
+      "lpGithubCandidate": "91a5a14116316ff836fb756d575f6a2f7b1b42a6",
+      "lpPublishedSource": "6d51a352061634b204abbfcf7a8ae83b2907afe4",
+      "lpDeploymentStatus": "succeeded",
+      "lpEnvironmentRevisionPreserved": 2,
+      "lpAudiencePreserved": "public",
+      "lpRelayEnabled": false,
+      "lpPublicCommercialPhoneVerified": true,
+      "lpCiRun22": "success",
+      "providerCallsOrMessagesByPublication": 0,
+      "actualAutomationActivated": false,
+      "githubPullRequestsMerged": false,
+      "wholeD1R2DisasterRecoveryProven": false
+    },
+    "checkedAt": "2026-10-22T16:51:22.551Z",
+    "aggregateBuild": {
+      "command": "pnpm run build",
+      "exit": 0,
+      "includesPdfBaseline": true,
+      "pdfPages": 8,
+      "includesOwnerNotifications": true
+    },
+    "types": {
+      "exit": 0
+    },
+    "concurrencyFixes": [
+      "busy inbox deferred without consuming attempts",
+      "outbox preparation separated from dispatch",
+      "same-recipient sends serialized",
+      "takeover before provider cancels without attempt"
+    ],
+    "browser": {
+      "localOnly": true,
+      "desktopInspected": true,
+      "mobileWidth": 390,
+      "horizontalOverflow": false,
+      "simulatedConversation": true,
+      "humanTakeover": true,
+      "privateDestinationsSeparated": true
+    },
+    "metaAudit": {
+      "portfolio": "Math Brands",
+      "authenticated": true,
+      "assetCountsBeforeDeveloperSignup": {
+        "whatsappAccountsAdded": 0,
+        "messagingAccountsAdded": 0,
+        "appsAdded": 0
+      },
+      "appsCreatedSinceAudit": 1,
+      "scope": "selected portfolio only",
+      "numberConnected": false,
+      "developerRegistration": {
+        "termsAcceptanceExplicitlyAuthorized": true,
+        "termsAccepted": true,
+        "registerStepComplete": true,
+        "registrationComplete": true,
+        "phoneVerificationComplete": true,
+        "existingEmailConfirmed": true,
+        "marketingOptIn": false,
+        "profileRole": "owner/founder",
+        "pendingStep": "Test transport complete; provider accounts, permitted recipients, full conversation/delivery and coexistence pending",
+        "authenticationHandedToOwner": true,
+        "ownerReportedAccountsCenterComplete": true,
+        "contactPresentInAccountsCenter": true,
+        "developerVerificationSmsRequested": true,
+        "agentEnteredExistingPhoneForVerification": true,
+        "agentAddedAuthenticationContact": false,
+        "accountsCenterContactFormOpened": true,
+        "appCreationReview": {
+          "name": "Math Brands Homologação",
+          "portfolio": "Math Brands",
+          "businessVerified": false,
+          "useCase": "WhatsApp",
+          "prepared": true,
+          "finalCreationApproved": true,
+          "createButtonClicked": true,
+          "passwordReauthenticationRequired": true,
+          "creationConfirmed": true,
+          "mode": "development",
+          "published": false
+        },
+        "appCreated": true,
+        "accessTokenGenerated": true,
+        "appSecretViewed": true
+      },
+      "whatsappTestSetup": {
+        "termsReviewPrepared": true,
+        "termsAcceptanceApproved": true,
+        "continueClicked": true,
+        "termsAccepted": true,
+        "stepOneOpened": true,
+        "testNumberClaimed": true,
+        "testMessagingAccountProvisioned": true,
+        "graphVersionDisplayed": "v25.0",
+        "temporaryTokenGenerated": true,
+        "testRecipientConfigured": false,
+        "messageSent": false
+      },
+      "officialTestHomologation": {
+        "environment": "isolated Git worktree outside OneDrive; credentials excluded from version control; new local D1/R2 state, no existing persisted database copied",
+        "appName": "Math Brands Homologação",
+        "appMode": "development",
+        "appPublished": false,
+        "privateCredentialsOnly": true,
+        "serviceAccess": {
+          "checkedAt": "2026-10-22T18:56:11.466Z",
+          "readOnly": true,
+          "sentMessages": 0,
+          "httpStatus": 200,
+          "phoneIdMatches": true,
+          "errorCode": null
+        },
+        "tokenInspection": {
+          "checkedAt": "2026-10-22T19:03:37.495Z",
+          "readOnly": true,
+          "sentMessages": 0,
+          "httpStatus": 200,
+          "valid": true,
+          "appMatches": true,
+          "expiresAt": "2026-10-22T20:00:00.000Z",
+          "scopes": [
+            "whatsapp_business_management",
+            "whatsapp_business_messaging",
+            "public_profile"
+          ],
+          "whatsappGranularScopes": [
+            {
+              "scope": "whatsapp_business_management",
+              "targetCount": 0,
+              "onlyTestTargets": false
+            },
+            {
+              "scope": "whatsapp_business_messaging",
+              "targetCount": 0,
+              "onlyTestTargets": false
+            }
+          ],
+          "errorCode": null,
+          "validIsHistoricalAtInspection": true
+        },
+        "assetScopeCaveat": "Granular scopes returned no target IDs; credential exclusivity to test assets was not proven. Local configuration and performed requests were bound to test IDs; no other assets queried.",
+        "activeSubscriptionBeforeTest": {
+          "checkedAt": "2026-10-22T19:17:52.811Z",
+          "readOnly": true,
+          "httpStatus": 200,
+          "errorCode": null,
+          "subscriptions": [
+            {
+              "object": "whatsapp_business_account",
+              "active": true,
+              "callbackMatches": true,
+              "fields": [
+                {
+                  "name": "messages",
+                  "version": "v26.0"
+                }
+              ]
+            }
+          ]
+        },
+        "graphServiceVersion": "v25.0",
+        "webhookSubscriptionVersion": "v26.0",
+        "localEndpointChecks": {
+          "checkedAt": "2026-10-22T19:06:09.983Z",
+          "localOnly": true,
+          "emptyEnvelopeOnly": true,
+          "realMetaWebhook": false,
+          "sentMessages": 0,
+          "passed": true,
+          "checks": [
+            {
+              "name": "correct-verification",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "wrong-verification",
+              "status": 403,
+              "passed": true
+            },
+            {
+              "name": "valid-empty-signed-envelope",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "invalid-signature",
+              "status": 401,
+              "passed": true
+            }
+          ]
+        },
+        "localGatewayChecks": {
+          "checkedAt": "2026-10-22T19:09:07.813Z",
+          "localOnly": true,
+          "emptyEnvelopeOnly": true,
+          "realMetaWebhook": false,
+          "sentMessages": 0,
+          "passed": true,
+          "checks": [
+            {
+              "name": "correct-verification",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "wrong-verification",
+              "status": 403,
+              "passed": true
+            },
+            {
+              "name": "valid-empty-signed-envelope",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "invalid-signature",
+              "status": 401,
+              "passed": true
+            }
+          ]
+        },
+        "publicEndpointChecks": {
+          "checkedAt": "2026-10-22T19:11:08.040Z",
+          "localOnly": false,
+          "emptyEnvelopeOnly": true,
+          "realMetaWebhook": false,
+          "sentMessages": 0,
+          "passed": true,
+          "checks": [
+            {
+              "name": "correct-verification",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "wrong-verification",
+              "status": 403,
+              "passed": true
+            },
+            {
+              "name": "valid-empty-signed-envelope",
+              "status": 200,
+              "passed": true
+            },
+            {
+              "name": "invalid-signature",
+              "status": 401,
+              "passed": true
+            }
+          ]
+        },
+        "gatewayExposure": {
+          "allowedPath": "/api/whatsapp",
+          "allowedMethods": [
+            "GET",
+            "POST"
+          ],
+          "otherPathsHttpStatus": 404,
+          "optionsHttpStatus": 405,
+          "bodyLimitBytes": 131072
+        },
+        "realMetaDashboardSample": {
+          "requestedInMetaDashboard": true,
+          "serverHttpStatus": 200,
+          "signatureAccepted": true,
+          "samplePhoneId": "123456123",
+          "matchesConfiguredTestAccount": false,
+          "ignoredByAccountScope": true,
+          "receivedEvents": 0,
+          "conversations": 0,
+          "inbox": 0,
+          "outbox": 0,
+          "crmLeadsCreated": 0,
+          "crmHandoffsCreated": 0,
+          "whatsappMessagesSent": 0,
+          "proves": "webhook transport and real Meta signature only; not end-to-end conversation or delivery"
+        },
+        "pausedLocalState": {
+          "privateLocalRoot": true,
+          "accountMatchesTestPhoneId": true,
+          "dryRun": true,
+          "killSwitch": true,
+          "budgetMicros": 0,
+          "testRecipients": 0,
+          "liveApproved": false,
+          "webhookVerified": false,
+          "ownerNotificationsEnabled": false,
+          "researchEnabled": false,
+          "counts": {
+            "prospecting_conversations": 0,
+            "prospecting_inbox": 0,
+            "prospecting_outbox": 0
+          }
+        },
+        "cleanup": {
+          "subscriptionCheck": {
+            "checkedAt": "2026-10-22T19:21:35.881Z",
+            "readOnly": true,
+            "httpStatus": 200,
+            "errorCode": null,
+            "subscriptions": []
+          },
+          "callbackRemoved": true,
+          "tunnelStopped": true,
+          "gatewayStopped": true,
+          "localAppStopped": true,
+          "formerPublicUrlHttpStatus": 530,
+          "temporaryAccessClosed": true,
+          "testAppAndNumberPreserved": true
+        },
+        "accountPreparationPending": [
+          "OpenAI API",
+          "Google Cloud/Places",
+          "Resend"
+        ],
+        "productionNumberConnected": false,
+        "whatsappMessagesSent": 0,
+        "paidProviderCalls": 0,
+        "productionDeploy": false,
+        "accountPreparationPendingAsOf": "2026-10-22T19:21:35.881Z",
+        "accountPreparationPendingScope": "Historical status at Meta test cleanup; see nextStage.providerAccountPreparation for subsequent account preparation.",
+        "tokenCurrentStatus": {
+          "checkedAt": "2026-10-22T22:31:20Z",
+          "status": "expired",
+          "basis": "Recorded expiresAt is earlier than this documentation update; no new API call performed",
+          "expiresAt": "2026-10-22T20:00:00.000Z",
+          "renewalRequiredBeforeReuse": true
+        }
+      }
+    },
+    "paidProviderCalls": 0,
+    "productionDeploy": false,
+    "providerAccountPreparation": {
+      "checkedAt": "2026-10-22T22:31:20Z",
+      "source": "Observed account UI and owner authorization; separate from historical Meta test events",
+      "googleCloud": {
+        "termsAcceptanceApproved": true,
+        "registrationComplete": true,
+        "projectName": "Math Brands Homologacao",
+        "projectCreated": true,
+        "billingAccountLinked": false,
+        "noBillingConfirmedInProjectDashboard": true,
+        "placesApiEnabled": false,
+        "placesApiKeyCreated": false,
+        "freeTrialStarted": false,
+        "researchEnabled": false
+      },
+      "resend": {
+        "accountPreexisting": true,
+        "plan": "Free",
+        "displayedMonthlyEmailLimit": 3000,
+        "displayedDailyEmailLimit": 100,
+        "domains": 0,
+        "existingFormKeyPreserved": true,
+        "newSendingKeyExplicitlyAuthorized": true,
+        "newSendingKeyName": "Math Brands — Homologação Comercial",
+        "newSendingKeyCreated": true,
+        "permission": "sending_access",
+        "domainAccess": "All domains",
+        "domainAccessWasOnlyUiOption": true,
+        "keyStoredOnlyInPrivateUnversionedEnv": true,
+        "from": "onboarding@resend.dev",
+        "apiValidationCalled": false,
+        "emailsSent": 0,
+        "recipientVerified": false,
+        "deliveryHomologated": false,
+        "privateEnvPresenceAndFormatChecked": true,
+        "testSenderPresent": true,
+        "ownAccountTestSenderAllowed": "onboarding@resend.dev",
+        "definitiveSenderDomainPending": true
+      },
+      "openaiApi": {
+        "accountPreexisting": true,
+        "organizationName": "Personal",
+        "projectName": "Math Brands Homologacao",
+        "separateProjectCreated": true,
+        "displayedCreditRemainingUsd": 0,
+        "displayedRequests": 0,
+        "keyCreationExplicitlyAuthorized": true,
+        "keyName": "Math Brands — Homologação Comercial",
+        "keyCreated": true,
+        "keyCreatedAt": "2026-10-22T22:28:28Z",
+        "keyExpiresAt": "2026-10-29T22:28:28Z",
+        "keyStatusAtObservation": "Active",
+        "keyPermissionMode": "Restricted",
+        "keyLastUsedAtObservation": "Never",
+        "scopes": [
+          "api.model.read",
+          "model.read",
+          "api.responses.write",
+          "api.responses.read"
+        ],
+        "otherCapabilitiesDisabled": true,
+        "keyStoredOnlyInPrivateUnversionedEnv": true,
+        "privateEnvPresenceAndFormatChecked": true,
+        "modelSelected": false,
+        "modelConfigured": false,
+        "pluginConnectionConfirmed": false,
+        "pluginInstalled": false,
+        "preparedThroughOfficialUi": true,
+        "apiCalls": 0,
+        "creditsPurchased": false,
+        "paymentCardAdded": false,
+        "newTermsPresentedDuringThisStep": false,
+        "remainingSteps": [
+          "select and approve model",
+          "approve nonzero budget if applicable",
+          "authorize and validate API use"
+        ]
+      },
+      "budgetMicros": 0,
+      "researchEnabled": false,
+      "ownerNotificationsEnabled": false,
+      "paidProviderCalls": 0,
+      "productionDeploy": false,
+      "privateEnvGates": {
+        "checkedWithoutSecretOutput": true,
+        "COMMERCIAL_ENVIRONMENT": "test",
+        "COMMERCIAL_EXTERNAL_APPROVED": false,
+        "COMMERCIAL_PRODUCTION_APPROVED": false,
+        "COMMERCIAL_SCHEDULER_ENABLED": false
+      },
+      "scope": "Historical snapshot at 2026-10-22T22:31:20Z, before the single authorized email test; see nextStage.emailDeliveryHomologation for the subsequent delivery proof."
+    },
+    "emailDeliveryHomologation": {
+      "checkedAt": "2026-10-22T22:35:24Z",
+      "source": [
+        "single authorized Resend API response",
+        "Resend email detail UI",
+        "owner inbox confirmation"
+      ],
+      "authorization": {
+        "explicit": true,
+        "maximumEmails": 1,
+        "recipientScope": "email of the same Resend account; private address omitted",
+        "subject": "Teste autorizado de homologação — Math Brands",
+        "bodyExplicitlyIdentifiedAsTest": true,
+        "bodyWithoutSaleOrClient": true
+      },
+      "transport": {
+        "requests": 1,
+        "method": "POST",
+        "provider": "Resend",
+        "httpStatus": 200,
+        "accepted": true,
+        "retries": 0,
+        "duplicateProtection": "atomic attempt marker and fixed idempotency key; values omitted",
+        "from": "onboarding@resend.dev",
+        "subjectAndBodyMatchApproved": true
+      },
+      "deliveryEvidence": {
+        "providerUiStatus": [
+          "Sent",
+          "Delivered"
+        ],
+        "providerUiDisplayedAt": "2026-10-22 19:34 America/Sao_Paulo",
+        "ownerConfirmedInboxReceipt": true,
+        "ownerConfirmation": "Recebi na caixa de entrada",
+        "receiptIdentifierOmitted": true,
+        "recipientAddressOmitted": true
+      },
+      "emailsSentInThisHomologation": 1,
+      "otherEmailsSentInThisHomologation": 0,
+      "aiApiCalls": 0,
+      "placesApiCalls": 0,
+      "whatsappMessagesSent": 0,
+      "crmLeadCreated": false,
+      "contractCreated": false,
+      "financialMovementCreated": false,
+      "runtimeGatesChanged": false,
+      "ownerEmailVerifiedConfiguration": false,
+      "ownerNotificationsEnabled": false,
+      "budgetMicros": 0,
+      "paidPlanPurchased": false,
+      "productionDeploy": false,
+      "proves": "Single isolated authorized email transport, provider delivery status and owner-confirmed inbox receipt; does not activate or homologate the integrated CRM notice queue.",
+      "remainingSteps": [
+        "verify definitive sender domain",
+        "homologate integrated CRM notice queue",
+        "review and authorize configuration activation separately"
+      ]
+    },
+    "zeroCostHomologation": {
+      "checkedAt": "2026-10-23T15:56:00.862Z",
+      "policy": {
+        "permanentZeroCost": true,
+        "paidFallback": false,
+        "positiveBudgetRejected": true,
+        "freeProviderAllowlist": [
+          "meta_whatsapp",
+          "resend",
+          "cloudflare_ai",
+          "tavily_search"
+        ],
+        "quotaPersistence": "global UTC minute/day/month atomic SQLite/D1 reservations, failures consumed",
+        "planReviewMaxDays": 31,
+        "templatesBlocked": true,
+        "realServiceWindowSafetyMinutes": 2
+      },
+      "accounts": {
+        "cloudflare": {
+          "existingAccount": true,
+          "termsSpecificallyApproved": true,
+          "currentPlan": "Workers Free US$0",
+          "credentialScopes": [
+            "Workers AI Read",
+            "Workers AI Edit"
+          ],
+          "credentialAccountCount": 1,
+          "credentialExpiresOn": "2026-10-30",
+          "storedOnlyInPrivateEnv": true
+        },
+        "tavily": {
+          "accountCreated": true,
+          "termsSpecificallyApproved": true,
+          "currentPlan": "Researcher Free",
+          "monthlyCredits": 1000,
+          "payAsYouGo": "Off",
+          "autoUpgrade": false,
+          "requestsStopAtPlanLimit": true,
+          "noUpcomingInvoice": true,
+          "keyType": "Development",
+          "keyMonthlyLimit": 620,
+          "defaultKeyPreservedUnused": true,
+          "storedOnlyInPrivateEnv": true
+        }
+      },
+      "officialTransport": {
+        "cloudflare": {
+          "realRequests": 2,
+          "syntheticInputOnly": true,
+          "safePolicyHandoffs": 2,
+          "usage": [
+            {
+              "inputTokens": 340,
+              "outputTokens": 57
+            },
+            {
+              "inputTokens": 338,
+              "outputTokens": 47
+            }
+          ],
+          "commercialQualityHomologated": false
+        },
+        "tavily": {
+          "realRequests": 1,
+          "originalPublicLibraryQuery": true,
+          "credits": 1,
+          "resultCount": 5,
+          "resultContentVerified": false,
+          "resultsPersisted": false
+        },
+        "networkCallsTotal": 3,
+        "privateCustomerDataSent": false,
+        "realMessagesSent": 0,
+        "cardAdded": false,
+        "paidPlanPurchased": false,
+        "initialHarnessExpectationCorrected": "A valid model decision selected policy/handoff. The overly strict expectation of model prose was corrected; the first call was preserved, not replayed."
+      },
+      "localValidation": {
+        "aggregateBuildExit": 0,
+        "typescriptExit": 0,
+        "commercialRuntimeSuites": 10,
+        "freeQuotaConcurrentConnections": 4,
+        "freeQuotaConcurrentAttempts": 40,
+        "originalQueriesVerified": 90,
+        "frozenPdfFixtures": 3,
+        "environment": "Windows bundled Node/Python; TMP and Poppler configured locally only",
+        "panelSavedPaused": true,
+        "newRoutesAfterResponse": true,
+        "blockedNoticesDoNotStarveEligibleQueues": true,
+        "additiveMigration": "0015 index only; no remote application",
+        "frozenPdfPages": 8,
+        "freePreHttpQuotaDeferralVerified": true
+      },
+      "privateGates": {
+        "freePlanReviewThrough": "2026-10-29T00:00:00Z",
+        "COMMERCIAL_ENVIRONMENT": "test",
+        "COMMERCIAL_EXTERNAL_APPROVED": false,
+        "COMMERCIAL_PRODUCTION_APPROVED": false,
+        "COMMERCIAL_SCHEDULER_ENABLED": false,
+        "ownerEmailVerified": false,
+        "ownerNotificationsEnabled": false
+      },
+      "productionDeploy": false
+    },
+    "metaAccessReconfirmation": {
+      "checkedAt": "2026-10-23T21:47:48.033Z",
+      "source": "Meta for Developers and Facebook identity checkpoint UI",
+      "developerAccessBlocked": false,
+      "platformReason": "Identity confirmed; access restored",
+      "currentStep": "Identity restored; sandbox message failed with country restriction 130497. Temporary callback and test subscription removed; official review required.",
+      "secretOrOtpRequestedInChat": false,
+      "credentialRenewed": true,
+      "realNumberConnected": false,
+      "whatsappMessagesSent": 0,
+      "productionDeployed": false,
+      "priorTransportEvidenceStillHistorical": true,
+      "initialBlockedCheck": {
+        "checkedAt": "2026-10-23T16:04:36.986Z",
+        "developerAccessBlocked": true,
+        "currentStep": "Owner must select the correct masked email and complete confirmation directly in Meta",
+        "platformReason": "Unusual activity; identity confirmation required"
+      },
+      "ownerCompletedIdentityConfirmation": true,
+      "accessRestoredMessageObserved": true,
+      "appListAndDashboardAccessible": true,
+      "appStatus": "Development / Unpublished",
+      "privateCheckoutUpdatedTo": "bd22a5bd7b4eae09cdb48212386e74dee426294b",
+      "activationChanged": false,
+      "browserNavigationHandoff": false,
+      "ownerConfirmedTestStepOpened": true
+    },
+    "reviewedCommercialCalendar": {
+      "checkedAt": "2026-10-23T21:42:51.034Z",
+      "artifact": "data/commercial-calendar-joinville-2026.json",
+      "city": "Joinville",
+      "state": "SC",
+      "timeZone": "America/Sao_Paulo",
+      "reviewedThrough": "2026-12-31",
+      "holidayCount": 13,
+      "officialSourcesVerified": true,
+      "publicSectorOptionalClosuresApplied": false,
+      "stateHolidayTransferredTo": "2026-08-16",
+      "focusedPolicyValidation": "passed",
+      "checks": [
+        "holidays and local business hours",
+        "state holiday transfer",
+        "optional public closure does not imply private closure",
+        "follow-ups skip holidays",
+        "expired calendar fails closed",
+        "research remains daily including holidays"
+      ],
+      "configApplied": false,
+      "productionChanged": false,
+      "networkCalls": 0,
+      "localPreviewApplication": {
+        "appliedAt": "2026-10-24T15:59:20.941Z",
+        "configApplied": true,
+        "environment": "localhost preview only",
+        "productionChanged": false,
+        "officialMetaTestAccountChanged": false
+      }
+    },
+    "metaCredentialRenewal": {
+      "checkedAt": "2026-10-23T21:47:48.033Z",
+      "privateStorageOnly": true,
+      "readOnlyNetworkCalls": 2,
+      "messagesSent": 0,
+      "tokenValid": true,
+      "appMatches": true,
+      "testPhoneIdMatches": true,
+      "tokenExpiresAt": "2026-10-23T23:00:00.000Z",
+      "scopes": [
+        "whatsapp_business_management",
+        "whatsapp_business_messaging",
+        "public_profile"
+      ],
+      "scopesWithinPriorGrant": true,
+      "whatsappGranularScopes": [
+        {
+          "scope": "whatsapp_business_management",
+          "targetCount": 0,
+          "onlyTestTargets": false
+        },
+        {
+          "scope": "whatsapp_business_messaging",
+          "targetCount": 0,
+          "onlyTestTargets": false
+        }
+      ],
+      "exclusiveTestAssetGrantProven": false,
+      "allCallsBoundToApprovedTestAssets": true,
+      "webhookReopened": false,
+      "recipientAdded": false,
+      "externalGatesChanged": false,
+      "productionChanged": false
+    },
+    "restrictedMetaConversationTest": {
+      "checkedAt": "2026-10-24T02:46:07.422Z",
+      "dateLocal": "2026-10-23",
+      "timeZone": "America/Sao_Paulo",
+      "authorization": "Owner explicitly approved one hello_world and up to two service replies to the verified private test recipient, plus a restricted temporary callback for at most 60 minutes",
+      "recipientVerifiedDirectlyInMeta": true,
+      "recipientDetailsNotExported": true,
+      "metaUiExplicitlyDescribedTestMessagesAsFree": true,
+      "template": "hello_world",
+      "language": "en_US",
+      "templateApproved": true,
+      "send": {
+        "attemptedAt": "2026-10-23T22:02:13.791Z",
+        "httpStatus": 200,
+        "attempts": 1,
+        "automaticRetries": 0,
+        "apiAccepted": true
+      },
+      "delivery": {
+        "status": "failed",
+        "errorCode": 130497,
+        "errorDescription": "Account restricted from messaging users in destination country",
+        "providerIdMatchedPrivately": true,
+        "source": "Meta for Developers visible complete webhook payload",
+        "eventAt": "2026-10-23T22:02:30.000Z",
+        "ownerReportedNotReceived": true,
+        "delivered": false
+      },
+      "quality": {
+        "observed": "UNKNOWN",
+        "platform": "CLOUD_API",
+        "healthyNotAssumed": true
+      },
+      "localPreflight": {
+        "passed": true,
+        "checks": [
+          {
+            "name": "correct-verification",
+            "status": 200,
+            "passed": true
+          },
+          {
+            "name": "wrong-verification",
+            "status": 403,
+            "passed": true
+          },
+          {
+            "name": "valid-empty-signature",
+            "status": 200,
+            "passed": true
+          },
+          {
+            "name": "wrong-signature",
+            "status": 401,
+            "passed": true
+          }
+        ],
+        "emptyEnvelopesOnly": true
+      },
+      "publicPreflight": {
+        "checks": [
+          {
+            "name": "correct_challenge",
+            "status": 200,
+            "passed": true
+          },
+          {
+            "name": "wrong_challenge",
+            "status": 403,
+            "passed": true
+          },
+          {
+            "name": "valid_empty_hmac",
+            "status": 200,
+            "passed": true
+          },
+          {
+            "name": "wrong_hmac",
+            "status": 401,
+            "passed": true
+          },
+          {
+            "name": "root_blocked",
+            "status": 404,
+            "passed": true
+          },
+          {
+            "name": "private_crm_blocked",
+            "status": 404,
+            "passed": true
+          },
+          {
+            "name": "options_blocked",
+            "status": 405,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      "officialCallback": {
+        "configuredAndVerified": true,
+        "fields": [
+          {
+            "name": "messages",
+            "version": "v26.0"
+          }
+        ],
+        "testWabaSubscribedDuringSession": true
+      },
+      "crm": {
+        "automaticRepliesSent": 0,
+        "realConversationProven": false,
+        "deliveryProven": false,
+        "bootstrapOutsideCrmOutbox": true,
+        "unmatchedDeliveryStatusIgnoredByDesign": true,
+        "dryRun": true,
+        "killSwitch": true,
+        "liveApproved": false,
+        "webhookVerified": false,
+        "localTestRecipientCount": 0,
+        "counts": {
+          "prospecting_conversations": 0,
+          "prospecting_inbox": 0,
+          "prospecting_outbox": 0
+        }
+      },
+      "cleanup": {
+        "tunnelClosed": true,
+        "tunnelClosedAt": "2026-10-23T22:58:00.045Z",
+        "tunnelClosedBy": "authorized_time_limit",
+        "withinAuthorizedHour": true,
+        "appCallbackRemoved": true,
+        "testWabaSubscriptionRemoved": true,
+        "privateServerStopped": true,
+        "renewedCredentialUsedOnlyForCleanup": true,
+        "cleanupCredentialExpiresAt": "2026-10-24T04:00:00.000Z"
+      },
+      "productionDeployed": false,
+      "realNumberConnected": false,
+      "cardAdded": false,
+      "paidPlanPurchased": false,
+      "support": {
+        "officialReference": "https://developers.facebook.com/documentation/business-messaging/whatsapp/support/error-codes",
+        "guidance": "Review destination-country eligibility for the business category; seek official clarification rather than assume a billing or code fix",
+        "draftPrepared": true,
+        "submitted": true,
+        "caseId": "29067865726179250",
+        "caseUrl": "https://business.facebook.com/direct-support/case-detail/29067865726179250/",
+        "status": "Open",
+        "observedCreatedAtLocal": "2026-10-24 07:17 America/Sao_Paulo",
+        "createdTimePrecision": "minute",
+        "observedAt": "2026-10-24T10:18:25.415Z",
+        "submissionCount": 1,
+        "topic": "Dev: Cloud API",
+        "requestType": "Messages API and Webhook",
+        "language": "English equivalent of approved Portuguese request",
+        "routingReason": "Mandatory Account & WABA selector did not list the artificial test phone",
+        "includesRoutingLimitationAndTriageRequest": true,
+        "specificSubmissionAuthorized": true,
+        "metaAiTermsExplicitlyAuthorized": true,
+        "termsUrl": "https://www.facebook.com/legal/ai-terms",
+        "disclosedSupportUse": "Assistance and improvement of customer support and automated assistance; access by Meta employees, support team and service providers",
+        "attachmentCount": 0,
+        "privatePhoneIncluded": false,
+        "credentialsIncluded": false,
+        "aiAssistanceOffered": true,
+        "humanReviewProven": false,
+        "restrictionResolved": false,
+        "additionalWhatsAppSends": 0,
+        "paidServiceAuthorized": false,
+        "statusReconfirmedAfterReload": true,
+        "humanTriage": {
+          "requestedInSubmittedCaseBody": true,
+          "chatFollowUpAttempted": true,
+          "chatFollowUpDeliveryConfirmed": false,
+          "chatFollowUpRepeated": false,
+          "humanReviewConfirmed": false,
+          "additionalChatTermsPromptObserved": true,
+          "additionalChatTermsAccepted": false,
+          "additionalChatTermsUrls": [
+            "https://www.facebook.com/legal/BetaProductTestingTerms",
+            "https://www.facebook.com/legal/meta-ai-business-assistant-supplemental-terms"
+          ]
+        }
+      }
+    },
+    "independentReadiness20261024": {
+      "checkedAt": "2026-10-24T16:00:30.884Z",
+      "environment": "local fixtures and localhost preview",
+      "costPolicy": "free_only",
+      "operationalCostLimitBRL": 0,
+      "handoffEmail": {
+        "localCrmQueueAdapterValidated": true,
+        "regressionReproducedBeforeFix": true,
+        "fix": "Filter already queued, simulated-live and archived handoffs before the reconciliation page limit",
+        "backlogAcceptedByFictionalProvider": 12,
+        "fictionalTransportUncertaintyAttempts": 1,
+        "quotaLedgerVerified": true,
+        "idempotencyVerified": true,
+        "uncertainNotReplayed": true,
+        "changedDestinationNotRedirected": true,
+        "financialTablesUnchangedInFixtures": true,
+        "realQueueDeliveryHomologated": false,
+        "realEmailsSent": 0
+      },
+      "calendar": {
+        "panelChoiceImplemented": true,
+        "defaultSelected": false,
+        "localPreviewApplied": true,
+        "preservedWhenUnselected": true,
+        "reviewedThrough": "2026-12-31",
+        "holidays": 13,
+        "pausePreserved": true,
+        "researchEnabled": false,
+        "productionApplied": false,
+        "officialMetaTestAccountChanged": false
+      },
+      "scheduler": {
+        "timerToAuthenticatedJobToSqliteValidated": true,
+        "weekendAndHolidayResearchVerified": true,
+        "duplicateEventIdempotent": true,
+        "staleEventRejected": true,
+        "failedRequestNotRetried": true,
+        "templateEnabled": false,
+        "cloudScheduleCreated": false,
+        "hostedExecutionProven": false,
+        "hostedCapacityReviewPending": true
+      },
+      "researchReview": {
+        "checkedOn": "2026-10-24",
+        "termsUpdatedOn": "2026-05-04",
+        "source": "https://www.tavily.com/terms",
+        "privateCrmInputAllowed": false,
+        "metadataPersistenceEnabled": false,
+        "permanentMetadataPermissionUnresolved": true,
+        "newRealQueries": 0
+      },
+      "validation": {
+        "runtimeSuitesPassed": 13,
+        "types": "passed",
+        "frameworkBuild": "passed",
+        "browser": {
+          "viewportWidth": 675,
+          "documentWidth": 675,
+          "externalOverflow": false,
+          "saveConfirmed": true,
+          "anonymousApiStatus": 403,
+          "previewStopped": true
+        }
+      },
+      "newExternalProviderCalls": 0,
+      "newWhatsAppMessages": 0,
+      "newRealEmails": 0,
+      "productionChanged": false,
+      "realNumberConnected": false
+    },
+    "senderDomainPreparation": {
+      "observedAt": "2026-10-24T16:08:54.889Z",
+      "domain": "avisos.mathbrands.com.br",
+      "region": "sa-east-1",
+      "status": "Not Started",
+      "domainCount": 1,
+      "domainCreated": true,
+      "ownershipVerified": false,
+      "receivingEnabled": false,
+      "dnsChanges": 0,
+      "dnsDraftPrepared": true,
+      "requiredRecords": 3,
+      "recordNames": [
+        "resend._domainkey.avisos",
+        "rsend.avisos",
+        "send.avisos"
+      ],
+      "publicDnsPreflight": "NXDOMAIN for each proposed required name in local resolver",
+      "publishedNameservers": [
+        "e.sec.dns.br",
+        "f.sec.dns.br"
+      ],
+      "administratorAccessConfirmed": false,
+      "dnsAuthorizationPending": true,
+      "siteAndExistingMailRecordsChanged": false,
+      "optionalRootDmarcIncluded": false,
+      "tlsEnforced": false,
+      "tlsProposalPrepared": true,
+      "tlsConfirmationCancelled": true,
+      "privateEmailConfigurationChanged": false,
+      "newEmailsSent": 0,
+      "paidPlanPurchased": false,
+      "automationActivated": false,
+      "source": "https://resend.com/docs/dashboard/domains/introduction"
+    },
+    "senderDomainHomologation": {
+      "observedAt": "2026-10-24T20:47:18.392Z",
+      "domain": "avisos.mathbrands.com.br",
+      "region": "sa-east-1",
+      "status": "Verified",
+      "verifiedAtLocalDisplayed": "2026-10-24 17:44 America/Sao_Paulo",
+      "displayedTimePrecision": "minute",
+      "specificDnsAndTlsAuthorization": true,
+      "administratorAccessConfirmed": true,
+      "recordsBefore": 9,
+      "recordsAfter": 12,
+      "authorizedRecordsAdded": 3,
+      "allOriginalRecordsPreserved": true,
+      "reloadedBeforeVerification": true,
+      "authoritativeDnsMatched": true,
+      "dnsVerificationCompleted": true,
+      "ownershipVerified": true,
+      "tls": "Enforced",
+      "receivingEnabled": false,
+      "siteRecordsChanged": false,
+      "mxChanged": false,
+      "nameserversChanged": false,
+      "rootDmarcChanged": false,
+      "privateSenderConfigured": true,
+      "onlyPrivateFromVariableChanged": true,
+      "credentialValuesUnchanged": true,
+      "ownerEmailVerificationGateChanged": false,
+      "realQueueDeliveryHomologated": false,
+      "newEmailsSent": 0,
+      "newWhatsAppMessages": 0,
+      "externalApproved": false,
+      "productionApproved": false,
+      "schedulerEnabled": false,
+      "productionDeployed": false,
+      "paidPlanPurchased": false
+    },
+    "ownerMailQueueDelivery": {
+      "acceptedAt": "2026-10-24T20:54:58.220Z",
+      "recordedAt": "2026-10-25T02:08:04.038Z",
+      "localDeliveryDisplayed": "2026-10-24 17:55 America/Sao_Paulo",
+      "displayedTimePrecision": "minute",
+      "authorization": "owner instruction to advance until usable; controlled owner test",
+      "senderDomain": "avisos.mathbrands.com.br",
+      "senderVerified": true,
+      "tls": "Enforced",
+      "provider": "resend",
+      "plan": "Free",
+      "payAsYouGoEnabled": false,
+      "transport": "official runtime outbox and adapter in separate SQLite database",
+      "httpStatus": 200,
+      "networkCalls": 1,
+      "queueRows": 1,
+      "providerReceiptMatched": true,
+      "providerStatus": "Delivered",
+      "userReceiptConfirmed": true,
+      "subjectIdentifiesTest": true,
+      "customerInboundFabricated": false,
+      "realClientsCreated": 0,
+      "opportunitiesCreated": 0,
+      "contractsCreated": 0,
+      "paymentsCreated": 0,
+      "whatsAppEventsCreated": 0,
+      "whatsAppSends": 0,
+      "reservedCostMicros": 0,
+      "retries": 0,
+      "exclusiveAttemptMarker": true,
+      "hostedCrmHandoffHomologated": false,
+      "appGatesChanged": false,
+      "productionChanges": 0
+    },
+    "privateEmailRecipientPreparation": {
+      "checkedAt": "2026-10-25T02:05:29.447Z",
+      "status": "private_recipient_confirmed_paused",
+      "userReceiptConfirmed": true,
+      "providerDeliveredConfirmed": true,
+      "isolatedRuntimeQueueAccepted": true,
+      "backupIntegrity": "ok",
+      "configChanges": [
+        "authorized owner recipient configured and verified",
+        "explicit zero-cost policy normalized"
+      ],
+      "configRevisionIncrement": 1,
+      "otherTablesUnchanged": true,
+      "onlyEnvironmentChange": "RESEND_FREE_PLAN_VERIFIED:absent->true",
+      "credentialValuesUnchanged": true,
+      "freeReviewThrough": "2026-10-29T00:00:00.000Z",
+      "dryRun": true,
+      "killSwitch": true,
+      "externalApproved": false,
+      "productionApproved": false,
+      "schedulerEnabled": false,
+      "researchEnabled": false,
+      "ownerNotificationsEnabled": false,
+      "metaQuality": "unknown",
+      "networkCalls": 0,
+      "productionChanges": 0
+    },
+    "metaSupportFollowup20261024": {
+      "caseId": "29067865726179250",
+      "observedAt": "2026-10-25T02:08:04.038Z",
+      "previousStatus": "Closed",
+      "closureReason": "chat automatically closed for no response; additional chat terms not completed",
+      "followupChannel": "same case official comment form",
+      "followupCommentsSent": 1,
+      "commentDisplayedLocal": "2026-10-24 17:52 America/Sao_Paulo",
+      "commentPersisted": true,
+      "status": "Open",
+      "humanTechnicalReplyVerified": false,
+      "additionalTermsAccepted": false,
+      "restrictionResolved": false,
+      "newWhatsAppMessages": 0,
+      "privateRecipientDisclosed": false,
+      "credentialsDisclosed": false
+    },
+    "hostedReadinessInspection20261024": {
+      "observedAt": "2026-10-25T02:08:04.038Z",
+      "projectId": "appgprj_6ac97e7bd4f48191bb0e682861cb6af9",
+      "siteStatus": "active",
+      "currentUserRole": "owner",
+      "accessMode": "custom",
+      "soleExplicitViewerRole": "owner",
+      "allowedViewerCount": 1,
+      "allowedGroupCount": 0,
+      "linkedSchedules": 0,
+      "latestSavedVersion": 19,
+      "environmentRevision": 1,
+      "existingIntakeVariables": 3,
+      "commercialCredentialsPresent": false,
+      "commercialJobConfigured": false,
+      "cloudTimerActivated": false,
+      "hostedCapacityMeasured": false,
+      "environmentChanged": false,
+      "deployed": false
+    },
+    "postIntegrationValidation20261024": {
+      "checkedAt": "2026-10-25T02:10:13.838Z",
+      "runtimeSuitesPassed": 14,
+      "runtimeSuitesFailed": 0,
+      "includesIsolatedV8Restore": true,
+      "remoteChangesIntegrated": true,
+      "mergeStrategy": "non-destructive merge; both histories preserved",
+      "useCaseGateBeforeQuotaAndNetwork": true,
+      "metadataGateSeparate": true,
+      "hostedWriterValidated": false,
+      "wholeD1R2RecoveryValidated": false,
+      "realNetworkCalls": 0,
+      "productionWrites": 0,
+      "typescriptPassed": true,
+      "githubCi": {
+        "runId": 40153510107,
+        "headRevision": "5d62dc1708c142f1fbd2f0206ee478f050367451",
+        "status": "completed",
+        "conclusion": "success",
+        "deploymentPerformed": false,
+        "url": "https://github.com/mathbrandscontato-wq/Sistema-Financeiro/actions/runs/40153510107"
+      }
+    },
+    "tavilySupportClarification": {
+      "checkedAt": "2026-10-25T02:14:32.605Z",
+      "status": "sent_readback_confirmed",
+      "recipient": "support@tavily.com",
+      "subject": "Researcher Free — minimal search metadata retention clarification",
+      "userSpecificallyAuthorized": true,
+      "fromAuthorizedAccount": true,
+      "sentLabelConfirmed": true,
+      "bodyConfirmed": true,
+      "ccCount": 0,
+      "bccCount": 0,
+      "attachments": 0,
+      "privateCustomerDataShared": false,
+      "credentialsShared": false,
+      "purchaseAuthorized": false,
+      "newTermsAccepted": false,
+      "providerResponseReceived": false,
+      "automationActivated": false,
+      "scheduledMonitoringCreated": false,
+      "quotedRetentionDays": 30
+    },
+    "publishedV19Preservation20261025": {
+      "recordedAt": "2026-10-25T11:08:13.601Z",
+      "sourceComparison": {
+        "checkedAt": "2026-10-25T10:43:20.771Z",
+        "siteSavedVersion": 19,
+        "siteSourceCommit": "a290c7106e6030e4e1ddded64c50ca4f0a2844ca",
+        "matchingGitHubCodeCommit": "ea8847fc0443169021204d4ae8a49d60853d1c1a",
+        "matchingGitHubPr": 3,
+        "cloudFiles": 261,
+        "githubFiles": 260,
+        "differences": [
+          "docs/markteam/PUBLICATION_AUTHORIZATION.md"
+        ],
+        "codeMatches": true,
+        "sourceReviewedPrivately": true,
+        "sourceUploaded": false,
+        "published": false
+      },
+      "privateBaselineRecovery": {
+        "checkedAt": "2026-10-25T02:31:55.909Z",
+        "status": "passed",
+        "source": "native owner backup checked against live protection hash; complete table inventory; private local restoration",
+        "sourceDataModelVersion": 7,
+        "sourceOwnerCount": 1,
+        "sourceTables": 33,
+        "sourceRows": 193,
+        "officialBackupHashMatched": true,
+        "allSourceColumnsRestored": true,
+        "nativeTruncatedValuesReplacedByOfficialBackup": 7,
+        "baselineMigrations": [
+          "0000",
+          "0001",
+          "0002",
+          "0003",
+          "0004",
+          "0005",
+          "0006",
+          "0007",
+          "0008",
+          "0009"
+        ],
+        "pendingMigrationsAppliedLocally": [
+          "0010",
+          "0011",
+          "0012",
+          "0013",
+          "0014",
+          "0015"
+        ],
+        "newTablesEmpty": 11,
+        "allExistingTableValuesUnchanged": true,
+        "financialValuesUnchanged": true,
+        "quoteAndPdfReferencesUnchanged": true,
+        "foreignKeyCheck": "ok",
+        "integrityCheck": "ok",
+        "offerPricePreservedBRL": 300,
+        "depositPolicyPreserved": "legacy_50",
+        "sourceInventoryDifferences": [
+          "workspace_access_history"
+        ],
+        "productionMigrationPerformed": false,
+        "productionBusinessRecordsChanged": false,
+        "productionBackupRecordsAdded": 1,
+        "networkCallsByDrill": 0,
+        "r2ObjectBytesIncluded": false,
+        "wholeD1R2DisasterRecoveryProven": false,
+        "atomicWholeDatabaseSnapshot": false
+      },
+      "privateReferencedObjectRecovery": {
+        "checkedAt": "2026-10-25T10:48:01.703Z",
+        "status": "passed",
+        "referencedObjectsExpected": 17,
+        "referencedObjectsRestored": 17,
+        "snapshots": 16,
+        "pdfs": 1,
+        "allHashesMatched": true,
+        "allDatabaseReferencesResolved": true,
+        "originalPdfRegenerated": false,
+        "restoredPrivately": true,
+        "bytesRestored": 1877789,
+        "productionObjectsChanged": false,
+        "productionDatabaseRestored": false,
+        "unreferencedR2ObjectsInventoried": false,
+        "allR2MetadataExported": false,
+        "atomicWholeDatabaseSnapshot": false,
+        "wholeD1R2DisasterRecoveryProven": false
+      },
+      "localUi": {
+        "checkedAt": "2026-10-25T11:02:26.560Z",
+        "environment": "localhost mock identity only",
+        "homologation": true,
+        "paused": true,
+        "zeroCost": true,
+        "scheduledTimeText": true,
+        "currentPolicy": "legacy_50",
+        "depositPolicies": [
+          "legacy_50",
+          "contract_deposit"
+        ],
+        "depositPolicySelectorPresent": true,
+        "documentWidth": 1265,
+        "width": 1280,
+        "settingsSaved": false,
+        "externalMessagesSent": 0,
+        "productionChanged": false
+      },
+      "validation": {
+        "codeTreeBeforeDocumentation": "1a11aad4294fae3fc925923a18f3971265df6f88",
+        "runtimeSuitesPassed": 14,
+        "publishedModuleSuitesPassed": 4,
+        "typescriptPassed": true,
+        "portfolioTestPassed": true,
+        "pdfFixturesPassed": 3,
+        "pdfPages": 8,
+        "pdfVisualDifferences": 0,
+        "allBuildSuiteProgramsCompleted": true,
+        "frameworkBuildPassed": true,
+        "aggregateLocalCommandInterruptedByWindowsTemporaryDirectory": true,
+        "remainingConcurrencyAndBuildRetriedSuccessfully": true,
+        "productTestsChangedToHideRunnerFailure": false,
+        "localReadWithoutBrowserContextStatus": 403,
+        "hostedGatewayBoundaryHomologated": false,
+        "sourceBuiltLocally": true,
+        "externalProviderCallsInValidation": 0
+      },
+      "productionDeploymentPerformed": false,
+      "productionBusinessRecordsChanged": false,
+      "productionBackupRecordsAdded": 1,
+      "providerCredentialsMovedToProduction": false
+    }
+  },
+  "currentStatus": {
+    "updated": "2026-10-25T11:08:13.602Z",
+    "costPolicy": "free_only",
+    "operationalCostLimitBRL": 0,
+    "active": false,
+    "productionDeploy": false,
+    "whatsappMessagesSent": 1,
+    "remaining": [
+      "Meta 130497 and real conversation/delivery/coexistence",
+      "Tavily commercial use-case and separate metadata retention clarification; only automated acknowledgement received",
+      "commercial agent quality and hosted handoff delivery",
+      "offer alignment and official Pix readiness",
+      "paused publication then hosted free cron capacity/access verification and explicit operational activation"
+    ],
+    "whatsappMessagesDelivered": 0,
+    "whatsappMessagesFailed": 1,
+    "whatsappAutomaticRepliesSent": 0,
+    "metaSupport": {
+      "caseId": "29067865726179250",
+      "status": "Open",
+      "reopenedByPersistedComment": true,
+      "humanTechnicalReplyVerified": false,
+      "restrictionResolved": false,
+      "checkedAgainOn": "2026-10-25"
+    },
+    "independentPreparation": {
+      "emailQueueLocal": "validated",
+      "calendarLocal": "applied in paused preview",
+      "timerLocal": "validated",
+      "productionActive": false,
+      "emailQueueIsolatedReal": "delivered and received by owner",
+      "privateEmailRecipientVerified": true,
+      "privateAccountPaused": true,
+      "hostedInspection": "owner-only access; no linked schedule; commercial credentials absent"
+    },
+    "senderDomain": {
+      "domain": "avisos.mathbrands.com.br",
+      "status": "Verified",
+      "dnsChanges": 3,
+      "ownershipVerified": true,
+      "tls": "Enforced",
+      "privateSenderConfigured": true,
+      "realQueueDeliveryHomologated": true,
+      "realQueueDeliveryScope": "isolated owner test only",
+      "hostedCrmHandoffHomologated": false
+    },
+    "emailsSentInThisTask": 3,
+    "emailsDeliveredInThisTask": 2,
+    "emailsUserConfirmedInThisTask": 2,
+    "research": {
+      "useCaseApproved": false,
+      "metadataPersistenceApproved": false,
+      "schedulerActivated": false,
+      "providerClarificationRequested": true,
+      "providerResponseReceived": false
+    },
+    "ownerTestEmailsSentInThisTask": 2,
+    "providerSupportEmailsSentInThisTask": 1,
+    "publishedSourceVersionPreserved": 19,
+    "localRecoveryWithRealBackupValidated": true,
+    "allReferencedObjectBytesRecoveredPrivately": true,
+    "wholeD1R2DisasterRecoveryProven": false,
+    "productionBackupRecordsAdded": 3
+  }
+}

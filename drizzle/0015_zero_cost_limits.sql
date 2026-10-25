@@ -1,0 +1,1 @@
+CREATE INDEX `prospecting_provider_usage` ON `prospecting_costs` (`provider`,`created`);

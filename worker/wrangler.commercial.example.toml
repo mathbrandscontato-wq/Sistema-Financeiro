@@ -1,0 +1,11 @@
+# Template only; no deployment or active schedule is performed by this repository.
+name = "mathbrands-commercial-timer"
+main = "commercial-cron.mjs"
+compatibility_date = "2026-10-22"
+[triggers]
+# Cloudflare interprets cron in UTC. Verify SP timezone before activation.
+# 13:30 UTC currently corresponds to 10:30 America/Sao_Paulo.
+crons = ["30 13 * * *"]
+[vars]
+SCHEDULE_ENABLED = "false"
+# Secrets via platform: CRM_SITE_TOKEN and COMMERCIAL_JOB_SECRET.

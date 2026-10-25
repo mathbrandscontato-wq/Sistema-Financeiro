@@ -1,11 +1,12 @@
+import {commercialFixture} from '../fixtures/commercial.mjs';
 import assert from 'node:assert/strict';
-import {readFile,mkdtemp,rm} from 'node:fs/promises';
+import {mkdtemp,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {planImport} from '../../lib/commercial-import.mjs';
 import {validateClient,validateOpportunity,optionalDate,centsInput,clientInput,opportunityInput,planCreateClient,planSaveClient,planCreateOpportunity,planSaveOpportunity,planArchive,planNegotiation} from '../../lib/crm.mjs';
-const source=JSON.parse(await readFile('data/commercial-reference.json','utf8'));
+const source=structuredClone(commercialFixture);
 const folder=await mkdtemp(join(tmpdir(),'mathbrands-crm-')),path=join(folder,'test.sqlite');
 const run=r=>JSON.parse(execFileSync('python3',['qa/commercial/sqlite-runner.py'],{input:JSON.stringify({path,...r}),encoding:'utf8'}));
 const execute=plan=>run({statements:plan.statements,returnChanges:true});
@@ -44,7 +45,7 @@ try{
  const racingCreate=await planCreateOpportunity(owner,{...payload,clientId:c2.id},uuid(),c2,now);execute(planArchive(owner,'client',c2,c2.revision,true,null,now));assert.deepEqual(execute(racingCreate).changes,[0,0]);assert.equal(one('commercial_opportunities',racingCreate.id,owner),undefined);
  const imported=await planImport(owner,source,{clients:[],opportunities:[],rows:[]},now);assert.equal(execute(imported).changes[0],1);
  const finances={contracts:all('commercial_contracts',owner),payments:all('commercial_payments',owner),sources:all('commercial_import_rows',owner)};
- const historic=all('commercial_opportunities',owner).find(o=>o.title==='Lavander Cerâmicas'),historicClient=one('commercial_clients',historic.client_id,owner),contract=finances.contracts.find(c=>c.opportunity_id===historic.id);
+ const historic=all('commercial_opportunities',owner).find(o=>o.title==='Empresa Fictícia Alfa'),historicClient=one('commercial_clients',historic.client_id,owner),contract=finances.contracts.find(c=>c.opportunity_id===historic.id);
  assert.throws(()=>planSaveOpportunity(owner,historic,1,{...opportunityInput(historic),amount:'999'},historicClient,contract,now),/Financeiro/);
  const historicSave=planSaveOpportunity(owner,historic,1,{...opportunityInput(historic),nextAction:'Aprovar as telas internas',nextActionOn:'2026-10-15',notes:'Histórico atualizado no CRM'},historicClient,contract,now);assert.equal(execute(historicSave).changes[0],1);
  assert.deepEqual(all('commercial_contracts',owner),finances.contracts);assert.deepEqual(all('commercial_payments',owner),finances.payments);assert.deepEqual(all('commercial_import_rows',owner),finances.sources);
