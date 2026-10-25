@@ -1,2 +1,2 @@
 import {env} from 'cloudflare:workers';
-export async function recordAccessAction(user:any,action:string){await env.DB!.prepare('INSERT INTO workspace_access_history(id,owner,actor,action,data,created) VALUES(?,?,?,?,?,?)').bind(crypto.randomUUID(),user.userId,user.actorId,action,JSON.stringify({role:user.role,phase:'attempt'}),new Date().toISOString()).run();}
+export async function recordAccessAction(user:{userId:string;actorId:string;role:string},action:string){await env.DB!.prepare('INSERT INTO workspace_access_history(id,owner,actor,action,data,created) VALUES(?,?,?,?,?,?)').bind(crypto.randomUUID(),user.userId,user.actorId,action,JSON.stringify({role:user.role,phase:'attempt'}),new Date().toISOString()).run();}

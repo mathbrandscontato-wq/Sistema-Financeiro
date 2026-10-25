@@ -1,23 +1,27 @@
+import type {DatabaseRows} from './db-types';
+import type {MutationPlan,SQLStatement} from './service-types';
+import type {CRMRequest} from './service-types';
+import {errorDetails} from './error-info.mjs';
 import {env} from 'cloudflare:workers';
 import {createProtectionSnapshot} from './protection';
 import {stableId} from './commercial-import.mjs';
 import {CRMError,validateMutationId,validateClient,validateOpportunity,validateNegotiation,planCreateClient,planSaveClient,planCreateOpportunity,planSaveOpportunity,planArchive,planNegotiation} from './crm.mjs';
 export const CRM_ACTIONS=['create_client','save_client','archive_client','create_opportunity','save_opportunity','archive_opportunity','negotiation'];
-export async function mutateCRM(owner:string,body:any){
+export async function mutateCRM(owner:string,body:CRMRequest){
  if(!env.DB||!env.BUCKET)throw new CRMError('A proteção dos dados está indisponível. Nenhum registro foi alterado.',503);
  const db=env.DB,now=new Date().toISOString(),action=body.action;
  if(!CRM_ACTIONS.includes(action))throw new CRMError('Ação inválida.');
- const find=async(table:string,id:any)=>{if(typeof id!=='string'||id.length>120)throw new CRMError('Registro inválido.');return db.prepare(`SELECT * FROM ${table} WHERE id=? AND owner=?`).bind(id,owner).first<any>();};
- let retryId:string|null=null,retryTable:string|null=null,retryParent:string|null=null,retryInput:any=null;
+ const find=async<K extends keyof DatabaseRows>(table:K,id:unknown)=>{if(typeof id!=='string'||id.length>120)throw new CRMError('Registro inválido.');return db.prepare(`SELECT * FROM ${table} WHERE id=? AND owner=?`).bind(id,owner).first<DatabaseRows[K]>();};
+ let retryId:string|null=null,retryTable:'commercial_client_history'|'commercial_history'|null=null,retryParent:string|null=null,retryInput:unknown=null;
  if(action==='create_client'||action==='create_opportunity'||action==='negotiation'){
   validateMutationId(body.mutationId);
   if(action==='create_client'){retryId=await stableId(owner,'crm-client-create',body.mutationId);retryTable='commercial_client_history';retryInput=validateClient(body.client);}
   else if(action==='create_opportunity'){retryId=await stableId(owner,'crm-opportunity-create',body.mutationId);retryTable='commercial_history';retryInput=validateOpportunity(body.opportunity);}
-  else{retryId=await stableId(owner,'crm-negotiation',body.mutationId);retryTable='commercial_history';retryParent=body.id;retryInput=validateNegotiation(body.negotiation);}
+  else{retryId=await stableId(owner,'crm-negotiation',body.mutationId);retryTable='commercial_history';retryParent=body.id||null;retryInput=validateNegotiation(body.negotiation);}
  }
- async function replay(){if(!retryId||!retryTable)return null;const event=await find(retryTable,retryId);if(!event)return null;const data=JSON.parse(event.data);if(JSON.stringify(action==='negotiation'?data:data.input)!==JSON.stringify(retryInput)||(retryParent&&event.opportunity_id!==retryParent))throw new CRMError('Esta solicitação já foi confirmada com outro conteúdo. Abra o registro para editar.',409);return {ok:true,id:action==='create_client'?event.client_id:event.opportunity_id,reused:true};}
+ async function replay(){if(!retryId||!retryTable)return null;const event=await find(retryTable,retryId) as (DatabaseRows['commercial_history']&DatabaseRows['commercial_client_history'])|null;if(!event)return null;const data=JSON.parse(event.data);if(JSON.stringify(action==='negotiation'?data:data.input)!==JSON.stringify(retryInput)||(retryParent&&event.opportunity_id!==retryParent))throw new CRMError('Esta solicitação já foi confirmada com outro conteúdo. Abra o registro para editar.',409);return {ok:true,id:action==='create_client'?event.client_id:event.opportunity_id,reused:true};}
  const already=await replay();if(already)return already;
- let plan:any;
+ let plan:MutationPlan;
  if(action==='create_client')plan=await planCreateClient(owner,body.client,body.mutationId,now);
  else if(action==='save_client'||action==='archive_client'){
   const row=await find('commercial_clients',body.id);
@@ -35,6 +39,6 @@ export async function mutateCRM(owner:string,body:any){
  }
  if(!plan.statements.length)return {ok:true,id:plan.id,reused:true};
  await createProtectionSnapshot(owner,'Antes de '+({'create_client':'criar cliente','save_client':'editar cliente','archive_client':'arquivar/restaurar cliente','create_opportunity':'criar oportunidade','save_opportunity':'editar oportunidade','archive_opportunity':'arquivar/restaurar oportunidade','negotiation':'registrar negociação'} as Record<string,string>)[action]);
- try{const results=await db.batch(plan.statements.map((s:any)=>db.prepare(s.sql).bind(...s.args)));if(!results[0].meta.changes)throw new CRMError('O registro ou seus vínculos mudaram. Recarregue os dados antes de salvar.',409);}catch(e:any){const committed=await replay();if(committed)return committed;if(e instanceof CRMError)throw e;if(/unique|constraint/i.test(e.message||''))throw new CRMError('Esse cadastro ou vínculo já existe. Recarregue os dados para conferir.',409);throw new CRMError('Não foi possível salvar. A operação foi cancelada.',503);}
+ try{const results=await db.batch(plan.statements.map((s:SQLStatement)=>db.prepare(s.sql).bind(...s.args)));if(!results[0].meta.changes)throw new CRMError('O registro ou seus vínculos mudaram. Recarregue os dados antes de salvar.',409);}catch(caught){const e=errorDetails(caught);const committed=await replay();if(committed)return committed;if(e instanceof CRMError)throw e;if(/unique|constraint/i.test(e.message||''))throw new CRMError('Esse cadastro ou vínculo já existe. Recarregue os dados para conferir.',409);throw new CRMError('Não foi possível salvar. A operação foi cancelada.',503);}
  return {ok:true,id:action==='negotiation'?body.id:plan.id};
 }

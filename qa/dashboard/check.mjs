@@ -1,5 +1,6 @@
+import {commercialFixture} from '../fixtures/commercial.mjs';
 import assert from 'node:assert/strict';
-import {readFile,mkdtemp,rm} from 'node:fs/promises';
+import {mkdtemp,rm} from 'node:fs/promises';
 import {join} from 'node:path';
 import {tmpdir} from 'node:os';
 import {execFileSync} from 'node:child_process';
@@ -13,7 +14,7 @@ const all=t=>run({queries:{rows:{sql:`SELECT * FROM ${t} ORDER BY rowid`}}}).row
 const records=()=>Object.fromEntries(DASHBOARD_TABLES.map(t=>[t,all(t)]));
 const read=(filters={})=>buildDashboard({owner,quotes:all('quotes'),records:records(),filters,asOf});
 const execute=p=>run({statements:p.statements,returnChanges:true});
-const source=JSON.parse(await readFile('data/commercial-reference.json','utf8'));
+const source=structuredClone(commercialFixture);
 const contract=id=>all('commercial_contracts').find(c=>c.id===id);
 try{
  run({initialize:true});let d=read();assert.equal(d.stats.conversion,null);assert.equal(d.stats.receivedCents,0);assert.equal(d.businesses.length,0);

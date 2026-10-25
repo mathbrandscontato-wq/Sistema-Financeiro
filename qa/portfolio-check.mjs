@@ -5,7 +5,6 @@ import {tmpdir} from 'node:os';
 import {join,resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import ts from 'typescript';
-import {planImport} from '../lib/commercial-import.mjs';
 const folder=await mkdtemp(join(tmpdir(),'forms-')),path=join(folder,'db.sqlite'),owner='owner';
 const run=r=>{const out=JSON.parse(execFileSync(process.env.PORTFOLIO_TEST_PYTHON||'python3',['qa/commercial/sqlite-runner.py'],{input:JSON.stringify({path,...r}),encoding:'utf8'}));if(out.error)throw Error(out.error);return out;};
 const query=(sql,args=[])=>run({queries:{data:{sql,args}},commitQueries:true}).data;

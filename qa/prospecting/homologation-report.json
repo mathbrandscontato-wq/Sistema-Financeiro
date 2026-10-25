@@ -1305,21 +1305,151 @@
       "automationActivated": false,
       "scheduledMonitoringCreated": false,
       "quotedRetentionDays": 30
+    },
+    "publishedV19Preservation20261025": {
+      "recordedAt": "2026-10-25T11:08:13.601Z",
+      "sourceComparison": {
+        "checkedAt": "2026-10-25T10:43:20.771Z",
+        "siteSavedVersion": 19,
+        "siteSourceCommit": "a290c7106e6030e4e1ddded64c50ca4f0a2844ca",
+        "matchingGitHubCodeCommit": "ea8847fc0443169021204d4ae8a49d60853d1c1a",
+        "matchingGitHubPr": 3,
+        "cloudFiles": 261,
+        "githubFiles": 260,
+        "differences": [
+          "docs/markteam/PUBLICATION_AUTHORIZATION.md"
+        ],
+        "codeMatches": true,
+        "sourceReviewedPrivately": true,
+        "sourceUploaded": false,
+        "published": false
+      },
+      "privateBaselineRecovery": {
+        "checkedAt": "2026-10-25T02:31:55.909Z",
+        "status": "passed",
+        "source": "native owner backup checked against live protection hash; complete table inventory; private local restoration",
+        "sourceDataModelVersion": 7,
+        "sourceOwnerCount": 1,
+        "sourceTables": 33,
+        "sourceRows": 193,
+        "officialBackupHashMatched": true,
+        "allSourceColumnsRestored": true,
+        "nativeTruncatedValuesReplacedByOfficialBackup": 7,
+        "baselineMigrations": [
+          "0000",
+          "0001",
+          "0002",
+          "0003",
+          "0004",
+          "0005",
+          "0006",
+          "0007",
+          "0008",
+          "0009"
+        ],
+        "pendingMigrationsAppliedLocally": [
+          "0010",
+          "0011",
+          "0012",
+          "0013",
+          "0014",
+          "0015"
+        ],
+        "newTablesEmpty": 11,
+        "allExistingTableValuesUnchanged": true,
+        "financialValuesUnchanged": true,
+        "quoteAndPdfReferencesUnchanged": true,
+        "foreignKeyCheck": "ok",
+        "integrityCheck": "ok",
+        "offerPricePreservedBRL": 300,
+        "depositPolicyPreserved": "legacy_50",
+        "sourceInventoryDifferences": [
+          "workspace_access_history"
+        ],
+        "productionMigrationPerformed": false,
+        "productionBusinessRecordsChanged": false,
+        "productionBackupRecordsAdded": 1,
+        "networkCallsByDrill": 0,
+        "r2ObjectBytesIncluded": false,
+        "wholeD1R2DisasterRecoveryProven": false,
+        "atomicWholeDatabaseSnapshot": false
+      },
+      "privateReferencedObjectRecovery": {
+        "checkedAt": "2026-10-25T10:48:01.703Z",
+        "status": "passed",
+        "referencedObjectsExpected": 17,
+        "referencedObjectsRestored": 17,
+        "snapshots": 16,
+        "pdfs": 1,
+        "allHashesMatched": true,
+        "allDatabaseReferencesResolved": true,
+        "originalPdfRegenerated": false,
+        "restoredPrivately": true,
+        "bytesRestored": 1877789,
+        "productionObjectsChanged": false,
+        "productionDatabaseRestored": false,
+        "unreferencedR2ObjectsInventoried": false,
+        "allR2MetadataExported": false,
+        "atomicWholeDatabaseSnapshot": false,
+        "wholeD1R2DisasterRecoveryProven": false
+      },
+      "localUi": {
+        "checkedAt": "2026-10-25T11:02:26.560Z",
+        "environment": "localhost mock identity only",
+        "homologation": true,
+        "paused": true,
+        "zeroCost": true,
+        "scheduledTimeText": true,
+        "currentPolicy": "legacy_50",
+        "depositPolicies": [
+          "legacy_50",
+          "contract_deposit"
+        ],
+        "depositPolicySelectorPresent": true,
+        "documentWidth": 1265,
+        "width": 1280,
+        "settingsSaved": false,
+        "externalMessagesSent": 0,
+        "productionChanged": false
+      },
+      "validation": {
+        "codeTreeBeforeDocumentation": "1a11aad4294fae3fc925923a18f3971265df6f88",
+        "runtimeSuitesPassed": 14,
+        "publishedModuleSuitesPassed": 4,
+        "typescriptPassed": true,
+        "portfolioTestPassed": true,
+        "pdfFixturesPassed": 3,
+        "pdfPages": 8,
+        "pdfVisualDifferences": 0,
+        "allBuildSuiteProgramsCompleted": true,
+        "frameworkBuildPassed": true,
+        "aggregateLocalCommandInterruptedByWindowsTemporaryDirectory": true,
+        "remainingConcurrencyAndBuildRetriedSuccessfully": true,
+        "productTestsChangedToHideRunnerFailure": false,
+        "localReadWithoutBrowserContextStatus": 403,
+        "hostedGatewayBoundaryHomologated": false,
+        "sourceBuiltLocally": true,
+        "externalProviderCallsInValidation": 0
+      },
+      "productionDeploymentPerformed": false,
+      "productionBusinessRecordsChanged": false,
+      "productionBackupRecordsAdded": 1,
+      "providerCredentialsMovedToProduction": false
     }
   },
   "currentStatus": {
-    "updated": "2026-10-25T02:14:32.605Z",
+    "updated": "2026-10-25T11:08:13.602Z",
     "costPolicy": "free_only",
     "operationalCostLimitBRL": 0,
     "active": false,
     "productionDeploy": false,
     "whatsappMessagesSent": 1,
     "remaining": [
-      "Meta destination-country eligibility restriction 130497; real conversation/delivery and coexistence unproven",
-      "commercial agent quality and handoff delivery in hosted CRM; isolated real owner-email queue delivery confirmed",
-      "Tavily commercial use-case/AUP clarification and separate source metadata retention review",
+      "Meta 130497 and real conversation/delivery/coexistence",
+      "Tavily commercial use-case and separate metadata retention clarification; only automated acknowledgement received",
+      "commercial agent quality and hosted handoff delivery",
       "offer alignment and official Pix readiness",
-      "hosted free cron capacity/access verification and production release"
+      "paused publication then hosted free cron capacity/access verification and explicit operational activation"
     ],
     "whatsappMessagesDelivered": 0,
     "whatsappMessagesFailed": 1,
@@ -1329,7 +1459,8 @@
       "status": "Open",
       "reopenedByPersistedComment": true,
       "humanTechnicalReplyVerified": false,
-      "restrictionResolved": false
+      "restrictionResolved": false,
+      "checkedAgainOn": "2026-10-25"
     },
     "independentPreparation": {
       "emailQueueLocal": "validated",
@@ -1363,6 +1494,11 @@
       "providerResponseReceived": false
     },
     "ownerTestEmailsSentInThisTask": 2,
-    "providerSupportEmailsSentInThisTask": 1
+    "providerSupportEmailsSentInThisTask": 1,
+    "publishedSourceVersionPreserved": 19,
+    "localRecoveryWithRealBackupValidated": true,
+    "allReferencedObjectBytesRecoveredPrivately": true,
+    "wholeD1R2DisasterRecoveryProven": false,
+    "productionBackupRecordsAdded": 1
   }
 }

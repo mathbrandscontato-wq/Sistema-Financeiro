@@ -1,5 +1,6 @@
+import {commercialFixture} from '../fixtures/commercial.mjs';
 import assert from 'node:assert/strict';
-import {readFile,mkdtemp,rm} from 'node:fs/promises';
+import {mkdtemp,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFileSync} from 'node:child_process';
@@ -11,7 +12,7 @@ const run=r=>JSON.parse(execFileSync('python3',['qa/commercial/sqlite-runner.py'
 const execute=p=>run({statements:p.statements,returnChanges:true}),all=(table,owner)=>run({queries:{rows:{sql:`SELECT * FROM ${table} WHERE owner=? ORDER BY rowid`,args:[owner]}}}).rows;
 const owner='finance-owner',other='another-owner',now='2026-10-10T10:00:00Z',uuid=()=>crypto.randomUUID();
 const contracts=()=>all('commercial_contracts',owner),payments=()=>all('commercial_payments',owner),events=()=>all('financial_history',owner),mappings=()=>all('financial_quote_receipts',owner),get=id=>contracts().find(c=>c.id===id);
-const source=JSON.parse(await readFile('data/commercial-reference.json','utf8'));
+const source=structuredClone(commercialFixture);
 const payment=(amount,kind='Pagamento parcial')=>({amount,paidOn:'2026-10-09',kind,note:'Recebimento conferido no extrato pelo usuário'});
 try{
  run({initialize:true});assert.ok(COMMERCIAL_TABLES.includes('financial_history'));assert.ok(COMMERCIAL_TABLES.includes('financial_quote_receipts'));
@@ -46,7 +47,7 @@ try{
  const reconciliation=await planQuoteReceipt(owner,fresh,fresh.revision,quote,link,'quote-receipt-1',null,payments(),mappings(),uuid(),now);assert.equal(execute(reconciliation).changes[0],1);fresh=get(fresh.id);assert.equal(contractSummary(fresh,payments()).received,10000);assert.equal(mappings().length,1);assert.equal(all('quotes',owner)[0].data,JSON.stringify(quoteData));assert.equal(pendingQuoteReceipts(fresh,[{id:1,...quoteData}],[link],mappings()).length,0);
  await assert.rejects(planQuoteReceipt(owner,fresh,fresh.revision,quote,link,'quote-receipt-1',null,payments(),mappings(),uuid(),now),/já foi conferido/);
  // A second quote receipt can match an existing receipt, preserving both sources without adding revenue.
- const existing=payments().find(p=>p.id===reconciliation.paymentId);quoteData.payments.push({id:'quote-receipt-2',cents:5000,date:'2026-10-09',note:'Sinal que já consta no controle'});run({statements:[{sql:'UPDATE quotes SET data=?,revision=revision+1 WHERE id=1',args:[JSON.stringify(quoteData)]}]});quote=all('quotes',owner)[0];const additional=await planPayment(owner,fresh,fresh.revision,payment('50','Sinal'),payments(),uuid(),now);execute(additional);fresh=get(fresh.id);const compatible=payments().find(p=>p.id===additional.paymentId),count=payments().length;
+ quoteData.payments.push({id:'quote-receipt-2',cents:5000,date:'2026-10-09',note:'Sinal que já consta no controle'});run({statements:[{sql:'UPDATE quotes SET data=?,revision=revision+1 WHERE id=1',args:[JSON.stringify(quoteData)]}]});quote=all('quotes',owner)[0];const additional=await planPayment(owner,fresh,fresh.revision,payment('50','Sinal'),payments(),uuid(),now);execute(additional);fresh=get(fresh.id);const compatible=payments().find(p=>p.id===additional.paymentId),count=payments().length;
  execute(await planQuoteReceipt(owner,fresh,fresh.revision,quote,link,'quote-receipt-2',compatible,payments(),mappings(),uuid(),now));fresh=get(fresh.id);assert.equal(payments().length,count);assert.equal(contractSummary(fresh,payments()).received,15000);assert.equal(mappings().length,2);assert.equal(all('quotes',owner)[0].data,JSON.stringify(quoteData));
  // Quote changed after planning: rollback the contract revision AND the newly inserted payment.
  quoteData.payments.push({id:'quote-receipt-3',cents:5000,date:'2026-10-09',note:'Outro recebimento'});run({statements:[{sql:'UPDATE quotes SET data=?,revision=revision+1 WHERE id=1',args:[JSON.stringify(quoteData)]}]});quote=all('quotes',owner)[0];const race=await planQuoteReceipt(owner,fresh,fresh.revision,quote,link,'quote-receipt-3',null,payments(),mappings(),uuid(),now),revision=fresh.revision,beforeCount=payments().length;run({statements:[{sql:'UPDATE quotes SET revision=revision+1 WHERE id=1',args:[]}]});assert.ok(execute(race).error);assert.equal(get(fresh.id).revision,revision);assert.equal(payments().length,beforeCount);assert.equal(mappings().length,2);
