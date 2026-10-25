@@ -1,0 +1,839 @@
+[
+  {
+    "id": "MB-023",
+    "handle": "studiohairblumenau",
+    "name": "Studio Hair Blumenau",
+    "city": "Blumenau",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 7
+  },
+  {
+    "id": "MB-024",
+    "handle": "beautyshop.homee",
+    "name": "BEAUTY SHOP Home",
+    "city": "Blumenau",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 7
+  },
+  {
+    "id": "MB-026",
+    "handle": "lume_concept_",
+    "name": "Lume Concept",
+    "city": "Jaraguá do Sul",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 7
+  },
+  {
+    "id": "MB-043",
+    "handle": "vanessacristinahairstylist",
+    "name": "Vanessa Cristina | Mechas | Balneário Camboriú-SC ...",
+    "city": "Balneário Camboriú",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 7
+  },
+  {
+    "id": "MB-052",
+    "handle": "js.studio.hair",
+    "name": "JS Studio Hair",
+    "city": "Maringá",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 7
+  },
+  {
+    "id": "MB-059",
+    "handle": "gefe_moraes_hair_stylist",
+    "name": "Gefe Moraes | Salão de beleza Balneário Piçarras ...",
+    "city": "Chapecó",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 7
+  },
+  {
+    "id": "MB-061",
+    "handle": "salaovisual_",
+    "name": "Salão Visual | Beleza Chapecó",
+    "city": "Chapecó",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 7
+  },
+  {
+    "id": "MB-066",
+    "handle": "beyoustudiohair",
+    "name": "Be You Studio Hair | Salão de Beleza ✨",
+    "city": "Cascavel",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 7
+  },
+  {
+    "id": "MB-085",
+    "handle": "poderosashairpg",
+    "name": "𝚂𝚊𝚕𝚊̃𝚘 𝚍𝚎 𝚋𝚎𝚕𝚎𝚣𝚊",
+    "city": "Ponta Grossa",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 7
+  },
+  {
+    "id": "MB-092",
+    "handle": "orbeautyconcept",
+    "name": "Cabelo em São José dos Pinhais",
+    "city": "São José dos Pinhais",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 7
+  },
+  {
+    "id": "MB-121",
+    "handle": "doceencantosconfeitaria",
+    "name": "Doce Encanto | Bolos Joinville",
+    "city": "Joinville",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-123",
+    "handle": "docecarolinadoceria",
+    "name": "Bolos | Doces | Cursos",
+    "city": "Jaraguá do Sul",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-137",
+    "handle": "bolos__tata",
+    "name": "Tatá Oliver - Confeitaria",
+    "city": "Itajaí",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-146",
+    "handle": "angelssconfeitaria",
+    "name": "Confeitaria | bolos, doces e cookies",
+    "city": "Ponta Grossa",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-148",
+    "handle": "saborearte.ind",
+    "name": "Cafeteria | Padaria | Doceria | Chapecó",
+    "city": "Chapecó",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-158",
+    "handle": "gabidoceprosa",
+    "name": "DOCE PROSA® | Bolos e doces",
+    "city": "Cascavel",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-165",
+    "handle": "ben_confeitaria_artesanal",
+    "name": "Ben Confeitaria Artesanal",
+    "city": "Criciúma",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-166",
+    "handle": "doce_encanto_criciuma",
+    "name": "Atelier e Doceria",
+    "city": "Criciúma",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-177",
+    "handle": "tinabolos",
+    "name": "Tina Bolos Foz do Iguaçu",
+    "city": "Foz do Iguaçu",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-178",
+    "handle": "irionesbolosrecheados",
+    "name": "Bolos Recheados Foz do Iguaçu",
+    "city": "Foz do Iguaçu",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-182",
+    "handle": "chocakesbrasil",
+    "name": "Chocakes Brasil Doceria",
+    "city": "Guarapuava",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-192",
+    "handle": "requintelages",
+    "name": "Requinte Pães e Doces",
+    "city": "Lages",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-197",
+    "handle": "patyferraribolos",
+    "name": "Paty Ferrari Bolos Artesanais",
+    "city": "Toledo",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-199",
+    "handle": "alinemezzari_doceriaartesanal",
+    "name": "alinemezzari_doceriaartesanal",
+    "city": "Toledo",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-200",
+    "handle": "pistachio_confeitaria",
+    "name": "Bolos e Doces | Apucarana",
+    "city": "Apucarana",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 7
+  },
+  {
+    "id": "MB-223",
+    "handle": "psi.adriana_garbin",
+    "name": "Adriana Garbin / Psicóloga em Cascavel-Pr (@psi. ...",
+    "city": "Cascavel",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 7
+  },
+  {
+    "id": "MB-245",
+    "handle": "espacoprimaverapsicologia",
+    "name": "espacoprimaverapsicologia",
+    "city": "Balneário Camboriú",
+    "uf": "SC",
+    "segment": "Psicólogo",
+    "score": 7
+  },
+  {
+    "id": "MB-009",
+    "handle": "espacomissbellaj",
+    "name": "Especialista em Mechas | Joinville",
+    "city": "Joinville",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-015",
+    "handle": "velancehair",
+    "name": "Velance Salão de Beleza",
+    "city": "Curitiba",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-036",
+    "handle": "renoveauthentichair",
+    "name": "Renove Hair",
+    "city": "Brusque",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-039",
+    "handle": "heldercano_hairstudio",
+    "name": "Hélder Cano - Hair Studio",
+    "city": "Londrina",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-040",
+    "handle": "adrianosantosunique",
+    "name": "UNIQUE Hair Studio",
+    "city": "Londrina",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-057",
+    "handle": "salaoasmeninas_",
+    "name": "AME l Hair Spa | Chapecó",
+    "city": "Chapecó",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-063",
+    "handle": "studio_fiw_a_fiw_chapeco",
+    "name": "Studio Fiw a Fiw Beleza, Chapecó ...",
+    "city": "Chapecó",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-077",
+    "handle": "studiot.ingleses",
+    "name": "Studio T Ingleses",
+    "city": "Florianópolis",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-078",
+    "handle": "instalumibeauty",
+    "name": "Salão de Beleza | Ponta Grossa | PR",
+    "city": "Ponta Grossa",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-082",
+    "handle": "nylhairdesign",
+    "name": "Nyl hair Design e prótese capilar",
+    "city": "Ponta Grossa",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-094",
+    "handle": "visual_spahair",
+    "name": "Visual Spa Hair -Salao de Beleza",
+    "city": "Foz do Iguaçu",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 6
+  },
+  {
+    "id": "MB-111",
+    "handle": "doramariecafe",
+    "name": "Dora Marie – Cafeteria e Confeitaria Francesa em ...",
+    "city": "Blumenau",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-112",
+    "handle": "backerhauspadaria",
+    "name": "Backer Haus",
+    "city": "Blumenau",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-115",
+    "handle": "donafranciscadoces",
+    "name": "Cafeteria de doces",
+    "city": "Londrina",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-119",
+    "handle": "katiellevianaconfeitaria",
+    "name": "Katielle Viana Confeitaria",
+    "city": "Londrina",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-125",
+    "handle": "dayconfeitaria_jaragua",
+    "name": "Dayane Confeitaria",
+    "city": "Jaraguá do Sul",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-140",
+    "handle": "bolosebolosconfeitaria",
+    "name": "Bolos & Bolos | Confeitaria",
+    "city": "Ponta Grossa",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-144",
+    "handle": "cursosconfeitaria.pg",
+    "name": "Ponta Grossa, PR 🏠",
+    "city": "Ponta Grossa",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-167",
+    "handle": "nhabentadoces",
+    "name": "Bolos| Doces | Bentocake| Lembrancinhas • Em Criciúma ...",
+    "city": "Criciúma",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-168",
+    "handle": "cakau_doceria",
+    "name": "São José dos Pinhais - PR",
+    "city": "São José dos Pinhais",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-169",
+    "handle": "_rafaconfeitaria_",
+    "name": "RAFA Confeitaria | Bolos e Doces",
+    "city": "São José dos Pinhais",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-176",
+    "handle": "sweetolive.confeitaria",
+    "name": "Sweet Olive Confeitaria®",
+    "city": "Foz do Iguaçu",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-181",
+    "handle": "mariasemaria",
+    "name": "Confeitaria Marias & Maria",
+    "city": "Foz do Iguaçu",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-187",
+    "handle": "padariasaojoselages",
+    "name": "São José",
+    "city": "Lages",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-191",
+    "handle": "padariacafeeprosa_",
+    "name": "Padaria Café e Prosa",
+    "city": "Lages",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-198",
+    "handle": "claubiscoliconfeitaria",
+    "name": "Clau Biscoli Confeitaria| Toledo Pr",
+    "city": "Toledo",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 6
+  },
+  {
+    "id": "MB-222",
+    "handle": "psi.gabriellemathias",
+    "name": "ANSIEDADE",
+    "city": "Jaraguá do Sul",
+    "uf": "SC",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-224",
+    "handle": "humanizar_psicologia",
+    "name": "Clínica Humanizar Psicologia, Neuropsicologia e Saúde ...",
+    "city": "Cascavel",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-225",
+    "handle": "clinicapsicologia_leticia",
+    "name": "Clínica de Psicologia Letícia",
+    "city": "Cascavel",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-235",
+    "handle": "carlarudiger.psicologa",
+    "name": "Carla Rudiger - Psicóloga Clinica",
+    "city": "Chapecó",
+    "uf": "SC",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-237",
+    "handle": "cpo.chapeco",
+    "name": "Clínica Psicológica do Oeste",
+    "city": "Chapecó",
+    "uf": "SC",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-239",
+    "handle": "psicologamaiaragianesini",
+    "name": "Psicologia e Neuropsicologia",
+    "city": "Brusque",
+    "uf": "SC",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-244",
+    "handle": "angelicaminella",
+    "name": "Angélica Minella | Psicóloga",
+    "city": "Brusque",
+    "uf": "SC",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-247",
+    "handle": "anaspinellipsico",
+    "name": "Ana Spinelli | Psicóloga TCC",
+    "city": "Balneário Camboriú",
+    "uf": "SC",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-250",
+    "handle": "psi.margrit",
+    "name": "Psicóloga Margrit Marize",
+    "city": "Foz do Iguaçu",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-254",
+    "handle": "psicologa_vanessadossantos",
+    "name": "Psicóloga Vanessa dos Santos (@ ...",
+    "city": "Guarapuava",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-257",
+    "handle": "dara.psicoinfantojuvenil",
+    "name": "Psicóloga Dara Maria Flores",
+    "city": "Guarapuava",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-258",
+    "handle": "geuclinicadepsicologia",
+    "name": "GEU Clínica de Psicologia",
+    "city": "Pinhais",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-259",
+    "handle": "clinicaamesjp",
+    "name": "Clínica Ame | Psicologia e Especialidades",
+    "city": "Pinhais",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-268",
+    "handle": "rafaelapastorepsi",
+    "name": "08/17719",
+    "city": "Toledo",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-278",
+    "handle": "gianedesouzapsico",
+    "name": "Giane de Souza",
+    "city": "Apucarana",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 6
+  },
+  {
+    "id": "MB-316",
+    "handle": "nuttrir_centrodenutricao",
+    "name": "NUTTRIR",
+    "city": "São José dos Pinhais",
+    "uf": "PR",
+    "segment": "Nutricionista",
+    "score": 6
+  },
+  {
+    "id": "MB-022",
+    "handle": "luzdaluaesthetichair",
+    "name": "Luz da Lua Esthetic Hair",
+    "city": "Blumenau",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 5
+  },
+  {
+    "id": "MB-031",
+    "handle": "wa_concept_hair",
+    "name": "WAYNER'S. Concept Salão de Beleza",
+    "city": "Brusque",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 5
+  },
+  {
+    "id": "MB-032",
+    "handle": "bsalon.lifestyle",
+    "name": "Boutique Salon",
+    "city": "Brusque",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 5
+  },
+  {
+    "id": "MB-041",
+    "handle": "megahairstudiot",
+    "name": "Mega Hair Studio T ✨",
+    "city": "Londrina",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 5
+  },
+  {
+    "id": "MB-048",
+    "handle": "thereehair",
+    "name": "Beleza, autoestima e cabelos saudáveis",
+    "city": "Balneário Camboriú",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 5
+  },
+  {
+    "id": "MB-056",
+    "handle": "nandacabelosecia",
+    "name": "Nanda & Cia",
+    "city": "Chapecó",
+    "uf": "SC",
+    "segment": "Salão de Beleza",
+    "score": 5
+  },
+  {
+    "id": "MB-088",
+    "handle": "studioelegancesjp",
+    "name": "Studio Elegance",
+    "city": "São José dos Pinhais",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 5
+  },
+  {
+    "id": "MB-093",
+    "handle": "studiogrybosi",
+    "name": "Leandro Grybosi",
+    "city": "São José dos Pinhais",
+    "uf": "PR",
+    "segment": "Salão de Beleza",
+    "score": 5
+  },
+  {
+    "id": "MB-136",
+    "handle": "confeitaria.sucre",
+    "name": "Bolos e Doces Artísticos",
+    "city": "Itajaí",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-143",
+    "handle": "doceriadamaripg",
+    "name": "Doceria da Mari",
+    "city": "Ponta Grossa",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-149",
+    "handle": "padariadonana",
+    "name": "Padaria e Confeitaria Don'Ana 🍰☕️",
+    "city": "Chapecó",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-152",
+    "handle": "bolos_da_noe",
+    "name": "Doces da Noe",
+    "city": "Brusque",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-154",
+    "handle": "luciana_da_veiga_baron",
+    "name": "Lu Doces| Brusque SC",
+    "city": "Brusque",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-156",
+    "handle": "doce_i_arte",
+    "name": "Doce & Arte_ Padaria e Confeitaria",
+    "city": "Brusque",
+    "uf": "SC",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-157",
+    "handle": "lyly_artecake",
+    "name": "Lyly Arte Cake | Especialista em bolos e doces ...",
+    "city": "Cascavel",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-175",
+    "handle": "confeitariamaisbolo",
+    "name": "Confeitaria Mais Bolo",
+    "city": "São José dos Pinhais",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-183",
+    "handle": "panidocesonhos",
+    "name": "Panificadora & Confeitaria & Restaurante Doce Sonhos ...",
+    "city": "Guarapuava",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-184",
+    "handle": "essenciadosabor_",
+    "name": "Padaria Essência do Sabor",
+    "city": "Guarapuava",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-193",
+    "handle": "sarah_confeitariaa",
+    "name": "Bolo, Doces e Festival de Fatias | Sarah Confeitaria",
+    "city": "Toledo",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-195",
+    "handle": "vividominguescakes",
+    "name": "Viviane Jaqueline Domingues",
+    "city": "Toledo",
+    "uf": "PR",
+    "segment": "Padaria / Confeitaria",
+    "score": 5
+  },
+  {
+    "id": "MB-251",
+    "handle": "psi_dimararibeiro",
+    "name": "Psicóloga Dimara Ribeiro",
+    "city": "Foz do Iguaçu",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 5
+  },
+  {
+    "id": "MB-275",
+    "handle": "temcomocuidar",
+    "name": "temcomocuidar - Clínica de Avaliação Neuropsicológica",
+    "city": "Apucarana",
+    "uf": "PR",
+    "segment": "Psicólogo",
+    "score": 5
+  },
+  {
+    "id": "MB-304",
+    "handle": "leticia.menezes.nutricao",
+    "name": "leticia.menezes.nutricao",
+    "city": "Maringá",
+    "uf": "PR",
+    "segment": "Nutricionista",
+    "score": 5
+  },
+  {
+    "id": "MB-311",
+    "handle": "nutrirubiathome",
+    "name": "Nutricionista Esportiva",
+    "city": "Joinville",
+    "uf": "SC",
+    "segment": "Nutricionista",
+    "score": 5
+  }
+]
