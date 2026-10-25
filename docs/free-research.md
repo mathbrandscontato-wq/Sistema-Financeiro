@@ -36,6 +36,8 @@ Sem ambos, `tavily_use_case_review_required` impede a chamada **antes** da reser
 
 Nenhuma ativação, aceite novo de termos ou consulta real foi realizada nesta atualização. Para revisão, descrever ao fornecedor o fluxo exato: biblioteca de consultas públicas por segmento e cidade, qualificação de empresas, nenhum envio pela Tavily, acesso limitado e nenhuma inferência de consentimento. Se o uso for proibido ou não puder ser confirmado, preservar o módulo desativado e avaliar outro meio tecnicamente autorizado **somente mediante decisão explícita do proprietário**, sem substituição silenciosa.
 
+Após autorização específica do proprietário, foi enviada **uma consulta a `support@tavily.com`**, endereço indicado nos termos oficiais. O Gmail confirmou envio e a releitura conferiu destinatário, conteúdo e ausência de cópia/anexos. O pedido descreve o caso de uso por segmento/cidade, até vinte buscas básicas diárias, revisão humana e contato somente mediante autorização independente. Também pergunta se URL canônica, título, consulta pública e data podem ficar no CRM privado por até trinta dias, e quais condições de atribuição, descarte e plano Free se aplicam. Esse prazo é uma proposta para esclarecimento, sem aprovação ou rotina de descarte implementada. Não foram enviados dados de clientes ou credenciais, nem autorizados custo, suporte pago, upgrade ou novos termos. **Resposta do fornecedor pendente; ambos os gates permanecem bloqueados.**
+
 ## Configuração e interrupção
 
 Campos necessários no objeto confiável do servidor:

@@ -1275,11 +1275,40 @@
       "wholeD1R2RecoveryValidated": false,
       "realNetworkCalls": 0,
       "productionWrites": 0,
-      "typescriptPassed": true
+      "typescriptPassed": true,
+      "githubCi": {
+        "runId": 40153510107,
+        "headRevision": "5d62dc1708c142f1fbd2f0206ee478f050367451",
+        "status": "completed",
+        "conclusion": "success",
+        "deploymentPerformed": false,
+        "url": "https://github.com/mathbrandscontato-wq/Sistema-Financeiro/actions/runs/40153510107"
+      }
+    },
+    "tavilySupportClarification": {
+      "checkedAt": "2026-10-25T02:14:32.605Z",
+      "status": "sent_readback_confirmed",
+      "recipient": "support@tavily.com",
+      "subject": "Researcher Free — minimal search metadata retention clarification",
+      "userSpecificallyAuthorized": true,
+      "fromAuthorizedAccount": true,
+      "sentLabelConfirmed": true,
+      "bodyConfirmed": true,
+      "ccCount": 0,
+      "bccCount": 0,
+      "attachments": 0,
+      "privateCustomerDataShared": false,
+      "credentialsShared": false,
+      "purchaseAuthorized": false,
+      "newTermsAccepted": false,
+      "providerResponseReceived": false,
+      "automationActivated": false,
+      "scheduledMonitoringCreated": false,
+      "quotedRetentionDays": 30
     }
   },
   "currentStatus": {
-    "updated": "2026-10-25T02:08:04.038Z",
+    "updated": "2026-10-25T02:14:32.605Z",
     "costPolicy": "free_only",
     "operationalCostLimitBRL": 0,
     "active": false,
@@ -1323,13 +1352,17 @@
       "realQueueDeliveryScope": "isolated owner test only",
       "hostedCrmHandoffHomologated": false
     },
-    "emailsSentInThisTask": 2,
+    "emailsSentInThisTask": 3,
     "emailsDeliveredInThisTask": 2,
     "emailsUserConfirmedInThisTask": 2,
     "research": {
       "useCaseApproved": false,
       "metadataPersistenceApproved": false,
-      "schedulerActivated": false
-    }
+      "schedulerActivated": false,
+      "providerClarificationRequested": true,
+      "providerResponseReceived": false
+    },
+    "ownerTestEmailsSentInThisTask": 2,
+    "providerSupportEmailsSentInThisTask": 1
   }
 }
