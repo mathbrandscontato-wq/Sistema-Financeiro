@@ -1261,6 +1261,21 @@
       "hostedCapacityMeasured": false,
       "environmentChanged": false,
       "deployed": false
+    },
+    "postIntegrationValidation20261024": {
+      "checkedAt": "2026-10-25T02:10:13.838Z",
+      "runtimeSuitesPassed": 14,
+      "runtimeSuitesFailed": 0,
+      "includesIsolatedV8Restore": true,
+      "remoteChangesIntegrated": true,
+      "mergeStrategy": "non-destructive merge; both histories preserved",
+      "useCaseGateBeforeQuotaAndNetwork": true,
+      "metadataGateSeparate": true,
+      "hostedWriterValidated": false,
+      "wholeD1R2RecoveryValidated": false,
+      "realNetworkCalls": 0,
+      "productionWrites": 0,
+      "typescriptPassed": true
     }
   },
   "currentStatus": {
@@ -1273,7 +1288,7 @@
     "remaining": [
       "Meta destination-country eligibility restriction 130497; real conversation/delivery and coexistence unproven",
       "commercial agent quality and handoff delivery in hosted CRM; isolated real owner-email queue delivery confirmed",
-      "source metadata retention review",
+      "Tavily commercial use-case/AUP clarification and separate source metadata retention review",
       "offer alignment and official Pix readiness",
       "hosted free cron capacity/access verification and production release"
     ],
@@ -1310,6 +1325,11 @@
     },
     "emailsSentInThisTask": 2,
     "emailsDeliveredInThisTask": 2,
-    "emailsUserConfirmedInThisTask": 2
+    "emailsUserConfirmedInThisTask": 2,
+    "research": {
+      "useCaseApproved": false,
+      "metadataPersistenceApproved": false,
+      "schedulerActivated": false
+    }
   }
 }
