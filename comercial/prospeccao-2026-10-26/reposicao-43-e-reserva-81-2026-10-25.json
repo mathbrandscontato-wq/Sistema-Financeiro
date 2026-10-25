@@ -1,0 +1,3134 @@
+{
+  "date": "2026-10-25",
+  "totalNewUnique": 124,
+  "replacements": [
+    {
+      "id": "MB-018",
+      "row": 19,
+      "date": "26/10/2026",
+      "segment": "Salão de Beleza",
+      "old": {
+        "handle": "@bohoartbeauty",
+        "name": "BOHO ART & BEAUTY",
+        "city": "Curitiba",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/bohoartbeauty/"
+      },
+      "replacement": {
+        "handle": "alameda_hair",
+        "name": "SALÃO DE BELEZA | BLUMENAU (@alameda_hair)",
+        "city": "Blumenau",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/alameda_hair/",
+        "snippet": "ALAMEDA HAIR | SALÃO DE BELEZA | BLUMENAU. 1,805 followers. 2,474 ... Venha viver a experiência Alameda ...",
+        "sourceSearch": "site:instagram.com salão beleza Blumenau",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Melina Muhai (@institutodebelezamelinamuhai)",
+            "url": "https://www.facebook.com/institutodebelezamelinamuhai/",
+            "snippet": "Melina Muhai. 506 followers. Spa & Beleza Melina Muhai Cuidamos da sua beleza. ... alameda #hair #hairstyles #fonteluminosa · No photo descr"
+          },
+          {
+            "title": "Salao De Beleza Jardim Camburi",
+            "url": "https://www.instagram.com/popular/salao-de-beleza-jardim-camburi/",
+            "snippet": "... studio Jes Caetano #relaxar #salãodebeleza # salao # beleza #curitiba. A @helo.demarch estava super empolgada pra mostrar o salão pra vo"
+          },
+          {
+            "title": "Melhores transplantes capilares perto de mim em Centro, Málaga",
+            "url": "https://www.fresha.com/lp/pt-PT/tt/hair-transplants/es-m%C3%A1laga/centro",
+            "snippet": "Salão de beleza imagem para Aesophy Excellence Clinic - Clínica Medicina Estética ... Hair Transplants em Polígono AlamedaHair Transplants e"
+          },
+          {
+            "title": "Salão de Beleza em Blumenau - Guia Blumenau",
+            "url": "https://blumenau.net.br/salao-de-beleza-em-blumenau-sc",
+            "snippet": "Alameda Hair. Rua Coronel Vidal Ramos - Jardim Blumenau - Blumenau - SC - CEP 89010-330. (47) 9136-7620. ver telefone. Avalie sua chamada te"
+          },
+          {
+            "title": "Melhores serviços de entrançamento de cabelo perto de mim em ...",
+            "url": "https://www.fresha.com/lp/pt-PT/tt/hair-braiding/es-m%C3%A1laga/cruz-de-humilladero",
+            "snippet": "... AlamedaHair braiding em El Palo · Hair braiding em Jardín de la AbadíaHair braiding em Santa Isabel · Descarregar a aplicação. Sobre a F"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-025",
+      "row": 26,
+      "date": "27/10/2026",
+      "segment": "Salão de Beleza",
+      "old": {
+        "handle": "@salaojanainafonseca",
+        "name": "Janaina Fonseca",
+        "city": "Jaraguá do Sul",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/salaojanainafonseca/"
+      },
+      "replacement": {
+        "handle": "leboho_concept",
+        "name": "SALÃO DE BELEZA EM BLUMENAU (@leboho_concept)",
+        "city": "Blumenau",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/leboho_concept/",
+        "snippet": "... Agendamentos: (47) 99206-2901 ou pelo link ... LĒ BOHO | SALÃO DE BELEZA EM BLUMENAU. 2,347 followers. 743 following. Onde a ...",
+        "sourceSearch": "site:instagram.com salão beleza Blumenau",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "LĒ BOHO | SALÃO DE BELEZA EM BLUMENAU (@leboho_concept ...",
+            "url": "https://www.instagram.com/leboho_concept/",
+            "snippet": "2,315 Followers, 749 Following, 356 Posts - LĒ BOHO | SALÃO DE BELEZA EM BLUMENAU (@leboho_concept) on Instagram: \"Onde a BELEZA se encontra"
+          },
+          {
+            "title": "Lê Boho - Blumenau, SC | GlamSpot",
+            "url": "https://glamspot.com.br/salao/leboho_concept",
+            "snippet": "Este salão é seu? Reivindique grátis para editar fotos, serviços e horários e ligar o agendamento online."
+          },
+          {
+            "title": "LĒ BOHO | SALÃO DE BELEZA EM BLUMENAU (@leboho_concept ...",
+            "url": "https://www.instagram.com/leboho_concept/reels/",
+            "snippet": "1,186 Followers, 564 Following, 86 Posts - LĒ BOHO | SALÃO DE BELEZA EM BLUMENAU (@leboho_concept) on Instagram: \"Onde a BELEZA se encontra "
+          },
+          {
+            "title": "Le Boho Concept | Blumenau SC - Facebook",
+            "url": "https://www.facebook.com/61574476719787/",
+            "snippet": "Le Boho Concept is at Le Boho Concept. A gente ama um clique desprevenido… porque é nele que a beleza real aparece. Close nesse cabelo lindo"
+          },
+          {
+            "title": "LĒ BOHO | SALÃO DE BELEZA EM BLUMENAU on Instagram ...",
+            "url": "https://www.instagram.com/p/DH7BGMvyAlr/",
+            "snippet": "18 likes, 2 comments - leboho_concept on April 1, 2025: \"Coloração, corte e tratamento Rua São Paulo, 2901 - Itoupava Seca - Blumenau Agende"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-032",
+      "row": 33,
+      "date": "27/10/2026",
+      "segment": "Salão de Beleza",
+      "old": {
+        "handle": "@bsalon.lifestyle",
+        "name": "Boutique Salon",
+        "city": "Brusque",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/bsalon.lifestyle/"
+      },
+      "replacement": {
+        "handle": "pointdabelezabnu",
+        "name": "Point da Beleza (@pointdabelezabnu) · Blumenau, SC",
+        "city": "Blumenau",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/pointdabelezabnu/",
+        "snippet": "Um salão de beleza completo para você ✨ Blumenau, SC Dúvidas, agendamentos e contato pelo link ⬇️ · Mecha em tons dourado ❤️ ...",
+        "sourceSearch": "site:instagram.com salão beleza Blumenau",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Renovando fachada na @pointdabelezabnu. # ...",
+            "url": "https://www.instagram.com/p/DYXo-I5FaJh/",
+            "snippet": "Renovando fachada na @pointdabelezabnu. · Estamos de comunicação visual nova ❤️ · Mais um trabalho feito. · Seu salão merece uma identidade "
+          },
+          {
+            "title": "Produções para Oktoberfest 🥨🍻",
+            "url": "https://www.instagram.com/p/DewcfQ5jrmk/",
+            "snippet": "pointdabelezabnu. Você linda na Oktoberfest! Aproveite nossos combos de cabelo e maquiagem pra arrasar nos desfiles e na festa."
+          },
+          {
+            "title": "Sobre um dia de princesa que minha \"criança\" sempre ...",
+            "url": "https://www.instagram.com/p/Cr21EaPObSs/",
+            "snippet": "... @joslainecarlos Gratidão por esse dia Vestido @versattialtacostura Salão @pointdabelezabnu Foto: @edersouzafotografia\"."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-042",
+      "row": 43,
+      "date": "28/10/2026",
+      "segment": "Salão de Beleza",
+      "old": {
+        "handle": "@eloohairstyle",
+        "name": "ELOO CRISTINA | ESPECIALISTA EM MECHAS | E MEGA ...",
+        "city": "Balneário Camboriú",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/eloohairstyle/"
+      },
+      "replacement": {
+        "handle": "salon27blumenau",
+        "name": "Salon 27 (@salon27blumenau) - SALÃO DE BELEZA",
+        "city": "Blumenau",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/salon27blumenau/",
+        "snippet": "... K+ followers · 856 following · 239 posts · @salon27blumenau: “ O salão mais lindo de Blumenau Dúvidas e agendamentos somente pelo link ... SALÃO DE BELEZA • ...",
+        "sourceSearch": "site:instagram.com salão beleza Blumenau",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "SALÃO DE BELEZA • Salon 27 (@salon27blumenau) - Instagram",
+            "url": "https://www.instagram.com/salon27blumenau/",
+            "snippet": "1,280 Followers, 856 Following, 239 Posts - SALÃO DE BELEZA • Salon 27 (@salon27blumenau) on Instagram: \"📍O salão mais lindo de Blumenau 📲"
+          },
+          {
+            "title": "SALÃO DE BELEZA • Salon 27 (@salon27blumenau) - Instagram",
+            "url": "https://www.instagram.com/salon27blumenau/reels/",
+            "snippet": "977 Followers, 739 Following, 222 Posts - See Instagram photos and videos from SALÃO DE BELEZA • Salon 27 (@salon27blumenau)"
+          },
+          {
+            "title": "Toda Bela — encontre sua profissional de beleza",
+            "url": "https://www.todabelaapp.site/",
+            "snippet": "Busque profissionais de beleza parceiras por nome, categoria, cidade ou atendimento a domicílio e veja serviços, preços e portfólio no Toda "
+          },
+          {
+            "title": "GlamSpot - Encontre os Melhores Salões de Beleza do Brasil",
+            "url": "https://glamspot.com.br/",
+            "snippet": "Descubra salões de beleza, barbearias e espaços de estética em todo o Brasil. Avaliações, endereços, serviços e muito mais."
+          },
+          {
+            "title": "Salão de Beleza em Blumenau, SC - Apontador",
+            "url": "https://www.apontador.com.br/em/blumenau-sc/beleza-e-estetica/salao-de-beleza/",
+            "snippet": "Encontre aqui diversas informações sobre Salão de Beleza em Blumenau, SC. Confira o telefone, endereço, avaliações dos clientes e mais detal"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-055",
+      "row": 56,
+      "date": "28/10/2026",
+      "segment": "Salão de Beleza",
+      "old": {
+        "handle": "@somebeleza",
+        "name": "Salão SOME",
+        "city": "Chapecó",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/somebeleza/"
+      },
+      "replacement": {
+        "handle": "centrodebelezalidia",
+        "name": "SALÃO DE BELEZA | SC- PALHOÇA (@centrodebelezalidia)",
+        "city": "Palhoça",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/centrodebelezalidia/",
+        "snippet": "SALÃO DE BELEZA | SC- PALHOÇA. 4,888 followers. 2,124 following. • Os ... mechas #palhoça ...",
+        "sourceSearch": "site:instagram.com salão beleza Palhoça",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Centro de Beleza Lídia Cabeleireiras - Facebook",
+            "url": "https://www.facebook.com/centrodebelezalidia/",
+            "snippet": "Centro de Beleza Lídia Cabeleireiras. 914 followers · 2 talking about this · 3,016 were here. Não há nada de mais belo do que distribuir a f"
+          },
+          {
+            "title": "SALÃO DE BELEZA | SC- PALHOÇA (@centrodebelezalidia ...",
+            "url": "https://www.instagram.com/centrodebelezalidia/",
+            "snippet": "4,818 Followers, 2,234 Following, 428 Posts - SALÃO DE BELEZA | SC- PALHOÇA (@centrodebelezalidia) on Instagram: \"• Os melhores profissionai"
+          },
+          {
+            "title": "Centro De Beleza Lídia | Salão de Beleza no Brasil",
+            "url": "https://salaodebelezapertodemim.online/santa-catarina/salao-de-beleza-palhoca/centro-de-beleza-lidia/",
+            "snippet": "Qual o endereço do Centro de Beleza Lídia? O Centro de Beleza Lídia está localizado na Rua Salvador Marcos da Silveira, 315, no bairro Ponte"
+          },
+          {
+            "title": "CENTRO DE BELEZA LÍDIA em Palhoça - SC | SalaodeBeleza.org",
+            "url": "https://www.salaodebeleza.org/sobre/centro-de-beleza-lidia-palhoca-sc",
+            "snippet": "Informações sobre CENTRO DE BELEZA LÍDIA em Palhoça 💅 » Empresa de Salão de Beleza perto de Você! Endereço, whatsapp, telefone, mapa, como "
+          },
+          {
+            "title": "Centro de Beleza Lídia | Instagram, Facebook | Linktree",
+            "url": "https://linktr.ee/centrodebelezalidia",
+            "snippet": "Seja Bem-Vinda! Centro de Beleza Lídia Seja Bem-Vinda!"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-058",
+      "row": 59,
+      "date": "28/10/2026",
+      "segment": "Salão de Beleza",
+      "old": {
+        "handle": "@studiocasad.rara",
+        "name": "Chapecó-SC",
+        "city": "Chapecó",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/studiocasad.rara/"
+      },
+      "replacement": {
+        "handle": "mnesteticaebeleza",
+        "name": "SALÃO DE BELEZA (@mnesteticaebeleza) · Palhoça, SC",
+        "city": "Palhoça",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/mnesteticaebeleza/",
+        "snippet": "Há 18 anos + de 10.000 atendimentos Especialista em Loiros, Alisamento, corte ,estética, manicure e pedicure, maquiagem, penteado by @_maryanjos_ · Mechas ...",
+        "sourceSearch": "site:instagram.com salão beleza Palhoça",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Black nails com esses detalhes em dourado! Amei❤💫 . Agende ...",
+            "url": "https://www.instagram.com/mnesteticaebeleza/p/B4kGegwADmC/?__d=1*",
+            "snippet": "2 likes, 0 comments - mnesteticaebeleza on November 7, 2019: \"Black nails com esses detalhes em dourado! Amei❤   . Agende já seu horário con"
+          },
+          {
+            "title": "ontem dia 27/04 estive à frente do workshop de tratamento e ...",
+            "url": "https://www.instagram.com",
+            "snippet": "ITALLIAN HAIRTECH Onde existe beleza profissional existe Itallian Hairtech TRIVITT AMEND a beleza inspira Spray Brilho Intenso ... • @ mnest"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-073",
+      "row": 74,
+      "date": "29/10/2026",
+      "segment": "Salão de Beleza",
+      "old": {
+        "handle": "@antennahair",
+        "name": "Antennahair",
+        "city": "Cascavel",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/antennahair/"
+      },
+      "replacement": {
+        "handle": "agsalondebeaute",
+        "name": "Amanda Guimarães (@agsalondebeaute)",
+        "city": "Palhoça",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/agsalondebeaute/",
+        "snippet": "Salão de Beleza Palhoça| Amanda Guimarães. 3,402 followers. 939 following. Mechas & Transformações ✨ Educadora de Cabeleireiros Da técnica ao sucesso ...",
+        "sourceSearch": "site:instagram.com salão beleza Palhoça",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Salão de beleza feminino em Balneário Gaivota  Paulo ...",
+            "url": "https://www.instagram.com/reel/DS0y4QXiQgd/",
+            "snippet": "Agende seu horário pela nossa agenda online ou fale conosco pelo WhatsApp. ... agsalondebeaute. Transformações que falam por si só! ✨ Cabelo"
+          },
+          {
+            "title": "📍Tudo o que você precisa em um só lugar No @perfect. ...",
+            "url": "https://www.instagram.com/p/DUTRuExEXW4/",
+            "snippet": "Na @agsalondebeaute , a Amanda Guimarães transforma cabelos com técnica, qualidade e muito cuidado. Centro Comercial IZA – Palhoça"
+          },
+          {
+            "title": "Kaz Balneário Camboriú | Permuta Inteligente & Networking",
+            "url": "https://www.instagram.com/p/DbHa6l0JQzP/",
+            "snippet": "Agende seu horário pela nossa agenda online ou fale conosco pelo WhatsApp. ... EXCLUSIVE HAIR | BEAUTY | CARE SALÃO DE BELEZA ... agsalondeb"
+          },
+          {
+            "title": "Atendimentos ao lado da caixa econômica em laguna",
+            "url": "https://www.instagram.com/p/DXaZovCETos/",
+            "snippet": "✨ Realce sua beleza com quem entende do assunto. Na @agsalondebeaute , a Amanda Guimarães transforma cabelos com técnica, qualidade e muito "
+          },
+          {
+            "title": "✨ Gratidão que transforma! ✨ Essa semana tivemos um dia ...",
+            "url": "https://www.instagram.com/apaepalhoca/reel/DR4gw4UEevB/?hl=id",
+            "snippet": "✨ Essa semana tivemos um dia especial aqui na APAE: a @kauana_alisamentos e a @agsalondebeaute dedicaram tempo, carinho e talento para cuida"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-081",
+      "row": 82,
+      "date": "30/10/2026",
+      "segment": "Salão de Beleza",
+      "old": {
+        "handle": "@novostilopontagrossa",
+        "name": "Salão de beleza em Ponta Grossa",
+        "city": "Ponta Grossa",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/novostilopontagrossa/"
+      },
+      "replacement": {
+        "handle": "lequipe_cabeleireiros",
+        "name": "Salão de Beleza Palhoça (@lequipe_cabeleireiros)",
+        "city": "Palhoça",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/lequipe_cabeleireiros/",
+        "snippet": "L'equipe | Salão de Beleza Palhoça. 1,911 followers. 1,541 following ... #hair #blonde #dourado #mechas #hairtouch #santacatarina #palhoça ...",
+        "sourceSearch": "site:instagram.com salão beleza Palhoça",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "L équipe Cabeleireiros Unissex - Av. Prefeito José ...",
+            "url": "https://www.fresha.com/lvp/l-equipe-cabeleireiros-unissex-avenida-prefeito-jose-monteiro-A80QvE",
+            "snippet": "L équipe Cabeleireiros Unissex · Av. Prefeito José Monteiro, 1045 - 51 - Itararé, São Vicente - SP, 11380-001, Brazil · Get directions. Read"
+          },
+          {
+            "title": "L'equipe Cabeleireiros",
+            "url": "https://www.instagram.com/explore/locations/119142417/lequipe-cabeleireiros/",
+            "snippet": "L'equipe Cabeleireiros on Instagram • Photos and Videos .... Com uma bagagem de mais de 20 anos de experiência na área da beleza , Nice. Arr"
+          },
+          {
+            "title": "Nomes e marcas de cabeleireiros, salão de beleza e ...",
+            "url": "https://evef.com.br/direito-de-uso-de-marcas/nomes-e-marcas-de-cabeleireiros-salao-de-beleza-e-produtos-para-cabelos-que-ja-solicitaram-o-registro-de-protecao-de-nome-fantasia",
+            "snippet": "L'equipe Cabeleireiros ; L'essence Cabeleireiros; La Belle Cabeleireiros; La Belle de Jour Cabeleireiros; La Belle Noivas & Cabeleireiros; L"
+          },
+          {
+            "title": "Cabeleireiros, manicure e pedicure em BARUERI/SP — 1944 ...",
+            "url": "https://cnpjob.com.br/empresas/sp/barueri/9602501-cabeleireiros-manicure-e-pedicure",
+            "snippet": "L EQUIPE CABELEIREIROS LTDA, L'EQUIPE CABELEIREIROS COMERCIO DE MODA E SERVICOS, 21/07/1997. JALES MUSCIANO CABELEIREIROS, JALES SALONE BELL"
+          },
+          {
+            "title": "Salão de Beleza em Barueri, SP: 2.398 endereços - Cidades.io",
+            "url": "https://barueri.cidades.io/pt/explorar/salao",
+            "snippet": "L'Equipe Cabeleireiros Comercio de Moda e Servicos. Salão de Beleza . Al. Madeira, 53, Loja: 02 · Alphaville Industrial   Em medição · Ver n"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-082",
+      "row": 83,
+      "date": "30/10/2026",
+      "segment": "Salão de Beleza",
+      "old": {
+        "handle": "@nylhairdesign",
+        "name": "Nyl hair Design e prótese capilar",
+        "city": "Ponta Grossa",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/nylhairdesign/"
+      },
+      "replacement": {
+        "handle": "studiokiuanysilva",
+        "name": "Salão de beleza💇🏽‍♀️Palhoça (@studiokiuanysilva)",
+        "city": "Palhoça",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/studiokiuanysilva/",
+        "snippet": "Salão de beleza ‍♀️Palhoça. 1,275 followers. 1,013 following. Experiência de 12 anos na área da beleza Especialista em mechas e cortes femininos",
+        "sourceSearch": "site:instagram.com salão beleza Palhoça",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Salão de beleza ‍♀️Palhoça (@studiokiuanysilva) • Instagram ...",
+            "url": "https://www.instagram.com/studiokiuanysilva/",
+            "snippet": "1,281 Followers, 1,032 Following, 225 Posts - Salão de beleza💇🏽‍♀️Palhoça (@studiokiuanysilva) on Instagram: \"🩷Experiência de 12 anos na "
+          },
+          {
+            "title": "Salão de beleza ‍♀️Palhoça (@studiokiuanysilva) • Instagram ...",
+            "url": "https://www.instagram.com/studiokiuanysilva/reels/",
+            "snippet": "977 Followers, 699 Following, 147 Posts - Salão de beleza💇🏽‍♀️Palhoça (@studiokiuanysilva) on Instagram: \"💖Sentir-se confiante e bem com "
+          },
+          {
+            "title": "LinkBio Studio Ta Silva",
+            "url": "https://tasilva.my.canva.site/",
+            "snippet": "Studio Ta Silva • Centro estético Seja muito bem vindo (a) aos meus links!"
+          },
+          {
+            "title": "Sempre Bella — Studio de Beleza | Agende online",
+            "url": "https://semprebella.studio/",
+            "snippet": "Seu momento de pausa, beleza e leveza. Agende online cabelos, unhas, cílios, sobrancelhas, limpeza de pele e muito mais."
+          },
+          {
+            "title": "OnChair | Profissionais de beleza, salões e agendamentos",
+            "url": "https://onchair.com.br/",
+            "snippet": "Encontre profissionais de beleza, cabeleireiros, manicures, barbeiros, maquiadores, esteticistas e salões. Agende serviços pela OnChair."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-084",
+      "row": 85,
+      "date": "30/10/2026",
+      "segment": "Salão de Beleza",
+      "old": {
+        "handle": "@espacolucasgodoi",
+        "name": "Salão em Ponta Grossa",
+        "city": "Ponta Grossa",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/espacolucasgodoi/"
+      },
+      "replacement": {
+        "handle": "liza_costaaa",
+        "name": "Liza Costa | Salão de Beleza em Brusque (@liza_costaaa)",
+        "city": "Brusque",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/liza_costaaa/",
+        "snippet": "Liza Costa | Salão de Beleza em Brusque. 3,892 followers. 2,425 following. Health/beauty. ▪️Vision by Liza Costa . Cabelos | Tratamentos | Unhas | Sobrancelha ...",
+        "sourceSearch": "site:instagram.com salão beleza Brusque",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "✨ Trabalhar com mulheres é uma inspiração diária. Cada cliente ...",
+            "url": "https://www.instagram.com",
+            "snippet": "36 likes, 5 comments - liza_costaaa on March 7, 2026: \"✨ Trabalhar com mulheres é uma inspiração diária. Cada cliente que passa por aqui tra"
+          },
+          {
+            "title": "Hidratar não é só passar produto. Sem diagnóstico, técnica ...",
+            "url": "https://www.instagram.com/marleneshairstyle/p/DW_gXbmD6Y-/?__d=11",
+            "snippet": "Esperamos por você. September 28 · liza_costaaa's profile picture · liza_costaaa . •. Follow. Read more"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-105",
+      "row": 106,
+      "date": "26/10/2026",
+      "segment": "Padaria / Confeitaria",
+      "old": {
+        "handle": "@confeitariaberries",
+        "name": "Bolos e Doces Finos em Curitiba",
+        "city": "Curitiba",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/confeitariaberries/"
+      },
+      "replacement": {
+        "handle": "priscilagreffinconfeitaria",
+        "name": "Priscila Greffin Confeitaria (@priscilagreffinconfeitaria)",
+        "city": "Jaraguá do Sul",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/priscilagreffinconfeitaria/",
+        "snippet": "... Jaraguá do Sul: sexta e sábado Dúvidas ou encomendas, clique no link ... Priscila Greffin Confeitaria. 8,629 followers. 298 following. • Bolos e bentô cake ...",
+        "sourceSearch": "site:instagram.com confeitaria Jaraguá do Sul",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Priscila Greffin Confeitaria (@priscilagreffinconfeitaria)",
+            "url": "https://www.instagram.com/priscilagreffinconfeitaria/?hl=en",
+            "snippet": "Priscila Greffin Confeitaria . 8,629 followers. 298 following. • Bolos e bentô cake buttercream Joinville: segunda a sábado Jaragu"
+          },
+          {
+            "title": "Priscila Greffin Confeitaria",
+            "url": "https://www.tiktok.com/@priscila.greffin",
+            "snippet": "Priscila Greffin Confeitaria (@priscila.greffin) no TikTok |2279 curtidas.166 seguidores.Bentôs e Bolos em buttercream.Assista ao "
+          },
+          {
+            "title": "Priscila Greffin Confeitaria (@priscilagreffinconfeitaria)",
+            "url": "https://www.instagram.com/priscilagreffinconfeitaria/reels/",
+            "snippet": "Priscila Greffin Confeitaria . 8,641 followers. 294 following. • Bolos e bentô cake buttercream Joinville: segunda a sábado Jaragu"
+          },
+          {
+            "title": "Priscila Greffin Confeitaria, Jaragua do Sul ...",
+            "url": "https://magicpin.com/brazil/Jaragua-Do-Sul/Jaragua-Do-Sul/Other/Priscila-Greffin-Confeitaria/store/2a504a6",
+            "snippet": "Priscila Greffin Confeitaria provides products and services located in Jaragua do Sul, Jaragua do Sul. Customers can explore more "
+          },
+          {
+            "title": "Priscila Greffin Confeitaria - R. Barão do Rio Branco, 588",
+            "url": "https://wanderboat.ai/restaurants/brazil/regi%C3%A3o-geogr%C3%A1fica-imediata-de-joinville/priscila-greffin-confeitaria/_DcMsHNaRZeTD5U0Bh4gaw",
+            "snippet": "Priscila Greffin Confeitaria at R. Barão do Rio Branco, 588 - Centro, Jaraguá do Sul - SC, 89251-400, Brazil. Check hours, reviews"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-139",
+      "row": 140,
+      "date": "27/10/2026",
+      "segment": "Padaria / Confeitaria",
+      "old": {
+        "handle": "@sodiedoces_itajai",
+        "name": "Sodie Doces Itajaí",
+        "city": "Itajaí",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/sodiedoces_itajai/"
+      },
+      "replacement": {
+        "handle": "flordelysconfeitaria",
+        "name": "Flor de Lys Confeitaria (@flordelysconfeitaria) - Doces",
+        "city": "Jaraguá do Sul",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/flordelysconfeitaria/",
+        "snippet": "... Jaraguá do Sul - Entrega em toda região ... 1 ano da ...",
+        "sourceSearch": "site:instagram.com confeitaria Jaraguá do Sul",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "flor de lis confeitaria (@flordelisconfeitariaa)",
+            "url": "https://www.instagram.com/flordelisconfeitariaa/",
+            "snippet": "... Flor de Lis Confeitaria ! Me chamo Juliana Cruz e minha história com a confeitaria começou há mais de 10 anos. Cresci empreend"
+          },
+          {
+            "title": "Flor de Lis Confeitaria Gourmet (@marmitariaflordeliss)",
+            "url": "https://www.facebook.com/marmitariaflordeliss/",
+            "snippet": "Esse trabalho mostra um pouco da nova fase da Flor de Lis: confeitaria e personalizados que podem fazer parte da mesma comemoração"
+          },
+          {
+            "title": "FLOR DE LIS CONFEITARIA LTDA - 26429134000116",
+            "url": "https://empresas.serasaexperian.com.br/consulta-gratis/FLOR-DE-LIS-CONFEITARIA-LTDA-26429134000116",
+            "snippet": "O CNPJ da empresa FLOR DE LIS CONFEITARIA LTDA é 26.429.134/0001-16. Com sede em BRASILIA, DF, possui 36 anos, 2 meses e 26 dias e"
+          },
+          {
+            "title": "FLOR DE LIS CONFEITARIA LTDA",
+            "url": "https://cnpja.com/en/office/53642594000109",
+            "snippet": "FLOR DE LIS CONFEITARIA LTDA. Ativa. 1/24/2024 – Present. Sociedade Empresária Limitada (206-2). R$ 10,000.00. destrava.societario"
+          },
+          {
+            "title": "Flor de Lis Confeitaria, Belo Horizonte/MG, 36.403.796/0001-70",
+            "url": "https://www.jusbrasil.com.br/nome/laura-christina-de-oliveira-araujo/cnpj-4Y3bcRb6m1W",
+            "snippet": "Flor de Lis Confeitaria . LAURA CHRISTINA DE OLIVEIRA ARAUJO. CNPJ 36.403.796/0001-70•Minas Gerais. Processos Sócios Sobre a empre"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-144",
+      "row": 145,
+      "date": "28/10/2026",
+      "segment": "Padaria / Confeitaria",
+      "old": {
+        "handle": "@cursosconfeitaria.pg",
+        "name": "Ponta Grossa, PR 🏠",
+        "city": "Ponta Grossa",
+        "uf": "PR",
+        "status": "DESCARTAR – FORA ICP",
+        "url": "https://www.instagram.com/cursosconfeitaria.pg/"
+      },
+      "replacement": {
+        "handle": "bornweiler",
+        "name": "Bornweiler",
+        "city": "Jaraguá do Sul",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/bornweiler/",
+        "snippet": "Confeitaria artesanal. Por @camilacborn Jaraguá do Sul Encomendas e orçamentos · Bolo florido e primaveril · Morangos e mais morangos O morango além ...",
+        "sourceSearch": "site:instagram.com confeitaria Jaraguá do Sul",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Bornweiler",
+            "url": "https://www.instagram.com/bornweiler/",
+            "snippet": "584 followers · 1 following · 74 posts · @bornweiler: “Confeitaria artesanal Por @camilacborn Jaraguá do Sul Encomendas e orçament"
+          },
+          {
+            "title": "Uma nova torta favorita acaba de chegar à maCakes. Nossa ...",
+            "url": "https://www.instagram.com/reel/DdWmPOHskdY/",
+            "snippet": "bornweiler. •. Follow · Três Rios do Sul, Santa Catarina. Photo by ... Photo by Encanteria | Confeitaria e Fábrica de Doces on Sep"
+          },
+          {
+            "title": "DICAS PARA BOLO DECORADO DE MORANGO  1. Massa ...",
+            "url": "https://www.instagram.com/reel/DQS05rckUIm/",
+            "snippet": "bornweiler. •. Follow · Três Rios do Sul, Santa Catarina. Photo by Bornweiler on October 04, 2026. May be an image of cake,. 9 lik"
+          },
+          {
+            "title": "Não adianta a mesa de doces estar apenas bonita, os ...",
+            "url": "https://www.instagram.com/p/De7Run5Gvdm/",
+            "snippet": "6 likes, 0 comments - bornweiler on October 25, 2026: \"Não adianta a mesa de doces estar apenas bonita, os docinhos serem delicios"
+          },
+          {
+            "title": "Morango, morango e mais morangos por aqui!!  1,5kg de ...",
+            "url": "https://www.instagram.com/p/Ddq1ftSG4CW/",
+            "snippet": "bornweiler. •. Follow · Três Rios do Sul, Santa Catarina. Photo by ... Photo by Império confeitaria on September 05, 2026. May be "
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-147",
+      "row": 148,
+      "date": "28/10/2026",
+      "segment": "Padaria / Confeitaria",
+      "old": {
+        "handle": "@saborecia",
+        "name": "Confeitaria, Café e Padaria Sabor & Cia 🍰☕️",
+        "city": "Chapecó",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/saborecia/"
+      },
+      "replacement": {
+        "handle": "patriciacruz.confeitaria",
+        "name": "Confeitaria da Patrícia (@patriciacruz.confeitaria)",
+        "city": "Jaraguá do Sul",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/patriciacruz.confeitaria/",
+        "snippet": "... Jaraguá do Sul • SC Encomendas pelo WhatsApp. ... Peça já o seu , não fique sem ...",
+        "sourceSearch": "site:instagram.com confeitaria Jaraguá do Sul",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "🍓❤️ DIA DOS PAIS | Patrícia Cruz Confeitaria ❤️🍓 Neste ...",
+            "url": "https://www.instagram.com/reel/DbyWRtdRhZr/",
+            "snippet": "Aqui na Patrícia Cruz Confeitaria, cada torta foi preparada com muito cuidado, carinho e amor para tornar esse domingo ainda mais "
+          },
+          {
+            "title": "Patrícia Cruz - Confeitaria on Instagram • Photos and Videos",
+            "url": "https://www.instagram.com/explore/locations/523516881377812/patricia-cruz-confeitaria/",
+            "snippet": "Patrícia Cruz - Confeitaria. patriciacruz_confeitaria. Product/service•51 posts. $$$$•Closed until 8:00 AM."
+          },
+          {
+            "title": "Um sonho em cada colherada! ✨ As Tortas dos ...",
+            "url": "https://www.instagram.com/reel/DdwS1eStjEc/",
+            "snippet": "✨ As Tortas dos Sonhos da Patrícia Cruz Confeitaria chegaram para conquistar todos os gostos! São diversos sabores deliciosos, com"
+          },
+          {
+            "title": "Patrícia Cruz Confeitaria - Cardápio e Delivery em ...",
+            "url": "https://pede.ai/go/itapuranga/patricia-cruz-confeitaria2",
+            "snippet": "Faça seu pedido online no Patrícia Cruz Confeitaria, Restaurantes e Sobremesas, em Itapuranga. Veja o cardápio completo com preços"
+          },
+          {
+            "title": "Tortas gourmet (@patriciacruz_confeitaria)",
+            "url": "https://www.instagram.com/patriciacruz_confeitaria/",
+            "snippet": "❤️ DIA DOS PAIS | Patrícia Cruz Confeitaria ❤️ Neste Dia dos Pais ..."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-149",
+      "row": 150,
+      "date": "28/10/2026",
+      "segment": "Padaria / Confeitaria",
+      "old": {
+        "handle": "@padariadonana",
+        "name": "Padaria e Confeitaria Don'Ana 🍰☕️",
+        "city": "Chapecó",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/padariadonana/"
+      },
+      "replacement": {
+        "handle": "ela.doces_",
+        "name": "Ela.doces | brigadeiros e bolos jaraguá (@ela.doces_)",
+        "city": "Jaraguá do Sul",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/ela.doces_/",
+        "snippet": "... encomendas | Jaraguá do Sul - SC ... confeitaria #confeitariasantacatarina #confeitaria #jaraguadosul #guaramirim ...",
+        "sourceSearch": "site:instagram.com confeitaria Jaraguá do Sul",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Ela.doces | brigadeiros e bolos jaraguá (@ela.doces_)",
+            "url": "https://www.instagram.com/ela.doces_/",
+            "snippet": "Aqui na Ela doces personalizamos seu bolo do jeitinho que você quiser . . ."
+          },
+          {
+            "title": "os irresistíveis morangos cravejados 🍓🤎 e o delicioso Licor ...",
+            "url": "https://www.instagram.com/reel/Dd2qyBPunF1/",
+            "snippet": "✨ Quando o sabor encontra a delicadeza… Hoje foi dia de conhecer duas delícias da Ela e Ela Doces: os irresistíveis morangos crave"
+          },
+          {
+            "title": "Quer ver uma confeitaria feliz? Compra isso pra ela - #doces",
+            "url": "https://www.facebook.com/figueirasdoces/videos/quer-ver-uma-confeitaria-feliz-compra-isso-pra-eladoces-bolo-humor-viral-explore/1081665214542971/",
+            "snippet": "Quer ver uma confeitaria feliz? Compra isso pra ela #doces #bolo #humor #viral #explore."
+          },
+          {
+            "title": "Edwiges Core Deixamos um espaço especial para ela",
+            "url": "https://www.instagram.com/reel/DRZieyHgBsP/",
+            "snippet": "Deixamos um espaço especial para ela: doces, embalagens e uma cenografia inspirada na Edwiges. ... A maior confeitaria rosa e + de"
+          },
+          {
+            "title": "Se bolo durasse do meio-dia até às 6h da manhã fora da ...",
+            "url": "https://www.facebook.com/julianapiccirrilli/videos/se-bolo-durasse-do-meio-dia-at%C3%A9-%C3%A0s-6h-da-manh%C3%A3-fora-da-geladeira-e-continuasse-p/1592883989126563/",
+            "snippet": "Quer ver uma confeitaria feliz? Compra isso pra ela #doces #bolo #humor. 00:08. Quer ver uma confeitaria feliz? Compra isso pra el"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-162",
+      "row": 163,
+      "date": "29/10/2026",
+      "segment": "Padaria / Confeitaria",
+      "old": {
+        "handle": "@bolodemae",
+        "name": "Bolos Caseiros- Criciúma SC",
+        "city": "Criciúma",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/bolodemae/"
+      },
+      "replacement": {
+        "handle": "celiasalgadosebolos",
+        "name": "Célia Salgados e Bolos (@celiasalgadosebolos) - Doces",
+        "city": "Apucarana",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/celiasalgadosebolos/",
+        "snippet": "Bolos | Doces | Salgados Feitos com sabor e tradição Encomendas todos os dias Apucarana - PR Fale com a nossa equipe.",
+        "sourceSearch": "site:instagram.com confeitaria Apucarana",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Célia Salgados e Bolos (@celiasalgadosebolos)",
+            "url": "https://www.facebook.com/celiasalgadosebolos/?locale=pt_BR",
+            "snippet": "Célia Salgados e Bolos. 11.074 seguidores · 8 falando sobre isso. Salgados; Bolos; Doces; Casa de Salgados; Lanchonete."
+          },
+          {
+            "title": "Célia Salgados e Bolos (@celiasalgadosebolos) - Doces",
+            "url": "https://www.instagram.com/celiasalgadosebolos/",
+            "snippet": "Hoje é dia de saborear o essa delícia da Célia Salgados e Bolos! Quem resiste ..."
+          },
+          {
+            "title": "Pavê de nata com chocolate; Torta Salgada; Bolos e ...",
+            "url": "https://www.facebook.com/celiasalgadosebolos/videos/delicias-da-c%C3%A9lia-salgados-e-bolos/580078952440287/",
+            "snippet": "#padariapaodemelocaucu #ocauçu #padaria #confeitaria #interiorpaulista. 00:10. #padariapaodemelocaucu ... Delicias da Célia Salgad"
+          },
+          {
+            "title": "Marque aquele seu amigo(a) que combina com esse bolo",
+            "url": "https://www.instagram.com/reel/C9TCjpny9E4/",
+            "snippet": "Na Célia Salgados e Bolos, você pode reunir a família e os amigos em um ambiente preparado com carinho para celebrar momentos ines"
+          },
+          {
+            "title": "Celia Salgados E Bolos - Apucarana, PR - WikiCidades",
+            "url": "https://wikicidades.com.br/pr/apucarana/celia-salgados-e-bolos-av-curitiba-657-apucarana",
+            "snippet": "Celia Salgados E Bolos. Apucarana, PR. 4.5. 847 avaliações no Google. Av. Curitiba, 657, Apucarana - PR. Mapa & Localização Contat"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-164",
+      "row": 165,
+      "date": "29/10/2026",
+      "segment": "Padaria / Confeitaria",
+      "old": {
+        "handle": "@bolleriaboloscaseiros",
+        "name": "Bolleria Bolos Caseiros",
+        "city": "Criciúma",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/bolleriaboloscaseiros/"
+      },
+      "replacement": {
+        "handle": "confeitariamegadoces",
+        "name": "Mega Doces Confeitaria (@confeitariamegadoces)",
+        "city": "Apucarana",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/confeitariamegadoces/",
+        "snippet": "Mega Doces Confeitaria. 1,037 followers. 134 following. Desde 1996 no coração de Apucarana ... #apucarana #bolos ...",
+        "sourceSearch": "site:instagram.com confeitaria Apucarana",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Mais um lindo feito com muito carinho para a Princesa Lili, do ...",
+            "url": "https://www.facebook.com/atrevizandoces/videos/mais-um-lindo-feito-com-muito-carinho-para-a-princesa-lili-do-jeitinho-que-ela-p/1530536447992791/",
+            "snippet": "... Confeitaria Bem Doces | Roberta D'avila #bolopequenasereia #bolosbauru #boloariel #bolofundodomar bolosdecorados | A Trevizan "
+          },
+          {
+            "title": "A Trevizan Doces (@atrevizandoces)",
+            "url": "https://www.facebook.com/atrevizandoces/",
+            "snippet": "... Confeitaria Bem Doces | Roberta D'avila #bolopequenasereia #bolosbauru #boloariel #bolofundodomar bolosdecorados - in Bauru, c"
+          },
+          {
+            "title": "www.diananicy.com.br Faça parte do Evento Artistas do Natal, é ...",
+            "url": "https://www.instagram.com",
+            "snippet": "Tudo bem? Meu nome é Roberta, sou da Confeitaria Bem Doces aqui da cidade de Bauru no interior de São Paulo, tô participando do ev"
+          },
+          {
+            "title": "Mais um lindo feito com muito carinho para a Princesa Lili, do ...",
+            "url": "https://www.facebook.com/atrevizandoces/posts/mais-um-lindo-feito-com-muito-carinho-para-a-princesa-lili-do-jeitinho-que-ela-p/1819033742894344/",
+            "snippet": "... Confeitaria Bem Doces | Roberta D'avila #bolopequenasereia #bolosbauru #boloariel #bolofundodomar bolosdecorados. Log in · 󰟙."
+          },
+          {
+            "title": "Nosso brownie supremo ##Ninho Nutella e moragos ## Loja ...",
+            "url": "https://www.facebook.com/atrevizandoces/posts/nosso-brownie-supremo-ninho-nutella-e-moragos-loja-ol%C3%A9gario-machado-2-50-galeria/1844718696992515/",
+            "snippet": "... Confeitaria Bem Doces | Roberta D'avila #bolopequenasereia #bolosbauru #boloariel #bolofundodomar bolosdecorados. Mais um lind"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-170",
+      "row": 171,
+      "date": "29/10/2026",
+      "segment": "Padaria / Confeitaria",
+      "old": {
+        "handle": "@confeitariaerlidoces",
+        "name": "Confeitaria Erli Doces",
+        "city": "São José dos Pinhais",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/confeitariaerlidoces/"
+      },
+      "replacement": {
+        "handle": "silviabuenobolos",
+        "name": "Silvia Bueno Bolos (@silviabuenobolos)",
+        "city": "Apucarana",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/silviabuenobolos/",
+        "snippet": "Amor em forma de tortas. Blindada, Amparada e Abençoada por Deus e N.S.. Tortas sob encomenda. Apucarana PR. ⚠️⚠️Pedidos no link abaixo⬇️⬇️.",
+        "sourceSearch": "site:instagram.com confeitaria Apucarana",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Silvia Bueno Bolos (@silviabuenobolos)",
+            "url": "https://www.instagram.com/silviabuenobolos/",
+            "snippet": "Silvia Bueno Bolos. 14.4K followers. 6,641 following. Amor em forma de tortas. Blindada, Amparada e Abençoada por Deus e N.S.. Tor"
+          },
+          {
+            "title": "Silvia Bueno Bolos em Apucarana, PR - 50.503.080/0001-76",
+            "url": "https://www.econodata.com.br/consulta-empresa/50503080000176-silvia-da-silva-bueno",
+            "snippet": "Sua atividade principal é de Fabricação de produtos de padaria e confeitaria ... Este não é o site da empresa SILVIA BUENO BOLOS. "
+          },
+          {
+            "title": "Hoje foi dia dos chocolatudos por aqui!!!! Sabadou com muito ...",
+            "url": "https://www.facebook.com/100078760553208/videos/hoje-foi-dia-dos-chocolatudos-por-aquisabadou-com-muito-chocolate-por-aquitortak/1526880036164481/",
+            "snippet": "Video · Silvia Bueno Bolos. Sep 19, 2026·. Hoje foi dia dos chocolatudos ... Ferrero #confeitaria #renathanconfeitaria #fatia #com"
+          },
+          {
+            "title": "A torta Kinder Whitte esta fazendo sucesso por onde passa. ...",
+            "url": "https://www.instagram.com/reel/DeCDDlNRx3B/",
+            "snippet": "Photo by Confeitaria & Doceria on September 23, 2026. May be an ... Join Silvia Bueno Bolos on Instagram. Sign up for Instagram · "
+          },
+          {
+            "title": "E teve bolo de Santo Antônio sim Senhor!!!!! #santoantônio ...",
+            "url": "https://www.facebook.com/100078760553208/videos/e-teve-bolo-de-santo-ant%C3%B4nio-sim-senhorsantoant%C3%B4nio-bolosantoant%C3%B4nio-festajunina/4523704054528467/",
+            "snippet": "Silvia Bueno Bolos. Jun 13, 2026·. E teve bolo de Santo Antônio sim Senhor!!!!! #santoantônio #bolosantoantônio #festajunina #apuc"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-172",
+      "row": 173,
+      "date": "29/10/2026",
+      "segment": "Padaria / Confeitaria",
+      "old": {
+        "handle": "@sodiesaojosedospinhais",
+        "name": "Sodiê São José Dos Pinhais",
+        "city": "São José dos Pinhais",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/sodiesaojosedospinhais/"
+      },
+      "replacement": {
+        "handle": "thayla_caroline_bolos",
+        "name": "𝑨𝒑𝒖𝒄𝒂𝒓𝒂𝒏𝒂 (@thayla_caroline_bolos)",
+        "city": "Apucarana",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/thayla_caroline_bolos/",
+        "snippet": "Transformando momentos em doces lembranças. Apucarana - Pr Bolos festivos /Personalizados Delivery Orçamentos / Encomendas pelo link a baixo.",
+        "sourceSearch": "site:instagram.com confeitaria Apucarana",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "𝑨𝒑𝒖𝒄𝒂𝒓𝒂𝒏𝒂 (@thayla_caroline_bolos)",
+            "url": "https://www.instagram.com/thayla_caroline_bolos/",
+            "snippet": "Thayla Caroline Bolos | Apucarana. 1,676 followers. 802 following. Local service. Transformando momentos em doces lembranças ..."
+          },
+          {
+            "title": "Por trás de cada doce lindo existe uma cozinha de cabeça pra ...",
+            "url": "https://www.instagram.com/docesflorao/reel/DbzNrTcto1C/",
+            "snippet": "... confeitaria #doces #docesflorao # ... Photo by Thayla Caroline Bolos | Apucarana on July 23, 2026."
+          },
+          {
+            "title": "Seja na famosa marmita ou na nossa caixa presenteavel, ele é ...",
+            "url": "https://www.instagram.com/p/DbZuZJLDlor/",
+            "snippet": "Photo by Thayla Caroline Bolos | Apucarana on ..."
+          },
+          {
+            "title": "Kit Bento cake melhor vovó  #bolodavovó #bolobentô",
+            "url": "https://www.instagram.com/p/DLFp92GMvFi/",
+            "snippet": "Photo by Thayla Caroline Bolos | Apucarana on September 25, 2026. May be an."
+          },
+          {
+            "title": "Melhores delivery de Apucarana",
+            "url": "https://portal.instadelivery.com.br/apucarana",
+            "snippet": "Panificadora e Confeitaria Pão Quente. Av. Curitiba, 623, Barra Funda, Apucarana / PR; Pedido mínimo: R$ 10,00. Thayla Caroline Bo"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-176",
+      "row": 177,
+      "date": "29/10/2026",
+      "segment": "Padaria / Confeitaria",
+      "old": {
+        "handle": "@sweetolive.confeitaria",
+        "name": "Sweet Olive Confeitaria®",
+        "city": "Foz do Iguaçu",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/sweetolive.confeitaria/"
+      },
+      "replacement": {
+        "handle": "amorde.bolo",
+        "name": "Amor de Bolo | Maringá - PR (@amorde.bolo)",
+        "city": "Maringá",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/amorde.bolo/",
+        "snippet": "Bolos personalizados, feitos com muito amor! Maringá -PR Bolos por encomenda ... confeitaria #bolo ...",
+        "sourceSearch": "site:instagram.com confeitaria Maringá",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Confeitaria Amor de Bolo ✨ (@amordebolo.rr)",
+            "url": "https://www.instagram.com/amordebolo.rr/",
+            "snippet": "Tem novidade na loja Amor de Bolo: agora você pode reservar uma mesa posta ..."
+          },
+          {
+            "title": "Amor de Bolo - Confeitaria Artesanal Ltda. Company Profile - Brazil ...",
+            "url": "https://www.emis.com/php/company-profile/BR/Amor_de_Bolo_-_Confeitaria_Artesanal_Ltda_en_18287440.html",
+            "snippet": "Amor de Bolo - Confeitaria Artesanal Ltda. (Brazil). Main Activities: Bread and Bakery Product Manufacturing. Secondary Activities"
+          },
+          {
+            "title": "Reel by Confeitaria Amor de Bolo ✨ (@amordebolo.rr)",
+            "url": "https://www.instagram.com/reel/DR53Qk1jVZ0/",
+            "snippet": "Join Confeitaria Amor de Bolo ✨ on Instagram. Sign up for Instagram · Sign up • Instagram · Meta · About · Blog · Jobs · Help · AP"
+          },
+          {
+            "title": "AMOR DE BOLO - CONFEITARIA ARTESANAL LTDA - ME",
+            "url": "https://empresas.serasaexperian.com.br/consulta-gratis/AMOR-DE-BOLO---CONFEITARIA-ARTESANAL-LTDA-42928587000143",
+            "snippet": "O CNPJ da empresa AMOR DE BOLO - CONFEITARIA ARTESANAL LTDA - ME (AMOR DE BOLO - CONFEITARIA ARTESANAL) é 42.928.587/0001-43. Com "
+          },
+          {
+            "title": "Amor de Bolo - Confeitaria Artesanal",
+            "url": "https://www.jusbrasil.com.br/nome/amor-de-bolo-confeitaria-artesanal-ltda/cnpj-CkKrbqzY5Q2",
+            "snippet": "AMOR DE BOLO - CONFEITARIA ARTESANAL LTDA. CNPJ 42.928.587/0001-43•Roraima. Processos Sócios Sobre a empresa. Confira se foram enc"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-210",
+      "row": 211,
+      "date": "26/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@psicologiahanna",
+        "name": "Psicóloga Hanna Martins",
+        "city": "Maringá",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/psicologiahanna/"
+      },
+      "replacement": {
+        "handle": "joanacs.psi",
+        "name": "Psicóloga Joana Carlota (@joanacs.psi)",
+        "city": "Blumenau",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/joanacs.psi/",
+        "snippet": "Psicóloga clínica CRP 12-14569 contatojoanacs@gmail.com Blumenau-SC Promovendo mais qualidade de vida ▫️ Mais informações acesse .",
+        "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Psicóloga Joana Carlota (@joanacs.psi)",
+            "url": "https://www.instagram.com/joanacs.psi/",
+            "snippet": "joanacs.psi. Psicóloga Joana Carlota. 5,488 followers. 2,920 following. Psicóloga clínica CRP 12-14569 contatojoanacs@gmail.com Blumenau-SC"
+          },
+          {
+            "title": "Prospectagram | Psicóloga Joana Carlota (@joanacs.psi)",
+            "url": "https://app.prospectagram.com.br/i/psicologos/joanacs.psi",
+            "snippet": "Informações. Categoria: Psicólogos. Conta verificada: Não. Site: linktr.ee/joanacs.psi · Ver perfil no Instagram←Ver todos os 14.807 Psicólo"
+          },
+          {
+            "title": "Psicóloga Joana Carlota Official: Facebook",
+            "url": "https://linktr.ee/joanacs.psi",
+            "snippet": "Psicóloga Joana Carlota has been a member of Linktree for 5 years and joined in July 2021. Resources joanacs.psi has populated their site wi"
+          },
+          {
+            "title": "Você dorme quantidade suficiente de sono, mas ainda ...",
+            "url": "https://www.instagram.com/reel/DF_Etg8SNOB/",
+            "snippet": "41 likes, 4 comments - joanacs.psi on February 12, 2025: \"Você dorme quantidade suficiente de sono, mas ainda assim acorda cansado/cansada?"
+          },
+          {
+            "title": "Você imaginava que um dos museus mais incríveis da ...",
+            "url": "https://www.instagram.com/reel/DaTr_2pT9jI/",
+            "snippet": "joanacs.psi. •. Follow · The National Gallery. Photo by Psicóloga Joana Carlota on August 18, 2026. May be art of rocking. Photo by Psicólog"
+          },
+          {
+            "title": "Manda essa vídeo pro seu amigo que nao quer pagar ...",
+            "url": "https://www.instagram.com/reel/DG0bXyauBNL/",
+            "snippet": "elisazarzur. socorro se um dia eles quiserem me black mail eu dou tudo o que eu tenho. joanacs.psi. Perfeito!! Isso sem contar ..."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-234",
+      "row": 235,
+      "date": "27/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@centro.terapia.cognitiva",
+        "name": "Centro de Terapia Cognitiva",
+        "city": "Chapecó",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/centro.terapia.cognitiva/"
+      },
+      "replacement": {
+        "handle": "psisaralpm",
+        "name": "Sara L. P. Martins | Psicóloga (@psisaralpm)",
+        "city": "Blumenau",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/psisaralpm/",
+        "snippet": "... Blumenau/SC CRP 12/18556 Agendamento e como iniciar ... ✨ Sara L. P. Martins CRP 12/18556 #autossabotagem #terapia #psicóloga ...",
+        "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Sara L. P. Martins | Psicóloga (@psisaralpm)",
+            "url": "https://www.instagram.com/psisaralpm/",
+            "snippet": "psisaralpm. Sara L. P. Martins | Psicóloga. 569 followers. 254 following. 🖋️Terapia Cognitivo-Comportamental Pensamentos, emoções e padrões"
+          },
+          {
+            "title": "Sara Martins - Psicóloga Clínica - Terapia Cognitivo- ...",
+            "url": "https://br.linkedin.com/in/psisaralpm",
+            "snippet": "Psicóloga Clínica - Terapia Cognitivo-Comportamental · Formação acadêmica: FURB - Universidade de Blumenau · Localidade: Blumenau · + de 500"
+          },
+          {
+            "title": "🇧🇷 tá com a terapia em dia? 🥹 happy dia da(o) psicóloga ...",
+            "url": "https://www.instagram.com/p/C_LXPVDuoD_/",
+            "snippet": "Psicologia por amor lkkkkkkkkkkkkkkkk ou não. millenelarissa · @psi.biavieira · priscilahering · @psisaralpm post em sua homenagem ahaha."
+          },
+          {
+            "title": "não tenho certeza se quero ter filhos, ...",
+            "url": "https://www.instagram.com/p/Co-ZinALTdj/",
+            "snippet": "Isso não significa escolher e tomar decisões de forma irresponsável. Significa apenas aceitar as incertezas da vida. View all 7 comments · p"
+          },
+          {
+            "title": "Maria Camila Moura | Em nossa sociedade, a ...",
+            "url": "https://www.instagram.com/p/DOv8SYokfgc/",
+            "snippet": "psisaralpm. Tão tão tãaao necessária reflexão. tatiana.venturelli. Obrigada por essa reflexão, era a resposta que eu pedi a Deus! Que ..."
+          },
+          {
+            "title": "Programa de Apoio ao Esporte e ao Exercício (@paee.furb)",
+            "url": "https://www.instagram.com/paee.furb/",
+            "snippet": "... Psicologia @psisaralpm Pedagogia @mellizabellini Arquitetura @maksell_refrigeracao @miras_arquitetura Ciências da Computação @jeanvmp Me"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-236",
+      "row": 237,
+      "date": "27/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@recriarpsicologiaclinica",
+        "name": "Recriar - Psicologia Clínica",
+        "city": "Chapecó",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/recriarpsicologiaclinica/"
+      },
+      "replacement": {
+        "handle": "psicologatatianaleal",
+        "name": "Tatiana Leal | Psicóloga Clínica (@psicologatatianaleal)",
+        "city": "Blumenau",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/psicologatatianaleal/",
+        "snippet": "Psicóloga Clínica - CRP 12-11490 Online e Presencial(Blumenau) Quando te ajudo a ser livre e a voar, mais alto eu voo! Agendar.",
+        "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Psicóloga Tatiana Leal",
+            "url": "https://br.mundopsicologos.com/procard/psicologa-tatiana-leal",
+            "snippet": "A psicóloga Tatiana Leal, CRP 12/11490, mantém um espaço psicoterapêutico particular e seguro, um lugar para tratar das suas individualidade"
+          },
+          {
+            "title": "Tatiana Leal",
+            "url": "https://www.instagram.com/reel/DA8MXRHtysp/",
+            "snippet": "... Foque no melhor para você!!!! Tenha um dia maravilhoso! ❤️❤️❤️ Psicóloga Tatiana Leal (47) 99203 8133\"."
+          },
+          {
+            "title": "Psicóloga Tatiana Leal",
+            "url": "https://www.facebook.com/61593327382894/photos/122110673763444246/",
+            "snippet": "Psicóloga Tatiana Leal added a new photo ... psicóloga #doençaoncológica #regulaçãoemocional ... Ser psicóloga é estar presente nesses momen"
+          },
+          {
+            "title": "Como falar com os nossos filhos sobre emoções difíceis? ...",
+            "url": "https://www.instagram.com/reel/DcJL_D6qC8l/",
+            "snippet": "▶️ Veja o vídeo e partilhe com outros pais e cuidadores. Marque a sua consulta de psicologia, com a nossa psicóloga Tatiana Leal Clínica ..."
+          },
+          {
+            "title": "Que nesta quarta-feira você se vista de si! Isso fará seu dia ...",
+            "url": "https://www.instagram.com/p/C6JVnUfxlvL/",
+            "snippet": "Que nesta quarta-feira você se vista de si! Isso fará seu dia mais feliz !!! Psicóloga Tatiana Leal Contato: (47) 99203 8133."
+          },
+          {
+            "title": "Clínica Médica da Achada",
+            "url": "https://www.facebook.com/61575959229724/posts/-como-falar-com-os-nossos-filhos-sobre-emo%C3%A7%C3%B5es-dif%C3%ADceistristeza-medo-frustra%C3%A7%C3%A3o-/122191939178865307/",
+            "snippet": "... psicologia, com a nossa psicóloga Tatiana Leal Clínica Médica da Achada Saúde e Bem-estar em cada consulta. Log in. Clínica Médica da .."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-246",
+      "row": 247,
+      "date": "28/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@psicologalizbolton",
+        "name": "Liz Bolton | Psicóloga Clínica",
+        "city": "Balneário Camboriú",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/psicologalizbolton/"
+      },
+      "replacement": {
+        "handle": "psicarolinamorastoni",
+        "name": "Psicóloga Infantil -CRP-12/18760 📍Blumenau-SC",
+        "city": "Blumenau",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/psicarolinamorastoni/",
+        "snippet": "... Psicóloga Carolina Morastoni - Tia Carol. 869 followers. 613 following. Psychologist. Psicóloga Infantil -CRP-12/18760 Blumenau-SC. Follow. Message ...",
+        "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Psicóloga Infantil -CRP-12/18760 📍Blumenau-SC",
+            "url": "https://www.instagram.com/psicarolinamorastoni/",
+            "snippet": "psicarolinamorastoni. Psicóloga Carolina Morastoni - Tia Carol. 869 followers. 613 following. Psychologist. Psicóloga Infantil -CRP-12/18760"
+          },
+          {
+            "title": "Psicóloga Carolina Morastoni - Tia Carol (@psicarolinamorastoni)",
+            "url": "https://app.prospectagram.com.br/i/psicologos/psicarolinamorastoni",
+            "snippet": "Instagram›14.807 Psicólogos no Instagram›@psicarolinamorastoni. P. Psicóloga Carolina Morastoni - Tia Carol. @psicarolinamorastoni. Psicólog"
+          },
+          {
+            "title": "Acho que estão tentando me sabotar 😅 #humor #reels # ...",
+            "url": "https://www.instagram.com/reel/DZQqsFUxuGR/",
+            "snippet": "#humor #reels #viralmemes · View all 13 comments · psicarolinamorastoni ... #Psicologia #Psicoterapia #SaúdeMental #Psicóloga #Terapia ... #"
+          },
+          {
+            "title": "não vá treinar sozinho! Tem mais alguma dica que funciona ...",
+            "url": "https://www.instagram.com/reel/Dez1x2XKMRp/",
+            "snippet": "psicarolinamorastoni. Ameei! Tai uma dificuldade que tenho: manter atividade fisica em dia.. seguindoo para aprender como criar esse habito "
+          },
+          {
+            "title": "Semana de Inclusão Guiando Acessibilidade!  Uma ideia que ...",
+            "url": "https://www.instagram.com/reel/Db4HA8Rh4Sg/",
+            "snippet": "psicarolinamorastoni. Obrigada pelo convite! Foi otimo compartilhar de historias e conhecimento com vocês nesse dia! October 6 · psi ..."
+          },
+          {
+            "title": "Essa trajetória começou com uma identificação com o ...",
+            "url": "https://www.instagram.com/reel/DJ9axiCO_88/",
+            "snippet": "#AutismoEmDia #AutismoAdulto #Neurodiversidade #MeuMundoAtípico · View all 11 comments · psicarolinamorastoni ... terapeuta possa ter sentim"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-247",
+      "row": 248,
+      "date": "28/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@anaspinellipsico",
+        "name": "Ana Spinelli | Psicóloga TCC",
+        "city": "Balneário Camboriú",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/anaspinellipsico/"
+      },
+      "replacement": {
+        "handle": "psicoevelynscharf",
+        "name": "Psicóloga Evelyn Luisa Pagel Scharf CRP",
+        "city": "Blumenau",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/psicoevelynscharf/",
+        "snippet": "Psicóloga Evelyn Luisa Pagel Scharf CRP: 12/19368. 1,498 followers. 479 ... #blumenau ...",
+        "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Psicóloga Evelyn Luisa Pagel Scharf CRP",
+            "url": "https://www.instagram.com/psicoevelynscharf/?hl=en",
+            "snippet": "psicoevelynscharf . Psicóloga Evelyn Luisa Pagel Scharf CRP: 12/19368. 1,498 ... ➡️ Psicóloga , especialista em neuropsicologia e terapeuta "
+          },
+          {
+            "title": "Psicóloga Evelyn Luisa Pagel Scharf | Blumenau SC",
+            "url": "https://www.facebook.com/psicoevelynscharf/?locale=pt_BR",
+            "snippet": "Entrar. Psicóloga Evelyn Luisa Pagel Scharf. Psicóloga em Blumenau-SC. CRP: 12/19368. Serviço de saúde mental. Seguir. Read more"
+          },
+          {
+            "title": "Photo by Psicóloga Evelyn Luisa Pagel Scharf CRP",
+            "url": "https://www.instagram.com",
+            "snippet": "psicoevelynscharf . •. Follow · Blumenau, Santa Catarina, Brazil. 15 likes. psicoevelynscharf . Olá, sou Evelyn Scharf, psicóloga e hoje vim"
+          },
+          {
+            "title": "Psicóloga Evelyn Luisa Pagel Scharf",
+            "url": "https://www.facebook.com/psicoevelynscharf/photos/1284336156218244/",
+            "snippet": "A alienação parental nunca tem como objetivo atingir os filhos e sim são mágoas do antigo parceiro e problemas com seu próprio eu interior. "
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-252",
+      "row": 253,
+      "date": "28/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@batistapsicoempatia",
+        "name": "Psicólogo | CRP-08/43793",
+        "city": "Foz do Iguaçu",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/batistapsicoempatia/"
+      },
+      "replacement": {
+        "handle": "psicologabrunafillus",
+        "name": "Psicóloga Bruna Fillus (@psicologabrunafillus)",
+        "city": "Ponta Grossa",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/psicologabrunafillus/",
+        "snippet": "Psicóloga Bruna Fillus. 896 followers. 518 following. Psychologist. Avaliação Psicológica Psicoterapia Online ou Presencial CRP 08/25902 @phillus ...",
+        "sourceSearch": "site:instagram.com psicóloga CRP Ponta Grossa",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Você tem uma nova oportunidade, agora! . . . Bruna Blem Fillus ...",
+            "url": "https://www.instagram.com/p/B4KK6hphxOp/",
+            "snippet": "... Psicóloga CRP 08 ... Photo by Psicóloga Bruna Fillus on October 28, 2019. ... Então quando cês perguntarem, psicólogo chora, esse psicól"
+          },
+          {
+            "title": "Psicóloga Bruna Fillus (@psicologabrunafillus)",
+            "url": "https://www.instagram.com/psicologabrunafillus/",
+            "snippet": "Psicóloga Bruna Fillus. 896 followers. 518 following. Psychologist. Avaliação Psicológica Psicoterapia Online ou Presencial CRP 08/25902 @ph"
+          },
+          {
+            "title": "Hoje foi dia de entrega de pedido por aqui  Amamos fazer ...",
+            "url": "https://www.instagram.com/reel/DHUZYWvRYoT/",
+            "snippet": "Trailer highlights Bruna e Allan ... ❤️ Deus abençoe! ... Photo by Psicóloga Bruna Fillus on January 11, 2026."
+          },
+          {
+            "title": "Quem sou eu? Meu nome é Bruna Blem Fillus, sou psicóloga ...",
+            "url": "https://www.instagram.com/p/B1btCXVFRIa/",
+            "snippet": "Photo by Psicóloga Bruna Fillus on August 21, 2019. 15 likes. psicologabrunafillus. Quem sou eu? Meu nome é Bruna Blem Fillus, sou psicóloga"
+          },
+          {
+            "title": "Bruna Blem Fillus",
+            "url": "https://www.facebook.com/bruna.blemfillus/",
+            "snippet": "Psicóloga Sócia Proprietária at Phillus Centro de Especialidades. . Psicóloga at Psicóloga Bruna Fillus. . Married to Allan Petter Nasciment"
+          },
+          {
+            "title": "FELIZ ANO NOVO ✨️ FELIZ 2026 ✨️ FELIZ VIDA ✨️ Meu ...",
+            "url": "https://www.instagram.com/p/DS87Bs0EVz4/?__d=1",
+            "snippet": "Photo by Psicóloga Bruna Fillus on December 31, 2025."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-253",
+      "row": 254,
+      "date": "28/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@psi.amandabramirez",
+        "name": "Psicóloga Amanda Braz Ramirez",
+        "city": "Foz do Iguaçu",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/psi.amandabramirez/"
+      },
+      "replacement": {
+        "handle": "laripsicologa",
+        "name": "Larissa Cristine Kinczel | Psicóloga (@laripsicologa)",
+        "city": "Ponta Grossa",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/laripsicologa/",
+        "snippet": "... Ponta Grossa/PR ... Psicóloga Larissa Cristine Kinczel CRP 08/27949 ...",
+        "sourceSearch": "site:instagram.com psicóloga CRP Ponta Grossa",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Larissa Cristine Kinczel | Psicóloga (@laripsicologa)",
+            "url": "https://www.instagram.com/laripsicologa/?hl=en",
+            "snippet": "1.8K+ followers · 961 following · 284 posts · @ laripsicologa : “✨ Transformando infâncias ✨ Psicóloga infantil Esp. em Desenvolvimento ..."
+          },
+          {
+            "title": "Larissa Cristine Kinczel | Psicóloga (@laripsicologa)",
+            "url": "https://www.instagram.com/laripsicologa/reels/?__d=1",
+            "snippet": "1.8K+ followers · 960 following · 284 posts · @ laripsicologa : “✨ Transformando infâncias ✨ Psicóloga infantil Esp. em Desenvolvimento ..."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-259",
+      "row": 260,
+      "date": "28/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@clinicaamesjp",
+        "name": "Clínica Ame | Psicologia e Especialidades",
+        "city": "Pinhais",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/clinicaamesjp/"
+      },
+      "replacement": {
+        "handle": "psic.adrianemuchal",
+        "name": "Psic.Adriane Muchal (@psic.adrianemuchal)",
+        "city": "Ponta Grossa",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/psic.adrianemuchal/",
+        "snippet": "Atendimento Presencial e Online Adriane Muchal – Psicóloga Clínica CRP 08/22421 Rua Santos Dumont, 293 – Centro Ponta Grossa – PR WhatsApp: (42) ...",
+        "sourceSearch": "site:instagram.com psicóloga CRP Ponta Grossa",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Psic.Adriane Muchal (@psic.adrianemuchal) · Ponta Grossa, PR",
+            "url": "https://www.instagram.com/psic.adrianemuchal/reels/",
+            "snippet": "psic.adrianemuchal. Psic.Adriane Muchal. 633 followers. 849 following. Atendimento Adolescentes, Adultos, Casais. Ansiedade, Depressão, Rela"
+          },
+          {
+            "title": "Psic.Adriane Muchal (@psic.adrianemuchal) - Instagram",
+            "url": "https://www.instagram.com/psic.adrianemuchal/",
+            "snippet": "Atendimento Adolescentes, Adultos, Casais. Ansiedade, Depressão, Relacionamento,Transtornos Emocionais. Presenciais e Online. psic.adrianemu"
+          },
+          {
+            "title": "Hoje, como psicóloga, tenho o privilégio de acompanhar ... - Threads",
+            "url": "https://www.threads.com/@psic.adrianemuchal/post/DeYbK0cALCt/hoje-como-psicologa-tenho-o-privilegio-de-acompanhar-outras-pessoas-nesse/",
+            "snippet": "Oct 11, 2026 · Psic.Adriane Muchal (@psic.adrianemuchal) · October 11, 2026 at 9:55 PM. Hoje, como psicóloga, tenho o privilégio de acompanh"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-260",
+      "row": 261,
+      "date": "28/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@despertarneuroepsico",
+        "name": "Despertar Clínica Neuropsicologia e Psicologia Infantil ...",
+        "city": "Pinhais",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/despertarneuroepsico/"
+      },
+      "replacement": {
+        "handle": "psicologa.esexologia.cirlene",
+        "name": "Cirlene Felde/Psicóloga CRP 08/17674 (@psicologa. ...",
+        "city": "Ponta Grossa",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/psicologa.esexologia.cirlene/",
+        "snippet": "Psicóloga (TCC) e Sexóloga Autora de \"Meu Corpo Me Pertence\" CRP: 08/17674 ✨ Agende sua consulta · Quando as lágrimas de alegria não cabem mais ..",
+        "sourceSearch": "site:instagram.com psicóloga CRP Ponta Grossa",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Cirlene Felde/Psicóloga CRP 08/17674 (@psicologa. ...",
+            "url": "https://www.instagram.com/psicologa.esexologia.cirlene/",
+            "snippet": "Psicóloga (TCC) e Sexóloga Autora de \"Meu Corpo Me Pertence\" CRP: 08/17674 ✨ Agende sua consulta. psicologa.esexologia.cirlene. Follow. Mess"
+          },
+          {
+            "title": "Reel by Cirlene Felde/Psicóloga CRP 08/17674 ...",
+            "url": "https://www.instagram.com/reel/DdK6Gk7p9mi/",
+            "snippet": "... likes, 0 comments - psicologa.esexologia.cirlene on September 11, 2026. ... Eu sou Alê, psicóloga e sexóloga, e realizo atendimentos onl"
+          },
+          {
+            "title": "CBN Entrevista – Cirlene Felde, psicóloga e sexóloga",
+            "url": "https://www.instagram.com/p/DeAFCCImt5g/",
+            "snippet": "13 likes. psicologa.esexologia.cirlene · September 11 · psicologa.esexologia.cirlene's profile picture. psicologa.esexologia.cirlene. •. Fol"
+          },
+          {
+            "title": "Reel by Cirlene Felde/Psicóloga CRP 08/17674 ...",
+            "url": "https://www.instagram.com/reel/Dc90nk7J8kU/",
+            "snippet": "17 likes, 0 comments - psicologa.esexologia.cirlene on September 6, 2026."
+          },
+          {
+            "title": "Talvez esse seja o vídeo que mais poderá gerar conexão ...",
+            "url": "https://www.threads.com/@lucabralsexologa/post/DeykrjQiWu6/video-talvez-esse-seja-o-video-que-mais-podera-gerar-conexao-ao-inves-de-abismo-na/",
+            "snippet": "Cirlene Felde (@psicologa.esexologia.cirlene) · October 5, 2026 at 6:51 PM. Sexualidade não é sexo! É afeto, confiança e a forma como a cria"
+          },
+          {
+            "title": "Reel by Cirlene Felde/Psicóloga CRP 08/17674 ...",
+            "url": "https://www.instagram.com/reel/Ddlm_hsJqJ7/",
+            "snippet": "37 likes, 0 comments - psicologa.esexologia.cirlene on September 22, 2026."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-261",
+      "row": 262,
+      "date": "29/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@espacoterapiaclinica",
+        "name": "🌿Espaço Terapia🌿",
+        "city": "Pinhais",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/espacoterapiaclinica/"
+      },
+      "replacement": {
+        "handle": "psicomozieli",
+        "name": "Mozieli Iop (@psicomozieli)",
+        "city": "Joinville",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/psicomozieli/",
+        "snippet": "Joinville - SC Psicóloga | CRP 12/19431 ‍ @ee_espacoexistencia ✨ Viver com propósito e leveza. ✈️ 🏖️ · Um papo necessário na @ ...",
+        "sourceSearch": "site:instagram.com psicóloga CRP Joinville",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Um bate papo sobre insônia com a psicóloga Mozieli",
+            "url": "https://www.facebook.com/muellerjoi/videos/um-bate-papo-sobre-ins%C3%B4nia-com-a-psic%C3%B3loga-mozieli/662500047714722/",
+            "snippet": "A Psicóloga @psicomozieli - CRP 12/19431 vem bater um papo sobre insônia, disturbio o qual a Associação Brasileira do Sono cita que, ..."
+          },
+          {
+            "title": "Mozieli Iop (@psicomozieli)",
+            "url": "https://www.instagram.com/psicomozieli/",
+            "snippet": "Joinville - SC Psicóloga | CRP 12/19431 ‍ @ee_espacoexistencia ✨ Viver com propósito e leveza. ✈️ 🏖️. psicomozieli. Follow. Message ..."
+          },
+          {
+            "title": "Nossa psicóloga Mozieli Iop, que faz parte do Grupo Doctor ...",
+            "url": "https://www.instagram.com/reel/Da3k17Xxgvv/",
+            "snippet": "✨. View all 11 comments · psicomozieli. É um prazer e grande satisfação poder buscar cada vez mais conhecimento para um atendimento mais ..."
+          },
+          {
+            "title": "Mozieli Ψ (@psicomozieli)",
+            "url": "https://www.threads.com/@psicomozieli",
+            "snippet": "776 Followers • 47 Threads • Psicóloga Joinville | SC. See the latest conversations with @psicomozieli."
+          },
+          {
+            "title": "27 de Agosto - Dia do Psicólogo",
+            "url": "https://www.instagram.com/reel/DcjTtnTOmut/",
+            "snippet": "Feliz Dia da Psicóloga e do Psicólogo. VIVA A PSICOLOGIA!!! . View all ... psicomozieli. Feliz dia do Psicólogo para minha eterna Psi ..."
+          },
+          {
+            "title": "#tbt bem palestrante sobre o que amo… Psicologia ❤️",
+            "url": "https://www.instagram.com/psicomozieli/p/C7VBOmSAIpp/?__d=16d",
+            "snippet": "108 likes, 5 comments - psicomozieli on May 23, 2024: \"#tbt bem palestrante sobre o que amo… Psicologia ❤️\"."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-273",
+      "row": 274,
+      "date": "29/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@mkochpsicologia",
+        "name": "Marilena O. Koch",
+        "city": "Toledo",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/mkochpsicologia/"
+      },
+      "replacement": {
+        "handle": "psi.vanessanunesds",
+        "name": "Psicóloga Vanessa Nunes I CRP 08/43864 (@psi. ...",
+        "city": "Francisco Beltrão",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/psi.vanessanunesds/",
+        "snippet": "Psicóloga Vanessa Nunes I CRP 08/43864. 451 followers. 128 following. • Psicóloga na execução penal @conselhodacomunidadefb • Grupo de estudos @proj.lapaz",
+        "sourceSearch": "site:instagram.com psicóloga CRP Francisco Beltrão",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Psicóloga Vanessa Nunes I CRP 08/43864 (@psi. ...",
+            "url": "https://www.instagram.com/psi.vanessanunesds/",
+            "snippet": "psi.vanessanunesds. Psicóloga Vanessa Nunes I CRP 08/43864. 451 followers. 128 following. • Psicóloga na execução penal @conselhodacomunidad"
+          },
+          {
+            "title": "ABRIL ❥ Antes que maio acabe, deixo aqui um registro ...",
+            "url": "https://www.instagram.com/p/DY3BRK9xIYv/?__d=16d",
+            "snippet": "psi.vanessanunesds. Adoro acompanhar sua rotina ❤️. psi.vanessanunesds. Esses palitos salgados me deram um dejavu. September 28 · josisilva."
+          },
+          {
+            "title": "Conselho da Comunidade da Comarca de Francisco Beltrão ...",
+            "url": "https://www.instagram.com/p/CaDuvhSsa8r/",
+            "snippet": "Cuidar também é garantir acesso a espaços de escuta, orientação e construção de autonomia. View 1 comment · psi.vanessanunesds. Oficina impo"
+          },
+          {
+            "title": "Reel by Complexo Social (DEPPEN) - Francisco Beltrão ...",
+            "url": "https://www.instagram.com/reel/CrlsP6cvzgH/",
+            "snippet": "psi.vanessanunesds. Parabéns aos envolvidos, que trabalho incrível! caroline_deyse. orgulho demais de um grupo!! July 13 · psico_keila's ..."
+          },
+          {
+            "title": "Numape - Francisco Beltrão: Apoio às Mulheres",
+            "url": "https://www.facebook.com/numapefranciscobeltrao/?locale=pt_BR",
+            "snippet": "... psi.vanessanunesds Que possamos seguir construindo espaços de escuta, presença e transformação."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-276",
+      "row": 277,
+      "date": "29/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@keitrin_lorena.psico",
+        "name": "Psicóloga Infanto-juvenil | ABA",
+        "city": "Apucarana",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/keitrin_lorena.psico/"
+      },
+      "replacement": {
+        "handle": "psi.biancamachado",
+        "name": "Psicóloga - CRP 08/38290 (@psi.biancamachado)",
+        "city": "Francisco Beltrão",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/psi.biancamachado/",
+        "snippet": "Bianca Machado | Psicóloga - CRP 08/38290. 490 followers. 386 following. Especialização em Desenvolvimento Infantil. Atendimentos clínicos presenciais e ...",
+        "sourceSearch": "site:instagram.com psicóloga CRP Francisco Beltrão",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "ATENDIMENTOS | acaocognitiva",
+            "url": "https://www.acaocognitiva.com/atendimentos",
+            "snippet": "@ psi.bianca.machado . 21 97732-2923. Terapia Cognitivo-Comportamental, Terapia do Esquema, Avaliação Neuropsicológica, Supervisão em TCC. B"
+          },
+          {
+            "title": "Teresópolis | Psicologia baseada em evidências! O curso é MINI ...",
+            "url": "https://www.instagram.com/reel/C1KKYNiuON0/",
+            "snippet": "Psicologia baseada em evidências! O curso é MINI Curso sobre AUTISMO na Idade Adulta @psi.bianca.machado · #psicoterapiaonline # ..."
+          },
+          {
+            "title": "Teresópolis | Psicologia baseada em evidências! O curso é MINI ...",
+            "url": "https://www.instagram.com",
+            "snippet": "Psicologia baseada em evidências! O curso é MINI Curso sobre AUTISMO na Idade Adulta @ psi.bianca.machado · #psicoterapiaonline # ..."
+          },
+          {
+            "title": "Samantha Soares - Psicóloga Clínica, Educadora em ...",
+            "url": "https://br.linkedin.com/in/samantha-soares-022a3824",
+            "snippet": "Psicóloga Clínica, Educadora em Saúde Mental e Socorrista em Primeiros Socorros de Saúde Mental · Depois de 15 anos atuando no mundo ..."
+          },
+          {
+            "title": "Olá, como vocês estão?! É com muito prazer que vos apresento ...",
+            "url": "https://www.instagram.com/p/CnHoOYdrZsT/",
+            "snippet": "... psicóloga e ... psicóloga e colaboradora do projeto @izabellarios_ #ciumes #grupo #psicologia ... @psibiaba @psi.biaboyadjian @psi.bianc"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-299",
+      "row": 300,
+      "date": "30/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@tatianakuerten",
+        "name": "Tatiana Kuerten | Psicóloga Clínica e Mentora| CRP 12/ ...",
+        "city": "Tubarão",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/tatianakuerten/"
+      },
+      "replacement": {
+        "handle": "rosangela.lopes.psicologa",
+        "name": "rosangela.lopes.psicologa - Francisco Beltrão, PR",
+        "city": "Francisco Beltrão",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/rosangela.lopes.psicologa/",
+        "snippet": "Psicóloga em Francisco Beltrão/PR CRP 08/49773 Relações • Traumas • Luto • Depressão Presencial e online Agende sua consulta.",
+        "sourceSearch": "site:instagram.com psicóloga CRP Francisco Beltrão",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Psicóloga (@rosangela.lopes.psicologa) · Francisco Beltrão, PR",
+            "url": "https://www.instagram.com/rosangela.lopes.psicologa/",
+            "snippet": "... Psicóloga aqui em Francisco Beltrão/PR Olá, eu sou Rosângela Lopes, psicóloga. Meu trabalho é voltado ao atendimento ..."
+          },
+          {
+            "title": "rosangela.lopes.psicologa Official: Instagram",
+            "url": "https://linktr.ee/rosangela.lopes.psicologa",
+            "snippet": "@rosangela.lopes.psicologa · Psicóloga em Francisco Beltrão/PR | CRP 12/23948. Especializada em escuta psicanalítica para relações, traumas,"
+          },
+          {
+            "title": "Há 29 anos fazendo parte da história da FEBRACT, a psicóloga ...",
+            "url": "https://www.instagram.com/reel/DeHpqFHgsjW/",
+            "snippet": "@rosangela.lopes.psicologa. Entre em contato e apresente seu cartão de associado: (46) 99986-8961. Associado AFMFB tem vantagem. Sempre ..."
+          },
+          {
+            "title": "Photo by Rosangela Portas Abertas (@portasabertas2015)",
+            "url": "https://www.instagram.com/p/DekEsXZkSuA/",
+            "snippet": "Siga no Instagram e fique por dentro: @rosangela.lopes.psicologa. Entre em contato e apresente seu cartão de associado: (46) 99986-8961"
+          },
+          {
+            "title": "Rosângela Lopes Psicóloga",
+            "url": "https://www.facebook.com/61590804801663/",
+            "snippet": "Cover photo of Rosângela Lopes Psicóloga. Rosângela Lopes Psicóloga. Psicóloga ... Rosângela Lopes PSICÓLOGA Psicologia · 󰍸 · 󰤦 · Rosângel"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-300",
+      "row": 301,
+      "date": "30/10/2026",
+      "segment": "Psicólogo",
+      "old": {
+        "handle": "@isaggalvan",
+        "name": "Isadora Gagliotto Galvan | Psicóloga TCC",
+        "city": "Francisco Beltrão",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/isaggalvan/"
+      },
+      "replacement": {
+        "handle": "psicologaellenhirasaka",
+        "name": "Psicóloga Ellen Hirasaka (@psicologaellenhirasaka)",
+        "city": "Francisco Beltrão",
+        "uf": "PR",
+        "instagram": "https://www.instagram.com/psicologaellenhirasaka/",
+        "snippet": "Psicóloga Ellen Hirasaka. 4,275 followers. 1,319 following. Especialista em Análise do Comportamento Neuropsicóloga CRP-08/21361 Francisco Beltrão - ...",
+        "sourceSearch": "site:instagram.com psicóloga CRP Francisco Beltrão",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Psicóloga Ellen Hirasaka (@psicologaellenhirasaka)",
+            "url": "https://www.instagram.com/psicologaellenhirasaka/?hl=en",
+            "snippet": "Psicóloga Ellen Hirasaka . 4,275 followers. 1,319 following. Especialista em ... Read more"
+          },
+          {
+            "title": "Psicóloga Ellen Hirasaka | Francisco Beltrão PR",
+            "url": "https://www.facebook.com/p/Psic%C3%B3loga-Ellen-Hirasaka-100054670770782/",
+            "snippet": "Psicóloga Ellen Hirasaka , Francisco Beltrão. 596 followers. Mental health service. ... Live 20/10/2020 às 20:00h Instagram @centroeducacion"
+          },
+          {
+            "title": "Psicóloga Ellen Hirasaka: Psicólogo, Francisco Beltrão - Loqal",
+            "url": "https://loqal.com.br/profissional/psicologa-ellen-hirasaka-centro-58195",
+            "snippet": "Psicóloga Ellen Hirasaka é psicólogo em Francisco Beltrão - PR. No Google, tem nota 5 em 110 avaliações. Serviços: online. Para falar com Ps"
+          },
+          {
+            "title": "PROTEÇÃO ESPECIAL : PALESTRA AOS JOVENS",
+            "url": "https://www.marmeleiro.pr.gov.br/noticia.php?notid=823",
+            "snippet": "Nov 7, 2019 — ... Psicóloga Ellen Hirasaka e, pela Assistente Social Anne Caroline D Zorzi , desenvolve projetos direcionados ao público em "
+          },
+          {
+            "title": "Psicóloga Ellen Hirasaka - Francisco Beltrao",
+            "url": "https://acheioprofissional.com.br/profissional/psicologa-ellen-hirasaka-4tlg",
+            "snippet": "Psicóloga Ellen Hirasaka e uma referência em serviços de psicólogo em Francisco Beltrao, PR. Com atendimento personalizado e foco na satisfa"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-319",
+      "row": 320,
+      "date": "26/10/2026",
+      "segment": "Nutricionista",
+      "old": {
+        "handle": "@daniloportonutri",
+        "name": "Danilo Porto | Nutricionista",
+        "city": "Jaraguá do Sul",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/daniloportonutri/"
+      },
+      "replacement": {
+        "handle": "nutribisalvador",
+        "name": "Bianca Salvador | Nutricionista em Jaraguá do Sul",
+        "city": "Jaraguá do Sul",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/nutribisalvador/",
+        "snippet": "Bianca Salvador | Nutricionista em Jaraguá do Sul | CRN10 14389. 1,103 ... Bianca Salvador CRN-10 14389 #nutricionista #dieta #emagrecer #treino #cafe ...",
+        "sourceSearch": "site:instagram.com nutricionista CRN Jaraguá do Sul",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Bianca Salvador | Nutricionista em Jaraguá do Sul",
+            "url": "https://www.instagram.com/nutribisalvador/",
+            "snippet": "nutribisalvador. Bianca Salvador | Nutricionista em Jaraguá do Sul | CRN10 14389. 1,103 followers. 683 following. | Nutrindo com leveza e se"
+          },
+          {
+            "title": "Photo by Bianca Salvador | Nutricionista em Jaraguá do Sul",
+            "url": "https://www.instagram.com/p/DDXao3gOmLc/",
+            "snippet": "... Photo by Bianca Salvador | Nutricionista em Jaraguá do Sul | CRN10 14389 on July 11. nutribisalvador ..."
+          },
+          {
+            "title": "Conhecimento que nutre, cuidado que transforma.  Em ...",
+            "url": "https://www.instagram.com/reel/Dc4RreExGoP/",
+            "snippet": "foi muito especial gratidão a todos. nutribisalvador. Foi sensacional ... #Nutricionista #NutriçãoIntegrativa #ConexãoNutri # ..."
+          },
+          {
+            "title": "31/08 Dia do Nutricionista  Verdades que ninguém conta! ...",
+            "url": "https://www.instagram.com/reel/Dcr5chJht52/",
+            "snippet": "Nutri maravilhosa!!! Parabéns amiga. nutribisalvador. Feliz dia Nutri!!! ✨. maram.fisio. Nutri sensacional, excelente ..."
+          },
+          {
+            "title": "Photo by Bianca Salvador | Nutricionista em Jaraguá do Sul",
+            "url": "https://www.instagram.com/p/DDXhJT7vaTF/",
+            "snippet": "nutribisalvador on December 9, 2024. ... A internet complicou tanto a alimentação que às vezes parece que pra dar certo ..."
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-324",
+      "row": 325,
+      "date": "27/10/2026",
+      "segment": "Nutricionista",
+      "old": {
+        "handle": "@nutriforadacaixa_",
+        "name": "Daniele Teixeira | Nutricionista",
+        "city": "Brusque",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/nutriforadacaixa_/"
+      },
+      "replacement": {
+        "handle": "nutrilurosso",
+        "name": "CRN10 9337 Criciúma e Floripa (@nutrilurosso)",
+        "city": "Criciúma",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/nutrilurosso/",
+        "snippet": "NUTRICIONISTA LU ROSSO - CRN10 9337 Criciúma e Floripa. 16.1K followers ... Nutri Lu Rosso Nutricionista | CRN 9337 ...",
+        "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "CRN10 9337 Criciúma e Floripa (@nutrilurosso) - Instagram",
+            "url": "https://www.instagram.com/nutrilurosso/?hl=en",
+            "snippet": "nutrilurosso. NUTRICIONISTA LU ROSSO - CRN10 9337 Criciúma e Floripa. 16.1K followers. 7,926 following. ‍  Membro SBMObesidade. ‍  Pós gradu"
+          },
+          {
+            "title": "NUTRICIONISTA LU ROSSO - CRN10 9337 Criciúma e Floripa ...",
+            "url": "https://www.instagram.com/nutrilurosso/reels/",
+            "snippet": "nutrilurosso. NUTRICIONISTA LU ROSSO - CRN10 9337 Criciúma e Floripa. 16.1K followers. 7,920 following. ‍  Membro SBMObesidade. ‍  Pós gradu"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-337",
+      "row": 338,
+      "date": "27/10/2026",
+      "segment": "Nutricionista",
+      "old": {
+        "handle": "@nutri.ana.mendes",
+        "name": "Nutricionista",
+        "city": "Toledo",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/nutri.ana.mendes/"
+      },
+      "replacement": {
+        "handle": "larissazanettec",
+        "name": "Larissa Zanette Colonetti (@larissazanettec)",
+        "city": "Criciúma",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/larissazanettec/",
+        "snippet": "Sou nutricionista, mas esse perfil vai além disso. Lipedema • Emagrecimento • Intestino Içara • Criciúma • On-line Agendamentos ↓ CRN 109630. Follow.",
+        "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Larissa Zanetti Theil",
+            "url": "https://www.escavador.com/sobre/5567934/larissa-zanetti-theil",
+            "snippet": "Larissa Zanetti Theil - Possui graduação em Educação Física pela Universidade Federal de Pelotas ... nutricionista , educador físico e odont"
+          },
+          {
+            "title": "Larissa Zanetti Theil - Integra IFFar - Portal da Inovação",
+            "url": "https://integra.iffarroupilha.edu.br/p/larissa-zanetti-theil",
+            "snippet": "Larissa Zanetti Theil -. Docente - Campus Santo Ângelo. https://integra.iffarroupilha.edu.br/p/ larissa-zanetti -theil. Lattes atualizado em"
+          },
+          {
+            "title": "ORIENTADORA: Prof. Dra. Mariângela da Rosa Afonso",
+            "url": "https://wp.ufpel.edu.br/ppgef/files/2016/10/Disserta%C3%A7%C3%A3o-Larissa-Zanetti-Theil.pdf",
+            "snippet": "THEIL, Larissa Zanetti . Nos passos da memória: um ... 11 Informações disponíveis no site http://www ... Nutricionista . Ano de 2012 até 201"
+          },
+          {
+            "title": "OAB- subseção de Não-Me-Toque recebe a Unidade Móvel ...",
+            "url": "https://subsecoes.oabrs.org.br/naometoque/noticias/oab-subsecao-naometoque-recebe-unidade-movel-saude-caars-e-realiza-workshop-sobre-habitos-alimentare/30039",
+            "snippet": "Larissa Zanetti e Diretoria da Subseção, representada pelo Vice-Presidente, Dr. Tiago Petry e pela Tesoureira, Dra. Graziela de Mattos Souil"
+          },
+          {
+            "title": "v. 16 n. 3 (2019) | Revista Thema",
+            "url": "https://periodicos.ifsul.edu.br/thema/issue/view/51",
+            "snippet": "Cultura e Lazer nos Asilos de Pelotas: uma proposta multidisciplinar com idosos institucionalizados. Gabriel Barros da Cunha, Larissa Zanett"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-345",
+      "row": 346,
+      "date": "28/10/2026",
+      "segment": "Nutricionista",
+      "old": {
+        "handle": "@nutrialineperes",
+        "name": "Aline Peres | Emagrecimento",
+        "city": "São José",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/nutrialineperes/"
+      },
+      "replacement": {
+        "handle": "bflornutri",
+        "name": "Dra. Beatriz Flôr-CRN 10372 (@bflornutri) · Criciúma, SC",
+        "city": "Criciúma",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/bflornutri/",
+        "snippet": "... Criciúma. ... Algumas sugestões de recheio de pão, para vocês não ficarem enjoados #nutricionista ...",
+        "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Dra. Beatriz Flôr-CRN 10372 (@bflornutri) · Criciúma, SC",
+            "url": "https://www.instagram.com/bflornutri/",
+            "snippet": "... nutricionista #alimentacaosaudavel #nutricriciuma #criciuma #oquepassarnopão #pao #nutri #bflornutri. Exagerou no final de semana?? Vamo"
+          },
+          {
+            "title": "Nutricionista – SEEBC",
+            "url": "https://bancarioscriciuma.com.br/parcerias-e-convenios/saude/nutricionista/",
+            "snippet": "Contato (48) 99683-9088 @bflornutri beatrizgabrielflor@gmail.com R. São José, 392 – sala 43 Centro, Criciúma – SC, 88809-476."
+          },
+          {
+            "title": "Os Melhores Nutricionistas em Criciúma, SC — WhatsApp",
+            "url": "https://acheioprofissional.com.br/nutricionista/criciuma",
+            "snippet": "Bflornutri Dra. Beatriz Flor. Nutricionista · Criciúma, SC. Chamar no WhatsApp ... Nutricionista Cleonir Berti Topanotti, Nutricionista Mari"
+          },
+          {
+            "title": "Melhores Serviços de Nutricionista em Criciúma, SC",
+            "url": "https://guiafix.com.br/criciuma-sc/nutricionista",
+            "snippet": "Um dos serviços mais recentes cadastrados na cidade é Bflornutri Dra. Beatriz Flor, ampliando as opções disponíveis para os clientes. Em Cri"
+          },
+          {
+            "title": "Bflornutri em Criciúma, SC - 47.952.772/0001-97",
+            "url": "https://www.econodata.com.br/consulta-empresa/47952772000197-bflornutri-ltda",
+            "snippet": "A empresa com a razão social Bflornutri LTDA, tem o nome fantasia Bflornutri, opera com o CNPJ 47.952.772/0001-97 (47952772000197) e foi fun"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-349",
+      "row": 350,
+      "date": "28/10/2026",
+      "segment": "Nutricionista",
+      "old": {
+        "handle": "@elisavieiranutricionista",
+        "name": "Elisa Vieira Nutricionista",
+        "city": "São José",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/elisavieiranutricionista/"
+      },
+      "replacement": {
+        "handle": "nutri_mararovaris",
+        "name": "Criciúma e Morro da Fumaça (@nutri_mararovaris)",
+        "city": "Criciúma",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/nutri_mararovaris/",
+        "snippet": "... CRN 11818 Morro da Fumaça,SC Criciúma,SC Agendamentos ⤵️ ... Nutricionista Mara Machado - Criciúma e Morro da Fumaça. 5,307 followers.",
+        "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Criciúma e Morro da Fumaça (@nutri_mararovaris)",
+            "url": "https://www.instagram.com/nutri_mararovaris/reels/",
+            "snippet": "Nutrição Clínica, Esportiva hipertrofia e Emagrecimento CRN 11818 Morro da Fumaça,SC Criciúma,SC Agendamentos ⤵️. nutri_mararovaris."
+          },
+          {
+            "title": "Nutricionista Mara Machado - Criciúma e Morro da Fumaça on ...",
+            "url": "https://www.instagram.com/p/C46o1oNO2rc/",
+            "snippet": "... SAÚDE E SEGURANÇA! (48) 99952-0277 @nutri_mararovaris MARA ROVARIS NUTRICIONISTA CRN 11818. nutri_mararovaris's profile picture · nutri_"
+          },
+          {
+            "title": "No Fala Doutor desta semana, entrevistei a Nutricionista Kenya ...",
+            "url": "https://www.instagram.com/reel/DPZfkvmkYhc/",
+            "snippet": "nutri_mararovaris. •. Follow. Photo by Nutricionista ..."
+          },
+          {
+            "title": "Bora falar de Saúde? @cynmartins @patriciarochab",
+            "url": "https://www.instagram.com/reel/DYhSRSFOxpf/",
+            "snippet": "nutri_mararovaris. •. Follow. Photo by Nutricionista ..."
+          },
+          {
+            "title": "Criciúma e Morro da Fumaça (@nutri_mararovaris)",
+            "url": "https://www.instagram.com/nutri_mararovaris/",
+            "snippet": "5.3K+ followers · 1.7K+ following · 94 posts · @nutri_mararovaris: “Nutrição Clínica, Esportiva hipertrofia e Emagrecimento CRN 11818 Morro "
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-351",
+      "row": 352,
+      "date": "28/10/2026",
+      "segment": "Nutricionista",
+      "old": {
+        "handle": "@patriciapaulettinutri",
+        "name": "Patricia Pauletti | Nutricionista",
+        "city": "Pato Branco",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/patriciapaulettinutri/"
+      },
+      "replacement": {
+        "handle": "mariaaugusta.nutricionista",
+        "name": "Maria Augusta Freitas (@mariaaugusta.nutricionista)",
+        "city": "Criciúma",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/mariaaugusta.nutricionista/",
+        "snippet": "999 followers · 32 posts · Nutricionista | CRN-SC 10821 Saúde, Metabolismo e Composição Corporal.",
+        "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "MARIA AUGUSTA NUTRICIONISTA. MEDITAÇÃO",
+            "url": "https://www.youtube.com/watch?v=-gTWttiisWs",
+            "snippet": "AUGUSTA TEIXEIRA. NUTRICIONISTA, REIKIANA, MEDITAÇÃO, PROF YOGA RESTAURATIVA ZAP ( ... MARIA AUGUSTA NUTRICIONISTA. MEDITAÇÃO: AMOR AFETUOSO"
+          },
+          {
+            "title": "Maria Augusta nutricionista. MEDITAÇÃO: CURA! NAMASTÊ 🥰",
+            "url": "https://www.youtube.com/watch?v=JWJb8ijqoCw",
+            "snippet": "Maria Augusta nutricionista, reikiana, Yoga Restaurativa e meditações. zap 31 99543-3363. GRATIDÃO."
+          },
+          {
+            "title": "Maria Augusta nutricionista. MEDITAÇÃO: PAZ, FORÇA, AMOR. ...",
+            "url": "https://www.youtube.com/watch?v=7xqKsJZWm2g",
+            "snippet": "Maria Augusta nutricionista, reikiana, meditação, Yoga Restaurativa. Zap (31)995433363. NAMASTÊ."
+          },
+          {
+            "title": "Uma semana para redescobrir o prazer de comer bem ...",
+            "url": "https://www.instagram.com/reel/DblQZwBg1Nn/",
+            "snippet": "... Maria Augusta Nutricionista segurança alimentar tira amostra verifica a temperatura dos alimentos mês de agosto nutricionista DI MARIA ."
+          },
+          {
+            "title": "Reel by Restaurante Di Maria - Balneário Piçarras",
+            "url": "https://www.instagram.com/reel/Cl3rP8duXqG/",
+            "snippet": "... Nutricionista • Bife de Alcatra Acebolado • Iscas de Frango ao Creme ... Maria Augusta Nutricionista. dimariapicarras's profile picture "
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-365",
+      "row": 366,
+      "date": "29/10/2026",
+      "segment": "Nutricionista",
+      "old": {
+        "handle": "@saborfitalimentosbr",
+        "name": "Sabor Fit",
+        "city": "Paranaguá",
+        "uf": "PR",
+        "status": "DESCARTAR – FORA ICP",
+        "url": "https://www.instagram.com/saborfitalimentosbr/"
+      },
+      "replacement": {
+        "handle": "debibertinutri",
+        "name": "Debora Berti | Nutricionista Oncológica (@debibertinutri)",
+        "city": "Criciúma",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/debibertinutri/",
+        "snippet": "‍⚕️DÉBORA BERTI - Nutricionista Oncológica - CRN 1645 Criciúma | On-line para ...",
+        "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Debora Berti | Nutricionista Oncológica (@debibertinutri)",
+            "url": "https://www.instagram.com/debibertinutri/?hl=pt",
+            "snippet": "7.6K+ followers · 3.2K+ following · 959 posts · @debibertinutri: “ ‍⚕️CRN 1645 Te ajudo a passar pelo tratamento oncológico com mais seguran"
+          },
+          {
+            "title": "Registro da @jornadanutricaounesc valorizando a nossa ...",
+            "url": "https://www.instagram.com/p/DeSeZZOgVgN/",
+            "snippet": "55 likes, 12 comments - debibertinutri on October 9, 2026: \"Registro da @jornadanutricaounesc valorizando a nossa profissão como ..."
+          },
+          {
+            "title": "Debora Berti | Nutricionista Oncológica (@debibertinutri)",
+            "url": "https://www.instagram.com/debibertinutri/reels/",
+            "snippet": "7.5K+ followers · 3.2K+ following · 954 posts · @debibertinutri: “ ‍⚕️CRN 1645 Te ajudo a passar pelo tratamento oncológico com mais seguran"
+          },
+          {
+            "title": "Uninter Natal Zona Norte Queremos expressar nossa gratidão ...",
+            "url": "https://www.instagram.com/reel/DRCeWcujbX5/",
+            "snippet": "debibertinutri. Registro da @jornadanutricaounesc valorizando a nossa profissão como NUTRICIONISTA compartilhando um pouco mais da minha ..."
+          },
+          {
+            "title": "Nutrição de Navegação: deixa eu te contar de onde veio esse ...",
+            "url": "https://www.instagram.com/reel/DTi67PYERS4/",
+            "snippet": "... likes, 1 comments - debibertinutri on January 12, 2026: \"Nutrição ... nutricionista apenas quando as complicações já apareceram?"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-384",
+      "row": 385,
+      "date": "30/10/2026",
+      "segment": "Nutricionista",
+      "old": {
+        "handle": "@nutricionistalucianacastanha",
+        "name": "Emagrecimento | Lipedema",
+        "city": "Palhoça",
+        "uf": "SC",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/nutricionistalucianacastanha/"
+      },
+      "replacement": {
+        "handle": "nutrituanyarenhart",
+        "name": "Nutricionista Joinville e Online (@nutrituanyarenhart)",
+        "city": "Joinville",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/nutrituanyarenhart/",
+        "snippet": "Fitododia | Nutricionista Joinville e Online. 13.5K followers. 2,478 following ... Nutricionista Tuany Arenhart CRN 8908 Edifício Helbor Dual Offices ...",
+        "sourceSearch": "site:instagram.com nutricionista CRN Joinville",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Nutricionista Joinville e Online (@nutrituanyarenhart) - Instagram",
+            "url": "https://www.instagram.com/nutrituanyarenhart/?hl=en",
+            "snippet": "nutrituanyarenhart. Fitododia | Nutricionista Joinville e Online. 13.5K followers. 2,478 following. Alimentação saudável prazerosa e duradou"
+          },
+          {
+            "title": "Tuany Arenhart - Nutricionista - LinkedIn",
+            "url": "https://br.linkedin.com/in/tuany-arenhart-676099186",
+            "snippet": "Nutricionista · Experiência: Clínica B Fine · Formação acadêmica: Católica de Santa Catarina ... Sites. Outro: https://www.instagram.com/nut"
+          },
+          {
+            "title": "Nutricionista Tuany Arenhart — Nutrição | Medsoft",
+            "url": "https://medsoft.com.br/joinville/nutricao/nutricionista-tuany-arenhart",
+            "snippet": "Endereço: R. Expedicionário Holz, 550 - Sl 1117 -, Joinville, SP. Descrição / apresentação. https://www.instagram.com/nutrituanyarenhart/."
+          },
+          {
+            "title": "NUTRICIONISTA TUANY ARENHART LTDA - CNPJ 54.472.759 ...",
+            "url": "https://procuracnpj.com.br/cnpj/54472759000104/nutricionista-tuany-arenhart-ltda",
+            "snippet": "NUTRITUANYARENHART@GMAIL.COM. Atividade Econômica (CNAE). O que é CNAE e como ler o código. Atividade principal. 8650-0/02. Atividades de pr"
+          },
+          {
+            "title": "Fitododia | Nutricionista Joinville e Online(@nutrituanyarenhart ...",
+            "url": "https://imginn.com/nutrituanyarenhart/",
+            "snippet": "@nutrituanyarenhart · Dump do final de semana ❤️ taken in Campo Alegre, Santa Catarina by @nutrituanyarenhart · Dump de Junho (ainda tá vale"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    },
+    {
+      "id": "MB-395",
+      "row": 396,
+      "date": "30/10/2026",
+      "segment": "Nutricionista",
+      "old": {
+        "handle": "@nutrimifuncional",
+        "name": "Nutricionista Michelle Iwassa Funcional",
+        "city": "Paranavaí",
+        "uf": "PR",
+        "status": "DESCARTAR – TEM SITE",
+        "url": "https://www.instagram.com/nutrimifuncional/"
+      },
+      "replacement": {
+        "handle": "nutri_nandastella",
+        "name": "Nutricionista - CRN 10 14478 | Joinville (@nutri_nandastella)",
+        "city": "Joinville",
+        "uf": "SC",
+        "instagram": "https://www.instagram.com/nutri_nandastella/",
+        "snippet": "Nanda Stella | Nutricionista - CRN 10 14478 | Joinville. 4,350 followers. 1,041 following. @armazemdanaturezabistro • Nutricionista • Autora:Consultório na ...",
+        "sourceSearch": "site:instagram.com nutricionista CRN Joinville",
+        "googleChecked": true,
+        "googleResults": [
+          {
+            "title": "Nutricionista - CRN 10 14478 | Joinville (@nutri_nandastella)",
+            "url": "https://www.instagram.com/nutri_nandastella/",
+            "snippet": "Nutri Nanda Stella CRN10 14478 WhatsApp: (47) 99909-1770 @nutri_nandastella. O QUE NINGUÉM ..."
+          },
+          {
+            "title": "Convênios",
+            "url": "https://www.oabjoinville.org.br/convenio/479/nutri-nanda-stella/",
+            "snippet": "Convênio Nutri Nanda Stella Convênio. - 15% de desconto. *Descontos mediante a apresentação de credencial/crachá e não cumulativos em promoç"
+          },
+          {
+            "title": "Fernanda Stella de Paula opiniões - Nutricionista Joinville",
+            "url": "https://www.doctoralia.com.br/fernanda-stella-de-paula/nutricionista/joinville",
+            "snippet": "Nutri Nanda Stella . Rua Padre Antônio Vieira, 341, América, Joinville 89204-150. Ampliar o mapa abre num novo separador. Disponibilidade. E"
+          },
+          {
+            "title": "Nutricionista - CRN 10 14478 | Joinville (@nutri_nandastella)",
+            "url": "https://www.instagram.com/NUTRI_NANDASTELLA/?__d=1%253Futm_source%253Dig_embed!",
+            "snippet": "Nutri Nanda Stella CRN10 14478 WhatsApp: (47) 99909-1770 @nutri_nandastella. O QUE NINGUÉM ..."
+          },
+          {
+            "title": "Os 20 Nutricionistas mais recomendados em Campeche",
+            "url": "https://www.doctoralia.com.br/nutricionista/campeche?page=49",
+            "snippet": "Nutricionista . Rua Padre Antônio Vieira, 341, Joinville • Mapa. Nutri Nanda Stella . Primeira consulta Nutrição. Preço não disponível. Esse"
+          }
+        ]
+      },
+      "status": "SUBSTITUTO EM TRIAGEM - NÃO ENVIAR",
+      "precondition": "Sem acesso de leitura direta do Instagram: verificar bio, site de marca, último post, visual e histórico DM antes de enviar"
+    }
+  ],
+  "reserve": [
+    {
+      "handle": "selmacabeleireira_",
+      "segment": "Salão de Beleza",
+      "city": "Palhoça",
+      "uf": "SC",
+      "name": "Salão de Beleza/Palhoça (@selmacabeleireira_)",
+      "instagram": "https://www.instagram.com/selmacabeleireira_/",
+      "snippet": "Salão de Beleza/Palhoça. 1,465 followers. 3,561 following. Beauty Salon. SELMA ... Essas ...",
+      "sourceSearch": "site:instagram.com salão beleza Palhoça",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "fredybeautybrusque",
+      "segment": "Salão de Beleza",
+      "city": "Brusque",
+      "uf": "SC",
+      "name": "Fredy Beauty Salão de Beleza (@fredybeautybrusque)",
+      "instagram": "https://www.instagram.com/fredybeautybrusque/",
+      "snippet": "Desde 2003 no coração e na beleza de Brusque. Cabelos e produção ‍♀️ Para agendamento e informações ⤵️.",
+      "sourceSearch": "site:instagram.com salão beleza Brusque",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "helenasalao",
+      "segment": "Salão de Beleza",
+      "city": "Brusque",
+      "uf": "SC",
+      "name": "Helena Salão de Beleza (@helenasalao)",
+      "instagram": "https://www.instagram.com/helenasalao/",
+      "snippet": "... Brusque #44AnosDeHistória #MulheresPoderosas #SalãoDeBeleza #Estética #Cabelo #helenasalao ...",
+      "sourceSearch": "site:instagram.com salão beleza Brusque",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "redhairsalao",
+      "segment": "Salão de Beleza",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Red Hair Salão de Beleza (@redhairsalao)",
+      "instagram": "https://www.instagram.com/redhairsalao/",
+      "snippet": "Red Hair Salão de Beleza. 5,255 followers. 2,599 following. Beauty Salon ... mechas #cortefeminino #chapecó ...",
+      "sourceSearch": "site:instagram.com salão beleza Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "blessbeautysjrp",
+      "segment": "Salão de Beleza",
+      "city": "São José",
+      "uf": "SC",
+      "name": "Bless Beauty Seu Salão de Beleza (@blessbeautysjrp)",
+      "instagram": "https://www.instagram.com/blessbeautysjrp/",
+      "snippet": "✨ Bless Beauty | Seu Salão de Beleza ✨ Cabelos • Unhas • Estética • Maquiagem • Sobrancelhas Rua Américo Gomes Novoa, 810. São José do Rio Preto - SP.",
+      "sourceSearch": "site:instagram.com salão beleza São José",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "elianelorencetti_studio",
+      "segment": "Salão de Beleza",
+      "city": "São José",
+      "uf": "SC",
+      "name": "Eliane Lorencetti Studio (@elianelorencetti_studio)",
+      "instagram": "https://www.instagram.com/elianelorencetti_studio/",
+      "snippet": "⚜️Há mais de 16 anos realçando a sua beleza. Cabelos • Unhas • Estética Salão de Beleza | Bela Vista - São José, SC Agendamentos via WhatsApp.",
+      "sourceSearch": "site:instagram.com salão beleza São José",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "blaziusmaisonsalon",
+      "segment": "Salão de Beleza",
+      "city": "São José",
+      "uf": "SC",
+      "name": "Salão de Beleza (@blaziusmaisonsalon)",
+      "instagram": "https://www.instagram.com/blaziusmaisonsalon/",
+      "snippet": "... Cabelos• Unhas• Barbearia Noivas e Produções Forquilhas, São José @blaziusbarber Seu momento de se cuidar começa aqui ... Blazius Maison Salon | Salão de Beleza.",
+      "sourceSearch": "site:instagram.com salão beleza São José",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "lulussecrets.itajai",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Lulus Secrets | Salão de Beleza em Itajaí (@lulussecrets. ...",
+      "instagram": "https://www.instagram.com/lulussecrets.itajai/",
+      "snippet": "itajai. Lulus Secrets | Salão de Beleza em Itajaí. 317 posts. 4,888 followers. 8 following. Beauty, cosmetic & personal care. Lulus Secrets | ...",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "labelleespacovip",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Salão de Beleza e Estética | Itajaí - SC (@labelleespacovip)",
+      "instagram": "https://www.instagram.com/labelleespacovip/",
+      "snippet": "La Belle Espaço Vip | Salão de Beleza e Estética | Itajaí - SC. 18.9K ... Ela nasceu pra ter essa ...",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "sttudioacoiffeur",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Studio A | Salão de beleza | Itajai SC (@sttudioacoiffeur)",
+      "instagram": "https://www.instagram.com/sttudioacoiffeur/",
+      "snippet": "Mechas iluminadas em tons de bege e champagne, raiz esfumada e camadas que valorizam o movimento dos fios. Elegância e luminosidade na medida certa! Agende seu ...",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "kettylinhair",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "salão de beleza itajai e Balneário Camboriú (@kettylinhair)",
+      "instagram": "https://www.instagram.com/kettylinhair/",
+      "snippet": "ITAJAÍ—47-988552751 —Rua Indaial n•1060 • BC —47-32280628 —Rua 3700 n•415 ... O tipo de loiro que faz a gente olhar duas vezes ...",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "room382_art_beauty",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "ROOM 382 art & beauty (@room382_art_beauty)",
+      "instagram": "https://www.instagram.com/room382_art_beauty/",
+      "snippet": "Salão de beleza-Coloristas Especialistas em mechas. Design em cortes. CEO @timotiochalito. Samuel Heusi, 382 - Itajaí/SC Agendamento via whats.",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "salaodebelezajeane",
+      "segment": "Salão de Beleza",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Salão de beleza Jeane Karla (@salaodebelezajeane)",
+      "instagram": "https://www.instagram.com/salaodebelezajeane/",
+      "snippet": "✨ Realce sua beleza todos os dias ‍♀️ Progressiva | Mechas | Penteados Unhas impecáveis Itajaí-Sc Agende seu horário!",
+      "sourceSearch": "site:instagram.com salão beleza Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "lumaesteticaebeleza",
+      "segment": "Salão de Beleza",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Salão de beleza em Ponta Grossa (@lumaesteticaebeleza)",
+      "instagram": "https://www.instagram.com/lumaesteticaebeleza/",
+      "snippet": "Salão de beleza em Ponta Grossa. 1,581 followers. 1,038 following. Luma Centro de Beleza & Estética Cabelo • unhas • estética • beauty. Experiências de beleza ...",
+      "sourceSearch": "site:instagram.com salão beleza Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "sl.beauty_pg",
+      "segment": "Salão de Beleza",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Salão de Beleza | Ponta Grossa (@sl.beauty_pg)",
+      "instagram": "https://www.instagram.com/sl.beauty_pg/",
+      "snippet": "Sl's Beauty | Salão de Beleza | Ponta Grossa. 1,835 followers. 4,093 following. Beauty Salon. ‍♀️ + de 8 anos no Mercado da Beleza ✂️Especialistas em ...",
+      "sourceSearch": "site:instagram.com salão beleza Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "espacovippg",
+      "segment": "Salão de Beleza",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "SALÃO DE BELEZA PONTA GROSSA (@espacovippg) • ...",
+      "instagram": "https://www.instagram.com/espacovippg/",
+      "snippet": "ESPAÇO VIP- BELEZA& ESTÉTICA| SALÃO DE BELEZA PONTA GROSSA. 695 followers. 617 following. Beauty Salon. ✨ Beleza com cuidado, essência e transformação ...",
+      "sourceSearch": "site:instagram.com salão beleza Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "renanpenteadosalaodebeleza",
+      "segment": "Salão de Beleza",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Salão de Beleza Renan Penteado. ...",
+      "instagram": "https://www.instagram.com/renanpenteadosalaodebeleza/",
+      "snippet": "Salão de Beleza Renan Penteado. 7,521 followers. 5,960 following. Product ... Em Ponta ...",
+      "sourceSearch": "site:instagram.com salão beleza Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "docesdalivia483",
+      "segment": "Padaria / Confeitaria",
+      "city": "São José dos Pinhais",
+      "uf": "PR",
+      "name": "Lívia Oliveira | Bolos e Brigadeiros | São José dos Pinhais ...",
+      "instagram": "https://www.instagram.com/docesdalivia483/",
+      "snippet": "Lívia Oliveira | Bolos e Brigadeiros | São José dos Pinhais. 383 followers. 675 ... São José dos Pinhais ❤️ #coxinhas #delivery #confeitaria #fyp #explorar ...",
+      "sourceSearch": "site:instagram.com confeitaria São José dos Pinhais",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "elianetavaresbolos",
+      "segment": "Padaria / Confeitaria",
+      "city": "Apucarana",
+      "uf": "PR",
+      "name": "Eliane Tavares | Apucarana PR (@elianetavaresbolos)",
+      "instagram": "https://www.instagram.com/elianetavaresbolos/",
+      "snippet": "#confeitaria #apucarana #bolos #torta #viral. Torta Ovomaltine ...",
+      "sourceSearch": "site:instagram.com confeitaria Apucarana",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "jurodrigues.confeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Bolos ▪︎ Doces ▪︎ Salgados (@jurodrigues.confeitaria)",
+      "instagram": "https://www.instagram.com/jurodrigues.confeitaria/",
+      "snippet": "3.7K+ followers · 1.9K+ following · 919 posts · @jurodrigues.confeitaria: “ Bolos personalizados, doces e salgados Por @_jurodriguess_ Maringá-PR ⤵️ Link",
+      "sourceSearch": "site:instagram.com confeitaria Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "pedrofreeitas",
+      "segment": "Padaria / Confeitaria",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Pedro Freitas Cachel | Bolos e Cursos Itajaí (@pedrofreeitas)",
+      "instagram": "https://www.instagram.com/pedrofreeitas/",
+      "snippet": "Pedro Freitas Cachel | Bolos e Cursos Itajaí. 12.2K followers. 7,380 following. Cake Decorator/Cursos Confeitaria Nutrição @pedrocachel GNT - Que Seja ...",
+      "sourceSearch": "site:instagram.com confeitaria Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "bydelicieconfeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "BOLOS & DOCES (@bydelicieconfeitaria)",
+      "instagram": "https://www.instagram.com/bydelicieconfeitaria/",
+      "snippet": "DELICIÊ CONFEITARIA | BOLOS & DOCES. 1,620 followers. 34 following. Entrepreneur. \"Espalhando doçuras por aí...\" Bolos e doces artesanais Itajaí-SC",
+      "sourceSearch": "site:instagram.com confeitaria Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "ramonserpa",
+      "segment": "Padaria / Confeitaria",
+      "city": "Itajaí",
+      "uf": "SC",
+      "name": "Gastronomia (@ramonserpa) - Bolos Decorados",
+      "instagram": "https://www.instagram.com/ramonserpa/",
+      "snippet": "Transformando bolos em Arte desde 2008. Itajaí - SC - Brasil Vice-campeão da América Latina. Encomendas link abaixo. ... Sigo apaixonado nesse bolo.",
+      "sourceSearch": "site:instagram.com confeitaria Itajaí",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "feitoalegria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Feito Alegria Doces Artesanais (@feitoalegria)",
+      "instagram": "https://www.instagram.com/feitoalegria/",
+      "snippet": "Feito Alegria Doces Artesanais. 175 posts. 4,648 followers. 1,462 following. Cafe ... CONFEITARIA E CAFE NOVO AQUI EM JOINVILLE Tudo que é feito na ...",
+      "sourceSearch": "site:instagram.com confeitaria Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "docinhosdasu.jlle",
+      "segment": "Padaria / Confeitaria",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Brigadeiros | Brownies | Joinville (@docinhosdasu.jlle) • ...",
+      "instagram": "https://www.instagram.com/docinhosdasu.jlle/",
+      "snippet": "... doces artesanais Escolha ter essa experiência Click no link e escolha o ... Confeitaria | Brigadeiros | Brownies | Joinville. 8,288 followers. 798 ...",
+      "sourceSearch": "site:instagram.com confeitaria Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "alanapondelek.confeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Bolos & Doces (@alanapondelek.confeitaria)",
+      "instagram": "https://www.instagram.com/alanapondelek.confeitaria/",
+      "snippet": "2.1K+ followers · 1.4K+ following · 514 posts · @alanapondelek.confeitaria: “ Bom Retiro, Joinville-Sc Bolos personalizados | Doces artesanais Por @alana ...",
+      "sourceSearch": "site:instagram.com confeitaria Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "ange.confeitariaartesanal",
+      "segment": "Padaria / Confeitaria",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Delivery | take away | Ange Confeitaria | Chapecó",
+      "instagram": "https://www.instagram.com/ange.confeitariaartesanal/",
+      "snippet": "Delivery | take away | Ange Confeitaria | Chapecó - SC. 1,424 followers. 600 following. Dessert Shop. | Delivery e doces por encomendas | Chapecó - SC",
+      "sourceSearch": "site:instagram.com confeitaria Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "santaisabel_confeitaria",
+      "segment": "Padaria / Confeitaria",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Confeitaria | Chapecó (@santaisabel_confeitaria)",
+      "instagram": "https://www.instagram.com/santaisabel_confeitaria/",
+      "snippet": "Adoçando seus momentos! Chapecó - SC Menu e encomendas ... Qual seu sabor preferido? #brigadeiro #tradicional #ninhocomnutella #churros #confeitaria ...",
+      "sourceSearch": "site:instagram.com confeitaria Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "confeitariasonhosdeacucar",
+      "segment": "Padaria / Confeitaria",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Sonhos de Açúcar Confeitaria (@confeitariasonhosdeacucar)",
+      "instagram": "https://www.instagram.com/confeitariasonhosdeacucar/",
+      "snippet": "#confeitaria #bolorosa #festadeaniversario #encomendas #bolodefesta ... Seus ... Parabéns Chapecó!",
+      "sourceSearch": "site:instagram.com confeitaria Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "sosweetpb",
+      "segment": "Padaria / Confeitaria",
+      "city": "Pato Branco",
+      "uf": "PR",
+      "name": "So Sweet | Casa de Bolos e Chás (@sosweetpb)",
+      "instagram": "https://www.instagram.com/sosweetpb/",
+      "snippet": "Te esperamos na So Sweet — Casa de Bolos & Chás, em Pato Branco! ... confeitaria #bolorecheado ...",
+      "sourceSearch": "site:instagram.com confeitaria Pato Branco",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psijessicaluiza",
+      "segment": "Psicólogo",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Psicóloga Jessica Luiza | Blumenau & Online ...",
+      "instagram": "https://www.instagram.com/psijessicaluiza/",
+      "snippet": "Psicóloga Jessica Luiza | Blumenau & Online. 6,031 followers. 389 following. Psicóloga Clínica | TCC | Neurociência | Sono CRP 12/16591 Blumenau e Online",
+      "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "my.psi",
+      "segment": "Psicólogo",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Mylena Büchner | Psicóloga CRP 08/32574 (@my.psi)",
+      "instagram": "https://www.instagram.com/my.psi/",
+      "snippet": "Mylena Büchner | Psicóloga CRP 08/32574. 382 followers. 154 following ... Ponta Grossa/PR: 153 | Psicóloga Mylena Büchner - CRP 08/32574 ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.giselebudal",
+      "segment": "Psicólogo",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Psicóloga em Joinville | Gisele Budal (@psi.giselebudal)",
+      "instagram": "https://www.instagram.com/psi.giselebudal/",
+      "snippet": "Psicóloga em Joinville | Gisele Budal. 1,037 followers. 113 following. Especialista em Terapia Cognitivo Comportamental CRP 12/17110 Presencial em ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.fernandacarvalho",
+      "segment": "Psicólogo",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Fernanda de Carvalho | Psicóloga (@psi.fernandacarvalho)",
+      "instagram": "https://www.instagram.com/psi.fernandacarvalho/",
+      "snippet": "Cuidando da saúde emocional de mulheres. Psicóloga Clínica | CRP 12/12940. Atendimentos online e presencial | Joinville/SC Contato .",
+      "sourceSearch": "site:instagram.com psicóloga CRP Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.fermartins",
+      "segment": "Psicólogo",
+      "city": "Francisco Beltrão",
+      "uf": "PR",
+      "name": "Fernanda Martins (@psi.fermartins)",
+      "instagram": "https://www.instagram.com/psi.fermartins/",
+      "snippet": "311 followers · 405 following · 32 posts · @psi.fermartins: “ Psicóloga e psicanalista (CRP: 08/29568) Atendimento presencial e online. Francisco Beltrão-",
+      "sourceSearch": "site:instagram.com psicóloga CRP Francisco Beltrão",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psibarbaradalvanna",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Bárbara Dalvanna I Psicóloga em Maringá ...",
+      "instagram": "https://www.instagram.com/psibarbaradalvanna/",
+      "snippet": "Bárbara Dalvanna I Psicóloga em Maringá. 1,860 followers. 917 following. CRP-08 ... E haja fôlego! Psicóloga ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologa_clinica_cleide_march",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Psicóloga em Maringá CRP 08/14127 ...",
+      "instagram": "https://www.instagram.com/psicologa_clinica_cleide_march/",
+      "snippet": "Psicóloga em Maringá CRP 08/14127. 527 followers. 1,478 following. Mental health service. atendimento presencial e on-line psicóloga com pós graduação e ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologamichelemaimone",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Michele Maimone Ⓜ️ Psicóloga Clínica ...",
+      "instagram": "https://www.instagram.com/psicologamichelemaimone/",
+      "snippet": "❤️Psicóloga Clínica ⚜️CRP 07717-6 @clinicapercorrere. Atendo crianças, adolescentes, adultos, casais e famílias. Maringá/ Pr/ Brazil. ☎️44 99718-9014.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.jenyffercarvalho",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Maringá-PR (@psi.jenyffercarvalho)",
+      "instagram": "https://www.instagram.com/psi.jenyffercarvalho/",
+      "snippet": "Jenyffer Carvalho | Psicóloga CRP 08/42312 | Maringá-PR. 663 followers. 1,081 following. Psychologist. Acolhendo pessoas e suas histórias por meio da ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "marcelaholandaa",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Marcela Holanda | Psicóloga Maringá (@marcelaholandaa)",
+      "instagram": "https://www.instagram.com/marcelaholandaa/",
+      "snippet": "CRP - 08/46835 ‍ Especialista em Terapia Cognitivo-Comportamental (TCC) | Maringá & Online. marcelaholandaa.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.marianaantunes",
+      "segment": "Psicólogo",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Mariana Antunes | Psicóloga (@psi.marianaantunes)",
+      "instagram": "https://www.instagram.com/psi.marianaantunes/",
+      "snippet": "Mariana Antunes | Psicóloga. 3,033 followers. 737 following. Por uma vida mais leve e menos ansiosa CRP 12/20304 Online e Presencial | Chapecó",
+      "sourceSearch": "site:instagram.com psicóloga CRP Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "anaameliapsicologia",
+      "segment": "Psicólogo",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Ana Amélia Bedin Psicóloga (@anaameliapsicologia)",
+      "instagram": "https://www.instagram.com/anaameliapsicologia/",
+      "snippet": "CRP 12/05726. Psicóloga Clínica Psicoterapia individual de adultos e de adolescentes. Psicoterapia de casal. Atendimento presencial e online.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psilaizaecker",
+      "segment": "Psicólogo",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Psicóloga Laiza Ecker | CRP 12/19014 (@psilaizaecker)",
+      "instagram": "https://www.instagram.com/psilaizaecker/",
+      "snippet": "... Chapecó-SC e Online. ... Psicóloga Laiza Ecker | CRP 12/19014. 216 followers. 144 following. Pós ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologa.giovanafiorentin",
+      "segment": "Psicólogo",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Giovana Gracielli Fiorentin (@psicologa.giovanafiorentin)",
+      "instagram": "https://www.instagram.com/psicologa.giovanafiorentin/",
+      "snippet": "Psicanalista - Psicóloga CRP-12/11832. Atendimentos Presenciais e Online Supervisora clínica em Psicanálise para profissionais. Escuta cuidadosa.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.pamelakoch",
+      "segment": "Psicólogo",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Pâmela Koch | Psicóloga em Chapecó (@psi.pamelakoch)",
+      "instagram": "https://www.instagram.com/psi.pamelakoch/",
+      "snippet": "Pâmela Koch Psicóloga CRP-12/14.747 (49) 9 8834-8174 #psicologia #psicoterapia #psicanalise #psicanaliseclinica #psicanáliselacaniana #chapecó #facaterapia ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psico.fabianadias",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga clínica | CRP 12/27236 (@psico.fabianadias)",
+      "instagram": "https://www.instagram.com/psico.fabianadias/",
+      "snippet": "Fabiana Dias | Psicóloga clínica | CRP 12/27236. 5,985 followers. 2,858 ... Criciúma.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.luanat",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Luana Tavares | Psicóloga CRP 12/23216 (@psi.luanat)",
+      "instagram": "https://www.instagram.com/psi.luanat/",
+      "snippet": "... Criciúma SC ... Luana Tavares | Psicóloga CRP 12/23216. 1,825 followers. 2,115 following. •Ψ ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.nicolemagnus",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga CRP 12/29851 (@psi.nicolemagnus)",
+      "instagram": "https://www.instagram.com/psi.nicolemagnus/",
+      "snippet": "Psicóloga | CRP 12/29851 Criciúma/SC Pós-graduada em Terapia Cognitivo-Comportamental Atendimento presencial e online - contato ⤵️.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologaleticiarizzatti",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga em Criciúma (@psicologaleticiarizzatti)",
+      "instagram": "https://www.instagram.com/psicologaleticiarizzatti/",
+      "snippet": "Leticia Rizzatti | Psicóloga em Criciúma. 678 followers. 376 following. CRP 12/23738 Ajudo crianças e adultos a superarem desafios emocionais Online pelo ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psico.michellecastro",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga CRP 12/23218 (@psico.michellecastro)",
+      "instagram": "https://www.instagram.com/psico.michellecastro/",
+      "snippet": "Michelle De Castro | Psicóloga CRP 12/23218. 2,063 followers. 2,683 following ... Nossa ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "joelmamiguelpsicologa",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga | CRP 12/15192 (@joelmamiguelpsicologa)",
+      "instagram": "https://www.instagram.com/joelmamiguelpsicologa/",
+      "snippet": "Joelma Miguel | Psicóloga | CRP 12/15192. 2,320 followers. 1,359 following ... #burnout #psicologia #esgotamentoemocional #criciúma ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psisamelacabral",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga Infantil | Criciúma (@psisamelacabral)",
+      "instagram": "https://www.instagram.com/psisamelacabral/",
+      "snippet": "Psicóloga | CRP 12/29288 TCC • Infantil e adultos. Pós-graduanda em ABA e Neuropsicopedagogia Criciúma | Presencial + online ↓ Agendamentos.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "jakemorettopsi",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Jaqueline Moretto | Psicóloga | Toledo-PR (@jakemorettopsi)",
+      "instagram": "https://www.instagram.com/jakemorettopsi/",
+      "snippet": "... CRP 08/28733 Agende sua sessão ↓ ... Jaqueline Moretto | Psicóloga | Toledo-PR. 2,659 followers. 1,968 following.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psikamilatoledo",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Kamila Toledo | Psicóloga e Supervisora Clínica",
+      "instagram": "https://www.instagram.com/psikamilatoledo/",
+      "snippet": "Kamila Toledo | Psicóloga e Supervisora Clínica | CRP 04/46692. 2,570 followers. 1,972 following. | Te ajudo a construir uma vida com mais sentido",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologawaleska.l",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Waleska | Psicóloga | Toledo (@psicologawaleska.l)",
+      "instagram": "https://www.instagram.com/psicologawaleska.l/",
+      "snippet": "... Psicóloga | CRP 08/18701⁣⁣ Saiba mais ⤵️ ... Waleska | Psicóloga | Toledo. 820 followers. 21 following. Ajudo você a simplificar a ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.nataliatoledo",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Natália Toledo | Psicóloga (@psi.nataliatoledo)",
+      "instagram": "https://www.instagram.com/psi.nataliatoledo/",
+      "snippet": "Muito prazer! Sou a Natália Toledo, Psicóloga Clinica, palestrante, apaixonada por pessoas, acredito que podemos fazer a diferença na vida uns dos outros. Amo a ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "roberta_lourencodetoledo",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Roberta Toledo / Psicóloga (@roberta_lourencodetoledo)",
+      "instagram": "https://www.instagram.com/roberta_lourencodetoledo/",
+      "snippet": "Roberta Toledo / Psicóloga. 5,555 followers. 5,455 following. Psicóloga e palestrante CRP 45.238-6. Psicóloga familiar, casal e adolescentes. Psicossomática",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "isabeltoledo.psi",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Isabel Toledo (@isabeltoledo.psi)",
+      "instagram": "https://www.instagram.com/isabeltoledo.psi/",
+      "snippet": "Isabel Toledo. 2,908 followers. 3,453 following. Psicóloga CRP 14/06366. Bacharelado e Licenciatura (UNESP) Especialista em Educação (UFGD) Mestra em História ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.mariajosetoledo",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Maria José Janini de Toledo (@psi.mariajosetoledo)",
+      "instagram": "https://www.instagram.com/psi.mariajosetoledo/",
+      "snippet": "Maria José Janini de Toledo. 376 followers. 457 following. CRP 08/02100. Psicóloga e Neuropsicóloga. Atendimentos: criança, adolescente e adulto. Presencial e ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "tatianetoledopsicologia",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Tatiane Toledo - Psicologia (@tatianetoledopsicologia)",
+      "instagram": "https://www.instagram.com/tatianetoledopsicologia/",
+      "snippet": "Tatiane Toledo Psicóloga Clínica CRP 06/112049. Psicoterapia - crianças, adolescentes, adultos e idosos. Rua Bonifácio Cubas, 152 - Freguesia do Ó.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrigabrielat",
+      "segment": "Nutricionista",
+      "city": "Jaraguá do Sul",
+      "uf": "SC",
+      "name": "Gabriela Tomasi | Nutricionista em Jaraguá do Sul",
+      "instagram": "https://www.instagram.com/nutrigabrielat/",
+      "snippet": "Gabriela Tomasi | Nutricionista em Jaraguá do Sul | CRN 6399. 6,500 followers. 2,861 following. Especialista em te fazer emagrecer sem neuras e sem passar ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Jaraguá do Sul",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "tarcisiojunior_",
+      "segment": "Nutricionista",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Dr. Tarcísio Júnior (@tarcisiojunior_) · Criciúma, SC",
+      "instagram": "https://www.instagram.com/tarcisiojunior_/",
+      "snippet": "... CRN-10/13637P ®️CRT ... O que eu diria sobre ser Nutri? Ser nutricionista ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutricionista_shaupastega",
+      "segment": "Nutricionista",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Nutricionista (@nutricionista_shaupastega)",
+      "instagram": "https://www.instagram.com/nutricionista_shaupastega/",
+      "snippet": "Quando emagrecer não depende só de dieta. Lipedema • Hormônios • Emagrecimento Nutricionista CRN 10-5690| Axys Clínica Joinville | Online Comece aqui.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "lucascostanutri",
+      "segment": "Nutricionista",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Nutricionista Lucas | CRN 10 7338 (@lucascostanutri)",
+      "instagram": "https://www.instagram.com/lucascostanutri/",
+      "snippet": "Nutricionista Lucas | CRN 10 7338. 15.3K followers. 323 following ... Joinville essa vontade vai embora rapidinho . . #nutricionista ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "gabialencar.nutri",
+      "segment": "Nutricionista",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Nutricionista em Maringá | CRN-8/2002 (@gabialencar.nutri)",
+      "instagram": "https://www.instagram.com/gabialencar.nutri/",
+      "snippet": "Gabriela Alencar | Nutricionista em Maringá | CRN-8/2002. 1,617 followers. 3,881 following. Organizo sua alimentação, sem te transformar refém de dieta ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutri.amandasato",
+      "segment": "Nutricionista",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Nutricionista | Maringá & online (@nutri.amandasato)",
+      "instagram": "https://www.instagram.com/nutri.amandasato/",
+      "snippet": "Amanda Sato | Nutricionista | Maringá & online. 1,493 followers. 1,469 following. CRN 19954. Mulher, por aqui te ajudo a emagrecer e alcançar o corpo que sempre ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "bahmoretti.nutri",
+      "segment": "Nutricionista",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Barbara Moretti | Nutricionista (@bahmoretti.nutri)",
+      "instagram": "https://www.instagram.com/bahmoretti.nutri/",
+      "snippet": "CRN-8 n°19697. A Nutri que acolhe, transforma e respeita quem você é ... #NutriçãoInteligente #Maringá #nutricionista #comportamento ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutribarbarasantana",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Nutricionista CRN 10/11413 (@nutribarbarasantana)",
+      "instagram": "https://www.instagram.com/nutribarbarasantana/",
+      "snippet": "Bárbara Sant'Ana | Nutricionista CRN 10/11413. 3,394 followers. 1,106 ... Blumenau: @kugiktofu ✨ #vegan #tofu #tofurecipes ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrithainacsousa",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Thainá Sousa | Nutricionista (@nutrithainacsousa)",
+      "instagram": "https://www.instagram.com/nutrithainacsousa/",
+      "snippet": "te mostro que é possível comer bem & ter resultados (com prazer e constância) atendimentos em Blumenau e online crn 14246 — agende aqui ↓.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutri.angelicafkl",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "nutri.angelicafkl - Angélica Ludwig",
+      "instagram": "https://www.instagram.com/nutri.angelicafkl/",
+      "snippet": "Angélica Ludwig | Nutricionista Materno Infantil | CRN 10-4896. 5,921 ... Blumenau/SC', desenvolvido no âmbito do Edital 01-2023 da Fundação Fritz ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutriamandaametzner",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Nutricionista (@nutriamandaametzner)",
+      "instagram": "https://www.instagram.com/nutriamandaametzner/",
+      "snippet": "... Blumenau | Online CRN 13763 ... Como nutricionista, eu te ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrimaiarak",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Nutricionista Comportamental | CRN 14471 (@nutrimaiarak)",
+      "instagram": "https://www.instagram.com/nutrimaiarak/",
+      "snippet": "... Blumenau e online Comece aqui ↓ ... Maiara Kopsch | Nutricionista Comportamental | CRN 14471. 1,163 followers. 628 ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrithainahenschel",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Thainá Henschel | Nutricionista (@nutrithainahenschel)",
+      "instagram": "https://www.instagram.com/nutrithainahenschel/",
+      "snippet": "... Blumenau CRN 12330 ... Meu trabalho como nutricionista ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutricao.dix",
+      "segment": "Nutricionista",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "André Dix | Nutricionista em Blumenau (@nutricao.dix)",
+      "instagram": "https://www.instagram.com/nutricao.dix/",
+      "snippet": "André Dix | Nutricionista em Blumenau. 2,285 followers. 764 following. Nutritionist. Planejamento Nutricional, Emagrecimento e Hipertrofia. CRN-10/9986",
+      "sourceSearch": "site:instagram.com nutricionista CRN Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "escolinhadescobrindosabores",
+      "segment": "Nutricionista",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "CRN 10. 3113 (@escolinhadescobrindosabores) ...",
+      "instagram": "https://www.instagram.com/escolinhadescobrindosabores/",
+      "snippet": "... Chapecó e Xanxerê –SC Agende. ... Graciane Piran | Nutricionista Infantil - CRN 10. 3113. 1,175 posts. 5,701 ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "vivianesimomura",
+      "segment": "Nutricionista",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Nutricionista Clínica | CRN 10: 6300 (@vivianesimomura)",
+      "instagram": "https://www.instagram.com/vivianesimomura/",
+      "snippet": "... Chapecó ... Viviane Simomura | Nutricionista Clínica | CRN 10: 6300. 1,079 followers.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutri.lucasmorais",
+      "segment": "Nutricionista",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Lucas Morais | Nutricionista (@nutri.lucasmorais)",
+      "instagram": "https://www.instagram.com/nutri.lucasmorais/",
+      "snippet": "Nutricionista | CRN-8 n°18389 🍽️ Te ajudo a emagrecer comendo o que gosta Consulta online e presencial Ponta Grossa • PR ⬇️ Agende sua consulta.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutribyju",
+      "segment": "Nutricionista",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Nutricionista CRN 8 18267 (@nutribyju) - Julia Portela",
+      "instagram": "https://www.instagram.com/nutribyju/",
+      "snippet": "Julia Portela | Nutricionista CRN 8 18267. 1,537 followers. 297 following ... A OAB Ponta ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "lg_anapaula",
+      "segment": "Nutricionista",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Ana Paula (@lg_anapaula)",
+      "instagram": "https://www.instagram.com/lg_anapaula/",
+      "snippet": "CRN 8 3592 Nutricionista Clínica - Paliativista Atenção à Saúde Unimed Ponta Grossa Enfermagem 5/10. Atendimento @clinica.believe #AnaNutriAlma.",
+      "sourceSearch": "site:instagram.com nutricionista CRN Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutricarolgibur",
+      "segment": "Nutricionista",
+      "city": "São José dos Pinhais",
+      "uf": "PR",
+      "name": "Carolina Gibur | Nutricionista (@nutricarolgibur)",
+      "instagram": "https://www.instagram.com/nutricarolgibur/",
+      "snippet": "... São José dos Pinhais ... nutricionista Carolina Gibur Nutricionista CRN - 16228. Receitinha nova por ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN São José dos Pinhais",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "nutrilomorais",
+      "segment": "Nutricionista",
+      "city": "São José dos Pinhais",
+      "uf": "PR",
+      "name": "Lorrayne Morais | Nutricionista (@nutrilomorais)",
+      "instagram": "https://www.instagram.com/nutrilomorais/",
+      "snippet": "... São José dos Pinhais | Online @ ... Me formei em 2023 e conquistei meu CRN em 2024. Hoje, apenas três anos depois de ...",
+      "sourceSearch": "site:instagram.com nutricionista CRN São José dos Pinhais",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    }
+  ],
+  "notes": [
+    "Nenhum substituto está liberado automaticamente",
+    "Leitura individual das bios ficou indisponível devido ao limite de consultas do serviço",
+    "Busca nominal não prova ausência de site",
+    "Não alterar dados no CRM, não enviar mensagens e não fazer merge"
+  ]
+}

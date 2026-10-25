@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-25",
+  "scope": "81 perfis novos de reserva",
+  "reviewed": [
+    {
+      "handle": "redhairsalao",
+      "reason": "Página de agendamento AppBarber encontrada; serviço digital já existente",
+      "evidence": "https://sites.appbarber.com.br/redhairsalao",
+      "kind": "BLOQUEADO – PÁGINA EXISTENTE"
+    },
+    {
+      "handle": "ramonserpa",
+      "reason": "Website pessoal Wix encontrado",
+      "evidence": "https://ramonserpa.wixsite.com/ramon",
+      "kind": "BLOQUEADO – TEM SITE"
+    },
+    {
+      "handle": "psijessicaluiza",
+      "reason": "Site profissional com identificação CRP e contato coincidentes",
+      "evidence": "https://www.psicologajessica.com.br/",
+      "kind": "BLOQUEADO – TEM SITE"
+    },
+    {
+      "handle": "psi.giselebudal",
+      "reason": "Página pública no Facebook informa psicologagiselebudal.com.br",
+      "evidence": "https://www.facebook.com/psi.giselebudal",
+      "kind": "BLOQUEADO – SITE INFORMADO"
+    },
+    {
+      "handle": "psibarbaradalvanna",
+      "reason": "Website próprio encontrado",
+      "evidence": "https://psibarbaradalvanna.com.br/",
+      "kind": "BLOQUEADO – TEM SITE"
+    },
+    {
+      "handle": "nutrigabrielat",
+      "reason": "Perfil público informou página própria em Google Sites, confirmar link antes de considerar novamente",
+      "evidence": "https://www.facebook.com/nutrigabrielact/",
+      "kind": "BLOQUEADO – PÁGINA EXISTENTE"
+    },
+    {
+      "handle": "blessbeautysjrp",
+      "reason": "É de São José do Rio Preto/SP, não São José/SC; falso positivo de geolocalização confirmado",
+      "evidence": "https://www.trinks.com/blessbeautysjrp",
+      "kind": "BLOQUEADO – FORA SC/PR"
+    },
+    {
+      "handle": "psikamilatoledo",
+      "reason": "O sobrenome Toledo foi confundido com a cidade: vínculo a espaço profissional em Juiz de Fora/MG",
+      "evidence": "https://www.instagram.com/espacovincularpsicologia/",
+      "kind": "BLOQUEADO – FORA SC/PR"
+    },
+    {
+      "handle": "isabeltoledo.psi",
+      "reason": "A pesquisa usou Toledo como localidade, mas o nome é Isabel Toledo; CRP-14 e vínculo acadêmico UFGD não permitem confirmar atuação no PR",
+      "evidence": "https://www.instagram.com/isabeltoledo.psi/",
+      "kind": "SUSPENDER – CIDADE NÃO COMPROVADA"
+    },
+    {
+      "handle": "tatianetoledopsicologia",
+      "reason": "Busca confundiu sobrenome Toledo com a cidade; CRP 06 não comprova atuação em Toledo/PR",
+      "evidence": "https://www.instagram.com/tatianetoledopsicologia/",
+      "kind": "SUSPENDER – CIDADE NÃO COMPROVADA"
+    },
+    {
+      "handle": "psi.fernandacarvalho",
+      "reason": "Resultados de sites de homônima em SP/CRP 06, enquanto o perfil encontrado refere Joinville/CRP 12; verificar identidade antes de decidir",
+      "evidence": "https://www.psifernandacarvalho.com.br/",
+      "kind": "REVISAR – POSSÍVEL HOMÔNIMA"
+    },
+    {
+      "handle": "psi.nataliatoledo",
+      "reason": "Toledo pode ser sobrenome, não localização; confirmar cidade e CRP",
+      "evidence": "https://www.instagram.com/psi.nataliatoledo/",
+      "kind": "REVISAR – CIDADE NÃO COMPROVADA"
+    },
+    {
+      "handle": "psi.mariajosetoledo",
+      "reason": "Toledo é sobrenome na apresentação, não comprovação de atendimento na cidade",
+      "evidence": "https://www.instagram.com/psi.mariajosetoledo/",
+      "kind": "REVISAR – CIDADE NÃO COMPROVADA"
+    },
+    {
+      "handle": "roberta_lourencodetoledo",
+      "reason": "Toledo aparenta ser sobrenome; a cidade não está comprovada na busca",
+      "evidence": "https://www.instagram.com/roberta_lourencodetoledo/",
+      "kind": "REVISAR – CIDADE NÃO COMPROVADA"
+    }
+  ],
+  "definitelyBlocked": 10,
+  "additionalReview": 4,
+  "note": "Sem leitura de bio direta. Outros 67 candidatos da reserva não auditados individualmente."
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-25",
+  "results": [],
+  "errors": [
+    {
+      "batch": 0,
+      "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: RuntimeException: Error calling MCP tool: [TextContent(type='text', text='Daily free Fetch allowance used and your wallet balance is empty. Add funds at https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None), TextContent(type='text', text='https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None)]"
+    },
+    {
+      "batch": 1,
+      "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: RuntimeException: Error calling MCP tool: [TextContent(type='text', text='Daily free Fetch allowance used and your wallet balance is empty. Add funds at https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None), TextContent(type='text', text='https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None)]"
+    },
+    {
+      "batch": 2,
+      "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: RuntimeException: Error calling MCP tool: [TextContent(type='text', text='Daily free Fetch allowance used and your wallet balance is empty. Add funds at https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None), TextContent(type='text', text='https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None)]"
+    },
+    {
+      "batch": 3,
+      "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: RuntimeException: Error calling MCP tool: [TextContent(type='text', text='Daily free Fetch allowance used and your wallet balance is empty. Add funds at https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None), TextContent(type='text', text='https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None)]"
+    },
+    {
+      "batch": 4,
+      "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: RuntimeException: Error calling MCP tool: [TextContent(type='text', text='Daily free Fetch allowance used and your wallet balance is empty. Add funds at https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None), TextContent(type='text', text='https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None)]"
+    },
+    {
+      "batch": 5,
+      "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: RuntimeException: Error calling MCP tool: [TextContent(type='text', text='Daily free Fetch allowance used and your wallet balance is empty. Add funds at https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None), TextContent(type='text', text='https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None)]"
+    },
+    {
+      "batch": 6,
+      "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: RuntimeException: Error calling MCP tool: [TextContent(type='text', text='Daily free Fetch allowance used and your wallet balance is empty. Add funds at https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None), TextContent(type='text', text='https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None)]"
+    },
+    {
+      "batch": 7,
+      "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: RuntimeException: Error calling MCP tool: [TextContent(type='text', text='Daily free Fetch allowance used and your wallet balance is empty. Add funds at https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None), TextContent(type='text', text='https://agent.tinyfish.ai/wallet?utm_source=mcp&utm_medium=insufficient_funds&utm_campaign=fetch&amount=10.00', annotations=None, meta=None)]"
+    }
+  ]
+}

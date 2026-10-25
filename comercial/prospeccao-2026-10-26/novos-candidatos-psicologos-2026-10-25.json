@@ -1,0 +1,534 @@
+{
+  "date": "2026-10-25",
+  "queries": [
+    {
+      "city": "Blumenau",
+      "searches": 10
+    },
+    {
+      "city": "Ponta Grossa",
+      "searches": 10
+    },
+    {
+      "city": "Joinville",
+      "searches": 10
+    },
+    {
+      "city": "Francisco Beltrão",
+      "searches": 10
+    },
+    {
+      "city": "Maringá",
+      "searches": 10
+    },
+    {
+      "city": "Chapecó",
+      "searches": 10
+    },
+    {
+      "city": "Criciúma",
+      "searches": 10
+    },
+    {
+      "city": "Toledo",
+      "searches": 10
+    }
+  ],
+  "candidates": [
+    {
+      "handle": "joanacs.psi",
+      "segment": "Psicólogo",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Psicóloga Joana Carlota (@joanacs.psi)",
+      "instagram": "https://www.instagram.com/joanacs.psi/",
+      "snippet": "Psicóloga clínica CRP 12-14569 contatojoanacs@gmail.com Blumenau-SC Promovendo mais qualidade de vida ▫️ Mais informações acesse .",
+      "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psisaralpm",
+      "segment": "Psicólogo",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Sara L. P. Martins | Psicóloga (@psisaralpm)",
+      "instagram": "https://www.instagram.com/psisaralpm/",
+      "snippet": "... Blumenau/SC CRP 12/18556 Agendamento e como iniciar ... ✨ Sara L. P. Martins CRP 12/18556 #autossabotagem #terapia #psicóloga ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psijessicaluiza",
+      "segment": "Psicólogo",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Psicóloga Jessica Luiza | Blumenau & Online ...",
+      "instagram": "https://www.instagram.com/psijessicaluiza/",
+      "snippet": "Psicóloga Jessica Luiza | Blumenau & Online. 6,031 followers. 389 following. Psicóloga Clínica | TCC | Neurociência | Sono CRP 12/16591 Blumenau e Online",
+      "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologatatianaleal",
+      "segment": "Psicólogo",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Tatiana Leal | Psicóloga Clínica (@psicologatatianaleal)",
+      "instagram": "https://www.instagram.com/psicologatatianaleal/",
+      "snippet": "Psicóloga Clínica - CRP 12-11490 Online e Presencial(Blumenau) Quando te ajudo a ser livre e a voar, mais alto eu voo! Agendar.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicarolinamorastoni",
+      "segment": "Psicólogo",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Psicóloga Infantil -CRP-12/18760 📍Blumenau-SC",
+      "instagram": "https://www.instagram.com/psicarolinamorastoni/",
+      "snippet": "... Psicóloga Carolina Morastoni - Tia Carol. 869 followers. 613 following. Psychologist. Psicóloga Infantil -CRP-12/18760 Blumenau-SC. Follow. Message ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicoevelynscharf",
+      "segment": "Psicólogo",
+      "city": "Blumenau",
+      "uf": "SC",
+      "name": "Psicóloga Evelyn Luisa Pagel Scharf CRP",
+      "instagram": "https://www.instagram.com/psicoevelynscharf/",
+      "snippet": "Psicóloga Evelyn Luisa Pagel Scharf CRP: 12/19368. 1,498 followers. 479 ... #blumenau ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Blumenau",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologabrunafillus",
+      "segment": "Psicólogo",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Psicóloga Bruna Fillus (@psicologabrunafillus)",
+      "instagram": "https://www.instagram.com/psicologabrunafillus/",
+      "snippet": "Psicóloga Bruna Fillus. 896 followers. 518 following. Psychologist. Avaliação Psicológica Psicoterapia Online ou Presencial CRP 08/25902 @phillus ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "laripsicologa",
+      "segment": "Psicólogo",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Larissa Cristine Kinczel | Psicóloga (@laripsicologa)",
+      "instagram": "https://www.instagram.com/laripsicologa/",
+      "snippet": "... Ponta Grossa/PR ... Psicóloga Larissa Cristine Kinczel CRP 08/27949 ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psic.adrianemuchal",
+      "segment": "Psicólogo",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Psic.Adriane Muchal (@psic.adrianemuchal)",
+      "instagram": "https://www.instagram.com/psic.adrianemuchal/",
+      "snippet": "Atendimento Presencial e Online Adriane Muchal – Psicóloga Clínica CRP 08/22421 Rua Santos Dumont, 293 – Centro Ponta Grossa – PR WhatsApp: (42) ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "my.psi",
+      "segment": "Psicólogo",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Mylena Büchner | Psicóloga CRP 08/32574 (@my.psi)",
+      "instagram": "https://www.instagram.com/my.psi/",
+      "snippet": "Mylena Büchner | Psicóloga CRP 08/32574. 382 followers. 154 following ... Ponta Grossa/PR: 153 | Psicóloga Mylena Büchner - CRP 08/32574 ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologa.esexologia.cirlene",
+      "segment": "Psicólogo",
+      "city": "Ponta Grossa",
+      "uf": "PR",
+      "name": "Cirlene Felde/Psicóloga CRP 08/17674 (@psicologa. ...",
+      "instagram": "https://www.instagram.com/psicologa.esexologia.cirlene/",
+      "snippet": "Psicóloga (TCC) e Sexóloga Autora de \"Meu Corpo Me Pertence\" CRP: 08/17674 ✨ Agende sua consulta · Quando as lágrimas de alegria não cabem mais ..",
+      "sourceSearch": "site:instagram.com psicóloga CRP Ponta Grossa",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicomozieli",
+      "segment": "Psicólogo",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Mozieli Iop (@psicomozieli)",
+      "instagram": "https://www.instagram.com/psicomozieli/",
+      "snippet": "Joinville - SC Psicóloga | CRP 12/19431 ‍ @ee_espacoexistencia ✨ Viver com propósito e leveza. ✈️ 🏖️ · Um papo necessário na @ ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.giselebudal",
+      "segment": "Psicólogo",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Psicóloga em Joinville | Gisele Budal (@psi.giselebudal)",
+      "instagram": "https://www.instagram.com/psi.giselebudal/",
+      "snippet": "Psicóloga em Joinville | Gisele Budal. 1,037 followers. 113 following. Especialista em Terapia Cognitivo Comportamental CRP 12/17110 Presencial em ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.fernandacarvalho",
+      "segment": "Psicólogo",
+      "city": "Joinville",
+      "uf": "SC",
+      "name": "Fernanda de Carvalho | Psicóloga (@psi.fernandacarvalho)",
+      "instagram": "https://www.instagram.com/psi.fernandacarvalho/",
+      "snippet": "Cuidando da saúde emocional de mulheres. Psicóloga Clínica | CRP 12/12940. Atendimentos online e presencial | Joinville/SC Contato .",
+      "sourceSearch": "site:instagram.com psicóloga CRP Joinville",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.vanessanunesds",
+      "segment": "Psicólogo",
+      "city": "Francisco Beltrão",
+      "uf": "PR",
+      "name": "Psicóloga Vanessa Nunes I CRP 08/43864 (@psi. ...",
+      "instagram": "https://www.instagram.com/psi.vanessanunesds/",
+      "snippet": "Psicóloga Vanessa Nunes I CRP 08/43864. 451 followers. 128 following. • Psicóloga na execução penal @conselhodacomunidadefb • Grupo de estudos @proj.lapaz",
+      "sourceSearch": "site:instagram.com psicóloga CRP Francisco Beltrão",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.biancamachado",
+      "segment": "Psicólogo",
+      "city": "Francisco Beltrão",
+      "uf": "PR",
+      "name": "Psicóloga - CRP 08/38290 (@psi.biancamachado)",
+      "instagram": "https://www.instagram.com/psi.biancamachado/",
+      "snippet": "Bianca Machado | Psicóloga - CRP 08/38290. 490 followers. 386 following. Especialização em Desenvolvimento Infantil. Atendimentos clínicos presenciais e ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Francisco Beltrão",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "rosangela.lopes.psicologa",
+      "segment": "Psicólogo",
+      "city": "Francisco Beltrão",
+      "uf": "PR",
+      "name": "rosangela.lopes.psicologa - Francisco Beltrão, PR",
+      "instagram": "https://www.instagram.com/rosangela.lopes.psicologa/",
+      "snippet": "Psicóloga em Francisco Beltrão/PR CRP 08/49773 Relações • Traumas • Luto • Depressão Presencial e online Agende sua consulta.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Francisco Beltrão",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologaellenhirasaka",
+      "segment": "Psicólogo",
+      "city": "Francisco Beltrão",
+      "uf": "PR",
+      "name": "Psicóloga Ellen Hirasaka (@psicologaellenhirasaka)",
+      "instagram": "https://www.instagram.com/psicologaellenhirasaka/",
+      "snippet": "Psicóloga Ellen Hirasaka. 4,275 followers. 1,319 following. Especialista em Análise do Comportamento Neuropsicóloga CRP-08/21361 Francisco Beltrão - ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Francisco Beltrão",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.fermartins",
+      "segment": "Psicólogo",
+      "city": "Francisco Beltrão",
+      "uf": "PR",
+      "name": "Fernanda Martins (@psi.fermartins)",
+      "instagram": "https://www.instagram.com/psi.fermartins/",
+      "snippet": "311 followers · 405 following · 32 posts · @psi.fermartins: “ Psicóloga e psicanalista (CRP: 08/29568) Atendimento presencial e online. Francisco Beltrão-",
+      "sourceSearch": "site:instagram.com psicóloga CRP Francisco Beltrão",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psibarbaradalvanna",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Bárbara Dalvanna I Psicóloga em Maringá ...",
+      "instagram": "https://www.instagram.com/psibarbaradalvanna/",
+      "snippet": "Bárbara Dalvanna I Psicóloga em Maringá. 1,860 followers. 917 following. CRP-08 ... E haja fôlego! Psicóloga ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologiajeitodeser",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Suzana dos Santos Oliveira CRP 08/35.194 ...",
+      "instagram": "https://www.instagram.com/psicologiajeitodeser/",
+      "snippet": "... Maringá/PR Agende seu atendimento pelo link abaixo ... Psicóloga Clínica CRP 08/35194 ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologa_clinica_cleide_march",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Psicóloga em Maringá CRP 08/14127 ...",
+      "instagram": "https://www.instagram.com/psicologa_clinica_cleide_march/",
+      "snippet": "Psicóloga em Maringá CRP 08/14127. 527 followers. 1,478 following. Mental health service. atendimento presencial e on-line psicóloga com pós graduação e ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologamichelemaimone",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Michele Maimone Ⓜ️ Psicóloga Clínica ...",
+      "instagram": "https://www.instagram.com/psicologamichelemaimone/",
+      "snippet": "❤️Psicóloga Clínica ⚜️CRP 07717-6 @clinicapercorrere. Atendo crianças, adolescentes, adultos, casais e famílias. Maringá/ Pr/ Brazil. ☎️44 99718-9014.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.jenyffercarvalho",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Maringá-PR (@psi.jenyffercarvalho)",
+      "instagram": "https://www.instagram.com/psi.jenyffercarvalho/",
+      "snippet": "Jenyffer Carvalho | Psicóloga CRP 08/42312 | Maringá-PR. 663 followers. 1,081 following. Psychologist. Acolhendo pessoas e suas histórias por meio da ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "marcelaholandaa",
+      "segment": "Psicólogo",
+      "city": "Maringá",
+      "uf": "PR",
+      "name": "Marcela Holanda | Psicóloga Maringá (@marcelaholandaa)",
+      "instagram": "https://www.instagram.com/marcelaholandaa/",
+      "snippet": "CRP - 08/46835 ‍ Especialista em Terapia Cognitivo-Comportamental (TCC) | Maringá & Online. marcelaholandaa.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Maringá",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.marianaantunes",
+      "segment": "Psicólogo",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Mariana Antunes | Psicóloga (@psi.marianaantunes)",
+      "instagram": "https://www.instagram.com/psi.marianaantunes/",
+      "snippet": "Mariana Antunes | Psicóloga. 3,033 followers. 737 following. Por uma vida mais leve e menos ansiosa CRP 12/20304 Online e Presencial | Chapecó",
+      "sourceSearch": "site:instagram.com psicóloga CRP Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "anaameliapsicologia",
+      "segment": "Psicólogo",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Ana Amélia Bedin Psicóloga (@anaameliapsicologia)",
+      "instagram": "https://www.instagram.com/anaameliapsicologia/",
+      "snippet": "CRP 12/05726. Psicóloga Clínica Psicoterapia individual de adultos e de adolescentes. Psicoterapia de casal. Atendimento presencial e online.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psilaizaecker",
+      "segment": "Psicólogo",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Psicóloga Laiza Ecker | CRP 12/19014 (@psilaizaecker)",
+      "instagram": "https://www.instagram.com/psilaizaecker/",
+      "snippet": "... Chapecó-SC e Online. ... Psicóloga Laiza Ecker | CRP 12/19014. 216 followers. 144 following. Pós ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologa.giovanafiorentin",
+      "segment": "Psicólogo",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Giovana Gracielli Fiorentin (@psicologa.giovanafiorentin)",
+      "instagram": "https://www.instagram.com/psicologa.giovanafiorentin/",
+      "snippet": "Psicanalista - Psicóloga CRP-12/11832. Atendimentos Presenciais e Online Supervisora clínica em Psicanálise para profissionais. Escuta cuidadosa.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.pamelakoch",
+      "segment": "Psicólogo",
+      "city": "Chapecó",
+      "uf": "SC",
+      "name": "Pâmela Koch | Psicóloga em Chapecó (@psi.pamelakoch)",
+      "instagram": "https://www.instagram.com/psi.pamelakoch/",
+      "snippet": "Pâmela Koch Psicóloga CRP-12/14.747 (49) 9 8834-8174 #psicologia #psicoterapia #psicanalise #psicanaliseclinica #psicanáliselacaniana #chapecó #facaterapia ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Chapecó",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psico.fabianadias",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga clínica | CRP 12/27236 (@psico.fabianadias)",
+      "instagram": "https://www.instagram.com/psico.fabianadias/",
+      "snippet": "Fabiana Dias | Psicóloga clínica | CRP 12/27236. 5,985 followers. 2,858 ... Criciúma.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.luanat",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Luana Tavares | Psicóloga CRP 12/23216 (@psi.luanat)",
+      "instagram": "https://www.instagram.com/psi.luanat/",
+      "snippet": "... Criciúma SC ... Luana Tavares | Psicóloga CRP 12/23216. 1,825 followers. 2,115 following. •Ψ ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.nicolemagnus",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga CRP 12/29851 (@psi.nicolemagnus)",
+      "instagram": "https://www.instagram.com/psi.nicolemagnus/",
+      "snippet": "Psicóloga | CRP 12/29851 Criciúma/SC Pós-graduada em Terapia Cognitivo-Comportamental Atendimento presencial e online - contato ⤵️.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologaleticiarizzatti",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga em Criciúma (@psicologaleticiarizzatti)",
+      "instagram": "https://www.instagram.com/psicologaleticiarizzatti/",
+      "snippet": "Leticia Rizzatti | Psicóloga em Criciúma. 678 followers. 376 following. CRP 12/23738 Ajudo crianças e adultos a superarem desafios emocionais Online pelo ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psico.michellecastro",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga CRP 12/23218 (@psico.michellecastro)",
+      "instagram": "https://www.instagram.com/psico.michellecastro/",
+      "snippet": "Michelle De Castro | Psicóloga CRP 12/23218. 2,063 followers. 2,683 following ... Nossa ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "joelmamiguelpsicologa",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga | CRP 12/15192 (@joelmamiguelpsicologa)",
+      "instagram": "https://www.instagram.com/joelmamiguelpsicologa/",
+      "snippet": "Joelma Miguel | Psicóloga | CRP 12/15192. 2,320 followers. 1,359 following ... #burnout #psicologia #esgotamentoemocional #criciúma ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psisamelacabral",
+      "segment": "Psicólogo",
+      "city": "Criciúma",
+      "uf": "SC",
+      "name": "Psicóloga Infantil | Criciúma (@psisamelacabral)",
+      "instagram": "https://www.instagram.com/psisamelacabral/",
+      "snippet": "Psicóloga | CRP 12/29288 TCC • Infantil e adultos. Pós-graduanda em ABA e Neuropsicopedagogia Criciúma | Presencial + online ↓ Agendamentos.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Criciúma",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "jakemorettopsi",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Jaqueline Moretto | Psicóloga | Toledo-PR (@jakemorettopsi)",
+      "instagram": "https://www.instagram.com/jakemorettopsi/",
+      "snippet": "... CRP 08/28733 Agende sua sessão ↓ ... Jaqueline Moretto | Psicóloga | Toledo-PR. 2,659 followers. 1,968 following.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psikamilatoledo",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Kamila Toledo | Psicóloga e Supervisora Clínica",
+      "instagram": "https://www.instagram.com/psikamilatoledo/",
+      "snippet": "Kamila Toledo | Psicóloga e Supervisora Clínica | CRP 04/46692. 2,570 followers. 1,972 following. | Te ajudo a construir uma vida com mais sentido",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psicologawaleska.l",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Waleska | Psicóloga | Toledo (@psicologawaleska.l)",
+      "instagram": "https://www.instagram.com/psicologawaleska.l/",
+      "snippet": "... Psicóloga | CRP 08/18701⁣⁣ Saiba mais ⤵️ ... Waleska | Psicóloga | Toledo. 820 followers. 21 following. Ajudo você a simplificar a ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.nataliatoledo",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Natália Toledo | Psicóloga (@psi.nataliatoledo)",
+      "instagram": "https://www.instagram.com/psi.nataliatoledo/",
+      "snippet": "Muito prazer! Sou a Natália Toledo, Psicóloga Clinica, palestrante, apaixonada por pessoas, acredito que podemos fazer a diferença na vida uns dos outros. Amo a ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "roberta_lourencodetoledo",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Roberta Toledo / Psicóloga (@roberta_lourencodetoledo)",
+      "instagram": "https://www.instagram.com/roberta_lourencodetoledo/",
+      "snippet": "Roberta Toledo / Psicóloga. 5,555 followers. 5,455 following. Psicóloga e palestrante CRP 45.238-6. Psicóloga familiar, casal e adolescentes. Psicossomática",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "isabeltoledo.psi",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Isabel Toledo (@isabeltoledo.psi)",
+      "instagram": "https://www.instagram.com/isabeltoledo.psi/",
+      "snippet": "Isabel Toledo. 2,908 followers. 3,453 following. Psicóloga CRP 14/06366. Bacharelado e Licenciatura (UNESP) Especialista em Educação (UFGD) Mestra em História ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "psi.mariajosetoledo",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Maria José Janini de Toledo (@psi.mariajosetoledo)",
+      "instagram": "https://www.instagram.com/psi.mariajosetoledo/",
+      "snippet": "Maria José Janini de Toledo. 376 followers. 457 following. CRP 08/02100. Psicóloga e Neuropsicóloga. Atendimentos: criança, adolescente e adulto. Presencial e ...",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    },
+    {
+      "handle": "tatianetoledopsicologia",
+      "segment": "Psicólogo",
+      "city": "Toledo",
+      "uf": "PR",
+      "name": "Tatiane Toledo - Psicologia (@tatianetoledopsicologia)",
+      "instagram": "https://www.instagram.com/tatianetoledopsicologia/",
+      "snippet": "Tatiane Toledo Psicóloga Clínica CRP 06/112049. Psicoterapia - crianças, adolescentes, adultos e idosos. Rua Bonifácio Cubas, 152 - Freguesia do Ó.",
+      "sourceSearch": "site:instagram.com psicóloga CRP Toledo",
+      "status": "NOVO CANDIDATO / NÃO ENVIAR"
+    }
+  ]
+}

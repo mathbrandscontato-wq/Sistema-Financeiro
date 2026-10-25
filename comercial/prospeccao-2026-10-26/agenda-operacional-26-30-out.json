@@ -1,0 +1,3916 @@
+{
+  "snapshot": "Auditoria V6 de 25/10/2026",
+  "rules": "Somente registros elegíveis à fila de VALIDAÇÃO; não autorizados para envio; 20 slots por segmento/dia; vagas explícitas",
+  "days": [
+    {
+      "date": "26/10/2026",
+      "tab": "02 • Segunda",
+      "profiles": [
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 1,
+          "profile": {
+            "id": "MB-061",
+            "handle": "salaovisual_",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 2,
+          "profile": {
+            "id": "MB-078",
+            "handle": "instalumibeauty",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 3,
+          "profile": {
+            "id": "MB-023",
+            "handle": "studiohairblumenau",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 4,
+          "profile": {
+            "id": "MB-063",
+            "handle": "studio_fiw_a_fiw_chapeco",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 5,
+          "profile": {
+            "id": "MB-064",
+            "handle": "mkbeauty_cascavel",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 6,
+          "profile": {
+            "id": "MB-043",
+            "handle": "vanessacristinahairstylist",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 7,
+          "profile": {
+            "id": "MB-090",
+            "handle": "beautyhaireestetica",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 8,
+          "profile": {
+            "id": "MB-096",
+            "handle": "nr_studiohair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 9,
+          "profile": {
+            "id": "MB-022",
+            "handle": "luzdaluaesthetichair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 10,
+          "profile": {
+            "id": "MB-092",
+            "handle": "orbeautyconcept",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 11,
+          "profile": {
+            "id": "MB-024",
+            "handle": "beautyshop.homee",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 12,
+          "profile": {
+            "id": "MB-026",
+            "handle": "lume_concept_",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 13,
+          "profile": {
+            "id": "MB-066",
+            "handle": "beyoustudiohair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 14,
+          "profile": {
+            "id": "MB-059",
+            "handle": "gefe_moraes_hair_stylist",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 15,
+          "profile": {
+            "id": "MB-052",
+            "handle": "js.studio.hair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 16,
+          "profile": {
+            "id": "MB-077",
+            "handle": "studiot.ingleses",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 17,
+          "profile": {
+            "id": "MB-094",
+            "handle": "visual_spahair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 18,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 19,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 20,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 21,
+          "profile": {
+            "id": "MB-123",
+            "handle": "docecarolinadoceria",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 22,
+          "profile": {
+            "id": "MB-115",
+            "handle": "donafranciscadoces",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 23,
+          "profile": {
+            "id": "MB-121",
+            "handle": "doceencantosconfeitaria",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 24,
+          "profile": {
+            "id": "MB-148",
+            "handle": "saborearte.ind",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 25,
+          "profile": {
+            "id": "MB-128",
+            "handle": "lorenamconfeitariaartesanal",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 26,
+          "profile": {
+            "id": "MB-146",
+            "handle": "angelssconfeitaria",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 27,
+          "profile": {
+            "id": "MB-137",
+            "handle": "bolos__tata",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 28,
+          "profile": {
+            "id": "MB-140",
+            "handle": "bolosebolosconfeitaria",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 29,
+          "profile": {
+            "id": "MB-197",
+            "handle": "patyferraribolos",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 30,
+          "profile": {
+            "id": "MB-182",
+            "handle": "chocakesbrasil",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 31,
+          "profile": {
+            "id": "MB-169",
+            "handle": "_rafaconfeitaria_",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 32,
+          "profile": {
+            "id": "MB-200",
+            "handle": "pistachio_confeitaria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 33,
+          "profile": {
+            "id": "MB-192",
+            "handle": "requintelages",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 34,
+          "profile": {
+            "id": "MB-178",
+            "handle": "irionesbolosrecheados",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 35,
+          "profile": {
+            "id": "MB-153",
+            "handle": "bolosdaneidebq",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 36,
+          "profile": {
+            "id": "MB-161",
+            "handle": "dalamicafeteria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 37,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 38,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 39,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 40,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 41,
+          "profile": {
+            "id": "MB-258",
+            "handle": "geuclinicadepsicologia",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 42,
+          "profile": {
+            "id": "MB-207",
+            "handle": "psi.anamaia",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 43,
+          "profile": {
+            "id": "MB-245",
+            "handle": "espacoprimaverapsicologia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 44,
+          "profile": {
+            "id": "MB-250",
+            "handle": "psi.margrit",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 45,
+          "profile": {
+            "id": "MB-275",
+            "handle": "temcomocuidar",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 46,
+          "profile": {
+            "id": "MB-214",
+            "handle": "dani.fioravante",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 47,
+          "profile": {
+            "id": "MB-216",
+            "handle": "espacopluraldepsicologia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 48,
+          "profile": {
+            "id": "MB-219",
+            "handle": "psicologa_camila.oliveira",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 49,
+          "profile": {
+            "id": "MB-233",
+            "handle": "psicologajessicaveiga",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 50,
+          "profile": {
+            "id": "MB-240",
+            "handle": "guisilveirapsi",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 51,
+          "profile": {
+            "id": "MB-242",
+            "handle": "mariaisadora.psicologa",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 52,
+          "profile": {
+            "id": "MB-249",
+            "handle": "psicoluanahochmann",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 53,
+          "profile": {
+            "id": "MB-255",
+            "handle": "psicoana.laura",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 54,
+          "profile": {
+            "id": "MB-256",
+            "handle": "psicologavivianek",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 55,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 56,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 57,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 58,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 59,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Psicólogo",
+          "position": 60,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 61,
+          "profile": {
+            "id": "MB-367",
+            "handle": "nutri.catharine",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 62,
+          "profile": {
+            "id": "MB-400",
+            "handle": "nutri.larissasiqueira",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 10
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 63,
+          "profile": {
+            "id": "MB-302",
+            "handle": "telianeestevam.nutri",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 64,
+          "profile": {
+            "id": "MB-301",
+            "handle": "alanaperichnutri",
+            "status": "PRIORIDADE_REVISAR",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 65,
+          "profile": {
+            "id": "MB-310",
+            "handle": "nutri_jana",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 66,
+          "profile": {
+            "id": "MB-313",
+            "handle": "nutricionistaisabelapaschoal",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 67,
+          "profile": {
+            "id": "MB-327",
+            "handle": "nutrituannyborba",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 68,
+          "profile": {
+            "id": "MB-330",
+            "handle": "rl.nutricao",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 69,
+          "profile": {
+            "id": "MB-332",
+            "handle": "luizavaldugabastos",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 70,
+          "profile": {
+            "id": "MB-333",
+            "handle": "nutribrunalindemberg",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 71,
+          "profile": {
+            "id": "MB-334",
+            "handle": "nutrimairalermen",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 72,
+          "profile": {
+            "id": "MB-335",
+            "handle": "thaigottardi",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 73,
+          "profile": {
+            "id": "MB-338",
+            "handle": "nutricao_unipar",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 74,
+          "profile": {
+            "id": "MB-344",
+            "handle": "karinamoreira.tricologista",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 75,
+          "profile": {
+            "id": "MB-352",
+            "handle": "nutri.mislainesouza",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 76,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 77,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 78,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 79,
+          "profile": null
+        },
+        {
+          "date": "26/10/2026",
+          "segment": "Nutricionista",
+          "position": 80,
+          "profile": null
+        }
+      ]
+    },
+    {
+      "date": "27/10/2026",
+      "tab": "03 • Terça",
+      "profiles": [
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 1,
+          "profile": {
+            "id": "MB-040",
+            "handle": "adrianosantosunique",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 2,
+          "profile": {
+            "id": "MB-002",
+            "handle": "deboragonzaga_hair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 3,
+          "profile": {
+            "id": "MB-003",
+            "handle": "daylimasalaodebeleza",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 4,
+          "profile": {
+            "id": "MB-004",
+            "handle": "mayracolorista_",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 5,
+          "profile": {
+            "id": "MB-006",
+            "handle": "studiorjoinville",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 6,
+          "profile": {
+            "id": "MB-007",
+            "handle": "espacoleoboldt",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 7,
+          "profile": {
+            "id": "MB-008",
+            "handle": "mayllacbeautystudio",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 8,
+          "profile": {
+            "id": "MB-010",
+            "handle": "cleide.campos.wingsstudiohair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 9,
+          "profile": {
+            "id": "MB-017",
+            "handle": "anamullercabeleireira",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 10,
+          "profile": {
+            "id": "MB-019",
+            "handle": "lanussamonteiro",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 11,
+          "profile": {
+            "id": "MB-020",
+            "handle": "aurebeleza",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 12,
+          "profile": {
+            "id": "MB-027",
+            "handle": "stephaniehair_oficial",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 13,
+          "profile": {
+            "id": "MB-028",
+            "handle": "mais_q_bella_jaragua",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 14,
+          "profile": {
+            "id": "MB-033",
+            "handle": "liciocostahairdesigner",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 15,
+          "profile": {
+            "id": "MB-044",
+            "handle": "hairconceptbc",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 16,
+          "profile": {
+            "id": "MB-049",
+            "handle": "show_hair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 17,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 18,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 19,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 20,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 21,
+          "profile": {
+            "id": "MB-189",
+            "handle": "makcakesbolosedoces",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 10
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 22,
+          "profile": {
+            "id": "MB-136",
+            "handle": "confeitaria.sucre",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 23,
+          "profile": {
+            "id": "MB-125",
+            "handle": "dayconfeitaria_jaragua",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 24,
+          "profile": {
+            "id": "MB-191",
+            "handle": "padariacafeeprosa_",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 25,
+          "profile": {
+            "id": "MB-198",
+            "handle": "claubiscoliconfeitaria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 26,
+          "profile": {
+            "id": "MB-193",
+            "handle": "sarah_confeitariaa",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 27,
+          "profile": {
+            "id": "MB-111",
+            "handle": "doramariecafe",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 28,
+          "profile": {
+            "id": "MB-167",
+            "handle": "nhabentadoces",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 29,
+          "profile": {
+            "id": "MB-177",
+            "handle": "tinabolos",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 30,
+          "profile": {
+            "id": "MB-154",
+            "handle": "luciana_da_veiga_baron",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 31,
+          "profile": {
+            "id": "MB-187",
+            "handle": "padariasaojoselages",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 32,
+          "profile": {
+            "id": "MB-157",
+            "handle": "lyly_artecake",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 33,
+          "profile": {
+            "id": "MB-119",
+            "handle": "katiellevianaconfeitaria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 34,
+          "profile": {
+            "id": "MB-152",
+            "handle": "bolos_da_noe",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 35,
+          "profile": {
+            "id": "MB-168",
+            "handle": "cakau_doceria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 36,
+          "profile": {
+            "id": "MB-102",
+            "handle": "bolosdalegna",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 37,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 38,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 39,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 40,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 41,
+          "profile": {
+            "id": "MB-264",
+            "handle": "psicoluramos",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 42,
+          "profile": {
+            "id": "MB-269",
+            "handle": "psileticianaiverth",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 43,
+          "profile": {
+            "id": "MB-271",
+            "handle": "psi.renate",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 44,
+          "profile": {
+            "id": "MB-272",
+            "handle": "vivianfuhr.psi",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 45,
+          "profile": {
+            "id": "MB-274",
+            "handle": "psi.mariaravali",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 46,
+          "profile": {
+            "id": "MB-283",
+            "handle": "nosso_espacopsicologia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 47,
+          "profile": {
+            "id": "MB-288",
+            "handle": "elisreginaerk",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 48,
+          "profile": {
+            "id": "MB-289",
+            "handle": "psicologa.susanne",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 49,
+          "profile": {
+            "id": "MB-290",
+            "handle": "grasielasuzin.psi",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 50,
+          "profile": {
+            "id": "MB-293",
+            "handle": "prolifepsicologia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 51,
+          "profile": {
+            "id": "MB-294",
+            "handle": "psianandacorrea",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 52,
+          "profile": {
+            "id": "MB-295",
+            "handle": "karineholt",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 53,
+          "profile": {
+            "id": "MB-297",
+            "handle": "psicologa.sheilasbitencourt",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 54,
+          "profile": {
+            "id": "MB-298",
+            "handle": "lizsantanaa",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 55,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 56,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 57,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 58,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 59,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Psicólogo",
+          "position": 60,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 61,
+          "profile": {
+            "id": "MB-357",
+            "handle": "julianevf",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 62,
+          "profile": {
+            "id": "MB-359",
+            "handle": "nutripaula.rodrigues",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 63,
+          "profile": {
+            "id": "MB-366",
+            "handle": "oliveiramedicinaintegrada",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 64,
+          "profile": {
+            "id": "MB-369",
+            "handle": "nutribrunakfonseca",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 65,
+          "profile": {
+            "id": "MB-372",
+            "handle": "nutrifrancarraro_",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 66,
+          "profile": {
+            "id": "MB-374",
+            "handle": "magalideschamps",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 67,
+          "profile": {
+            "id": "MB-377",
+            "handle": "jeniferbitencourt.nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 68,
+          "profile": {
+            "id": "MB-378",
+            "handle": "ednalva_nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 69,
+          "profile": {
+            "id": "MB-380",
+            "handle": "analvanutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 70,
+          "profile": {
+            "id": "MB-382",
+            "handle": "nutrisaudegilmara",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 71,
+          "profile": {
+            "id": "MB-385",
+            "handle": "nataliazonta.nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 72,
+          "profile": {
+            "id": "MB-386",
+            "handle": "nutri.naigrezzana",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 73,
+          "profile": {
+            "id": "MB-388",
+            "handle": "annaclaudia_nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 74,
+          "profile": {
+            "id": "MB-389",
+            "handle": "nutri_estefaniacampos",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 75,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 76,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 77,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 78,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 79,
+          "profile": null
+        },
+        {
+          "date": "27/10/2026",
+          "segment": "Nutricionista",
+          "position": 80,
+          "profile": null
+        }
+      ]
+    },
+    {
+      "date": "28/10/2026",
+      "tab": "04 • Quarta",
+      "profiles": [
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 1,
+          "profile": {
+            "id": "MB-053",
+            "handle": "capellihairmakeup",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 2,
+          "profile": {
+            "id": "MB-054",
+            "handle": "dgstudiosalao",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 3,
+          "profile": {
+            "id": "MB-068",
+            "handle": "studio_castrohair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 4,
+          "profile": {
+            "id": "MB-071",
+            "handle": "briliabeauty",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 5,
+          "profile": {
+            "id": "MB-072",
+            "handle": "studio_vilma_hair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 6,
+          "profile": {
+            "id": "MB-076",
+            "handle": "alohahairstudio_",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 7,
+          "profile": {
+            "id": "MB-079",
+            "handle": "serucabeleireiros",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 8,
+          "profile": {
+            "id": "MB-083",
+            "handle": "betel.studiopg",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 9,
+          "profile": {
+            "id": "MB-087",
+            "handle": "dayanehair_studio_de_beleza",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 10,
+          "profile": {
+            "id": "MB-089",
+            "handle": "gustavogiugno",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 11,
+          "profile": {
+            "id": "MB-091",
+            "handle": "rainhas_megahair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 12,
+          "profile": {
+            "id": "MB-099",
+            "handle": "davidliimma",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 13,
+          "profile": {
+            "id": "MB-100",
+            "handle": "rosimere_megahair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 14,
+          "profile": {
+            "id": "MB-041",
+            "handle": "megahairstudiot",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 15,
+          "profile": {
+            "id": "MB-036",
+            "handle": "renoveauthentichair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 16,
+          "profile": {
+            "id": "MB-039",
+            "handle": "heldercano_hairstudio",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 17,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 18,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 19,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 20,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 21,
+          "profile": {
+            "id": "MB-104",
+            "handle": "comcarinho_confeitaria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 22,
+          "profile": {
+            "id": "MB-106",
+            "handle": "senhoraacucaroficial",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 23,
+          "profile": {
+            "id": "MB-126",
+            "handle": "docesmargarets",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 24,
+          "profile": {
+            "id": "MB-127",
+            "handle": "donanamaringa",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 25,
+          "profile": {
+            "id": "MB-129",
+            "handle": "anaflaviaboer",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 26,
+          "profile": {
+            "id": "MB-130",
+            "handle": "ericaherediadoces",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 27,
+          "profile": {
+            "id": "MB-131",
+            "handle": "ladolce.confeitariaartesanal",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 28,
+          "profile": {
+            "id": "MB-142",
+            "handle": "binascakepg",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 29,
+          "profile": {
+            "id": "MB-151",
+            "handle": "docedenu.vem",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 30,
+          "profile": {
+            "id": "MB-155",
+            "handle": "padaria.teixeira",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 31,
+          "profile": {
+            "id": "MB-160",
+            "handle": "a.colherconfeitariartesanal",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 32,
+          "profile": {
+            "id": "MB-174",
+            "handle": "doceria_geovana_zeck",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 33,
+          "profile": {
+            "id": "MB-179",
+            "handle": "doce.luz_",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 34,
+          "profile": {
+            "id": "MB-180",
+            "handle": "bendito_reve",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 35,
+          "profile": {
+            "id": "MB-186",
+            "handle": "graodetrigo_padariaartesanal",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 36,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 37,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 38,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 39,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 40,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 41,
+          "profile": {
+            "id": "MB-251",
+            "handle": "psi_dimararibeiro",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 42,
+          "profile": {
+            "id": "MB-257",
+            "handle": "dara.psicoinfantojuvenil",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 43,
+          "profile": {
+            "id": "MB-224",
+            "handle": "humanizar_psicologia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 44,
+          "profile": {
+            "id": "MB-278",
+            "handle": "gianedesouzapsico",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 45,
+          "profile": {
+            "id": "MB-239",
+            "handle": "psicologamaiaragianesini",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 46,
+          "profile": {
+            "id": "MB-237",
+            "handle": "cpo.chapeco",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 47,
+          "profile": {
+            "id": "MB-244",
+            "handle": "angelicaminella",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 48,
+          "profile": {
+            "id": "MB-235",
+            "handle": "carlarudiger.psicologa",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 49,
+          "profile": {
+            "id": "MB-225",
+            "handle": "clinicapsicologia_leticia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 50,
+          "profile": {
+            "id": "MB-254",
+            "handle": "psicologa_vanessadossantos",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 51,
+          "profile": {
+            "id": "MB-206",
+            "handle": "psicologiaacreditar",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 52,
+          "profile": {
+            "id": "MB-220",
+            "handle": "psicologa_claudiapiva",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 53,
+          "profile": {
+            "id": "MB-228",
+            "handle": "clinica_afetos",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 54,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 55,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 56,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 57,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 58,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 59,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Psicólogo",
+          "position": 60,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 61,
+          "profile": {
+            "id": "MB-390",
+            "handle": "alinepotuk",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 62,
+          "profile": {
+            "id": "MB-396",
+            "handle": "nutribenttobeatriz",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 63,
+          "profile": {
+            "id": "MB-399",
+            "handle": "nutri_raissaavila",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 64,
+          "profile": {
+            "id": "MB-316",
+            "handle": "nuttrir_centrodenutricao",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 65,
+          "profile": {
+            "id": "MB-311",
+            "handle": "nutrirubiathome",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 66,
+          "profile": {
+            "id": "MB-304",
+            "handle": "leticia.menezes.nutricao",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 67,
+          "profile": {
+            "id": "MB-309",
+            "handle": "camilamiranutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 68,
+          "profile": {
+            "id": "MB-320",
+            "handle": "ien.institutodenutricao",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 69,
+          "profile": {
+            "id": "MB-322",
+            "handle": "nutrithainaveneri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 70,
+          "profile": {
+            "id": "MB-326",
+            "handle": "evelinborges.nutricionista",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 71,
+          "profile": {
+            "id": "MB-328",
+            "handle": "nutripaulinegodoi",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 72,
+          "profile": {
+            "id": "MB-329",
+            "handle": "nutri.cinthiacorrea",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 73,
+          "profile": {
+            "id": "MB-339",
+            "handle": "nutri.danibouchet",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 74,
+          "profile": {
+            "id": "MB-341",
+            "handle": "nutriharlenepereira",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 75,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 76,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 77,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 78,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 79,
+          "profile": null
+        },
+        {
+          "date": "28/10/2026",
+          "segment": "Nutricionista",
+          "position": 80,
+          "profile": null
+        }
+      ]
+    },
+    {
+      "date": "29/10/2026",
+      "tab": "05 • Quinta",
+      "profiles": [
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 1,
+          "profile": {
+            "id": "MB-088",
+            "handle": "studioelegancesjp",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 2,
+          "profile": {
+            "id": "MB-009",
+            "handle": "espacomissbellaj",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 3,
+          "profile": {
+            "id": "MB-031",
+            "handle": "wa_concept_hair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 4,
+          "profile": {
+            "id": "MB-015",
+            "handle": "velancehair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 5,
+          "profile": {
+            "id": "MB-011",
+            "handle": "deboragomeshair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 6,
+          "profile": {
+            "id": "MB-013",
+            "handle": "fiofiobeautyclub",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 7,
+          "profile": {
+            "id": "MB-016",
+            "handle": "salao.rosangela",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 8,
+          "profile": {
+            "id": "MB-021",
+            "handle": "jonathanmellooficial",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 9,
+          "profile": {
+            "id": "MB-029",
+            "handle": "espacobeautyverasanttos",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 10,
+          "profile": {
+            "id": "MB-030",
+            "handle": "dreamsstudiohair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 11,
+          "profile": {
+            "id": "MB-034",
+            "handle": "salaovivianesilva",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 12,
+          "profile": {
+            "id": "MB-035",
+            "handle": "fellerroger",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 13,
+          "profile": {
+            "id": "MB-046",
+            "handle": "cleylambert",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 14,
+          "profile": {
+            "id": "MB-047",
+            "handle": "estilo_visual",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 15,
+          "profile": {
+            "id": "MB-060",
+            "handle": "camarim_62",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 16,
+          "profile": {
+            "id": "MB-062",
+            "handle": "estudiogoncalves.cco",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 17,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 18,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 19,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 20,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 21,
+          "profile": {
+            "id": "MB-188",
+            "handle": "blend.bydayse",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 22,
+          "profile": {
+            "id": "MB-190",
+            "handle": "paraisodosabor_37",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 23,
+          "profile": {
+            "id": "MB-196",
+            "handle": "casadebolostoledo",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 9
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 24,
+          "profile": {
+            "id": "MB-143",
+            "handle": "doceriadamaripg",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 25,
+          "profile": {
+            "id": "MB-165",
+            "handle": "ben_confeitaria_artesanal",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 26,
+          "profile": {
+            "id": "MB-199",
+            "handle": "alinemezzari_doceriaartesanal",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 27,
+          "profile": {
+            "id": "MB-181",
+            "handle": "mariasemaria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 28,
+          "profile": {
+            "id": "MB-195",
+            "handle": "vividominguescakes",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 29,
+          "profile": {
+            "id": "MB-183",
+            "handle": "panidocesonhos",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 30,
+          "profile": {
+            "id": "MB-156",
+            "handle": "doce_i_arte",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 31,
+          "profile": {
+            "id": "MB-175",
+            "handle": "confeitariamaisbolo",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 32,
+          "profile": {
+            "id": "MB-166",
+            "handle": "doce_encanto_criciuma",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 33,
+          "profile": {
+            "id": "MB-112",
+            "handle": "backerhauspadaria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 34,
+          "profile": {
+            "id": "MB-158",
+            "handle": "gabidoceprosa",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 35,
+          "profile": {
+            "id": "MB-107",
+            "handle": "eli_barao",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 36,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 37,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 38,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 39,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 40,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 41,
+          "profile": {
+            "id": "MB-230",
+            "handle": "graciolipsicologia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 42,
+          "profile": {
+            "id": "MB-241",
+            "handle": "psi.larissavieira",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 43,
+          "profile": {
+            "id": "MB-248",
+            "handle": "fabianadasilva.psicologa",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 44,
+          "profile": {
+            "id": "MB-262",
+            "handle": "thaniagreski",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 45,
+          "profile": {
+            "id": "MB-263",
+            "handle": "psicokathllenweiss",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 46,
+          "profile": {
+            "id": "MB-265",
+            "handle": "psialinevieirag",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 47,
+          "profile": {
+            "id": "MB-266",
+            "handle": "prof.edpsico",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 48,
+          "profile": {
+            "id": "MB-270",
+            "handle": "humanitas.psicologia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 49,
+          "profile": {
+            "id": "MB-282",
+            "handle": "clinicasuzanaalves",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 50,
+          "profile": {
+            "id": "MB-284",
+            "handle": "consultoriojositrentini",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 51,
+          "profile": {
+            "id": "MB-285",
+            "handle": "psicobeatrizpannek",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 52,
+          "profile": {
+            "id": "MB-286",
+            "handle": "circulo_psicanalise",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 53,
+          "profile": {
+            "id": "MB-287",
+            "handle": "psi_crisperes",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 54,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 55,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 56,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 57,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 58,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 59,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Psicólogo",
+          "position": 60,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 61,
+          "profile": {
+            "id": "MB-343",
+            "handle": "sandreleal.nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 62,
+          "profile": {
+            "id": "MB-346",
+            "handle": "karenrochanutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 63,
+          "profile": {
+            "id": "MB-350",
+            "handle": "vaniaabechenutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 64,
+          "profile": {
+            "id": "MB-354",
+            "handle": "mariaraquelnutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 65,
+          "profile": {
+            "id": "MB-355",
+            "handle": "draelaineantunes.nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 66,
+          "profile": {
+            "id": "MB-358",
+            "handle": "carolinabarbosasaude",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 67,
+          "profile": {
+            "id": "MB-361",
+            "handle": "eliana.nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 68,
+          "profile": {
+            "id": "MB-362",
+            "handle": "rafaelacarvalho_nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 69,
+          "profile": {
+            "id": "MB-368",
+            "handle": "nutricao.especializada",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 70,
+          "profile": {
+            "id": "MB-371",
+            "handle": "lucianogasques",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 71,
+          "profile": {
+            "id": "MB-373",
+            "handle": "andreiamartins_nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 72,
+          "profile": {
+            "id": "MB-375",
+            "handle": "samaracardosonutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 73,
+          "profile": {
+            "id": "MB-379",
+            "handle": "nutrimoniqconte",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 74,
+          "profile": {
+            "id": "MB-383",
+            "handle": "vanusa.nutricionista",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 75,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 76,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 77,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 78,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 79,
+          "profile": null
+        },
+        {
+          "date": "29/10/2026",
+          "segment": "Nutricionista",
+          "position": 80,
+          "profile": null
+        }
+      ]
+    },
+    {
+      "date": "30/10/2026",
+      "tab": "06 • Sexta",
+      "profiles": [
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 1,
+          "profile": {
+            "id": "MB-067",
+            "handle": "studiokarinesilveira",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 2,
+          "profile": {
+            "id": "MB-070",
+            "handle": "felicibeauty",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 3,
+          "profile": {
+            "id": "MB-075",
+            "handle": "cris.maiahair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 4,
+          "profile": {
+            "id": "MB-086",
+            "handle": "fabioluisconcept",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 5,
+          "profile": {
+            "id": "MB-097",
+            "handle": "lamony.beleza",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 6,
+          "profile": {
+            "id": "MB-098",
+            "handle": "mara.hair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 7,
+          "profile": {
+            "id": "MB-085",
+            "handle": "poderosashairpg",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 7
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 8,
+          "profile": {
+            "id": "MB-093",
+            "handle": "studiogrybosi",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 7
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 9,
+          "profile": {
+            "id": "MB-048",
+            "handle": "thereehair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 7
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 10,
+          "profile": {
+            "id": "MB-037",
+            "handle": "saloncristianopinheirocp",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 7
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 11,
+          "profile": {
+            "id": "MB-051",
+            "handle": "studio1000hair",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 6
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 12,
+          "profile": {
+            "id": "MB-080",
+            "handle": "conceyto.pg",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 6
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 13,
+          "profile": {
+            "id": "MB-038",
+            "handle": "studiohair2londrina",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 14,
+          "profile": {
+            "id": "MB-065",
+            "handle": "studioelaineayala",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 15,
+          "profile": {
+            "id": "MB-069",
+            "handle": "studio_maos_de_tesoura",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 16,
+          "profile": {
+            "id": "MB-050",
+            "handle": "henriquegrulkehairdesign",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 17,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 18,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 19,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Salão de Beleza",
+          "position": 20,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 21,
+          "profile": {
+            "id": "MB-109",
+            "handle": "padariaconfeitariamaia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 22,
+          "profile": {
+            "id": "MB-116",
+            "handle": "vivimomessodoceria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 23,
+          "profile": {
+            "id": "MB-122",
+            "handle": "confeitariasementedaterra",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 24,
+          "profile": {
+            "id": "MB-124",
+            "handle": "docesegredo.confeitaria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 25,
+          "profile": {
+            "id": "MB-133",
+            "handle": "mairagayardodoceria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 26,
+          "profile": {
+            "id": "MB-134",
+            "handle": "levitusdoces",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 27,
+          "profile": {
+            "id": "MB-138",
+            "handle": "docariadanaia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 28,
+          "profile": {
+            "id": "MB-141",
+            "handle": "capitolinadoceria",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 29,
+          "profile": {
+            "id": "MB-145",
+            "handle": "caramellospontagrossa",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 30,
+          "profile": {
+            "id": "MB-171",
+            "handle": "beneditacandy",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 31,
+          "profile": {
+            "id": "MB-173",
+            "handle": "angel.bake.shop",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 32,
+          "profile": {
+            "id": "MB-185",
+            "handle": "panificadorapaodmel",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 33,
+          "profile": {
+            "id": "MB-194",
+            "handle": "confeitariamarcia",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 34,
+          "profile": {
+            "id": "MB-135",
+            "handle": "davilasconfeitaria",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 35,
+          "profile": {
+            "id": "MB-103",
+            "handle": "lullybolosconfeitaria",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 36,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 37,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 38,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 39,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Padaria / Confeitaria",
+          "position": 40,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 41,
+          "profile": {
+            "id": "MB-292",
+            "handle": "psicologafrancinemarcelina",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 42,
+          "profile": {
+            "id": "MB-296",
+            "handle": "beatrizsilva.psi",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 43,
+          "profile": {
+            "id": "MB-232",
+            "handle": "psicologasuele",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 7
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 44,
+          "profile": {
+            "id": "MB-277",
+            "handle": "psicologia.ds",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 7
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 45,
+          "profile": {
+            "id": "MB-238",
+            "handle": "era.clinicaneuropsi",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 46,
+          "profile": {
+            "id": "MB-209",
+            "handle": "alessandrarod_psicologa",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 47,
+          "profile": {
+            "id": "MB-279",
+            "handle": "cpsjpsicologia",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 48,
+          "profile": {
+            "id": "MB-231",
+            "handle": "personalittepsicologia",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 49,
+          "profile": {
+            "id": "MB-243",
+            "handle": "psicologapatriciaszpoganicz",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 50,
+          "profile": {
+            "id": "MB-227",
+            "handle": "valentina.psi",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 51,
+          "profile": {
+            "id": "MB-205",
+            "handle": "phillus.especialidades",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 9
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 52,
+          "profile": {
+            "id": "MB-213",
+            "handle": "clinicaabertamente",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 9
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 53,
+          "profile": {
+            "id": "MB-202",
+            "handle": "institutosolardepsicologia",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 9
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 54,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 55,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 56,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 57,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 58,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 59,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Psicólogo",
+          "position": 60,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 61,
+          "profile": {
+            "id": "MB-393",
+            "handle": "nutrisuelenm",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 62,
+          "profile": {
+            "id": "MB-397",
+            "handle": "nutrigislenetiton",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 63,
+          "profile": {
+            "id": "MB-398",
+            "handle": "deboragiaretta.nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 8
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 64,
+          "profile": {
+            "id": "MB-370",
+            "handle": "nutrianakurazumi",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 7
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 65,
+          "profile": {
+            "id": "MB-381",
+            "handle": "nutri.maribittel",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 7
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 66,
+          "profile": {
+            "id": "MB-387",
+            "handle": "clinicaleticiajocoski",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 7
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 67,
+          "profile": {
+            "id": "MB-315",
+            "handle": "nutriryanwippel",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 6
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 68,
+          "profile": {
+            "id": "MB-336",
+            "handle": "jesouza.nutri",
+            "status": "PENDENTE_DE_GOOGLE",
+            "score": 6
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 69,
+          "profile": {
+            "id": "MB-321",
+            "handle": "nutrianacsouza",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 70,
+          "profile": {
+            "id": "MB-342",
+            "handle": "nutri.rafaelmafra",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 71,
+          "profile": {
+            "id": "MB-323",
+            "handle": "nutrilarimoresco",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 72,
+          "profile": {
+            "id": "MB-317",
+            "handle": "nutri.renataribeiro",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 73,
+          "profile": {
+            "id": "MB-353",
+            "handle": "isabelazumblicknutri",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 74,
+          "profile": {
+            "id": "MB-318",
+            "handle": "nutrijanainefagundes",
+            "status": "PENDENTE_VALIDACAO_ATIVIDADE",
+            "score": 10
+          }
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 75,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 76,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 77,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 78,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 79,
+          "profile": null
+        },
+        {
+          "date": "30/10/2026",
+          "segment": "Nutricionista",
+          "position": 80,
+          "profile": null
+        }
+      ]
+    }
+  ]
+}
