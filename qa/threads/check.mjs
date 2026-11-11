@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {assessThreadsLead,normalizeThreadsUrl,publicPostKey,canFollowUp,assertExternalActionAllowed,THREADS_CRITERIA} from '../../lib/threads-qualification.mjs';
+const evidence=Object.fromEntries(THREADS_CRITERIA.map(k=>[k,'Evidência verificável']));
+const high=assessThreadsLead({scores:Object.fromEntries(THREADS_CRITERIA.map(k=>[k,2])),evidence});
+assert.equal(high.score,12);assert.equal(high.priority,'Alta prioridade');assert.equal(high.stage,'Prospecção');
+assert.equal(assessThreadsLead({scores:Object.fromEntries(THREADS_CRITERIA.map(k=>[k,2])),evidence,noContact:true}).eligibleForContact,false);
+assert.throws(()=>assessThreadsLead({scores:{...high.scores,need:3},evidence}),/Nota inválida/);
+assert.throws(()=>assessThreadsLead({scores:high.scores,evidence:{}}),/evidência/i);
+assert.equal(normalizeThreadsUrl('https://threads.com/@math.brands/post/DfnjAKfH-hb?foo=1'),'https://www.threads.com/@math.brands/post/DfnjAKfH-hb');
+assert.throws(()=>normalizeThreadsUrl('https://example.com/@any/post/123'),/Threads/);
+assert.equal(publicPostKey({postId:'123'}),'threads:post:123');
+assert.equal(canFollowUp({firstApproachSent:true,interested:true,unansweredAttempts:1}),true);
+assert.equal(canFollowUp({firstApproachSent:true,interested:true,unansweredAttempts:2}),false);
+assert.equal(canFollowUp({firstApproachSent:true,responded:false,interested:false}),false);
+assert.throws(()=>assertExternalActionAllowed({approved:true,channelAllowed:true}),/bloqueada/);
+assert.equal(assertExternalActionAllowed({approved:true,channelAllowed:true,policyApproved:true}),true);
+console.log('Threads: critérios, evidências, deduplicação, follow-up e barreira de envio OK.');
