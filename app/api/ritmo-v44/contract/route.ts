@@ -3,10 +3,13 @@
  * Desligada por padrão. Não cria checkout, não move dinheiro nem confirma recibos.
  */
 import {env} from 'cloudflare:workers';
-import {verifyIncomingRequest,PROTOCOL_VERSION} from '../../../lib/ritmo-v44/protocol.mjs';
-import {projectContractStatus} from '../../../lib/ritmo-v44/contract-status.mjs';
+import {verifyIncomingRequest,PROTOCOL_VERSION} from '../../../../lib/ritmo-v44/protocol.mjs';
+import {projectContractStatus} from '../../../../lib/ritmo-v44/contract-status.mjs';
 export const dynamic='force-dynamic';
-const reply=(payload:any,status=200)=>Response.json(payload,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
+const reply=(payload:unknown,status=200)=>Response.json(payload,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
+type ContractRow={id:string;owner:string;opportunity_id:string;active:number;status:string;deposit_cents:number|null;amount_cents:number;revision:number};
+type OpportunityRow={client_id:string;stage:string;service:string|null};
+type PaymentRow={id:string;owner:string;contract_id:string;amount_cents:number;confirmation:string;reversed_on:string|null;kind:string;created:string;paid_on:string|null};
 export async function GET(req:Request){
  const runtime=env as unknown as {DB?:D1Database;INTAKE_OWNER?:string;RITMO_V44_ENABLED?:string;RITMO_V44_SECRET?:string;RITMO_V44_ORGANIZATION_ID?:string};
  if(runtime.RITMO_V44_ENABLED!=='true')return reply({error:'Indisponível'},404);
@@ -21,13 +24,14 @@ export async function GET(req:Request){
  if(typeof contractId!=='string'||!/^[A-Za-z0-9][A-Za-z0-9_-]{0,199}$/.test(contractId))
   return reply({error:'Contrato inválido'},400);
  try{
-  const contract=await runtime.DB.prepare('SELECT * FROM commercial_contracts WHERE id=? AND owner=?').bind(contractId,runtime.INTAKE_OWNER).first<any>();
+  const contract=await runtime.DB.prepare('SELECT id,owner,opportunity_id,active,status,deposit_cents,amount_cents,revision FROM commercial_contracts WHERE id=? AND owner=?').bind(contractId,runtime.INTAKE_OWNER).first<ContractRow>();
   if(!contract)return reply({error:'Contrato não encontrado'},404);
-  const opportunity=await runtime.DB.prepare('SELECT * FROM commercial_opportunities WHERE id=? AND owner=?').bind(contract.opportunity_id,runtime.INTAKE_OWNER).first<any>();
+  const opportunity=await runtime.DB.prepare('SELECT client_id,stage,service FROM commercial_opportunities WHERE id=? AND owner=?').bind(contract.opportunity_id,runtime.INTAKE_OWNER).first<OpportunityRow>();
   if(!opportunity)return reply({error:'Contratação inconsistente'},409);
   const payments=await runtime.DB.prepare('SELECT id,owner,contract_id,amount_cents,confirmation,reversed_on,kind,created,paid_on FROM commercial_payments WHERE contract_id=? AND owner=?')
-   .bind(contract.id,runtime.INTAKE_OWNER).all<any>();
+   .bind(contract.id,runtime.INTAKE_OWNER).all<PaymentRow>();
   return reply({protocolVersion:PROTOCOL_VERSION,organizationId:runtime.RITMO_V44_ORGANIZATION_ID,
     contract:projectContractStatus(contract,opportunity,payments.results)});
  }catch(e){console.error('ritmo-v44-contract',e);return reply({error:'Consulta temporariamente indisponível'},503)}
 }
+
