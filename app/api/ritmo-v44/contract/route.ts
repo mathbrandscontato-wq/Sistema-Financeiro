@@ -9,7 +9,7 @@ export const dynamic='force-dynamic';
 const reply=(payload:unknown,status=200)=>Response.json(payload,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 type ContractRow={id:string;owner:string;opportunity_id:string;active:number;status:string;deposit_cents:number|null;amount_cents:number;revision:number};
 type OpportunityRow={client_id:string;stage:string;service:string|null};
-type PaymentRow={id:string;owner:string;contract_id:string;amount_cents:number;confirmation:string;reversed_on:string|null;kind:string;created:string;paid_on:string|null};
+type PaymentRow={id:string;owner:string;contract_id:string;amount_cents:number;confirmation:string;reversed_on:string|null;kind:string;confirmed_at:string|null};
 export async function GET(req:Request){
  const runtime=env as unknown as {DB?:D1Database;INTAKE_OWNER?:string;RITMO_V44_ENABLED?:string;RITMO_V44_SECRET?:string;RITMO_V44_ORGANIZATION_ID?:string};
  if(runtime.RITMO_V44_ENABLED!=='true')return reply({error:'Indisponível'},404);
@@ -26,9 +26,15 @@ export async function GET(req:Request){
  try{
   const contract=await runtime.DB.prepare('SELECT id,owner,opportunity_id,active,status,deposit_cents,amount_cents,revision FROM commercial_contracts WHERE id=? AND owner=?').bind(contractId,runtime.INTAKE_OWNER).first<ContractRow>();
   if(!contract)return reply({error:'Contrato não encontrado'},404);
-  const opportunity=await runtime.DB.prepare('SELECT client_id,stage,service FROM commercial_opportunities WHERE id=? AND owner=?').bind(contract.opportunity_id,runtime.INTAKE_OWNER).first<OpportunityRow>();
+  const opportunity=await runtime.DB.prepare('SELECT o.client_id,o.stage,o.service FROM commercial_opportunities o JOIN commercial_clients c ON c.id=o.client_id AND c.owner=o.owner WHERE o.id=? AND o.owner=? AND o.archived=0').bind(contract.opportunity_id,runtime.INTAKE_OWNER).first<OpportunityRow>();
   if(!opportunity)return reply({error:'Contratação inconsistente'},409);
-  const payments=await runtime.DB.prepare('SELECT id,owner,contract_id,amount_cents,confirmation,reversed_on,kind,created,paid_on FROM commercial_payments WHERE contract_id=? AND owner=?')
+  const payments=await runtime.DB.prepare(`
+   SELECT p.id,p.owner,p.contract_id,p.amount_cents,p.confirmation,p.reversed_on,p.kind,
+     (SELECT MIN(h.created) FROM financial_history h
+      WHERE h.owner=p.owner AND h.contract_id=p.contract_id
+        AND json_extract(h.data,'$.paymentId')=p.id
+        AND json_extract(h.data,'$.action') IN ('payment_record','quote_receipt')) AS confirmed_at
+   FROM commercial_payments p WHERE p.contract_id=? AND p.owner=?`)
    .bind(contract.id,runtime.INTAKE_OWNER).all<PaymentRow>();
   return reply({protocolVersion:PROTOCOL_VERSION,organizationId:runtime.RITMO_V44_ORGANIZATION_ID,
     contract:projectContractStatus(contract,opportunity,payments.results)});

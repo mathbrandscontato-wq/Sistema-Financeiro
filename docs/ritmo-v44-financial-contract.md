@@ -33,9 +33,9 @@ O serviço consulta diretamente `commercial_contracts`, `commercial_opportunitie
 - `contractId` e `commercialClientId`.
 - `status` de aprovação comercial.
 - `serviceLabel` e `contractRevision`.
-- `deposit` e `final`: `pending` ou `confirmed`, recibo que atingiu o limite, instante registrado e data declarada.
+- `deposit` e `final`: `pending` ou `confirmed`, recibo que atingiu o limite e instante de confirmação na trilha financeira.
 
-Apenas recebimentos de confirmação `Confirmado`, não estornados, pertencentes ao mesmo proprietário e contrato podem satisfazer condições. Sinal usa somente recebimentos `Sinal`. Quitação considera o total pago. Não há detecção de compensação Pix/Cartão por esta API: os registros são da operação financeira existente e continuam dependendo de sua forma original de conferência.
+Apenas recebimentos com confirmação registrada na trilha financeira, não estornados, pertencentes ao mesmo proprietário e contrato podem satisfazer condições. Recebimentos legados sem evidência individual de confirmação permanecem pendentes na ponte. Sinal usa somente recebimentos `Sinal`. Quitação considera o total pago. Não há detecção de compensação Pix/Cartão por esta API: os registros são da operação financeira existente e continuam dependendo de sua forma original de conferência.
 
 ## Limites fundamentais
 
@@ -51,3 +51,4 @@ Apenas recebimentos de confirmação `Confirmado`, não estornados, pertencentes
 `node --test qa/ritmo-v44-contract.mjs` valida assinatura, adulteração, janela de replay, contrato aprovado, pagamento parcial, estorno, quitação e isolamento. Workflow GitHub Actions somente leitura.
 
 **NO-GO para integração ativa:** falta validação da origem oficial de ambos os Sites, contrato aprovado, mapeamento ID/tenant, sistema de eventos/reconciliação, provedor de checkout e teste real de staging.
+
